@@ -1,0 +1,777 @@
+{
+    "test_number": 5,
+    "energy_prices": [
+        {
+            "time": 0.0,
+            "price": 37.359124352190655
+        },
+        {
+            "time": 0.25,
+            "price": 50.73476760152091
+        },
+        {
+            "time": 0.5,
+            "price": 58.70235949944796
+        },
+        {
+            "time": 0.75,
+            "price": 66.89140562604895
+        },
+        {
+            "time": 1.0,
+            "price": 70.31297170892535
+        },
+        {
+            "time": 1.25,
+            "price": 82.6483958898522
+        },
+        {
+            "time": 1.5,
+            "price": 77.46803322126901
+        },
+        {
+            "time": 1.75,
+            "price": 80.21305265571179
+        },
+        {
+            "time": 2.0,
+            "price": 72.21318903319691
+        },
+        {
+            "time": 2.25,
+            "price": 63.80920173197892
+        },
+        {
+            "time": 2.5,
+            "price": 52.90752725869442
+        },
+        {
+            "time": 2.75,
+            "price": 50.23046438350078
+        },
+        {
+            "time": 3.0,
+            "price": 37.148330618559335
+        },
+        {
+            "time": 3.25,
+            "price": 30.618098780594213
+        },
+        {
+            "time": 3.5,
+            "price": 29.211818906104533
+        },
+        {
+            "time": 3.75,
+            "price": 26.76138903148172
+        },
+        {
+            "time": 4.0,
+            "price": 24.435982122730728
+        },
+        {
+            "time": 4.25,
+            "price": 21.588809759311935
+        },
+        {
+            "time": 4.5,
+            "price": 17.363851194011197
+        },
+        {
+            "time": 4.75,
+            "price": 20.443141934764203
+        },
+        {
+            "time": 5.0,
+            "price": 15.561034454347716
+        },
+        {
+            "time": 5.25,
+            "price": 20.903989752418067
+        },
+        {
+            "time": 5.5,
+            "price": 21.270913843334863
+        },
+        {
+            "time": 5.75,
+            "price": 20.537622942960628
+        },
+        {
+            "time": 6.0,
+            "price": 18.03967159704619
+        },
+        {
+            "time": 6.25,
+            "price": 22.601618236650747
+        },
+        {
+            "time": 6.5,
+            "price": 21.6128968575447
+        },
+        {
+            "time": 6.75,
+            "price": 15.372140378650586
+        },
+        {
+            "time": 7.0,
+            "price": 17.292776884329456
+        },
+        {
+            "time": 7.25,
+            "price": 23.00028881004504
+        },
+        {
+            "time": 7.5,
+            "price": 22.12974145994133
+        },
+        {
+            "time": 7.75,
+            "price": 22.07984692587319
+        },
+        {
+            "time": 8.0,
+            "price": 25.98232885281919
+        },
+        {
+            "time": 8.25,
+            "price": 26.768893475384846
+        },
+        {
+            "time": 8.5,
+            "price": 33.7161671895681
+        },
+        {
+            "time": 8.75,
+            "price": 36.1577577654853
+        },
+        {
+            "time": 9.0,
+            "price": 40.67333978689088
+        },
+        {
+            "time": 9.25,
+            "price": 42.38963392822217
+        },
+        {
+            "time": 9.5,
+            "price": 45.54521475725852
+        },
+        {
+            "time": 9.75,
+            "price": 56.01126944243894
+        },
+        {
+            "time": 10.0,
+            "price": 60.84203339232904
+        },
+        {
+            "time": 10.25,
+            "price": 61.297344730611975
+        },
+        {
+            "time": 10.5,
+            "price": 67.69262629578428
+        },
+        {
+            "time": 10.75,
+            "price": 67.0093619473398
+        },
+        {
+            "time": 11.0,
+            "price": 68.13522530344977
+        },
+        {
+            "time": 11.25,
+            "price": 68.7998231130847
+        },
+        {
+            "time": 11.5,
+            "price": 72.21393549996826
+        },
+        {
+            "time": 11.75,
+            "price": 66.18321040927286
+        },
+        {
+            "time": 12.0,
+            "price": 57.39316019437395
+        },
+        {
+            "time": 12.25,
+            "price": 56.710037307520246
+        },
+        {
+            "time": 12.5,
+            "price": 51.011841111148144
+        },
+        {
+            "time": 12.75,
+            "price": 46.23502199310933
+        },
+        {
+            "time": 13.0,
+            "price": 41.045337861398515
+        },
+        {
+            "time": 13.25,
+            "price": 35.94880160220284
+        },
+        {
+            "time": 13.5,
+            "price": 27.24529278545085
+        },
+        {
+            "time": 13.75,
+            "price": 26.96486181459323
+        }
+    ],
+    "arrivals": [
+        {
+            "id": 0,
+            "arrival_time": 0.4269012845647703,
+            "departure_time": 8.024133496185147,
+            "required_energy": 42.27809272541462
+        },
+        {
+            "id": 1,
+            "arrival_time": 0.3536499017970416,
+            "departure_time": 7.295866980708105,
+            "required_energy": 22.332469088732097
+        },
+        {
+            "id": 2,
+            "arrival_time": 1.3305519870173697,
+            "departure_time": 4.629010953548603,
+            "required_energy": 55.85967745187573
+        },
+        {
+            "id": 3,
+            "arrival_time": 1.7386031705996357,
+            "departure_time": 4.62840516801308,
+            "required_energy": 47.363242493968556
+        },
+        {
+            "id": 4,
+            "arrival_time": 2.0444030163989475,
+            "departure_time": 7.802463563650113,
+            "required_energy": 24.672990898994836
+        },
+        {
+            "id": 5,
+            "arrival_time": 2.002650513225165,
+            "departure_time": 10.189255537770888,
+            "required_energy": 42.820532406172305
+        },
+        {
+            "id": 6,
+            "arrival_time": 2.235563993161824,
+            "departure_time": 9.450181077551548,
+            "required_energy": 23.3605222880246
+        },
+        {
+            "id": 7,
+            "arrival_time": 2.0904657194572205,
+            "departure_time": 7.77529291846694,
+            "required_energy": 37.34424855306758
+        },
+        {
+            "id": 8,
+            "arrival_time": 2.340177564375349,
+            "departure_time": 5.321453421341078,
+            "required_energy": 29.453932757583164
+        },
+        {
+            "id": 9,
+            "arrival_time": 2.6285636804413777,
+            "departure_time": 8.322126490368353,
+            "required_energy": 25.262125803930676
+        },
+        {
+            "id": 10,
+            "arrival_time": 2.5399186890375196,
+            "departure_time": 8.71829937055372,
+            "required_energy": 15.186440535947012
+        },
+        {
+            "id": 11,
+            "arrival_time": 2.771180511916749,
+            "departure_time": 8.705174751685455,
+            "required_energy": 42.40358392762427
+        },
+        {
+            "id": 12,
+            "arrival_time": 3.2385272363516497,
+            "departure_time": 5.65169843023933,
+            "required_energy": 54.01031179888438
+        },
+        {
+            "id": 13,
+            "arrival_time": 3.481772630634882,
+            "departure_time": 8.59502683086446,
+            "required_energy": 28.85756668801078
+        },
+        {
+            "id": 14,
+            "arrival_time": 3.575725181270432,
+            "departure_time": 8.676220293955916,
+            "required_energy": 36.40664241198327
+        },
+        {
+            "id": 15,
+            "arrival_time": 3.6520361552263907,
+            "departure_time": 9.328750954691468,
+            "required_energy": 58.8984076701695
+        },
+        {
+            "id": 16,
+            "arrival_time": 3.6505099690644696,
+            "departure_time": 11.4975816815153,
+            "required_energy": 14.268791925441622
+        },
+        {
+            "id": 17,
+            "arrival_time": 3.622072705383363,
+            "departure_time": 11.924263816005162,
+            "required_energy": 55.85279375820579
+        },
+        {
+            "id": 18,
+            "arrival_time": 4.160480547566378,
+            "departure_time": 9.475894147719588,
+            "required_energy": 38.17870627327082
+        },
+        {
+            "id": 19,
+            "arrival_time": 4.439504644929725,
+            "departure_time": 12.439670053873236,
+            "required_energy": 33.82489577321253
+        },
+        {
+            "id": 20,
+            "arrival_time": 4.699948562641451,
+            "departure_time": 8.903379279527735,
+            "required_energy": 11.937653783816856
+        },
+        {
+            "id": 21,
+            "arrival_time": 4.702083909229909,
+            "departure_time": 12.274467711596227,
+            "required_energy": 23.995963334673633
+        },
+        {
+            "id": 22,
+            "arrival_time": 4.98835783340977,
+            "departure_time": 9.436130154850233,
+            "required_energy": 12.971334527132068
+        },
+        {
+            "id": 23,
+            "arrival_time": 5.369698765748835,
+            "departure_time": 14.0,
+            "required_energy": 19.74981802515282
+        },
+        {
+            "id": 24,
+            "arrival_time": 5.753851411923148,
+            "departure_time": 8.933170495214098,
+            "required_energy": 11.928410706901962
+        },
+        {
+            "id": 25,
+            "arrival_time": 5.924564602593106,
+            "departure_time": 11.87829803993338,
+            "required_energy": 42.13892714786108
+        },
+        {
+            "id": 26,
+            "arrival_time": 5.7878354948949,
+            "departure_time": 11.392047210174372,
+            "required_energy": 55.092292015989734
+        },
+        {
+            "id": 27,
+            "arrival_time": 6.456106938354486,
+            "departure_time": 12.921865329603111,
+            "required_energy": 34.66075231705972
+        },
+        {
+            "id": 28,
+            "arrival_time": 6.5244006921915005,
+            "departure_time": 10.54738215525055,
+            "required_energy": 18.498564523571506
+        },
+        {
+            "id": 29,
+            "arrival_time": 6.631875997044342,
+            "departure_time": 13.71546718320376,
+            "required_energy": 53.23024435422057
+        },
+        {
+            "id": 30,
+            "arrival_time": 6.9572560675962665,
+            "departure_time": 14.0,
+            "required_energy": 17.096007996471705
+        },
+        {
+            "id": 31,
+            "arrival_time": 7.073363081289887,
+            "departure_time": 13.828981935475564,
+            "required_energy": 27.59336245245074
+        },
+        {
+            "id": 32,
+            "arrival_time": 7.081489004249247,
+            "departure_time": 13.501976593331488,
+            "required_energy": 11.099174333186964
+        },
+        {
+            "id": 33,
+            "arrival_time": 7.437808158490223,
+            "departure_time": 12.23544683604013,
+            "required_energy": 27.677831949613935
+        },
+        {
+            "id": 34,
+            "arrival_time": 7.672560164805224,
+            "departure_time": 10.0855535601913,
+            "required_energy": 51.67375046381218
+        },
+        {
+            "id": 35,
+            "arrival_time": 7.692928077371266,
+            "departure_time": 11.465315056956399,
+            "required_energy": 57.24832418076371
+        },
+        {
+            "id": 36,
+            "arrival_time": 7.543341816252342,
+            "departure_time": 14.0,
+            "required_energy": 53.048151759519456
+        },
+        {
+            "id": 37,
+            "arrival_time": 7.964715854470417,
+            "departure_time": 14.0,
+            "required_energy": 10.43425217000071
+        },
+        {
+            "id": 38,
+            "arrival_time": 7.849115506884272,
+            "departure_time": 10.403065162492682,
+            "required_energy": 51.245415812286396
+        },
+        {
+            "id": 39,
+            "arrival_time": 7.949305530575885,
+            "departure_time": 14.0,
+            "required_energy": 34.55257222613303
+        },
+        {
+            "id": 40,
+            "arrival_time": 7.943114566501418,
+            "departure_time": 9.99581650827381,
+            "required_energy": 32.15965548344119
+        },
+        {
+            "id": 41,
+            "arrival_time": 8.456492098334806,
+            "departure_time": 14.0,
+            "required_energy": 18.59621858434199
+        },
+        {
+            "id": 42,
+            "arrival_time": 8.445929720816764,
+            "departure_time": 14.0,
+            "required_energy": 58.61766501888325
+        },
+        {
+            "id": 43,
+            "arrival_time": 8.667085257799114,
+            "departure_time": 13.47922997291229,
+            "required_energy": 37.42584670200499
+        },
+        {
+            "id": 44,
+            "arrival_time": 8.997918477788218,
+            "departure_time": 14.0,
+            "required_energy": 33.720485437057434
+        },
+        {
+            "id": 45,
+            "arrival_time": 8.842061648451754,
+            "departure_time": 14.0,
+            "required_energy": 16.91998764212863
+        },
+        {
+            "id": 46,
+            "arrival_time": 8.81244582364657,
+            "departure_time": 13.958042144104542,
+            "required_energy": 55.95865354855938
+        },
+        {
+            "id": 47,
+            "arrival_time": 8.922266016031642,
+            "departure_time": 12.893234587314893,
+            "required_energy": 55.697744296513726
+        },
+        {
+            "id": 48,
+            "arrival_time": 9.183015191361621,
+            "departure_time": 14.0,
+            "required_energy": 20.828673675546106
+        },
+        {
+            "id": 49,
+            "arrival_time": 9.179647860985003,
+            "departure_time": 11.313704963836194,
+            "required_energy": 58.76043839070972
+        },
+        {
+            "id": 50,
+            "arrival_time": 9.846215714377053,
+            "departure_time": 12.71118470492263,
+            "required_energy": 44.96665930364284
+        },
+        {
+            "id": 51,
+            "arrival_time": 9.997855796493184,
+            "departure_time": 14.0,
+            "required_energy": 17.8721749676022
+        },
+        {
+            "id": 52,
+            "arrival_time": 9.75887484080707,
+            "departure_time": 14.0,
+            "required_energy": 23.32021368584726
+        },
+        {
+            "id": 53,
+            "arrival_time": 10.229469096056146,
+            "departure_time": 14.0,
+            "required_energy": 15.061059791553806
+        },
+        {
+            "id": 54,
+            "arrival_time": 10.320957525902891,
+            "departure_time": 14.0,
+            "required_energy": 58.471050307838226
+        },
+        {
+            "id": 55,
+            "arrival_time": 10.590536170389782,
+            "departure_time": 13.588731521913257,
+            "required_energy": 20.40229403834239
+        },
+        {
+            "id": 56,
+            "arrival_time": 10.738721906486669,
+            "departure_time": 14.0,
+            "required_energy": 44.25009634358558
+        },
+        {
+            "id": 57,
+            "arrival_time": 11.127460378678395,
+            "departure_time": 13.839988274438337,
+            "required_energy": 24.0276832889316
+        },
+        {
+            "id": 58,
+            "arrival_time": 11.365116275022212,
+            "departure_time": 14.0,
+            "required_energy": 36.7090682192495
+        },
+        {
+            "id": 59,
+            "arrival_time": 11.261086570166766,
+            "departure_time": 14.0,
+            "required_energy": 41.31739657145205
+        },
+        {
+            "id": 60,
+            "arrival_time": 11.395215104607534,
+            "departure_time": 14.0,
+            "required_energy": 30.014710024039967
+        },
+        {
+            "id": 61,
+            "arrival_time": 11.730853374881036,
+            "departure_time": 14.0,
+            "required_energy": 59.829023297581784
+        },
+        {
+            "id": 62,
+            "arrival_time": 11.700169536326204,
+            "departure_time": 14.0,
+            "required_energy": 56.28941356412613
+        },
+        {
+            "id": 63,
+            "arrival_time": 12.038360206276119,
+            "departure_time": 14.0,
+            "required_energy": 57.7975440771187
+        },
+        {
+            "id": 64,
+            "arrival_time": 12.302423249811362,
+            "departure_time": 14.0,
+            "required_energy": 12.021414372586294
+        },
+        {
+            "id": 65,
+            "arrival_time": 12.561272454139255,
+            "departure_time": 14.0,
+            "required_energy": 57.21580361339632
+        },
+        {
+            "id": 66,
+            "arrival_time": 12.958033821135643,
+            "departure_time": 14.0,
+            "required_energy": 57.55362339944625
+        },
+        {
+            "id": 67,
+            "arrival_time": 13.449026216429633,
+            "departure_time": 14.0,
+            "required_energy": 33.35369490607075
+        },
+        {
+            "id": 68,
+            "arrival_time": 13.402038073229324,
+            "departure_time": 14.0,
+            "required_energy": 42.473336349746454
+        },
+        {
+            "id": 69,
+            "arrival_time": 13.516091977822628,
+            "departure_time": 14.0,
+            "required_energy": 28.51571741360604
+        },
+        {
+            "id": 70,
+            "arrival_time": 13.597370574171675,
+            "departure_time": 14.0,
+            "required_energy": 19.514404273267196
+        },
+        {
+            "id": 71,
+            "arrival_time": 13.943109266545147,
+            "departure_time": 14.0,
+            "required_energy": 55.92739944570285
+        }
+    ],
+    "parking_config": {
+        "n_spots": 40,
+        "chargers": [
+            {
+                "charger_id": 0,
+                "power": 7
+            },
+            {
+                "charger_id": 1,
+                "power": 7
+            },
+            {
+                "charger_id": 2,
+                "power": 7
+            },
+            {
+                "charger_id": 3,
+                "power": 7
+            },
+            {
+                "charger_id": 4,
+                "power": 7
+            },
+            {
+                "charger_id": 5,
+                "power": 7
+            },
+            {
+                "charger_id": 6,
+                "power": 7
+            },
+            {
+                "charger_id": 7,
+                "power": 7
+            },
+            {
+                "charger_id": 8,
+                "power": 7
+            },
+            {
+                "charger_id": 9,
+                "power": 7
+            },
+            {
+                "charger_id": 10,
+                "power": 7
+            },
+            {
+                "charger_id": 11,
+                "power": 7
+            },
+            {
+                "charger_id": 12,
+                "power": 7
+            },
+            {
+                "charger_id": 13,
+                "power": 7
+            },
+            {
+                "charger_id": 14,
+                "power": 7
+            },
+            {
+                "charger_id": 15,
+                "power": 7
+            },
+            {
+                "charger_id": 16,
+                "power": 7
+            },
+            {
+                "charger_id": 17,
+                "power": 7
+            },
+            {
+                "charger_id": 18,
+                "power": 7
+            },
+            {
+                "charger_id": 19,
+                "power": 7
+            },
+            {
+                "charger_id": 20,
+                "power": 22
+            },
+            {
+                "charger_id": 21,
+                "power": 22
+            },
+            {
+                "charger_id": 22,
+                "power": 22
+            },
+            {
+                "charger_id": 23,
+                "power": 22
+            },
+            {
+                "charger_id": 24,
+                "power": 22
+            },
+            {
+                "charger_id": 25,
+                "power": 50
+            },
+            {
+                "charger_id": 26,
+                "power": 50
+            }
+        ],
+        "transformer_limit": 120
+    }
+}
