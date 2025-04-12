@@ -1,0 +1,60 @@
+RESUMEN DE MEJORES HIPERPARÁMETROS
+=================================
+
+Configuración: test_system_2
+--------------------------------------------------
+Costo final: 153503.75
+Satisfacción de energía: 76.68%
+EVs satisfechos: 19/49 (38.78%)
+Tiempo de ejecución: 6.30 segundos
+Mejora de costo: 34.23%
+
+Mejores hiperparámetros:
+  max_iteraciones: 500
+  temperatura_inicial: 2.0
+  factor_enfriamiento: 0.9
+  umbral_reinicio: 30
+  prob_perturbacion_intervalos: 0.5
+  prob_perturbacion_vehiculos: 0.4
+  factor_completitud: 0.5
+  factor_ventana: 1.5
+
+
+Configuración: test_system_9
+--------------------------------------------------
+Costo final: 1112781.47
+Satisfacción de energía: 79.65%
+EVs satisfechos: 169/285 (59.30%)
+Tiempo de ejecución: 4010.28 segundos
+Mejora de costo: 33.81%
+
+Mejores hiperparámetros:
+  max_iteraciones: 1000
+  temperatura_inicial: 1.0
+  factor_enfriamiento: 0.8
+  umbral_reinicio: 30
+  prob_perturbacion_intervalos: 0.3
+  prob_perturbacion_vehiculos: 0.2
+  factor_completitud: 1.5
+  factor_ventana: 1.5
+
+
+Configuración: test_system_10
+--------------------------------------------------
+Costo final: 12697989.40
+Satisfacción de energía: 12.65%
+EVs satisfechos: 0/554 (0.00%)
+Tiempo de ejecución: 509.66 segundos
+Mejora de costo: 1.10%
+
+Mejores hiperparámetros:
+  max_iteraciones: 1000
+  temperatura_inicial: 0.5
+  factor_enfriamiento: 0.9
+  umbral_reinicio: 30
+  prob_perturbacion_intervalos: 0.5
+  prob_perturbacion_vehiculos: 0.2
+  factor_completitud: 0.5
+  factor_ventana: 1.5
+
+
