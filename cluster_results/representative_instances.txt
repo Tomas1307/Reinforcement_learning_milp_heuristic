@@ -1,0 +1,21 @@
+Instancias representativas
+========================
+
+Cluster 0:
+  test_system_2.json (distancia: 1.3467)
+    n_evs: 49
+    congestion_ratio: 0.50
+    complexity_factor: 22.65
+
+Cluster 1:
+  test_system_9.json (distancia: 0.9173)
+    n_evs: 285
+    congestion_ratio: 0.89
+    complexity_factor: 162.67
+
+Cluster 2:
+  test_system_10.json (distancia: 0.0000)
+    n_evs: 554
+    congestion_ratio: 8.13
+    complexity_factor: 4401.70
+
