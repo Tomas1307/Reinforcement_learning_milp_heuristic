@@ -1,0 +1,4737 @@
+{
+    "test_number": 10,
+    "energy_prices": [
+        {
+            "time": 0.0,
+            "price": 54.27549795469251
+        },
+        {
+            "time": 0.25,
+            "price": 58.3987761618472
+        },
+        {
+            "time": 0.5,
+            "price": 72.61825653747805
+        },
+        {
+            "time": 0.75,
+            "price": 75.03845604623018
+        },
+        {
+            "time": 1.0,
+            "price": 80.07747748008934
+        },
+        {
+            "time": 1.25,
+            "price": 79.27089613712259
+        },
+        {
+            "time": 1.5,
+            "price": 76.36112066101558
+        },
+        {
+            "time": 1.75,
+            "price": 65.40215291111659
+        },
+        {
+            "time": 2.0,
+            "price": 51.418762940306024
+        },
+        {
+            "time": 2.25,
+            "price": 48.318305960798995
+        },
+        {
+            "time": 2.5,
+            "price": 33.45627585689095
+        },
+        {
+            "time": 2.75,
+            "price": 34.24860777801347
+        },
+        {
+            "time": 3.0,
+            "price": 26.998972818139066
+        },
+        {
+            "time": 3.25,
+            "price": 28.159522683940857
+        },
+        {
+            "time": 3.5,
+            "price": 32.71396096289778
+        },
+        {
+            "time": 3.75,
+            "price": 33.239015209401
+        },
+        {
+            "time": 4.0,
+            "price": 38.345132033401974
+        },
+        {
+            "time": 4.25,
+            "price": 47.28398492218204
+        },
+        {
+            "time": 4.5,
+            "price": 51.31172322869947
+        },
+        {
+            "time": 4.75,
+            "price": 52.404676596618955
+        },
+        {
+            "time": 5.0,
+            "price": 62.85184468032525
+        },
+        {
+            "time": 5.25,
+            "price": 62.80969679839118
+        },
+        {
+            "time": 5.5,
+            "price": 56.0910771519243
+        },
+        {
+            "time": 5.75,
+            "price": 45.846591369068506
+        },
+        {
+            "time": 6.0,
+            "price": 38.64233458081205
+        },
+        {
+            "time": 6.25,
+            "price": 37.53765270249766
+        },
+        {
+            "time": 6.5,
+            "price": 31.357656992510172
+        },
+        {
+            "time": 6.75,
+            "price": 21.147205652503104
+        },
+        {
+            "time": 7.0,
+            "price": 22.800413111561774
+        },
+        {
+            "time": 7.25,
+            "price": 13.380800238562635
+        },
+        {
+            "time": 7.5,
+            "price": 13.430107425528357
+        },
+        {
+            "time": 7.75,
+            "price": 10.633515366888775
+        },
+        {
+            "time": 8.0,
+            "price": 9.171614069207756
+        },
+        {
+            "time": 8.25,
+            "price": 15.335712078497039
+        },
+        {
+            "time": 8.5,
+            "price": 17.717822990185816
+        },
+        {
+            "time": 8.75,
+            "price": 23.547641674870654
+        },
+        {
+            "time": 9.0,
+            "price": 32.245337259750386
+        },
+        {
+            "time": 9.25,
+            "price": 32.62562560550974
+        },
+        {
+            "time": 9.5,
+            "price": 38.90798289518593
+        },
+        {
+            "time": 9.75,
+            "price": 38.077664510273095
+        },
+        {
+            "time": 10.0,
+            "price": 42.23516643841383
+        },
+        {
+            "time": 10.25,
+            "price": 42.97121682881811
+        },
+        {
+            "time": 10.5,
+            "price": 37.57675536801063
+        },
+        {
+            "time": 10.75,
+            "price": 38.82597394012056
+        },
+        {
+            "time": 11.0,
+            "price": 31.463604000484533
+        },
+        {
+            "time": 11.25,
+            "price": 23.506227126606653
+        },
+        {
+            "time": 11.5,
+            "price": 21.50342310373854
+        },
+        {
+            "time": 11.75,
+            "price": 8.522164881155824
+        },
+        {
+            "time": 12.0,
+            "price": 11.7185649042589
+        },
+        {
+            "time": 12.25,
+            "price": 18.505211680547287
+        },
+        {
+            "time": 12.5,
+            "price": 15.435691619194655
+        },
+        {
+            "time": 12.75,
+            "price": 16.73315457526924
+        },
+        {
+            "time": 13.0,
+            "price": 13.272595668208304
+        },
+        {
+            "time": 13.25,
+            "price": 9.829372074546772
+        },
+        {
+            "time": 13.5,
+            "price": 10.73483292431071
+        },
+        {
+            "time": 13.75,
+            "price": 10.406811191195658
+        }
+    ],
+    "arrivals": [
+        {
+            "id": 0,
+            "arrival_time": 0.04129205639335409,
+            "departure_time": 6.997488282599623,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.342039173281712
+        },
+        {
+            "id": 1,
+            "arrival_time": 0.07434801692753523,
+            "departure_time": 4.373333555413742,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 11.311011340573458
+        },
+        {
+            "id": 2,
+            "arrival_time": 0.13567468621189094,
+            "departure_time": 5.073644118083968,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 7.09728317944451
+        },
+        {
+            "id": 3,
+            "arrival_time": 0.15009594405356186,
+            "departure_time": 3.58155441599795,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 27.376979981304917
+        },
+        {
+            "id": 4,
+            "arrival_time": 0.2473899951911247,
+            "departure_time": 6.791756539908295,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 12.924913712897949
+        },
+        {
+            "id": 5,
+            "arrival_time": 0.25264259856443805,
+            "departure_time": 6.029221338674824,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 14.16622999502539
+        },
+        {
+            "id": 6,
+            "arrival_time": 0.26371368583661714,
+            "departure_time": 6.391037551263143,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 55.05111800320976
+        },
+        {
+            "id": 7,
+            "arrival_time": 0.28031582765179164,
+            "departure_time": 5.98896707348029,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 24.257165912438154
+        },
+        {
+            "id": 8,
+            "arrival_time": 0.289042895534547,
+            "departure_time": 6.173940742131178,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 40.09100664802363
+        },
+        {
+            "id": 9,
+            "arrival_time": 0.29343292975595503,
+            "departure_time": 7.391771678738618,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 25.390072004824454
+        },
+        {
+            "id": 10,
+            "arrival_time": 0.3070115781236038,
+            "departure_time": 5.837227717342296,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.185867125892688
+        },
+        {
+            "id": 11,
+            "arrival_time": 0.30982376244376675,
+            "departure_time": 7.786098464809782,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 25.418538279923467
+        },
+        {
+            "id": 12,
+            "arrival_time": 0.32543588667402346,
+            "departure_time": 5.723809077691683,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 22.283116918424263
+        },
+        {
+            "id": 13,
+            "arrival_time": 0.32655917288413283,
+            "departure_time": 8.964712774319734,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 51.25474819245001
+        },
+        {
+            "id": 14,
+            "arrival_time": 0.3380806146185251,
+            "departure_time": 8.31137714736608,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 59.29366596809687
+        },
+        {
+            "id": 15,
+            "arrival_time": 0.3421203821927228,
+            "departure_time": 5.99481256281047,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 20.962336579835306
+        },
+        {
+            "id": 16,
+            "arrival_time": 0.34588905283422866,
+            "departure_time": 5.265841654925319,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 47.95776113208458
+        },
+        {
+            "id": 17,
+            "arrival_time": 0.35003494237908606,
+            "departure_time": 7.604320820537642,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 11.736903976305314
+        },
+        {
+            "id": 18,
+            "arrival_time": 0.36451775483240434,
+            "departure_time": 2.005535169987262,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 15.343412455062161
+        },
+        {
+            "id": 19,
+            "arrival_time": 0.39321861352997334,
+            "departure_time": 3.1971019844544575,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.792229814523463
+        },
+        {
+            "id": 20,
+            "arrival_time": 0.3970191929021982,
+            "departure_time": 9.628450768420501,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.350079162889436
+        },
+        {
+            "id": 21,
+            "arrival_time": 0.44558423327956787,
+            "departure_time": 5.917830982713314,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 25.11337154953902
+        },
+        {
+            "id": 22,
+            "arrival_time": 0.450510589675865,
+            "departure_time": 4.618167960430563,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 18.19195555875217
+        },
+        {
+            "id": 23,
+            "arrival_time": 0.45778753034285025,
+            "departure_time": 2.706680410661779,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 19.085260164957646
+        },
+        {
+            "id": 24,
+            "arrival_time": 0.48072894922945064,
+            "departure_time": 9.615918724723777,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.217404413403976
+        },
+        {
+            "id": 25,
+            "arrival_time": 0.4959116613628176,
+            "departure_time": 4.976360601865381,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 21.413173193178704
+        },
+        {
+            "id": 26,
+            "arrival_time": 0.4993889393819235,
+            "departure_time": 6.711673003060126,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 35.82187155156415
+        },
+        {
+            "id": 27,
+            "arrival_time": 0.5664655357085833,
+            "departure_time": 8.200839817885724,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 33.41103107781932
+        },
+        {
+            "id": 28,
+            "arrival_time": 0.586074780920238,
+            "departure_time": 3.119686825369162,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 32.821545584531
+        },
+        {
+            "id": 29,
+            "arrival_time": 0.6047851470973109,
+            "departure_time": 7.651738207232494,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 20.299128622022845
+        },
+        {
+            "id": 30,
+            "arrival_time": 0.6097686907149367,
+            "departure_time": 9.37936977466584,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 25.98212771365803
+        },
+        {
+            "id": 31,
+            "arrival_time": 0.6228176239326682,
+            "departure_time": 5.572869810443088,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 55.208020436086024
+        },
+        {
+            "id": 32,
+            "arrival_time": 0.6452245243346282,
+            "departure_time": 4.696632042463948,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 35.693991088556224
+        },
+        {
+            "id": 33,
+            "arrival_time": 0.6639202408336142,
+            "departure_time": 7.0238645809758316,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 33.486885717156134
+        },
+        {
+            "id": 34,
+            "arrival_time": 0.7102764121403449,
+            "departure_time": 8.208496430756053,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.91595590645892
+        },
+        {
+            "id": 35,
+            "arrival_time": 0.7126048012458122,
+            "departure_time": 7.043871926489841,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 38.9851163272188
+        },
+        {
+            "id": 36,
+            "arrival_time": 0.7544630743782126,
+            "departure_time": 8.112189010577135,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 20.551641141465918
+        },
+        {
+            "id": 37,
+            "arrival_time": 0.7934798816397763,
+            "departure_time": 5.814024876683625,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 46.900254650331476
+        },
+        {
+            "id": 38,
+            "arrival_time": 0.8044368902795958,
+            "departure_time": 9.081352879460141,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 48.00636989779824
+        },
+        {
+            "id": 39,
+            "arrival_time": 0.8072390704255932,
+            "departure_time": 10.460709285912188,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 19.33695803905737
+        },
+        {
+            "id": 40,
+            "arrival_time": 0.8241530970081159,
+            "departure_time": 8.705947421844682,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 29.971931741149728
+        },
+        {
+            "id": 41,
+            "arrival_time": 0.8332172398478443,
+            "departure_time": 6.869127392646239,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 13.32806481715591
+        },
+        {
+            "id": 42,
+            "arrival_time": 0.8355378821900936,
+            "departure_time": 4.700514862944263,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 14.00017000685782
+        },
+        {
+            "id": 43,
+            "arrival_time": 0.8449989051092857,
+            "departure_time": 8.539530346220651,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 19.498692869106026
+        },
+        {
+            "id": 44,
+            "arrival_time": 0.8857782855098488,
+            "departure_time": 6.479775621393879,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 35.593833384347995
+        },
+        {
+            "id": 45,
+            "arrival_time": 0.889230182147779,
+            "departure_time": 9.2014321031467,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 17.804309336681605
+        },
+        {
+            "id": 46,
+            "arrival_time": 0.8927735812953166,
+            "departure_time": 9.782335914047042,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 34.25366381687914
+        },
+        {
+            "id": 47,
+            "arrival_time": 0.9339234928551476,
+            "departure_time": 2.0924487790021384,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 36.431330095726494
+        },
+        {
+            "id": 48,
+            "arrival_time": 0.9495007944892713,
+            "departure_time": 4.558262836643754,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 16.54140360893833
+        },
+        {
+            "id": 49,
+            "arrival_time": 0.9542715556928831,
+            "departure_time": 7.635323088088953,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 29.53189923559993
+        },
+        {
+            "id": 50,
+            "arrival_time": 0.9569360159751465,
+            "departure_time": 5.412249469332604,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 14.223190648836358
+        },
+        {
+            "id": 51,
+            "arrival_time": 0.9613381552260858,
+            "departure_time": 8.64832235710156,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 46.170886001363506
+        },
+        {
+            "id": 52,
+            "arrival_time": 0.96840985665406,
+            "departure_time": 5.115713282641635,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 34.32926879182904
+        },
+        {
+            "id": 53,
+            "arrival_time": 0.978049510682806,
+            "departure_time": 8.281654903788862,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 13.950824593986368
+        },
+        {
+            "id": 54,
+            "arrival_time": 0.9852213929494429,
+            "departure_time": 3.470650180886854,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 34.25132710363807
+        },
+        {
+            "id": 55,
+            "arrival_time": 1.0084739039867496,
+            "departure_time": 7.292031544842134,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 50.63229402687318
+        },
+        {
+            "id": 56,
+            "arrival_time": 1.0098258663412765,
+            "departure_time": 6.744117151530093,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 11.405791595032884
+        },
+        {
+            "id": 57,
+            "arrival_time": 1.0134974983896725,
+            "departure_time": 6.058499478623297,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 9.283249011051472
+        },
+        {
+            "id": 58,
+            "arrival_time": 1.027665423761508,
+            "departure_time": 6.880389833005859,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 9.853359713519342
+        },
+        {
+            "id": 59,
+            "arrival_time": 1.0376609648624329,
+            "departure_time": 3.0318537884900825,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 37.08274935255893
+        },
+        {
+            "id": 60,
+            "arrival_time": 1.0411060704581432,
+            "departure_time": 5.510609280746708,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.337382783733936
+        },
+        {
+            "id": 61,
+            "arrival_time": 1.0491505308080038,
+            "departure_time": 7.481999547787914,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.338776450304984
+        },
+        {
+            "id": 62,
+            "arrival_time": 1.0516109900394668,
+            "departure_time": 12.077223325208502,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 35.205667104676365
+        },
+        {
+            "id": 63,
+            "arrival_time": 1.0596349310287465,
+            "departure_time": 7.065833860619523,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 39.22105727309736
+        },
+        {
+            "id": 64,
+            "arrival_time": 1.0789797893537194,
+            "departure_time": 8.080717847201734,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 15.75373307886156
+        },
+        {
+            "id": 65,
+            "arrival_time": 1.082814795015108,
+            "departure_time": 8.475288759477586,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 20.202879516437985
+        },
+        {
+            "id": 66,
+            "arrival_time": 1.085730776748606,
+            "departure_time": 6.723546633419125,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 16.566405484006616
+        },
+        {
+            "id": 67,
+            "arrival_time": 1.1024870265048632,
+            "departure_time": 4.227970890170422,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 10.708522843164841
+        },
+        {
+            "id": 68,
+            "arrival_time": 1.105750233669372,
+            "departure_time": 9.660301471993668,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 41.26081078020283
+        },
+        {
+            "id": 69,
+            "arrival_time": 1.1082370129870514,
+            "departure_time": 6.333965342376064,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 35.30829488038437
+        },
+        {
+            "id": 70,
+            "arrival_time": 1.1164586433625678,
+            "departure_time": 5.970373020871495,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 45.76015497673172
+        },
+        {
+            "id": 71,
+            "arrival_time": 1.1451712604527386,
+            "departure_time": 8.654797461858251,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 21.398378113913942
+        },
+        {
+            "id": 72,
+            "arrival_time": 1.1594505444402248,
+            "departure_time": 7.221825301652675,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 4.57831380787378
+        },
+        {
+            "id": 73,
+            "arrival_time": 1.20946702035108,
+            "departure_time": 4.106620746982954,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 11.85535617996747
+        },
+        {
+            "id": 74,
+            "arrival_time": 1.2143387706337752,
+            "departure_time": 6.78986011905608,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 5.72799385800358
+        },
+        {
+            "id": 75,
+            "arrival_time": 1.2333201394493463,
+            "departure_time": 11.447855106158666,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 35.08918302757937
+        },
+        {
+            "id": 76,
+            "arrival_time": 1.240290359547397,
+            "departure_time": 8.833896806552957,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 32.005227142998834
+        },
+        {
+            "id": 77,
+            "arrival_time": 1.2418094874183931,
+            "departure_time": 5.670959081713951,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 7.795402560256227
+        },
+        {
+            "id": 78,
+            "arrival_time": 1.2667683146440494,
+            "departure_time": 3.958920499256803,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 45.40919541451378
+        },
+        {
+            "id": 79,
+            "arrival_time": 1.2768595050707694,
+            "departure_time": 5.890196912949705,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.43250085714351
+        },
+        {
+            "id": 80,
+            "arrival_time": 1.2973655621167295,
+            "departure_time": 4.0873681662747705,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 13.11743606248291
+        },
+        {
+            "id": 81,
+            "arrival_time": 1.3293596943705082,
+            "departure_time": 6.610408431665773,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 46.377802903786765
+        },
+        {
+            "id": 82,
+            "arrival_time": 1.3334374986665916,
+            "departure_time": 7.299000997049378,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 8.720720076427112
+        },
+        {
+            "id": 83,
+            "arrival_time": 1.343041722826211,
+            "departure_time": 8.436856362830028,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 22.778697694940195
+        },
+        {
+            "id": 84,
+            "arrival_time": 1.3667666941393763,
+            "departure_time": 7.7631635570257,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 21.120383495072087
+        },
+        {
+            "id": 85,
+            "arrival_time": 1.3759825147165883,
+            "departure_time": 8.8998679358208,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 30.02585880026416
+        },
+        {
+            "id": 86,
+            "arrival_time": 1.3929095358036,
+            "departure_time": 5.818318978586815,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 4.776775049677404
+        },
+        {
+            "id": 87,
+            "arrival_time": 1.401013751608196,
+            "departure_time": 7.329482762906452,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 49.05614914945155
+        },
+        {
+            "id": 88,
+            "arrival_time": 1.4392937165337722,
+            "departure_time": 11.1360935089034,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 10.039378195822213
+        },
+        {
+            "id": 89,
+            "arrival_time": 1.4563083942095565,
+            "departure_time": 6.7738872077467525,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 45.48279199109873
+        },
+        {
+            "id": 90,
+            "arrival_time": 1.487345599148818,
+            "departure_time": 5.582626880825688,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 34.43708657451405
+        },
+        {
+            "id": 91,
+            "arrival_time": 1.5417999372894036,
+            "departure_time": 6.173126044026813,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 25.879260335532003
+        },
+        {
+            "id": 92,
+            "arrival_time": 1.6011864835303273,
+            "departure_time": 8.13780234532577,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 70.30147177811628
+        },
+        {
+            "id": 93,
+            "arrival_time": 1.6535984263645902,
+            "departure_time": 7.461637312039338,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.782170846777543
+        },
+        {
+            "id": 94,
+            "arrival_time": 1.6640112816592414,
+            "departure_time": 12.581130382798804,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 78.6242612227776
+        },
+        {
+            "id": 95,
+            "arrival_time": 1.6785112754939697,
+            "departure_time": 5.513898292154937,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 37.87014448738153
+        },
+        {
+            "id": 96,
+            "arrival_time": 1.7006608207472882,
+            "departure_time": 4.654606230223632,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 4.327381410681692
+        },
+        {
+            "id": 97,
+            "arrival_time": 1.7204257555839115,
+            "departure_time": 5.029387441582996,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 17.475912000119404
+        },
+        {
+            "id": 98,
+            "arrival_time": 1.7840018124614505,
+            "departure_time": 6.324136345897388,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 61.206621842592924
+        },
+        {
+            "id": 99,
+            "arrival_time": 1.8962481405774483,
+            "departure_time": 4.957366069705783,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 8.546289497841851
+        },
+        {
+            "id": 100,
+            "arrival_time": 1.9008804061595956,
+            "departure_time": 10.777933325995335,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 35.00900070410832
+        },
+        {
+            "id": 101,
+            "arrival_time": 1.9025308297120596,
+            "departure_time": 5.802514519532359,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 14.557760379374379
+        },
+        {
+            "id": 102,
+            "arrival_time": 1.9227964816241145,
+            "departure_time": 8.667398792870152,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 26.15357466567406
+        },
+        {
+            "id": 103,
+            "arrival_time": 1.9241434981114907,
+            "departure_time": 8.816339175326998,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 23.41717453946673
+        },
+        {
+            "id": 104,
+            "arrival_time": 1.9543220030215083,
+            "departure_time": 10.650374878181687,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 24.25118493401431
+        },
+        {
+            "id": 105,
+            "arrival_time": 2.0229939457961907,
+            "departure_time": 6.4152816773937715,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 44.493693391172435
+        },
+        {
+            "id": 106,
+            "arrival_time": 2.091669279009173,
+            "departure_time": 6.491783108322046,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.57798776934718
+        },
+        {
+            "id": 107,
+            "arrival_time": 2.1078653294607266,
+            "departure_time": 11.102213618735586,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 16.079717256461286
+        },
+        {
+            "id": 108,
+            "arrival_time": 2.2040724570656844,
+            "departure_time": 8.24049555791438,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 38.8433028066892
+        },
+        {
+            "id": 109,
+            "arrival_time": 2.216618577018322,
+            "departure_time": 4.128124515319184,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 45.292240304492054
+        },
+        {
+            "id": 110,
+            "arrival_time": 2.2920062015402705,
+            "departure_time": 9.352916845469899,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 31.63564218621423
+        },
+        {
+            "id": 111,
+            "arrival_time": 2.307131069952071,
+            "departure_time": 5.824837298572209,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 16.61631957037943
+        },
+        {
+            "id": 112,
+            "arrival_time": 2.3353936231030543,
+            "departure_time": 9.723748195938182,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 34.27941315289304
+        },
+        {
+            "id": 113,
+            "arrival_time": 2.4007020823924714,
+            "departure_time": 9.225079431308558,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 79.02753655964894
+        },
+        {
+            "id": 114,
+            "arrival_time": 2.465872734178777,
+            "departure_time": 8.622652575306764,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 34.68173863738145
+        },
+        {
+            "id": 115,
+            "arrival_time": 2.4941868564840357,
+            "departure_time": 6.791751218285668,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.077918149585837
+        },
+        {
+            "id": 116,
+            "arrival_time": 2.537793714378722,
+            "departure_time": 6.744917966756864,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 34.141847126591855
+        },
+        {
+            "id": 117,
+            "arrival_time": 2.597308432170487,
+            "departure_time": 8.590932367547595,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 18.28558557280123
+        },
+        {
+            "id": 118,
+            "arrival_time": 2.605474864519767,
+            "departure_time": 8.15848146413974,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 11.212214365616614
+        },
+        {
+            "id": 119,
+            "arrival_time": 2.7220638979678435,
+            "departure_time": 7.646022501138107,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 16.167311129941947
+        },
+        {
+            "id": 120,
+            "arrival_time": 2.7647531797942966,
+            "departure_time": 6.350007713496081,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.678898532361334
+        },
+        {
+            "id": 121,
+            "arrival_time": 2.787975761546801,
+            "departure_time": 5.936611662271417,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 44.31168979876933
+        },
+        {
+            "id": 122,
+            "arrival_time": 2.8323562563668103,
+            "departure_time": 8.30698027570863,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 31.66378524887054
+        },
+        {
+            "id": 123,
+            "arrival_time": 2.8425470073589745,
+            "departure_time": 10.080193703625984,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 9.986668701858731
+        },
+        {
+            "id": 124,
+            "arrival_time": 2.848736525747269,
+            "departure_time": 9.320881459933533,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 6.189780203856328
+        },
+        {
+            "id": 125,
+            "arrival_time": 2.859785978842381,
+            "departure_time": 8.481600869738145,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 14.993550574046964
+        },
+        {
+            "id": 126,
+            "arrival_time": 2.902918121956581,
+            "departure_time": 8.464221112247495,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 36.71768905124336
+        },
+        {
+            "id": 127,
+            "arrival_time": 2.9109948157537784,
+            "departure_time": 8.505328867134835,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 8.204172231703112
+        },
+        {
+            "id": 128,
+            "arrival_time": 2.9457698703482507,
+            "departure_time": 7.650535141097082,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 16.952266683921017
+        },
+        {
+            "id": 129,
+            "arrival_time": 2.95241851490033,
+            "departure_time": 7.708375133062663,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 54.44050334586717
+        },
+        {
+            "id": 130,
+            "arrival_time": 2.957630816248087,
+            "departure_time": 8.355320502108864,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 57.96624737137746
+        },
+        {
+            "id": 131,
+            "arrival_time": 2.9924301801060182,
+            "departure_time": 7.138008962075302,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 44.770311232079486
+        },
+        {
+            "id": 132,
+            "arrival_time": 2.999766392455229,
+            "departure_time": 11.080989457670231,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 50.41545426906212
+        },
+        {
+            "id": 133,
+            "arrival_time": 3.0000249891570427,
+            "departure_time": 4.881843514416058,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 19.415118212685748
+        },
+        {
+            "id": 134,
+            "arrival_time": 3.0742299461929896,
+            "departure_time": 7.913065877937268,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 12.372474148590374
+        },
+        {
+            "id": 135,
+            "arrival_time": 3.0965978454384873,
+            "departure_time": 10.201709775896287,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 22.17591756315788
+        },
+        {
+            "id": 136,
+            "arrival_time": 3.167460351658553,
+            "departure_time": 4.685851358918807,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 12.879032772987653
+        },
+        {
+            "id": 137,
+            "arrival_time": 3.194419717272189,
+            "departure_time": 12.635333827042015,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 6.501460511135072
+        },
+        {
+            "id": 138,
+            "arrival_time": 3.2146161901305756,
+            "departure_time": 9.6955753729296,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 23.296101120694345
+        },
+        {
+            "id": 139,
+            "arrival_time": 3.216808636859137,
+            "departure_time": 6.552256019520257,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 42.623247102567525
+        },
+        {
+            "id": 140,
+            "arrival_time": 3.2582062715021594,
+            "departure_time": 9.077795469286933,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 23.137011887127432
+        },
+        {
+            "id": 141,
+            "arrival_time": 3.2799648358374216,
+            "departure_time": 9.391415177553403,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 49.867385999929915
+        },
+        {
+            "id": 142,
+            "arrival_time": 3.2800430013814212,
+            "departure_time": 6.191036142991784,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 36.19982488070304
+        },
+        {
+            "id": 143,
+            "arrival_time": 3.331033975791839,
+            "departure_time": 9.964176966979043,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 9.760078542840136
+        },
+        {
+            "id": 144,
+            "arrival_time": 3.345762456111027,
+            "departure_time": 7.012485063384453,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 28.71204179693873
+        },
+        {
+            "id": 145,
+            "arrival_time": 3.370618731457569,
+            "departure_time": 5.8072903537133715,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 47.823056992444116
+        },
+        {
+            "id": 146,
+            "arrival_time": 3.421936844283222,
+            "departure_time": 10.462650532239373,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.134905031990506
+        },
+        {
+            "id": 147,
+            "arrival_time": 3.4448112394208277,
+            "departure_time": 10.418776040728725,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 34.41797884827424
+        },
+        {
+            "id": 148,
+            "arrival_time": 3.503051544846815,
+            "departure_time": 8.745276455539386,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 39.649229354945156
+        },
+        {
+            "id": 149,
+            "arrival_time": 3.579883249277309,
+            "departure_time": 10.559485730308962,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 30.517071845062425
+        },
+        {
+            "id": 150,
+            "arrival_time": 3.5805610711066835,
+            "departure_time": 9.466008640167182,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 83.88691368382004
+        },
+        {
+            "id": 151,
+            "arrival_time": 3.585902040689003,
+            "departure_time": 12.522047001040717,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 25.670227142876875
+        },
+        {
+            "id": 152,
+            "arrival_time": 3.6537911957012508,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 30.52026869927242
+        },
+        {
+            "id": 153,
+            "arrival_time": 3.692667466765578,
+            "departure_time": 11.037543841656547,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.000392319659007
+        },
+        {
+            "id": 154,
+            "arrival_time": 3.7321609417678605,
+            "departure_time": 8.30552238887238,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 66.42079052631556
+        },
+        {
+            "id": 155,
+            "arrival_time": 3.839012322260424,
+            "departure_time": 8.513146632245128,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 17.382809384117596
+        },
+        {
+            "id": 156,
+            "arrival_time": 3.921567788966409,
+            "departure_time": 6.930705579704971,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 6.889061250685526
+        },
+        {
+            "id": 157,
+            "arrival_time": 3.9234367361349864,
+            "departure_time": 8.608482827790224,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 54.995994484485664
+        },
+        {
+            "id": 158,
+            "arrival_time": 3.924999426288461,
+            "departure_time": 9.563542272428538,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 6.862611717370699
+        },
+        {
+            "id": 159,
+            "arrival_time": 3.9275900428759005,
+            "departure_time": 11.188714634478442,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 12.589380008215358
+        },
+        {
+            "id": 160,
+            "arrival_time": 3.9374945602464813,
+            "departure_time": 9.258376464397926,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 17.85808633674323
+        },
+        {
+            "id": 161,
+            "arrival_time": 3.945294667136314,
+            "departure_time": 8.460409446689404,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 17.871863870049452
+        },
+        {
+            "id": 162,
+            "arrival_time": 4.0245988936973,
+            "departure_time": 6.609755406491277,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 34.55591311789808
+        },
+        {
+            "id": 163,
+            "arrival_time": 4.025515756011115,
+            "departure_time": 10.561107284043551,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 14.727315573737382
+        },
+        {
+            "id": 164,
+            "arrival_time": 4.050580413600035,
+            "departure_time": 12.364891862663981,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 41.10970779456927
+        },
+        {
+            "id": 165,
+            "arrival_time": 4.068829580171732,
+            "departure_time": 8.651007225109181,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 41.94672187463551
+        },
+        {
+            "id": 166,
+            "arrival_time": 4.073601606129685,
+            "departure_time": 12.231850689695307,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 42.20743049296404
+        },
+        {
+            "id": 167,
+            "arrival_time": 4.087544559516903,
+            "departure_time": 9.758185111574097,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 23.403453514493222
+        },
+        {
+            "id": 168,
+            "arrival_time": 4.090504541022964,
+            "departure_time": 11.036878753172541,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 40.667453473862984
+        },
+        {
+            "id": 169,
+            "arrival_time": 4.109727838894799,
+            "departure_time": 10.749782157220658,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 14.735434478493255
+        },
+        {
+            "id": 170,
+            "arrival_time": 4.121542878950765,
+            "departure_time": 8.590621336237863,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 23.525026078115964
+        },
+        {
+            "id": 171,
+            "arrival_time": 4.135335784176941,
+            "departure_time": 10.065979704990635,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 20.56533349996578
+        },
+        {
+            "id": 172,
+            "arrival_time": 4.144952632983751,
+            "departure_time": 11.009158703040256,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 42.045715065040824
+        },
+        {
+            "id": 173,
+            "arrival_time": 4.1468250624227005,
+            "departure_time": 10.767651957292092,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 21.106436761658543
+        },
+        {
+            "id": 174,
+            "arrival_time": 4.189666248841629,
+            "departure_time": 8.99309973674331,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 17.29154483166557
+        },
+        {
+            "id": 175,
+            "arrival_time": 4.20707597281731,
+            "departure_time": 8.444273516478685,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 24.665030492813464
+        },
+        {
+            "id": 176,
+            "arrival_time": 4.224011328865064,
+            "departure_time": 9.593296777934274,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 24.162847174475516
+        },
+        {
+            "id": 177,
+            "arrival_time": 4.24893905324318,
+            "departure_time": 8.549663651001271,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 15.759938351137217
+        },
+        {
+            "id": 178,
+            "arrival_time": 4.258878764841034,
+            "departure_time": 8.910981251135759,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.821150251092234
+        },
+        {
+            "id": 179,
+            "arrival_time": 4.2662943654435255,
+            "departure_time": 10.018713087715213,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 38.094183846749665
+        },
+        {
+            "id": 180,
+            "arrival_time": 4.2791784752827065,
+            "departure_time": 11.125646246484212,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 80.96083424176268
+        },
+        {
+            "id": 181,
+            "arrival_time": 4.293665902738151,
+            "departure_time": 7.612484842227739,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.806730611931584
+        },
+        {
+            "id": 182,
+            "arrival_time": 4.305541685715951,
+            "departure_time": 13.213480711958827,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 26.114317702594494
+        },
+        {
+            "id": 183,
+            "arrival_time": 4.307876016192668,
+            "departure_time": 8.41977037800165,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 6.817187275363404
+        },
+        {
+            "id": 184,
+            "arrival_time": 4.317322758850329,
+            "departure_time": 9.400349200363042,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 24.58127730469345
+        },
+        {
+            "id": 185,
+            "arrival_time": 4.365880669984486,
+            "departure_time": 12.67454342425978,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 19.91941403270689
+        },
+        {
+            "id": 186,
+            "arrival_time": 4.4211397873181975,
+            "departure_time": 11.877122710643686,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 87.59055026013041
+        },
+        {
+            "id": 187,
+            "arrival_time": 4.421772912500808,
+            "departure_time": 8.4705221240898,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 8.499511332837585
+        },
+        {
+            "id": 188,
+            "arrival_time": 4.422323084940626,
+            "departure_time": 9.897748681781541,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 7.5466003372347785
+        },
+        {
+            "id": 189,
+            "arrival_time": 4.48466488666894,
+            "departure_time": 10.71109089295183,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 73.46955733354062
+        },
+        {
+            "id": 190,
+            "arrival_time": 4.4883151828116254,
+            "departure_time": 12.75971168269892,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.696528241038472
+        },
+        {
+            "id": 191,
+            "arrival_time": 4.4917064289610025,
+            "departure_time": 12.215288836243738,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 14.672424970160796
+        },
+        {
+            "id": 192,
+            "arrival_time": 4.52931142945585,
+            "departure_time": 12.754405180716368,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 29.61741470663756
+        },
+        {
+            "id": 193,
+            "arrival_time": 4.607906161744497,
+            "departure_time": 9.50394718308425,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 29.474634600535303
+        },
+        {
+            "id": 194,
+            "arrival_time": 4.657684698377504,
+            "departure_time": 7.049264148904386,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 17.929733731125086
+        },
+        {
+            "id": 195,
+            "arrival_time": 4.659133903261262,
+            "departure_time": 11.491575281536836,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 25.90271309944476
+        },
+        {
+            "id": 196,
+            "arrival_time": 4.671787284731131,
+            "departure_time": 11.815330779468429,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 45.35303305501845
+        },
+        {
+            "id": 197,
+            "arrival_time": 4.674414066410019,
+            "departure_time": 11.648604765922611,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 39.79152848203396
+        },
+        {
+            "id": 198,
+            "arrival_time": 4.675868242832403,
+            "departure_time": 8.682239235429837,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 34.532702872801124
+        },
+        {
+            "id": 199,
+            "arrival_time": 4.7490633740211035,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 18.45664037604472
+        },
+        {
+            "id": 200,
+            "arrival_time": 4.75825539141416,
+            "departure_time": 11.064948617286719,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 37.32497771249495
+        },
+        {
+            "id": 201,
+            "arrival_time": 4.772944098470164,
+            "departure_time": 10.169295373804047,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 13.04269754320474
+        },
+        {
+            "id": 202,
+            "arrival_time": 4.794378080348681,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 16.370488863525814
+        },
+        {
+            "id": 203,
+            "arrival_time": 4.804856349509046,
+            "departure_time": 8.781925051698789,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 44.58356756922147
+        },
+        {
+            "id": 204,
+            "arrival_time": 4.805215275054659,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 27.332105933337512
+        },
+        {
+            "id": 205,
+            "arrival_time": 4.811390218103879,
+            "departure_time": 11.527254407151299,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 41.456488688417494
+        },
+        {
+            "id": 206,
+            "arrival_time": 4.812310975853805,
+            "departure_time": 13.448211555839729,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 41.211439921447216
+        },
+        {
+            "id": 207,
+            "arrival_time": 4.8402979385993845,
+            "departure_time": 11.344563878925314,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 41.12281016507883
+        },
+        {
+            "id": 208,
+            "arrival_time": 4.873448235075623,
+            "departure_time": 10.502305871505694,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 43.86380467863913
+        },
+        {
+            "id": 209,
+            "arrival_time": 4.933983388506531,
+            "departure_time": 10.555611212277578,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 74.04711632533655
+        },
+        {
+            "id": 210,
+            "arrival_time": 4.986239125667037,
+            "departure_time": 11.995222475234351,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 11.598313418520691
+        },
+        {
+            "id": 211,
+            "arrival_time": 5.097405027430947,
+            "departure_time": 8.946613964924529,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 33.34767629866984
+        },
+        {
+            "id": 212,
+            "arrival_time": 5.118886386923332,
+            "departure_time": 11.400320872460824,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 53.657182186304404
+        },
+        {
+            "id": 213,
+            "arrival_time": 5.146041746476705,
+            "departure_time": 11.028679122698605,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 28.096269103701623
+        },
+        {
+            "id": 214,
+            "arrival_time": 5.167185028824176,
+            "departure_time": 12.481290699573066,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.96063833675504
+        },
+        {
+            "id": 215,
+            "arrival_time": 5.177229475568975,
+            "departure_time": 11.82369740305569,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 32.94191536414332
+        },
+        {
+            "id": 216,
+            "arrival_time": 5.224055919689425,
+            "departure_time": 9.498304754635937,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 36.26492753371357
+        },
+        {
+            "id": 217,
+            "arrival_time": 5.230719049298862,
+            "departure_time": 10.269034451657905,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 18.95437543720826
+        },
+        {
+            "id": 218,
+            "arrival_time": 5.265981409320181,
+            "departure_time": 11.767907550504997,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 17.63184446199396
+        },
+        {
+            "id": 219,
+            "arrival_time": 5.282040296860231,
+            "departure_time": 13.062274296339613,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 12.409671413434879
+        },
+        {
+            "id": 220,
+            "arrival_time": 5.301014295000603,
+            "departure_time": 11.537086317601323,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 13.451466173670855
+        },
+        {
+            "id": 221,
+            "arrival_time": 5.3726157187901995,
+            "departure_time": 7.346173042445649,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 18.648062972147923
+        },
+        {
+            "id": 222,
+            "arrival_time": 5.374739478407767,
+            "departure_time": 12.722554524850992,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.571063312642387
+        },
+        {
+            "id": 223,
+            "arrival_time": 5.379981820448471,
+            "departure_time": 10.285634764042804,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 49.260693199651264
+        },
+        {
+            "id": 224,
+            "arrival_time": 5.45826051787591,
+            "departure_time": 9.43590639944696,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 14.808450097514669
+        },
+        {
+            "id": 225,
+            "arrival_time": 5.480359899646464,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 43.169619089773214
+        },
+        {
+            "id": 226,
+            "arrival_time": 5.485436710401243,
+            "departure_time": 10.366288680356675,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 11.821041648985355
+        },
+        {
+            "id": 227,
+            "arrival_time": 5.5291549306575805,
+            "departure_time": 13.18438309166277,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 16.79551239753225
+        },
+        {
+            "id": 228,
+            "arrival_time": 5.533704832164297,
+            "departure_time": 8.218690002879828,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 21.28680539633162
+        },
+        {
+            "id": 229,
+            "arrival_time": 5.609351668323632,
+            "departure_time": 11.801705746505217,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.7215583766893
+        },
+        {
+            "id": 230,
+            "arrival_time": 5.6873758562689805,
+            "departure_time": 12.8902811014506,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 24.973282336416244
+        },
+        {
+            "id": 231,
+            "arrival_time": 5.693107500767965,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 55.678222433590626
+        },
+        {
+            "id": 232,
+            "arrival_time": 5.693680841883791,
+            "departure_time": 10.874049121830058,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.45718884771436
+        },
+        {
+            "id": 233,
+            "arrival_time": 5.696362145377562,
+            "departure_time": 9.825528153623349,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 45.319440405834804
+        },
+        {
+            "id": 234,
+            "arrival_time": 5.74803186958653,
+            "departure_time": 10.821152190533114,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 5.709935656025621
+        },
+        {
+            "id": 235,
+            "arrival_time": 5.821638098241424,
+            "departure_time": 11.751628476486651,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 17.842369570122816
+        },
+        {
+            "id": 236,
+            "arrival_time": 5.8433866336241,
+            "departure_time": 10.739065858380165,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 28.761810154409627
+        },
+        {
+            "id": 237,
+            "arrival_time": 5.847598113836119,
+            "departure_time": 13.085652801022293,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 25.186448422773747
+        },
+        {
+            "id": 238,
+            "arrival_time": 5.918310319369507,
+            "departure_time": 8.921882281269587,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 27.667260003349927
+        },
+        {
+            "id": 239,
+            "arrival_time": 5.92490926836482,
+            "departure_time": 13.097365860687054,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 21.35775948077896
+        },
+        {
+            "id": 240,
+            "arrival_time": 5.960774516015348,
+            "departure_time": 10.887791059048194,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 27.878278722739026
+        },
+        {
+            "id": 241,
+            "arrival_time": 5.987174405563128,
+            "departure_time": 10.222811725088835,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 29.06726085959156
+        },
+        {
+            "id": 242,
+            "arrival_time": 6.126239157101029,
+            "departure_time": 13.15077764458416,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 23.64176348712403
+        },
+        {
+            "id": 243,
+            "arrival_time": 6.169039447438765,
+            "departure_time": 10.820741316634777,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 29.966491828082056
+        },
+        {
+            "id": 244,
+            "arrival_time": 6.173014036116409,
+            "departure_time": 12.002272758431172,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 54.70296742462147
+        },
+        {
+            "id": 245,
+            "arrival_time": 6.244835380106217,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 14.420377967957908
+        },
+        {
+            "id": 246,
+            "arrival_time": 6.247259384109717,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 68.337891608511
+        },
+        {
+            "id": 247,
+            "arrival_time": 6.263920128078915,
+            "departure_time": 8.202272700873161,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 39.03225683137128
+        },
+        {
+            "id": 248,
+            "arrival_time": 6.276285451484845,
+            "departure_time": 10.740328926758771,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 10.510698431129432
+        },
+        {
+            "id": 249,
+            "arrival_time": 6.28069254866999,
+            "departure_time": 12.190894718912528,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 21.609591379018262
+        },
+        {
+            "id": 250,
+            "arrival_time": 6.292130560066891,
+            "departure_time": 9.959875035943899,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 46.98180961132115
+        },
+        {
+            "id": 251,
+            "arrival_time": 6.334513344874905,
+            "departure_time": 11.208597805280075,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 8.633189114958384
+        },
+        {
+            "id": 252,
+            "arrival_time": 6.3387384891489305,
+            "departure_time": 13.614234134060743,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 16.548275335823895
+        },
+        {
+            "id": 253,
+            "arrival_time": 6.351923152420846,
+            "departure_time": 10.003208006391384,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 45.58080284755131
+        },
+        {
+            "id": 254,
+            "arrival_time": 6.3599337063193015,
+            "departure_time": 11.60788802416339,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 8.213883347502403
+        },
+        {
+            "id": 255,
+            "arrival_time": 6.375945681943904,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 11.838474060383838
+        },
+        {
+            "id": 256,
+            "arrival_time": 6.485749813993463,
+            "departure_time": 12.938179405494342,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 20.36588980493519
+        },
+        {
+            "id": 257,
+            "arrival_time": 6.637275942471875,
+            "departure_time": 8.219210942992325,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 23.16274425323991
+        },
+        {
+            "id": 258,
+            "arrival_time": 6.688185909617866,
+            "departure_time": 13.910370015479923,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 7.995729948750813
+        },
+        {
+            "id": 259,
+            "arrival_time": 6.701819195833464,
+            "departure_time": 10.627992925993961,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 37.709708017676455
+        },
+        {
+            "id": 260,
+            "arrival_time": 6.706122028992256,
+            "departure_time": 11.677890100478887,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 34.309686670855754
+        },
+        {
+            "id": 261,
+            "arrival_time": 6.709011611215532,
+            "departure_time": 13.752834209912194,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 36.60678739016771
+        },
+        {
+            "id": 262,
+            "arrival_time": 6.741378589185584,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 32.94248493311264
+        },
+        {
+            "id": 263,
+            "arrival_time": 6.745044914030855,
+            "departure_time": 11.905262962604214,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.96070522452989
+        },
+        {
+            "id": 264,
+            "arrival_time": 6.8185478460167,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.000835587550682
+        },
+        {
+            "id": 265,
+            "arrival_time": 6.839269404509711,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.89361192382969
+        },
+        {
+            "id": 266,
+            "arrival_time": 6.864194879671672,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 15.507453096200832
+        },
+        {
+            "id": 267,
+            "arrival_time": 6.898413257537413,
+            "departure_time": 13.43069953214674,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 49.58747272543532
+        },
+        {
+            "id": 268,
+            "arrival_time": 7.005878007666599,
+            "departure_time": 13.391404163280253,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 43.82210205544301
+        },
+        {
+            "id": 269,
+            "arrival_time": 7.055622511463152,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 17.02602785922017
+        },
+        {
+            "id": 270,
+            "arrival_time": 7.0820462877246,
+            "departure_time": 13.257721203739099,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 11.134604516956564
+        },
+        {
+            "id": 271,
+            "arrival_time": 7.0921562272567735,
+            "departure_time": 11.798485513725108,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 31.766126445775985
+        },
+        {
+            "id": 272,
+            "arrival_time": 7.108514349727707,
+            "departure_time": 12.913169764256118,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 43.76482208911503
+        },
+        {
+            "id": 273,
+            "arrival_time": 7.148627289846818,
+            "departure_time": 13.251301378873148,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 42.79518946859187
+        },
+        {
+            "id": 274,
+            "arrival_time": 7.172044513081541,
+            "departure_time": 11.194448193842101,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 40.76196071052161
+        },
+        {
+            "id": 275,
+            "arrival_time": 7.1820896583082465,
+            "departure_time": 12.197546487469014,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 40.4241027424462
+        },
+        {
+            "id": 276,
+            "arrival_time": 7.200134886261198,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.879727906919605
+        },
+        {
+            "id": 277,
+            "arrival_time": 7.206812736763713,
+            "departure_time": 11.704793492437197,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 42.93584759913404
+        },
+        {
+            "id": 278,
+            "arrival_time": 7.2140959171257615,
+            "departure_time": 12.627734393184678,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 18.232921717447958
+        },
+        {
+            "id": 279,
+            "arrival_time": 7.214827516927141,
+            "departure_time": 13.54422998798772,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.13041073246528
+        },
+        {
+            "id": 280,
+            "arrival_time": 7.2410667276507175,
+            "departure_time": 12.432522968320043,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 45.56570604190753
+        },
+        {
+            "id": 281,
+            "arrival_time": 7.247479157243218,
+            "departure_time": 13.055864544821276,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 33.527699462381314
+        },
+        {
+            "id": 282,
+            "arrival_time": 7.266356369422552,
+            "departure_time": 12.29549240097073,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 41.469531475075584
+        },
+        {
+            "id": 283,
+            "arrival_time": 7.2755795516675885,
+            "departure_time": 13.397574372998028,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 25.031657880611107
+        },
+        {
+            "id": 284,
+            "arrival_time": 7.2785330837117055,
+            "departure_time": 12.990587515835738,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 44.277735414288124
+        },
+        {
+            "id": 285,
+            "arrival_time": 7.283887153980941,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 16.647432335983652
+        },
+        {
+            "id": 286,
+            "arrival_time": 7.295787103797134,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 28.88556500666991
+        },
+        {
+            "id": 287,
+            "arrival_time": 7.315384991810832,
+            "departure_time": 12.694385294416367,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 18.641651765474467
+        },
+        {
+            "id": 288,
+            "arrival_time": 7.320342837992285,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 29.327067822684647
+        },
+        {
+            "id": 289,
+            "arrival_time": 7.346082659886861,
+            "departure_time": 11.577886517757705,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 27.818873287789486
+        },
+        {
+            "id": 290,
+            "arrival_time": 7.3890102287368045,
+            "departure_time": 11.210364598988502,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 44.009218509297924
+        },
+        {
+            "id": 291,
+            "arrival_time": 7.437598171233235,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 33.80397005516088
+        },
+        {
+            "id": 292,
+            "arrival_time": 7.474771352208232,
+            "departure_time": 11.629475730851503,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 32.301032902845314
+        },
+        {
+            "id": 293,
+            "arrival_time": 7.5138610871697376,
+            "departure_time": 13.407197276414127,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 64.6392986385205
+        },
+        {
+            "id": 294,
+            "arrival_time": 7.52369067369666,
+            "departure_time": 11.21937053580594,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 11.837055484312227
+        },
+        {
+            "id": 295,
+            "arrival_time": 7.577463492159279,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 31.448232519073727
+        },
+        {
+            "id": 296,
+            "arrival_time": 7.606322190365433,
+            "departure_time": 12.813112846557484,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 25.640257059522693
+        },
+        {
+            "id": 297,
+            "arrival_time": 7.608227012066161,
+            "departure_time": 12.717344261568211,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 46.34666255310457
+        },
+        {
+            "id": 298,
+            "arrival_time": 7.625282969834666,
+            "departure_time": 13.493303051622073,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 6.401471487688315
+        },
+        {
+            "id": 299,
+            "arrival_time": 7.635697200986841,
+            "departure_time": 13.443089833020746,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 50.26144053031438
+        },
+        {
+            "id": 300,
+            "arrival_time": 7.6480428430918925,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 18.36763333192026
+        },
+        {
+            "id": 301,
+            "arrival_time": 7.6804277219212,
+            "departure_time": 11.788315246433864,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 27.010385226430653
+        },
+        {
+            "id": 302,
+            "arrival_time": 7.685502648099466,
+            "departure_time": 13.449047010450567,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 10.004660027302073
+        },
+        {
+            "id": 303,
+            "arrival_time": 7.72447363216842,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 38.498834030418976
+        },
+        {
+            "id": 304,
+            "arrival_time": 7.7248443314249595,
+            "departure_time": 11.600154986474983,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 23.035165909879886
+        },
+        {
+            "id": 305,
+            "arrival_time": 7.726473237321594,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 14.05183922472744
+        },
+        {
+            "id": 306,
+            "arrival_time": 7.737043463820006,
+            "departure_time": 10.93542752632192,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 19.950255814819876
+        },
+        {
+            "id": 307,
+            "arrival_time": 7.7485494675296795,
+            "departure_time": 13.905375190855352,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 28.28644894239138
+        },
+        {
+            "id": 308,
+            "arrival_time": 7.814926267670954,
+            "departure_time": 13.849038483332116,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 18.471731912720912
+        },
+        {
+            "id": 309,
+            "arrival_time": 7.840822707165508,
+            "departure_time": 11.251647228065572,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.620498006324656
+        },
+        {
+            "id": 310,
+            "arrival_time": 7.855824213864762,
+            "departure_time": 12.70647182213894,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 10.999713822972495
+        },
+        {
+            "id": 311,
+            "arrival_time": 7.881900446963046,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 22.925904638095464
+        },
+        {
+            "id": 312,
+            "arrival_time": 7.888775501476168,
+            "departure_time": 12.769624744848533,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.06348437366151
+        },
+        {
+            "id": 313,
+            "arrival_time": 7.910343139931223,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 77.02772980743563
+        },
+        {
+            "id": 314,
+            "arrival_time": 7.930141379004535,
+            "departure_time": 12.667809098349842,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 9.056580538058903
+        },
+        {
+            "id": 315,
+            "arrival_time": 7.949562574569525,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 39.589434282853375
+        },
+        {
+            "id": 316,
+            "arrival_time": 7.963966182593412,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 49.162151795542066
+        },
+        {
+            "id": 317,
+            "arrival_time": 8.01449204342452,
+            "departure_time": 11.37906787013865,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 49.18657910318369
+        },
+        {
+            "id": 318,
+            "arrival_time": 8.024680340057749,
+            "departure_time": 13.618330743380124,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.856295212479633
+        },
+        {
+            "id": 319,
+            "arrival_time": 8.096621731160932,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 9.409426738785413
+        },
+        {
+            "id": 320,
+            "arrival_time": 8.211573212730434,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.35482430872314
+        },
+        {
+            "id": 321,
+            "arrival_time": 8.211937393850988,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 88.4548748894018
+        },
+        {
+            "id": 322,
+            "arrival_time": 8.254230903579518,
+            "departure_time": 13.96941729051003,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 36.063088372839175
+        },
+        {
+            "id": 323,
+            "arrival_time": 8.25728134600488,
+            "departure_time": 11.756046642172587,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 16.37236069011484
+        },
+        {
+            "id": 324,
+            "arrival_time": 8.286489048480682,
+            "departure_time": 13.489145377420403,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 48.46930119680888
+        },
+        {
+            "id": 325,
+            "arrival_time": 8.32054558451629,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.326683863336972
+        },
+        {
+            "id": 326,
+            "arrival_time": 8.324701771472242,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 7.29145072918156
+        },
+        {
+            "id": 327,
+            "arrival_time": 8.344869980149099,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.245527594907276
+        },
+        {
+            "id": 328,
+            "arrival_time": 8.365007532260568,
+            "departure_time": 13.813443395388717,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 13.211305713749955
+        },
+        {
+            "id": 329,
+            "arrival_time": 8.384060400877479,
+            "departure_time": 13.876881780871015,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 13.002986514973855
+        },
+        {
+            "id": 330,
+            "arrival_time": 8.434531584796833,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 53.504391379467755
+        },
+        {
+            "id": 331,
+            "arrival_time": 8.437304048663936,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 29.211304359334033
+        },
+        {
+            "id": 332,
+            "arrival_time": 8.437759392274442,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 6.5875501482777725
+        },
+        {
+            "id": 333,
+            "arrival_time": 8.493399742655495,
+            "departure_time": 13.598028493124206,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 29.97093698432886
+        },
+        {
+            "id": 334,
+            "arrival_time": 8.500919038401307,
+            "departure_time": 12.836680605393312,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 7.4118887375180975
+        },
+        {
+            "id": 335,
+            "arrival_time": 8.519993848983528,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 59.109637085075896
+        },
+        {
+            "id": 336,
+            "arrival_time": 8.523277044039663,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 89.4169811900848
+        },
+        {
+            "id": 337,
+            "arrival_time": 8.524309014270836,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.19448534739174
+        },
+        {
+            "id": 338,
+            "arrival_time": 8.524583937293594,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.80290637075968
+        },
+        {
+            "id": 339,
+            "arrival_time": 8.531850971028412,
+            "departure_time": 12.740055583217966,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 9.891644455913234
+        },
+        {
+            "id": 340,
+            "arrival_time": 8.677606244411745,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 23.81617210266841
+        },
+        {
+            "id": 341,
+            "arrival_time": 8.678971848979144,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 37.164444196716836
+        },
+        {
+            "id": 342,
+            "arrival_time": 8.716190764036485,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 10.69211554765226
+        },
+        {
+            "id": 343,
+            "arrival_time": 8.730000251360611,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 28.340147895232903
+        },
+        {
+            "id": 344,
+            "arrival_time": 8.734620862361153,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 30.300526077445934
+        },
+        {
+            "id": 345,
+            "arrival_time": 8.740764733322711,
+            "departure_time": 13.119399147411396,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 15.465046854669925
+        },
+        {
+            "id": 346,
+            "arrival_time": 8.742688780833136,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 25.322390835177636
+        },
+        {
+            "id": 347,
+            "arrival_time": 8.772122353378311,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 13.383649272819486
+        },
+        {
+            "id": 348,
+            "arrival_time": 8.772667664698176,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 28.158454118471305
+        },
+        {
+            "id": 349,
+            "arrival_time": 8.79302300147892,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 19.946213111354865
+        },
+        {
+            "id": 350,
+            "arrival_time": 8.799479227823838,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 44.23769335278793
+        },
+        {
+            "id": 351,
+            "arrival_time": 8.824900388566043,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 20.960966450740756
+        },
+        {
+            "id": 352,
+            "arrival_time": 8.849037859737603,
+            "departure_time": 13.231491005057002,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 31.528871694148123
+        },
+        {
+            "id": 353,
+            "arrival_time": 8.851980996845683,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 23.48026216827806
+        },
+        {
+            "id": 354,
+            "arrival_time": 8.858714003831581,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 18.748180373739952
+        },
+        {
+            "id": 355,
+            "arrival_time": 8.861268182522625,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 33.5407468355261
+        },
+        {
+            "id": 356,
+            "arrival_time": 8.872280164735272,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 49.475801621946424
+        },
+        {
+            "id": 357,
+            "arrival_time": 8.877080088177031,
+            "departure_time": 12.899199192095246,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 22.785165723943194
+        },
+        {
+            "id": 358,
+            "arrival_time": 8.91174682769767,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 26.17380775767193
+        },
+        {
+            "id": 359,
+            "arrival_time": 8.940073512139248,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 21.068809943834545
+        },
+        {
+            "id": 360,
+            "arrival_time": 8.942170744943333,
+            "departure_time": 13.826224408765306,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 35.1776339189331
+        },
+        {
+            "id": 361,
+            "arrival_time": 8.94923482046632,
+            "departure_time": 10.978575076586992,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 21.63922669711091
+        },
+        {
+            "id": 362,
+            "arrival_time": 8.972023612015466,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 61.598886469867665
+        },
+        {
+            "id": 363,
+            "arrival_time": 8.976268791973798,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 6.243743446498938
+        },
+        {
+            "id": 364,
+            "arrival_time": 9.05673460111686,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 18.498264398621387
+        },
+        {
+            "id": 365,
+            "arrival_time": 9.129966561623839,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 17.37510094649428
+        },
+        {
+            "id": 366,
+            "arrival_time": 9.168456113087053,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 6.598596253520704
+        },
+        {
+            "id": 367,
+            "arrival_time": 9.180208308232977,
+            "departure_time": 12.697375054049983,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 32.379214925600735
+        },
+        {
+            "id": 368,
+            "arrival_time": 9.189046831487797,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.327930547049588
+        },
+        {
+            "id": 369,
+            "arrival_time": 9.193694758148876,
+            "departure_time": 13.654654685293446,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.722769731097888
+        },
+        {
+            "id": 370,
+            "arrival_time": 9.21072414621276,
+            "departure_time": 13.56013066413018,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 8.743084645089898
+        },
+        {
+            "id": 371,
+            "arrival_time": 9.227021670880289,
+            "departure_time": 13.66425667674977,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 48.45249268440996
+        },
+        {
+            "id": 372,
+            "arrival_time": 9.272517655998112,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 47.75914672503824
+        },
+        {
+            "id": 373,
+            "arrival_time": 9.276159361235923,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 9.63881989459048
+        },
+        {
+            "id": 374,
+            "arrival_time": 9.293535008778289,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 19.602876650724866
+        },
+        {
+            "id": 375,
+            "arrival_time": 9.299727825305261,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 30.785278174338103
+        },
+        {
+            "id": 376,
+            "arrival_time": 9.309146809607324,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.940338188149628
+        },
+        {
+            "id": 377,
+            "arrival_time": 9.344606209624406,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 31.650644499242475
+        },
+        {
+            "id": 378,
+            "arrival_time": 9.36967211680054,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.388839463970346
+        },
+        {
+            "id": 379,
+            "arrival_time": 9.414883265352074,
+            "departure_time": 12.446312135289045,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 23.36430386075806
+        },
+        {
+            "id": 380,
+            "arrival_time": 9.421652420231602,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 8.479889727785398
+        },
+        {
+            "id": 381,
+            "arrival_time": 9.43298980109623,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.166206043394636
+        },
+        {
+            "id": 382,
+            "arrival_time": 9.476558612333259,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 10.238723533162693
+        },
+        {
+            "id": 383,
+            "arrival_time": 9.482377215860975,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 78.62649210486899
+        },
+        {
+            "id": 384,
+            "arrival_time": 9.500987793979194,
+            "departure_time": 12.039373408955695,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 17.41503103152709
+        },
+        {
+            "id": 385,
+            "arrival_time": 9.502204029434909,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 38.48168499944233
+        },
+        {
+            "id": 386,
+            "arrival_time": 9.561474182002543,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 72.51355880818052
+        },
+        {
+            "id": 387,
+            "arrival_time": 9.599584326549225,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.73000814724987
+        },
+        {
+            "id": 388,
+            "arrival_time": 9.636598070347533,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 20.490913025045806
+        },
+        {
+            "id": 389,
+            "arrival_time": 9.69459128489674,
+            "departure_time": 11.91368483100635,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 18.88432745275637
+        },
+        {
+            "id": 390,
+            "arrival_time": 9.722907942509933,
+            "departure_time": 13.842306678025386,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 18.703847480390134
+        },
+        {
+            "id": 391,
+            "arrival_time": 9.738678642840137,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 28.581541751609322
+        },
+        {
+            "id": 392,
+            "arrival_time": 9.744736298589538,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.166800197120274
+        },
+        {
+            "id": 393,
+            "arrival_time": 9.79184416329478,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.05526078668824
+        },
+        {
+            "id": 394,
+            "arrival_time": 9.814625580558708,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 21.152239687721877
+        },
+        {
+            "id": 395,
+            "arrival_time": 9.860831859388078,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 39.25911848769419
+        },
+        {
+            "id": 396,
+            "arrival_time": 9.900080536379296,
+            "departure_time": 11.985768149355422,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 44.43795505269494
+        },
+        {
+            "id": 397,
+            "arrival_time": 9.909925434186604,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 32.97143682127124
+        },
+        {
+            "id": 398,
+            "arrival_time": 9.948467137025332,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 46.9092091549993
+        },
+        {
+            "id": 399,
+            "arrival_time": 9.954063323319463,
+            "departure_time": 13.841383887232423,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 20.314131948718842
+        },
+        {
+            "id": 400,
+            "arrival_time": 9.977400837298465,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.808978243054405
+        },
+        {
+            "id": 401,
+            "arrival_time": 10.012880391058074,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 26.485768094147424
+        },
+        {
+            "id": 402,
+            "arrival_time": 10.052164838216259,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 7.301785598800859
+        },
+        {
+            "id": 403,
+            "arrival_time": 10.052241756258923,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 10.29475531968834
+        },
+        {
+            "id": 404,
+            "arrival_time": 10.060643768243251,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 32.08857188584647
+        },
+        {
+            "id": 405,
+            "arrival_time": 10.082858413578165,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 22.275472713394826
+        },
+        {
+            "id": 406,
+            "arrival_time": 10.095758640280174,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 31.320037700807056
+        },
+        {
+            "id": 407,
+            "arrival_time": 10.12286473316277,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 36.48447356896697
+        },
+        {
+            "id": 408,
+            "arrival_time": 10.216748663109827,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 43.00501362655619
+        },
+        {
+            "id": 409,
+            "arrival_time": 10.295757272337253,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 40.24620683179679
+        },
+        {
+            "id": 410,
+            "arrival_time": 10.309468061854307,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 7.519372501179761
+        },
+        {
+            "id": 411,
+            "arrival_time": 10.360548590621383,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 12.841786499609073
+        },
+        {
+            "id": 412,
+            "arrival_time": 10.375601518329747,
+            "departure_time": 13.41555172503517,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 9.128852099457744
+        },
+        {
+            "id": 413,
+            "arrival_time": 10.382943087398385,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 4.021421013765313
+        },
+        {
+            "id": 414,
+            "arrival_time": 10.409206287863531,
+            "departure_time": 12.788278385617987,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 26.625307755277525
+        },
+        {
+            "id": 415,
+            "arrival_time": 10.416943641123902,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 32.203252645267135
+        },
+        {
+            "id": 416,
+            "arrival_time": 10.493044944087071,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 5.925201187713898
+        },
+        {
+            "id": 417,
+            "arrival_time": 10.49671375282519,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 32.21720385792071
+        },
+        {
+            "id": 418,
+            "arrival_time": 10.517751957136259,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 27.664355290903153
+        },
+        {
+            "id": 419,
+            "arrival_time": 10.542013656094795,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 50.96896751293258
+        },
+        {
+            "id": 420,
+            "arrival_time": 10.635447571737751,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 44.28678438609201
+        },
+        {
+            "id": 421,
+            "arrival_time": 10.65648792510014,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 24.176746390962396
+        },
+        {
+            "id": 422,
+            "arrival_time": 10.6825086356347,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 23.146901386922373
+        },
+        {
+            "id": 423,
+            "arrival_time": 10.686957600310247,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 22.962256833768034
+        },
+        {
+            "id": 424,
+            "arrival_time": 10.69599240958973,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 26.856463927635467
+        },
+        {
+            "id": 425,
+            "arrival_time": 10.74064546592125,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.740424956028932
+        },
+        {
+            "id": 426,
+            "arrival_time": 10.75920001700272,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 32.30804152518704
+        },
+        {
+            "id": 427,
+            "arrival_time": 10.83542738788749,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 49.6405670100619
+        },
+        {
+            "id": 428,
+            "arrival_time": 10.855509881805578,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.91231960941976
+        },
+        {
+            "id": 429,
+            "arrival_time": 10.877568339303199,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 55.93678087443872
+        },
+        {
+            "id": 430,
+            "arrival_time": 10.920036180734773,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 8.205714930799061
+        },
+        {
+            "id": 431,
+            "arrival_time": 10.950864152999163,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 21.698529858307616
+        },
+        {
+            "id": 432,
+            "arrival_time": 10.971797233443738,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 42.00893965007645
+        },
+        {
+            "id": 433,
+            "arrival_time": 11.005967373830707,
+            "departure_time": 13.37537131036092,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 68.07914382059104
+        },
+        {
+            "id": 434,
+            "arrival_time": 11.0233940829151,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 18.805029484844216
+        },
+        {
+            "id": 435,
+            "arrival_time": 11.026349434061618,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 37.52666212632293
+        },
+        {
+            "id": 436,
+            "arrival_time": 11.02819686977343,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 33.84890421744268
+        },
+        {
+            "id": 437,
+            "arrival_time": 11.053037168219218,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 45.060708907235245
+        },
+        {
+            "id": 438,
+            "arrival_time": 11.069597481440516,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 44.81708436425553
+        },
+        {
+            "id": 439,
+            "arrival_time": 11.116956571834605,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 47.520618439791136
+        },
+        {
+            "id": 440,
+            "arrival_time": 11.124017299665663,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 14.628582575048846
+        },
+        {
+            "id": 441,
+            "arrival_time": 11.129118332806758,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 32.969298928431805
+        },
+        {
+            "id": 442,
+            "arrival_time": 11.148010096221322,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 41.825086367887266
+        },
+        {
+            "id": 443,
+            "arrival_time": 11.156933996988634,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.525216607539411
+        },
+        {
+            "id": 444,
+            "arrival_time": 11.162773030085392,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 16.31869113204866
+        },
+        {
+            "id": 445,
+            "arrival_time": 11.163481432668007,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.911239159674555
+        },
+        {
+            "id": 446,
+            "arrival_time": 11.183488854259899,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 21.961978341811882
+        },
+        {
+            "id": 447,
+            "arrival_time": 11.202794783614927,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 15.020868140617871
+        },
+        {
+            "id": 448,
+            "arrival_time": 11.207973519810855,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 27.928820945725718
+        },
+        {
+            "id": 449,
+            "arrival_time": 11.245885020064375,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 31.61911122818414
+        },
+        {
+            "id": 450,
+            "arrival_time": 11.257200839677745,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 6.054250319436629
+        },
+        {
+            "id": 451,
+            "arrival_time": 11.28128671386448,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 29.96188766057174
+        },
+        {
+            "id": 452,
+            "arrival_time": 11.304720262156422,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 17.805216795882426
+        },
+        {
+            "id": 453,
+            "arrival_time": 11.311280396373803,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 56.02423180195907
+        },
+        {
+            "id": 454,
+            "arrival_time": 11.44153119386402,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 20.8678704597178
+        },
+        {
+            "id": 455,
+            "arrival_time": 11.457729825197388,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 31.403374278059868
+        },
+        {
+            "id": 456,
+            "arrival_time": 11.479763179273883,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 21.811715001615365
+        },
+        {
+            "id": 457,
+            "arrival_time": 11.48394080477119,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 10.81609856820521
+        },
+        {
+            "id": 458,
+            "arrival_time": 11.533985266366066,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 63.23097721944399
+        },
+        {
+            "id": 459,
+            "arrival_time": 11.558970638951092,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 19.707965922706872
+        },
+        {
+            "id": 460,
+            "arrival_time": 11.57050112880577,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 46.32348485834559
+        },
+        {
+            "id": 461,
+            "arrival_time": 11.599981009535203,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 25.07376203765662
+        },
+        {
+            "id": 462,
+            "arrival_time": 11.624031549845371,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.142811641777364
+        },
+        {
+            "id": 463,
+            "arrival_time": 11.625481530574064,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 25.12173185992176
+        },
+        {
+            "id": 464,
+            "arrival_time": 11.626414124969239,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 23.64823722671647
+        },
+        {
+            "id": 465,
+            "arrival_time": 11.635332017576658,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 44.998063235259735
+        },
+        {
+            "id": 466,
+            "arrival_time": 11.643030431218664,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 18.06130147484089
+        },
+        {
+            "id": 467,
+            "arrival_time": 11.653862489580023,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 35.10524440475724
+        },
+        {
+            "id": 468,
+            "arrival_time": 11.667688808008362,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 46.50970335501056
+        },
+        {
+            "id": 469,
+            "arrival_time": 11.673450187716087,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 47.04833804700811
+        },
+        {
+            "id": 470,
+            "arrival_time": 11.691629382849465,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 24.42848098333223
+        },
+        {
+            "id": 471,
+            "arrival_time": 11.696209380713904,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 33.82180442951538
+        },
+        {
+            "id": 472,
+            "arrival_time": 11.709101732159217,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 36.35963554030616
+        },
+        {
+            "id": 473,
+            "arrival_time": 11.746172335638757,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 16.01971418137518
+        },
+        {
+            "id": 474,
+            "arrival_time": 11.77977780384037,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 6.260391846064906
+        },
+        {
+            "id": 475,
+            "arrival_time": 11.791464021266375,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 36.598188718645915
+        },
+        {
+            "id": 476,
+            "arrival_time": 11.846105822743022,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 7.471236677557818
+        },
+        {
+            "id": 477,
+            "arrival_time": 11.86347324851726,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 42.95796695549835
+        },
+        {
+            "id": 478,
+            "arrival_time": 11.866992537444798,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 41.62001256582006
+        },
+        {
+            "id": 479,
+            "arrival_time": 11.87369018350779,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 40.954671450750894
+        },
+        {
+            "id": 480,
+            "arrival_time": 11.912203015983883,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 19.671214034330973
+        },
+        {
+            "id": 481,
+            "arrival_time": 11.971733404462084,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 6.518230592723893
+        },
+        {
+            "id": 482,
+            "arrival_time": 11.982351644176676,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 12.688041968466592
+        },
+        {
+            "id": 483,
+            "arrival_time": 11.996439631216408,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 10.374110545145179
+        },
+        {
+            "id": 484,
+            "arrival_time": 12.022836057792063,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.111180360227515
+        },
+        {
+            "id": 485,
+            "arrival_time": 12.02473797493948,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 15.775860903518538
+        },
+        {
+            "id": 486,
+            "arrival_time": 12.062321569717412,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 47.83196193702445
+        },
+        {
+            "id": 487,
+            "arrival_time": 12.06297005582439,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 22.61773189667245
+        },
+        {
+            "id": 488,
+            "arrival_time": 12.067465711408278,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 13.336631982575275
+        },
+        {
+            "id": 489,
+            "arrival_time": 12.084388609194479,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 43.6142687831449
+        },
+        {
+            "id": 490,
+            "arrival_time": 12.12176838291351,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.136135852925705
+        },
+        {
+            "id": 491,
+            "arrival_time": 12.166814448465457,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 49.44338673668868
+        },
+        {
+            "id": 492,
+            "arrival_time": 12.177269240044488,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 36.46510975319871
+        },
+        {
+            "id": 493,
+            "arrival_time": 12.180438318963029,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 6.235708535017679
+        },
+        {
+            "id": 494,
+            "arrival_time": 12.223527805991976,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 35.123271929604215
+        },
+        {
+            "id": 495,
+            "arrival_time": 12.39229750569176,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 36.078034153721774
+        },
+        {
+            "id": 496,
+            "arrival_time": 12.402319902500512,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.357247093814217
+        },
+        {
+            "id": 497,
+            "arrival_time": 12.42184362687337,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 44.527976800930105
+        },
+        {
+            "id": 498,
+            "arrival_time": 12.476491849589506,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 6.109760821132299
+        },
+        {
+            "id": 499,
+            "arrival_time": 12.488790134856263,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 8.60546457871718
+        },
+        {
+            "id": 500,
+            "arrival_time": 12.48913516040286,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 8.492377574766206
+        },
+        {
+            "id": 501,
+            "arrival_time": 12.622260436106112,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 36.09558219053971
+        },
+        {
+            "id": 502,
+            "arrival_time": 12.695757166048882,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 29.09284346670432
+        },
+        {
+            "id": 503,
+            "arrival_time": 12.698394648337601,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 14.406745772518757
+        },
+        {
+            "id": 504,
+            "arrival_time": 12.71464154685436,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 11.15118148139604
+        },
+        {
+            "id": 505,
+            "arrival_time": 12.720473494768902,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 33.240301759529856
+        },
+        {
+            "id": 506,
+            "arrival_time": 12.727117743516457,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 29.092000697413834
+        },
+        {
+            "id": 507,
+            "arrival_time": 12.761681322133725,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 27.139520944464522
+        },
+        {
+            "id": 508,
+            "arrival_time": 12.78179201370984,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 41.94015789337243
+        },
+        {
+            "id": 509,
+            "arrival_time": 12.794902777030824,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 10.733603274113072
+        },
+        {
+            "id": 510,
+            "arrival_time": 12.822944444839784,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 24.748622728613277
+        },
+        {
+            "id": 511,
+            "arrival_time": 12.826730230432727,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 18.00662800576037
+        },
+        {
+            "id": 512,
+            "arrival_time": 12.861350892672302,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 12.611484474373112
+        },
+        {
+            "id": 513,
+            "arrival_time": 12.863502037698376,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 41.204806756373614
+        },
+        {
+            "id": 514,
+            "arrival_time": 12.878703407037973,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 28.19815035876983
+        },
+        {
+            "id": 515,
+            "arrival_time": 12.896716421983388,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 41.403673436968596
+        },
+        {
+            "id": 516,
+            "arrival_time": 12.896886428853731,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 16.339049989449844
+        },
+        {
+            "id": 517,
+            "arrival_time": 12.965450001375642,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 34.130994589677385
+        },
+        {
+            "id": 518,
+            "arrival_time": 12.99782110200115,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 26.345396525381584
+        },
+        {
+            "id": 519,
+            "arrival_time": 13.014619347432106,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 8.427605783381605
+        },
+        {
+            "id": 520,
+            "arrival_time": 13.03849844156383,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 26.906734691795155
+        },
+        {
+            "id": 521,
+            "arrival_time": 13.086351317081665,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 22.57567919830443
+        },
+        {
+            "id": 522,
+            "arrival_time": 13.19317145144241,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 30.242946415869888
+        },
+        {
+            "id": 523,
+            "arrival_time": 13.19836304734831,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 57.05346933219379
+        },
+        {
+            "id": 524,
+            "arrival_time": 13.225684293082494,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 13.66742255500671
+        },
+        {
+            "id": 525,
+            "arrival_time": 13.364178045811848,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 43.54254752380871
+        },
+        {
+            "id": 526,
+            "arrival_time": 13.367485706358027,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 17.96637604387314
+        },
+        {
+            "id": 527,
+            "arrival_time": 13.37522659576525,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 35.28974666155596
+        },
+        {
+            "id": 528,
+            "arrival_time": 13.391568731868155,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 56.38197022373096
+        },
+        {
+            "id": 529,
+            "arrival_time": 13.396044086864027,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.645342701000278
+        },
+        {
+            "id": 530,
+            "arrival_time": 13.412982512984861,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 7.818773854203785
+        },
+        {
+            "id": 531,
+            "arrival_time": 13.414204623535367,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 52.0191132719656
+        },
+        {
+            "id": 532,
+            "arrival_time": 13.416413307129458,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 56.271975978155616
+        },
+        {
+            "id": 533,
+            "arrival_time": 13.449156809259339,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 13.128291783977916
+        },
+        {
+            "id": 534,
+            "arrival_time": 13.467997213752103,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 9.134244215859587
+        },
+        {
+            "id": 535,
+            "arrival_time": 13.498768464576344,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 25.303176602367508
+        },
+        {
+            "id": 536,
+            "arrival_time": 13.521297546941529,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 29.857272658489567
+        },
+        {
+            "id": 537,
+            "arrival_time": 13.542648955090325,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 46.62123292749663
+        },
+        {
+            "id": 538,
+            "arrival_time": 13.573269172382252,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 25.230572075399742
+        },
+        {
+            "id": 539,
+            "arrival_time": 13.576660636773395,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 20.94705815811072
+        },
+        {
+            "id": 540,
+            "arrival_time": 13.578174036995986,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 36.579074531127134
+        },
+        {
+            "id": 541,
+            "arrival_time": 13.614864448347381,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 15.313048167154683
+        },
+        {
+            "id": 542,
+            "arrival_time": 13.72601123901103,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 34.84332081936001
+        },
+        {
+            "id": 543,
+            "arrival_time": 13.733685812211965,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 37.85380592934568
+        },
+        {
+            "id": 544,
+            "arrival_time": 13.766869393262189,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.097618228775428
+        },
+        {
+            "id": 545,
+            "arrival_time": 13.781415787182679,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 7.358501376509597
+        },
+        {
+            "id": 546,
+            "arrival_time": 13.791307981324653,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 12.649048580804154
+        },
+        {
+            "id": 547,
+            "arrival_time": 13.794315953939485,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 64.90265109281462
+        },
+        {
+            "id": 548,
+            "arrival_time": 13.811049285532864,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 35.99670649229
+        },
+        {
+            "id": 549,
+            "arrival_time": 13.878839424945392,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 32.25034087842335
+        },
+        {
+            "id": 550,
+            "arrival_time": 13.929327963327163,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 10.44178498698394
+        },
+        {
+            "id": 551,
+            "arrival_time": 13.941726302342223,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.093882741365555
+        },
+        {
+            "id": 552,
+            "arrival_time": 13.971043076876157,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 23.746319510109192
+        },
+        {
+            "id": 553,
+            "arrival_time": 13.996841482063093,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 28.056323102153897
+        }
+    ],
+    "parking_config": {
+        "n_spots": 30,
+        "chargers": [
+            {
+                "charger_id": 0,
+                "power": 7
+            },
+            {
+                "charger_id": 1,
+                "power": 7
+            },
+            {
+                "charger_id": 2,
+                "power": 7
+            },
+            {
+                "charger_id": 3,
+                "power": 7
+            },
+            {
+                "charger_id": 4,
+                "power": 7
+            },
+            {
+                "charger_id": 5,
+                "power": 7
+            },
+            {
+                "charger_id": 6,
+                "power": 7
+            },
+            {
+                "charger_id": 7,
+                "power": 7
+            },
+            {
+                "charger_id": 8,
+                "power": 7
+            },
+            {
+                "charger_id": 9,
+                "power": 7
+            },
+            {
+                "charger_id": 10,
+                "power": 22
+            },
+            {
+                "charger_id": 11,
+                "power": 22
+            },
+            {
+                "charger_id": 12,
+                "power": 22
+            },
+            {
+                "charger_id": 13,
+                "power": 22
+            },
+            {
+                "charger_id": 14,
+                "power": 22
+            },
+            {
+                "charger_id": 15,
+                "power": 50
+            },
+            {
+                "charger_id": 16,
+                "power": 50
+            }
+        ],
+        "transformer_limit": 150
+    }
+}

@@ -1,0 +1,3807 @@
+{
+    "schedule": {
+        "0": [
+            [
+                0.25,
+                0.5,
+                13,
+                22,
+                22.0
+            ],
+            [
+                0.25,
+                0.5,
+                15,
+                22,
+                11.755955
+            ],
+            [
+                0.25,
+                0.5,
+                16,
+                22,
+                50.0
+            ]
+        ],
+        "1": [
+            [
+                0.25,
+                0.5,
+                9,
+                6,
+                7.0
+            ],
+            [
+                0.25,
+                0.5,
+                15,
+                6,
+                38.244045
+            ]
+        ],
+        "2": [
+            [
+                1.0,
+                1.25,
+                15,
+                7,
+                6.3891327
+            ]
+        ],
+        "6": [
+            [
+                1.5,
+                1.75,
+                14,
+                25,
+                22.0
+            ],
+            [
+                6.0,
+                6.25,
+                15,
+                16,
+                50.0
+            ]
+        ],
+        "8": [
+            [
+                2.0,
+                2.25,
+                15,
+                10,
+                50.0
+            ]
+        ],
+        "10": [
+            [
+                1.0,
+                1.25,
+                16,
+                1,
+                48.743469
+            ]
+        ],
+        "11": [
+            [
+                1.75,
+                2.0,
+                11,
+                9,
+                22.0
+            ]
+        ],
+        "12": [
+            [
+                1.5,
+                1.75,
+                16,
+                22,
+                50.0
+            ]
+        ],
+        "15": [
+            [
+                0.5,
+                0.75,
+                11,
+                28,
+                22.0
+            ],
+            [
+                0.5,
+                0.75,
+                16,
+                28,
+                6.0
+            ]
+        ],
+        "20": [
+            [
+                5.5,
+                5.75,
+                15,
+                6,
+                50.0
+            ]
+        ],
+        "21": [
+            [
+                1.0,
+                1.25,
+                12,
+                29,
+                22.0
+            ]
+        ],
+        "25": [
+            [
+                1.75,
+                2.0,
+                12,
+                22,
+                22.0
+            ]
+        ],
+        "29": [
+            [
+                3.75,
+                4.0,
+                15,
+                2,
+                50.0
+            ]
+        ],
+        "30": [
+            [
+                8.5,
+                8.75,
+                13,
+                19,
+                22.0
+            ]
+        ],
+        "33": [
+            [
+                0.75,
+                1.0,
+                15,
+                27,
+                50.0
+            ]
+        ],
+        "34": [
+            [
+                2.0,
+                2.25,
+                13,
+                22,
+                28.0
+            ]
+        ],
+        "36": [
+            [
+                7.75,
+                8.0,
+                14,
+                27,
+                22.51982
+            ]
+        ],
+        "37": [
+            [
+                1.25,
+                1.5,
+                16,
+                5,
+                50.0
+            ]
+        ],
+        "40": [
+            [
+                6.75,
+                7.0,
+                16,
+                28,
+                50.0
+            ]
+        ],
+        "41": [
+            [
+                4.0,
+                4.25,
+                12,
+                22,
+                22.0
+            ]
+        ],
+        "43": [
+            [
+                1.75,
+                2.0,
+                10,
+                28,
+                6.0
+            ],
+            [
+                2.5,
+                2.75,
+                16,
+                27,
+                27.088025
+            ],
+            [
+                6.25,
+                6.5,
+                12,
+                25,
+                100.0
+            ]
+        ],
+        "61": [
+            [
+                2.25,
+                2.5,
+                16,
+                24,
+                50.0
+            ]
+        ],
+        "65": [
+            [
+                3.0,
+                3.25,
+                15,
+                7,
+                50.0
+            ]
+        ],
+        "68": [
+            [
+                1.5,
+                1.75,
+                12,
+                21,
+                8.8928998
+            ]
+        ],
+        "70": [
+            [
+                3.0,
+                3.25,
+                14,
+                9,
+                22.0
+            ]
+        ],
+        "71": [
+            [
+                5.25,
+                5.5,
+                16,
+                1,
+                50.0
+            ]
+        ],
+        "72": [
+            [
+                3.0,
+                3.25,
+                10,
+                18,
+                18.313255
+            ]
+        ],
+        "73": [
+            [
+                3.25,
+                3.5,
+                12,
+                10,
+                28.0
+            ]
+        ],
+        "74": [
+            [
+                2.5,
+                2.75,
+                16,
+                28,
+                22.911975
+            ]
+        ],
+        "79": [
+            [
+                2.25,
+                2.5,
+                12,
+                0,
+                22.0
+            ]
+        ],
+        "84": [
+            [
+                3.75,
+                4.0,
+                16,
+                14,
+                50.0
+            ]
+        ],
+        "90": [
+            [
+                2.75,
+                3.0,
+                15,
+                17,
+                50.0
+            ]
+        ],
+        "92": [
+            [
+                2.5,
+                2.75,
+                15,
+                29,
+                50.0
+            ]
+        ],
+        "97": [
+            [
+                2.0,
+                2.25,
+                12,
+                25,
+                22.0
+            ]
+        ],
+        "99": [
+            [
+                2.25,
+                2.5,
+                15,
+                18,
+                50.0
+            ]
+        ],
+        "103": [
+            [
+                4.5,
+                4.75,
+                16,
+                20,
+                50.0
+            ],
+            [
+                8.75,
+                9.0,
+                10,
+                22,
+                28.0
+            ]
+        ],
+        "108": [
+            [
+                5.5,
+                5.75,
+                16,
+                12,
+                50.0
+            ]
+        ],
+        "115": [
+            [
+                5.25,
+                5.5,
+                13,
+                4,
+                22.0
+            ]
+        ],
+        "124": [
+            [
+                6.5,
+                6.75,
+                15,
+                15,
+                2.6084671
+            ]
+        ],
+        "143": [
+            [
+                4.25,
+                4.5,
+                15,
+                9,
+                50.0
+            ]
+        ],
+        "169": [
+            [
+                6.0,
+                6.25,
+                12,
+                3,
+                28.0
+            ]
+        ],
+        "172": [
+            [
+                9.0,
+                9.25,
+                10,
+                22,
+                28.0
+            ]
+        ],
+        "180": [
+            [
+                5.75,
+                6.0,
+                16,
+                20,
+                50.0
+            ]
+        ],
+        "186": [
+            [
+                10.5,
+                10.75,
+                14,
+                14,
+                22.0
+            ]
+        ],
+        "197": [
+            [
+                4.75,
+                5.0,
+                15,
+                3,
+                50.0
+            ],
+            [
+                9.25,
+                9.5,
+                10,
+                3,
+                22.0
+            ]
+        ],
+        "201": [
+            [
+                7.5,
+                7.75,
+                16,
+                9,
+                50.0
+            ]
+        ],
+        "204": [
+            [
+                5.5,
+                5.75,
+                13,
+                14,
+                28.0
+            ]
+        ],
+        "205": [
+            [
+                6.5,
+                6.75,
+                10,
+                26,
+                22.0
+            ],
+            [
+                7.25,
+                7.5,
+                16,
+                25,
+                50.0
+            ],
+            [
+                11.0,
+                11.25,
+                16,
+                15,
+                50.0
+            ]
+        ],
+        "224": [
+            [
+                5.75,
+                6.0,
+                13,
+                20,
+                28.0
+            ]
+        ],
+        "226": [
+            [
+                5.5,
+                5.75,
+                11,
+                19,
+                22.0
+            ]
+        ],
+        "239": [
+            [
+                8.5,
+                8.75,
+                15,
+                7,
+                13.773678
+            ]
+        ],
+        "242": [
+            [
+                8.0,
+                8.25,
+                11,
+                9,
+                22.0
+            ],
+            [
+                10.75,
+                11.0,
+                13,
+                21,
+                22.0
+            ]
+        ],
+        "250": [
+            [
+                7.5,
+                7.75,
+                10,
+                16,
+                22.0
+            ]
+        ],
+        "252": [
+            [
+                7.75,
+                8.0,
+                15,
+                12,
+                16.193101
+            ],
+            [
+                11.25,
+                11.5,
+                15,
+                18,
+                50.0
+            ]
+        ],
+        "258": [
+            [
+                10.0,
+                10.25,
+                16,
+                29,
+                50.0
+            ]
+        ],
+        "260": [
+            [
+                7.75,
+                8.0,
+                10,
+                15,
+                5.4801802
+            ]
+        ],
+        "263": [
+            [
+                8.5,
+                8.75,
+                16,
+                22,
+                50.0
+            ]
+        ],
+        "269": [
+            [
+                9.75,
+                10.0,
+                10,
+                15,
+                28.0
+            ]
+        ],
+        "274": [
+            [
+                7.5,
+                7.75,
+                11,
+                3,
+                22.0
+            ]
+        ],
+        "281": [
+            [
+                13.0,
+                13.25,
+                16,
+                16,
+                50.0
+            ]
+        ],
+        "282": [
+            [
+                11.25,
+                11.5,
+                12,
+                11,
+                22.0
+            ]
+        ],
+        "283": [
+            [
+                11.25,
+                11.5,
+                16,
+                0,
+                50.0
+            ]
+        ],
+        "286": [
+            [
+                7.75,
+                8.0,
+                15,
+                0,
+                33.806899
+            ]
+        ],
+        "293": [
+            [
+                12.5,
+                12.75,
+                16,
+                10,
+                56.0
+            ]
+        ],
+        "305": [
+            [
+                13.75,
+                14.0,
+                15,
+                13,
+                50.0
+            ]
+        ],
+        "312": [
+            [
+                11.5,
+                11.75,
+                13,
+                20,
+                50.0
+            ]
+        ],
+        "314": [
+            [
+                8.5,
+                8.75,
+                15,
+                28,
+                36.226322
+            ]
+        ],
+        "316": [
+            [
+                12.25,
+                12.5,
+                15,
+                12,
+                50.0
+            ],
+            [
+                12.5,
+                12.75,
+                12,
+                0,
+                22.0
+            ]
+        ],
+        "325": [
+            [
+                9.0,
+                9.25,
+                14,
+                25,
+                21.306735
+            ]
+        ],
+        "326": [
+            [
+                11.75,
+                12.0,
+                10,
+                5,
+                28.0
+            ]
+        ],
+        "335": [
+            [
+                10.25,
+                10.5,
+                10,
+                21,
+                22.0
+            ]
+        ],
+        "338": [
+            [
+                9.75,
+                10.0,
+                16,
+                3,
+                19.813599
+            ]
+        ],
+        "344": [
+            [
+                8.75,
+                9.0,
+                14,
+                9,
+                22.0
+            ]
+        ],
+        "350": [
+            [
+                13.25,
+                13.5,
+                10,
+                0,
+                28.0
+            ]
+        ],
+        "351": [
+            [
+                10.75,
+                11.0,
+                15,
+                20,
+                50.0
+            ]
+        ]
+    },
+    "extra_info": {
+        "rejected_details": {
+            "2": {
+                "required_energy": 7.09728317944451,
+                "delivered_energy": 6.3891327,
+                "unmet_energy": 0.7081504794445097,
+                "penalty_cost": 708.1504794445098
+            },
+            "3": {
+                "required_energy": 27.376979981304917,
+                "delivered_energy": 0,
+                "unmet_energy": 27.376979981304917,
+                "penalty_cost": 27376.979981304918
+            },
+            "4": {
+                "required_energy": 12.924913712897949,
+                "delivered_energy": 0,
+                "unmet_energy": 12.924913712897949,
+                "penalty_cost": 12924.91371289795
+            },
+            "5": {
+                "required_energy": 14.16622999502539,
+                "delivered_energy": 0,
+                "unmet_energy": 14.16622999502539,
+                "penalty_cost": 14166.22999502539
+            },
+            "7": {
+                "required_energy": 24.257165912438154,
+                "delivered_energy": 0,
+                "unmet_energy": 24.257165912438154,
+                "penalty_cost": 24257.165912438155
+            },
+            "9": {
+                "required_energy": 25.390072004824454,
+                "delivered_energy": 0,
+                "unmet_energy": 25.390072004824454,
+                "penalty_cost": 25390.072004824455
+            },
+            "11": {
+                "required_energy": 25.418538279923467,
+                "delivered_energy": 22.0,
+                "unmet_energy": 3.4185382799234674,
+                "penalty_cost": 3418.5382799234676
+            },
+            "13": {
+                "required_energy": 51.25474819245001,
+                "delivered_energy": 0,
+                "unmet_energy": 51.25474819245001,
+                "penalty_cost": 51254.74819245001
+            },
+            "14": {
+                "required_energy": 59.29366596809687,
+                "delivered_energy": 0,
+                "unmet_energy": 59.29366596809687,
+                "penalty_cost": 59293.665968096866
+            },
+            "16": {
+                "required_energy": 47.95776113208458,
+                "delivered_energy": 0,
+                "unmet_energy": 47.95776113208458,
+                "penalty_cost": 47957.761132084575
+            },
+            "17": {
+                "required_energy": 11.736903976305314,
+                "delivered_energy": 0,
+                "unmet_energy": 11.736903976305314,
+                "penalty_cost": 11736.903976305313
+            },
+            "18": {
+                "required_energy": 15.343412455062161,
+                "delivered_energy": 0,
+                "unmet_energy": 15.343412455062161,
+                "penalty_cost": 15343.412455062162
+            },
+            "19": {
+                "required_energy": 12.792229814523463,
+                "delivered_energy": 0,
+                "unmet_energy": 12.792229814523463,
+                "penalty_cost": 12792.229814523464
+            },
+            "21": {
+                "required_energy": 25.11337154953902,
+                "delivered_energy": 22.0,
+                "unmet_energy": 3.1133715495390213,
+                "penalty_cost": 3113.371549539021
+            },
+            "22": {
+                "required_energy": 18.19195555875217,
+                "delivered_energy": 0,
+                "unmet_energy": 18.19195555875217,
+                "penalty_cost": 18191.955558752168
+            },
+            "23": {
+                "required_energy": 19.085260164957646,
+                "delivered_energy": 0,
+                "unmet_energy": 19.085260164957646,
+                "penalty_cost": 19085.260164957646
+            },
+            "24": {
+                "required_energy": 28.217404413403976,
+                "delivered_energy": 0,
+                "unmet_energy": 28.217404413403976,
+                "penalty_cost": 28217.404413403976
+            },
+            "26": {
+                "required_energy": 35.82187155156415,
+                "delivered_energy": 0,
+                "unmet_energy": 35.82187155156415,
+                "penalty_cost": 35821.87155156415
+            },
+            "27": {
+                "required_energy": 33.41103107781932,
+                "delivered_energy": 0,
+                "unmet_energy": 33.41103107781932,
+                "penalty_cost": 33411.031077819316
+            },
+            "28": {
+                "required_energy": 32.821545584531,
+                "delivered_energy": 0,
+                "unmet_energy": 32.821545584531,
+                "penalty_cost": 32821.545584531
+            },
+            "30": {
+                "required_energy": 25.98212771365803,
+                "delivered_energy": 22.0,
+                "unmet_energy": 3.9821277136580306,
+                "penalty_cost": 3982.1277136580306
+            },
+            "31": {
+                "required_energy": 55.208020436086024,
+                "delivered_energy": 0,
+                "unmet_energy": 55.208020436086024,
+                "penalty_cost": 55208.02043608602
+            },
+            "32": {
+                "required_energy": 35.693991088556224,
+                "delivered_energy": 0,
+                "unmet_energy": 35.693991088556224,
+                "penalty_cost": 35693.99108855623
+            },
+            "34": {
+                "required_energy": 56.91595590645892,
+                "delivered_energy": 28.0,
+                "unmet_energy": 28.91595590645892,
+                "penalty_cost": 28915.95590645892
+            },
+            "35": {
+                "required_energy": 38.9851163272188,
+                "delivered_energy": 0,
+                "unmet_energy": 38.9851163272188,
+                "penalty_cost": 38985.1163272188
+            },
+            "38": {
+                "required_energy": 48.00636989779824,
+                "delivered_energy": 0,
+                "unmet_energy": 48.00636989779824,
+                "penalty_cost": 48006.369897798235
+            },
+            "39": {
+                "required_energy": 19.33695803905737,
+                "delivered_energy": 0,
+                "unmet_energy": 19.33695803905737,
+                "penalty_cost": 19336.958039057372
+            },
+            "42": {
+                "required_energy": 14.00017000685782,
+                "delivered_energy": 0,
+                "unmet_energy": 14.00017000685782,
+                "penalty_cost": 14000.17000685782
+            },
+            "44": {
+                "required_energy": 35.593833384347995,
+                "delivered_energy": 0,
+                "unmet_energy": 35.593833384347995,
+                "penalty_cost": 35593.83338434799
+            },
+            "45": {
+                "required_energy": 17.804309336681605,
+                "delivered_energy": 0,
+                "unmet_energy": 17.804309336681605,
+                "penalty_cost": 17804.309336681607
+            },
+            "46": {
+                "required_energy": 34.25366381687914,
+                "delivered_energy": 0,
+                "unmet_energy": 34.25366381687914,
+                "penalty_cost": 34253.66381687914
+            },
+            "47": {
+                "required_energy": 36.431330095726494,
+                "delivered_energy": 0,
+                "unmet_energy": 36.431330095726494,
+                "penalty_cost": 36431.330095726495
+            },
+            "48": {
+                "required_energy": 16.54140360893833,
+                "delivered_energy": 0,
+                "unmet_energy": 16.54140360893833,
+                "penalty_cost": 16541.40360893833
+            },
+            "49": {
+                "required_energy": 29.53189923559993,
+                "delivered_energy": 0,
+                "unmet_energy": 29.53189923559993,
+                "penalty_cost": 29531.89923559993
+            },
+            "50": {
+                "required_energy": 14.223190648836358,
+                "delivered_energy": 0,
+                "unmet_energy": 14.223190648836358,
+                "penalty_cost": 14223.190648836358
+            },
+            "51": {
+                "required_energy": 46.170886001363506,
+                "delivered_energy": 0,
+                "unmet_energy": 46.170886001363506,
+                "penalty_cost": 46170.886001363506
+            },
+            "52": {
+                "required_energy": 34.32926879182904,
+                "delivered_energy": 0,
+                "unmet_energy": 34.32926879182904,
+                "penalty_cost": 34329.26879182904
+            },
+            "53": {
+                "required_energy": 13.950824593986368,
+                "delivered_energy": 0,
+                "unmet_energy": 13.950824593986368,
+                "penalty_cost": 13950.824593986368
+            },
+            "54": {
+                "required_energy": 34.25132710363807,
+                "delivered_energy": 0,
+                "unmet_energy": 34.25132710363807,
+                "penalty_cost": 34251.32710363807
+            },
+            "55": {
+                "required_energy": 50.63229402687318,
+                "delivered_energy": 0,
+                "unmet_energy": 50.63229402687318,
+                "penalty_cost": 50632.29402687318
+            },
+            "56": {
+                "required_energy": 11.405791595032884,
+                "delivered_energy": 0,
+                "unmet_energy": 11.405791595032884,
+                "penalty_cost": 11405.791595032884
+            },
+            "57": {
+                "required_energy": 9.283249011051472,
+                "delivered_energy": 0,
+                "unmet_energy": 9.283249011051472,
+                "penalty_cost": 9283.249011051472
+            },
+            "58": {
+                "required_energy": 9.853359713519342,
+                "delivered_energy": 0,
+                "unmet_energy": 9.853359713519342,
+                "penalty_cost": 9853.359713519343
+            },
+            "59": {
+                "required_energy": 37.08274935255893,
+                "delivered_energy": 0,
+                "unmet_energy": 37.08274935255893,
+                "penalty_cost": 37082.74935255893
+            },
+            "60": {
+                "required_energy": 49.337382783733936,
+                "delivered_energy": 0,
+                "unmet_energy": 49.337382783733936,
+                "penalty_cost": 49337.382783733934
+            },
+            "62": {
+                "required_energy": 35.205667104676365,
+                "delivered_energy": 0,
+                "unmet_energy": 35.205667104676365,
+                "penalty_cost": 35205.667104676366
+            },
+            "63": {
+                "required_energy": 39.22105727309736,
+                "delivered_energy": 0,
+                "unmet_energy": 39.22105727309736,
+                "penalty_cost": 39221.05727309736
+            },
+            "64": {
+                "required_energy": 15.75373307886156,
+                "delivered_energy": 0,
+                "unmet_energy": 15.75373307886156,
+                "penalty_cost": 15753.73307886156
+            },
+            "66": {
+                "required_energy": 16.566405484006616,
+                "delivered_energy": 0,
+                "unmet_energy": 16.566405484006616,
+                "penalty_cost": 16566.405484006616
+            },
+            "67": {
+                "required_energy": 10.708522843164841,
+                "delivered_energy": 0,
+                "unmet_energy": 10.708522843164841,
+                "penalty_cost": 10708.522843164841
+            },
+            "68": {
+                "required_energy": 41.26081078020283,
+                "delivered_energy": 8.8928998,
+                "unmet_energy": 32.36791098020283,
+                "penalty_cost": 32367.91098020283
+            },
+            "69": {
+                "required_energy": 35.30829488038437,
+                "delivered_energy": 0,
+                "unmet_energy": 35.30829488038437,
+                "penalty_cost": 35308.294880384376
+            },
+            "70": {
+                "required_energy": 45.76015497673172,
+                "delivered_energy": 22.0,
+                "unmet_energy": 23.76015497673172,
+                "penalty_cost": 23760.15497673172
+            },
+            "75": {
+                "required_energy": 35.08918302757937,
+                "delivered_energy": 0,
+                "unmet_energy": 35.08918302757937,
+                "penalty_cost": 35089.18302757937
+            },
+            "76": {
+                "required_energy": 32.005227142998834,
+                "delivered_energy": 0,
+                "unmet_energy": 32.005227142998834,
+                "penalty_cost": 32005.227142998832
+            },
+            "77": {
+                "required_energy": 7.795402560256227,
+                "delivered_energy": 0,
+                "unmet_energy": 7.795402560256227,
+                "penalty_cost": 7795.402560256227
+            },
+            "78": {
+                "required_energy": 45.40919541451378,
+                "delivered_energy": 0,
+                "unmet_energy": 45.40919541451378,
+                "penalty_cost": 45409.19541451378
+            },
+            "79": {
+                "required_energy": 56.43250085714351,
+                "delivered_energy": 22.0,
+                "unmet_energy": 34.43250085714351,
+                "penalty_cost": 34432.50085714351
+            },
+            "80": {
+                "required_energy": 13.11743606248291,
+                "delivered_energy": 0,
+                "unmet_energy": 13.11743606248291,
+                "penalty_cost": 13117.43606248291
+            },
+            "81": {
+                "required_energy": 46.377802903786765,
+                "delivered_energy": 0,
+                "unmet_energy": 46.377802903786765,
+                "penalty_cost": 46377.80290378677
+            },
+            "82": {
+                "required_energy": 8.720720076427112,
+                "delivered_energy": 0,
+                "unmet_energy": 8.720720076427112,
+                "penalty_cost": 8720.720076427111
+            },
+            "83": {
+                "required_energy": 22.778697694940195,
+                "delivered_energy": 0,
+                "unmet_energy": 22.778697694940195,
+                "penalty_cost": 22778.697694940194
+            },
+            "85": {
+                "required_energy": 30.02585880026416,
+                "delivered_energy": 0,
+                "unmet_energy": 30.02585880026416,
+                "penalty_cost": 30025.85880026416
+            },
+            "86": {
+                "required_energy": 4.776775049677404,
+                "delivered_energy": 0,
+                "unmet_energy": 4.776775049677404,
+                "penalty_cost": 4776.775049677404
+            },
+            "87": {
+                "required_energy": 49.05614914945155,
+                "delivered_energy": 0,
+                "unmet_energy": 49.05614914945155,
+                "penalty_cost": 49056.14914945155
+            },
+            "88": {
+                "required_energy": 10.039378195822213,
+                "delivered_energy": 0,
+                "unmet_energy": 10.039378195822213,
+                "penalty_cost": 10039.378195822213
+            },
+            "89": {
+                "required_energy": 45.48279199109873,
+                "delivered_energy": 0,
+                "unmet_energy": 45.48279199109873,
+                "penalty_cost": 45482.791991098726
+            },
+            "91": {
+                "required_energy": 25.879260335532003,
+                "delivered_energy": 0,
+                "unmet_energy": 25.879260335532003,
+                "penalty_cost": 25879.260335532003
+            },
+            "92": {
+                "required_energy": 70.30147177811628,
+                "delivered_energy": 50.0,
+                "unmet_energy": 20.30147177811628,
+                "penalty_cost": 20301.47177811628
+            },
+            "93": {
+                "required_energy": 28.782170846777543,
+                "delivered_energy": 0,
+                "unmet_energy": 28.782170846777543,
+                "penalty_cost": 28782.170846777542
+            },
+            "94": {
+                "required_energy": 78.6242612227776,
+                "delivered_energy": 0,
+                "unmet_energy": 78.6242612227776,
+                "penalty_cost": 78624.26122277761
+            },
+            "95": {
+                "required_energy": 37.87014448738153,
+                "delivered_energy": 0,
+                "unmet_energy": 37.87014448738153,
+                "penalty_cost": 37870.14448738153
+            },
+            "96": {
+                "required_energy": 4.327381410681692,
+                "delivered_energy": 0,
+                "unmet_energy": 4.327381410681692,
+                "penalty_cost": 4327.381410681692
+            },
+            "98": {
+                "required_energy": 61.206621842592924,
+                "delivered_energy": 0,
+                "unmet_energy": 61.206621842592924,
+                "penalty_cost": 61206.621842592926
+            },
+            "100": {
+                "required_energy": 35.00900070410832,
+                "delivered_energy": 0,
+                "unmet_energy": 35.00900070410832,
+                "penalty_cost": 35009.000704108315
+            },
+            "101": {
+                "required_energy": 14.557760379374379,
+                "delivered_energy": 0,
+                "unmet_energy": 14.557760379374379,
+                "penalty_cost": 14557.760379374378
+            },
+            "102": {
+                "required_energy": 26.15357466567406,
+                "delivered_energy": 0,
+                "unmet_energy": 26.15357466567406,
+                "penalty_cost": 26153.57466567406
+            },
+            "104": {
+                "required_energy": 24.25118493401431,
+                "delivered_energy": 0,
+                "unmet_energy": 24.25118493401431,
+                "penalty_cost": 24251.184934014313
+            },
+            "105": {
+                "required_energy": 44.493693391172435,
+                "delivered_energy": 0,
+                "unmet_energy": 44.493693391172435,
+                "penalty_cost": 44493.69339117243
+            },
+            "106": {
+                "required_energy": 56.57798776934718,
+                "delivered_energy": 0,
+                "unmet_energy": 56.57798776934718,
+                "penalty_cost": 56577.98776934718
+            },
+            "107": {
+                "required_energy": 16.079717256461286,
+                "delivered_energy": 0,
+                "unmet_energy": 16.079717256461286,
+                "penalty_cost": 16079.717256461287
+            },
+            "109": {
+                "required_energy": 45.292240304492054,
+                "delivered_energy": 0,
+                "unmet_energy": 45.292240304492054,
+                "penalty_cost": 45292.24030449206
+            },
+            "110": {
+                "required_energy": 31.63564218621423,
+                "delivered_energy": 0,
+                "unmet_energy": 31.63564218621423,
+                "penalty_cost": 31635.64218621423
+            },
+            "111": {
+                "required_energy": 16.61631957037943,
+                "delivered_energy": 0,
+                "unmet_energy": 16.61631957037943,
+                "penalty_cost": 16616.31957037943
+            },
+            "112": {
+                "required_energy": 34.27941315289304,
+                "delivered_energy": 0,
+                "unmet_energy": 34.27941315289304,
+                "penalty_cost": 34279.413152893045
+            },
+            "113": {
+                "required_energy": 79.02753655964894,
+                "delivered_energy": 0,
+                "unmet_energy": 79.02753655964894,
+                "penalty_cost": 79027.53655964894
+            },
+            "114": {
+                "required_energy": 34.68173863738145,
+                "delivered_energy": 0,
+                "unmet_energy": 34.68173863738145,
+                "penalty_cost": 34681.73863738145
+            },
+            "115": {
+                "required_energy": 30.077918149585837,
+                "delivered_energy": 22.0,
+                "unmet_energy": 8.077918149585837,
+                "penalty_cost": 8077.918149585837
+            },
+            "116": {
+                "required_energy": 34.141847126591855,
+                "delivered_energy": 0,
+                "unmet_energy": 34.141847126591855,
+                "penalty_cost": 34141.847126591856
+            },
+            "117": {
+                "required_energy": 18.28558557280123,
+                "delivered_energy": 0,
+                "unmet_energy": 18.28558557280123,
+                "penalty_cost": 18285.585572801232
+            },
+            "118": {
+                "required_energy": 11.212214365616614,
+                "delivered_energy": 0,
+                "unmet_energy": 11.212214365616614,
+                "penalty_cost": 11212.214365616614
+            },
+            "119": {
+                "required_energy": 16.167311129941947,
+                "delivered_energy": 0,
+                "unmet_energy": 16.167311129941947,
+                "penalty_cost": 16167.311129941947
+            },
+            "120": {
+                "required_energy": 5.678898532361334,
+                "delivered_energy": 0,
+                "unmet_energy": 5.678898532361334,
+                "penalty_cost": 5678.898532361334
+            },
+            "121": {
+                "required_energy": 44.31168979876933,
+                "delivered_energy": 0,
+                "unmet_energy": 44.31168979876933,
+                "penalty_cost": 44311.68979876933
+            },
+            "122": {
+                "required_energy": 31.66378524887054,
+                "delivered_energy": 0,
+                "unmet_energy": 31.66378524887054,
+                "penalty_cost": 31663.78524887054
+            },
+            "123": {
+                "required_energy": 9.986668701858731,
+                "delivered_energy": 0,
+                "unmet_energy": 9.986668701858731,
+                "penalty_cost": 9986.66870185873
+            },
+            "124": {
+                "required_energy": 6.189780203856328,
+                "delivered_energy": 2.6084671,
+                "unmet_energy": 3.581313103856328,
+                "penalty_cost": 3581.3131038563283
+            },
+            "125": {
+                "required_energy": 14.993550574046964,
+                "delivered_energy": 0,
+                "unmet_energy": 14.993550574046964,
+                "penalty_cost": 14993.550574046963
+            },
+            "126": {
+                "required_energy": 36.71768905124336,
+                "delivered_energy": 0,
+                "unmet_energy": 36.71768905124336,
+                "penalty_cost": 36717.68905124336
+            },
+            "127": {
+                "required_energy": 8.204172231703112,
+                "delivered_energy": 0,
+                "unmet_energy": 8.204172231703112,
+                "penalty_cost": 8204.17223170311
+            },
+            "128": {
+                "required_energy": 16.952266683921017,
+                "delivered_energy": 0,
+                "unmet_energy": 16.952266683921017,
+                "penalty_cost": 16952.266683921018
+            },
+            "129": {
+                "required_energy": 54.44050334586717,
+                "delivered_energy": 0,
+                "unmet_energy": 54.44050334586717,
+                "penalty_cost": 54440.50334586717
+            },
+            "130": {
+                "required_energy": 57.96624737137746,
+                "delivered_energy": 0,
+                "unmet_energy": 57.96624737137746,
+                "penalty_cost": 57966.24737137746
+            },
+            "131": {
+                "required_energy": 44.770311232079486,
+                "delivered_energy": 0,
+                "unmet_energy": 44.770311232079486,
+                "penalty_cost": 44770.31123207948
+            },
+            "132": {
+                "required_energy": 50.41545426906212,
+                "delivered_energy": 0,
+                "unmet_energy": 50.41545426906212,
+                "penalty_cost": 50415.45426906212
+            },
+            "133": {
+                "required_energy": 19.415118212685748,
+                "delivered_energy": 0,
+                "unmet_energy": 19.415118212685748,
+                "penalty_cost": 19415.11821268575
+            },
+            "134": {
+                "required_energy": 12.372474148590374,
+                "delivered_energy": 0,
+                "unmet_energy": 12.372474148590374,
+                "penalty_cost": 12372.474148590374
+            },
+            "135": {
+                "required_energy": 22.17591756315788,
+                "delivered_energy": 0,
+                "unmet_energy": 22.17591756315788,
+                "penalty_cost": 22175.91756315788
+            },
+            "136": {
+                "required_energy": 12.879032772987653,
+                "delivered_energy": 0,
+                "unmet_energy": 12.879032772987653,
+                "penalty_cost": 12879.032772987654
+            },
+            "137": {
+                "required_energy": 6.501460511135072,
+                "delivered_energy": 0,
+                "unmet_energy": 6.501460511135072,
+                "penalty_cost": 6501.460511135072
+            },
+            "138": {
+                "required_energy": 23.296101120694345,
+                "delivered_energy": 0,
+                "unmet_energy": 23.296101120694345,
+                "penalty_cost": 23296.101120694344
+            },
+            "139": {
+                "required_energy": 42.623247102567525,
+                "delivered_energy": 0,
+                "unmet_energy": 42.623247102567525,
+                "penalty_cost": 42623.247102567526
+            },
+            "140": {
+                "required_energy": 23.137011887127432,
+                "delivered_energy": 0,
+                "unmet_energy": 23.137011887127432,
+                "penalty_cost": 23137.01188712743
+            },
+            "141": {
+                "required_energy": 49.867385999929915,
+                "delivered_energy": 0,
+                "unmet_energy": 49.867385999929915,
+                "penalty_cost": 49867.38599992992
+            },
+            "142": {
+                "required_energy": 36.19982488070304,
+                "delivered_energy": 0,
+                "unmet_energy": 36.19982488070304,
+                "penalty_cost": 36199.82488070304
+            },
+            "144": {
+                "required_energy": 28.71204179693873,
+                "delivered_energy": 0,
+                "unmet_energy": 28.71204179693873,
+                "penalty_cost": 28712.04179693873
+            },
+            "145": {
+                "required_energy": 47.823056992444116,
+                "delivered_energy": 0,
+                "unmet_energy": 47.823056992444116,
+                "penalty_cost": 47823.056992444115
+            },
+            "146": {
+                "required_energy": 31.134905031990506,
+                "delivered_energy": 0,
+                "unmet_energy": 31.134905031990506,
+                "penalty_cost": 31134.905031990507
+            },
+            "147": {
+                "required_energy": 34.41797884827424,
+                "delivered_energy": 0,
+                "unmet_energy": 34.41797884827424,
+                "penalty_cost": 34417.97884827424
+            },
+            "148": {
+                "required_energy": 39.649229354945156,
+                "delivered_energy": 0,
+                "unmet_energy": 39.649229354945156,
+                "penalty_cost": 39649.22935494516
+            },
+            "149": {
+                "required_energy": 30.517071845062425,
+                "delivered_energy": 0,
+                "unmet_energy": 30.517071845062425,
+                "penalty_cost": 30517.071845062426
+            },
+            "150": {
+                "required_energy": 83.88691368382004,
+                "delivered_energy": 0,
+                "unmet_energy": 83.88691368382004,
+                "penalty_cost": 83886.91368382004
+            },
+            "151": {
+                "required_energy": 25.670227142876875,
+                "delivered_energy": 0,
+                "unmet_energy": 25.670227142876875,
+                "penalty_cost": 25670.227142876876
+            },
+            "152": {
+                "required_energy": 30.52026869927242,
+                "delivered_energy": 0,
+                "unmet_energy": 30.52026869927242,
+                "penalty_cost": 30520.26869927242
+            },
+            "153": {
+                "required_energy": 20.000392319659007,
+                "delivered_energy": 0,
+                "unmet_energy": 20.000392319659007,
+                "penalty_cost": 20000.392319659008
+            },
+            "154": {
+                "required_energy": 66.42079052631556,
+                "delivered_energy": 0,
+                "unmet_energy": 66.42079052631556,
+                "penalty_cost": 66420.79052631556
+            },
+            "155": {
+                "required_energy": 17.382809384117596,
+                "delivered_energy": 0,
+                "unmet_energy": 17.382809384117596,
+                "penalty_cost": 17382.809384117598
+            },
+            "156": {
+                "required_energy": 6.889061250685526,
+                "delivered_energy": 0,
+                "unmet_energy": 6.889061250685526,
+                "penalty_cost": 6889.061250685527
+            },
+            "157": {
+                "required_energy": 54.995994484485664,
+                "delivered_energy": 0,
+                "unmet_energy": 54.995994484485664,
+                "penalty_cost": 54995.994484485665
+            },
+            "158": {
+                "required_energy": 6.862611717370699,
+                "delivered_energy": 0,
+                "unmet_energy": 6.862611717370699,
+                "penalty_cost": 6862.611717370699
+            },
+            "159": {
+                "required_energy": 12.589380008215358,
+                "delivered_energy": 0,
+                "unmet_energy": 12.589380008215358,
+                "penalty_cost": 12589.380008215358
+            },
+            "160": {
+                "required_energy": 17.85808633674323,
+                "delivered_energy": 0,
+                "unmet_energy": 17.85808633674323,
+                "penalty_cost": 17858.086336743232
+            },
+            "161": {
+                "required_energy": 17.871863870049452,
+                "delivered_energy": 0,
+                "unmet_energy": 17.871863870049452,
+                "penalty_cost": 17871.863870049452
+            },
+            "162": {
+                "required_energy": 34.55591311789808,
+                "delivered_energy": 0,
+                "unmet_energy": 34.55591311789808,
+                "penalty_cost": 34555.91311789808
+            },
+            "163": {
+                "required_energy": 14.727315573737382,
+                "delivered_energy": 0,
+                "unmet_energy": 14.727315573737382,
+                "penalty_cost": 14727.315573737382
+            },
+            "164": {
+                "required_energy": 41.10970779456927,
+                "delivered_energy": 0,
+                "unmet_energy": 41.10970779456927,
+                "penalty_cost": 41109.707794569265
+            },
+            "165": {
+                "required_energy": 41.94672187463551,
+                "delivered_energy": 0,
+                "unmet_energy": 41.94672187463551,
+                "penalty_cost": 41946.72187463551
+            },
+            "166": {
+                "required_energy": 42.20743049296404,
+                "delivered_energy": 0,
+                "unmet_energy": 42.20743049296404,
+                "penalty_cost": 42207.43049296404
+            },
+            "167": {
+                "required_energy": 23.403453514493222,
+                "delivered_energy": 0,
+                "unmet_energy": 23.403453514493222,
+                "penalty_cost": 23403.453514493223
+            },
+            "168": {
+                "required_energy": 40.667453473862984,
+                "delivered_energy": 0,
+                "unmet_energy": 40.667453473862984,
+                "penalty_cost": 40667.45347386298
+            },
+            "170": {
+                "required_energy": 23.525026078115964,
+                "delivered_energy": 0,
+                "unmet_energy": 23.525026078115964,
+                "penalty_cost": 23525.026078115963
+            },
+            "171": {
+                "required_energy": 20.56533349996578,
+                "delivered_energy": 0,
+                "unmet_energy": 20.56533349996578,
+                "penalty_cost": 20565.33349996578
+            },
+            "172": {
+                "required_energy": 42.045715065040824,
+                "delivered_energy": 28.0,
+                "unmet_energy": 14.045715065040824,
+                "penalty_cost": 14045.715065040824
+            },
+            "173": {
+                "required_energy": 21.106436761658543,
+                "delivered_energy": 0,
+                "unmet_energy": 21.106436761658543,
+                "penalty_cost": 21106.436761658544
+            },
+            "174": {
+                "required_energy": 17.29154483166557,
+                "delivered_energy": 0,
+                "unmet_energy": 17.29154483166557,
+                "penalty_cost": 17291.544831665567
+            },
+            "175": {
+                "required_energy": 24.665030492813464,
+                "delivered_energy": 0,
+                "unmet_energy": 24.665030492813464,
+                "penalty_cost": 24665.030492813465
+            },
+            "176": {
+                "required_energy": 24.162847174475516,
+                "delivered_energy": 0,
+                "unmet_energy": 24.162847174475516,
+                "penalty_cost": 24162.847174475515
+            },
+            "177": {
+                "required_energy": 15.759938351137217,
+                "delivered_energy": 0,
+                "unmet_energy": 15.759938351137217,
+                "penalty_cost": 15759.938351137218
+            },
+            "178": {
+                "required_energy": 49.821150251092234,
+                "delivered_energy": 0,
+                "unmet_energy": 49.821150251092234,
+                "penalty_cost": 49821.15025109224
+            },
+            "179": {
+                "required_energy": 38.094183846749665,
+                "delivered_energy": 0,
+                "unmet_energy": 38.094183846749665,
+                "penalty_cost": 38094.183846749664
+            },
+            "180": {
+                "required_energy": 80.96083424176268,
+                "delivered_energy": 50.0,
+                "unmet_energy": 30.960834241762683,
+                "penalty_cost": 30960.834241762685
+            },
+            "181": {
+                "required_energy": 30.806730611931584,
+                "delivered_energy": 0,
+                "unmet_energy": 30.806730611931584,
+                "penalty_cost": 30806.730611931584
+            },
+            "182": {
+                "required_energy": 26.114317702594494,
+                "delivered_energy": 0,
+                "unmet_energy": 26.114317702594494,
+                "penalty_cost": 26114.317702594493
+            },
+            "183": {
+                "required_energy": 6.817187275363404,
+                "delivered_energy": 0,
+                "unmet_energy": 6.817187275363404,
+                "penalty_cost": 6817.187275363403
+            },
+            "184": {
+                "required_energy": 24.58127730469345,
+                "delivered_energy": 0,
+                "unmet_energy": 24.58127730469345,
+                "penalty_cost": 24581.277304693453
+            },
+            "185": {
+                "required_energy": 19.91941403270689,
+                "delivered_energy": 0,
+                "unmet_energy": 19.91941403270689,
+                "penalty_cost": 19919.41403270689
+            },
+            "186": {
+                "required_energy": 87.59055026013041,
+                "delivered_energy": 22.0,
+                "unmet_energy": 65.59055026013041,
+                "penalty_cost": 65590.55026013042
+            },
+            "187": {
+                "required_energy": 8.499511332837585,
+                "delivered_energy": 0,
+                "unmet_energy": 8.499511332837585,
+                "penalty_cost": 8499.511332837585
+            },
+            "188": {
+                "required_energy": 7.5466003372347785,
+                "delivered_energy": 0,
+                "unmet_energy": 7.5466003372347785,
+                "penalty_cost": 7546.600337234779
+            },
+            "189": {
+                "required_energy": 73.46955733354062,
+                "delivered_energy": 0,
+                "unmet_energy": 73.46955733354062,
+                "penalty_cost": 73469.55733354062
+            },
+            "190": {
+                "required_energy": 12.696528241038472,
+                "delivered_energy": 0,
+                "unmet_energy": 12.696528241038472,
+                "penalty_cost": 12696.528241038472
+            },
+            "191": {
+                "required_energy": 14.672424970160796,
+                "delivered_energy": 0,
+                "unmet_energy": 14.672424970160796,
+                "penalty_cost": 14672.424970160795
+            },
+            "192": {
+                "required_energy": 29.61741470663756,
+                "delivered_energy": 0,
+                "unmet_energy": 29.61741470663756,
+                "penalty_cost": 29617.414706637563
+            },
+            "193": {
+                "required_energy": 29.474634600535303,
+                "delivered_energy": 0,
+                "unmet_energy": 29.474634600535303,
+                "penalty_cost": 29474.634600535304
+            },
+            "194": {
+                "required_energy": 17.929733731125086,
+                "delivered_energy": 0,
+                "unmet_energy": 17.929733731125086,
+                "penalty_cost": 17929.733731125085
+            },
+            "195": {
+                "required_energy": 25.90271309944476,
+                "delivered_energy": 0,
+                "unmet_energy": 25.90271309944476,
+                "penalty_cost": 25902.71309944476
+            },
+            "196": {
+                "required_energy": 45.35303305501845,
+                "delivered_energy": 0,
+                "unmet_energy": 45.35303305501845,
+                "penalty_cost": 45353.03305501845
+            },
+            "198": {
+                "required_energy": 34.532702872801124,
+                "delivered_energy": 0,
+                "unmet_energy": 34.532702872801124,
+                "penalty_cost": 34532.70287280112
+            },
+            "199": {
+                "required_energy": 18.45664037604472,
+                "delivered_energy": 0,
+                "unmet_energy": 18.45664037604472,
+                "penalty_cost": 18456.64037604472
+            },
+            "200": {
+                "required_energy": 37.32497771249495,
+                "delivered_energy": 0,
+                "unmet_energy": 37.32497771249495,
+                "penalty_cost": 37324.97771249495
+            },
+            "202": {
+                "required_energy": 16.370488863525814,
+                "delivered_energy": 0,
+                "unmet_energy": 16.370488863525814,
+                "penalty_cost": 16370.488863525814
+            },
+            "203": {
+                "required_energy": 44.58356756922147,
+                "delivered_energy": 0,
+                "unmet_energy": 44.58356756922147,
+                "penalty_cost": 44583.56756922147
+            },
+            "206": {
+                "required_energy": 41.211439921447216,
+                "delivered_energy": 0,
+                "unmet_energy": 41.211439921447216,
+                "penalty_cost": 41211.439921447214
+            },
+            "207": {
+                "required_energy": 41.12281016507883,
+                "delivered_energy": 0,
+                "unmet_energy": 41.12281016507883,
+                "penalty_cost": 41122.81016507883
+            },
+            "208": {
+                "required_energy": 43.86380467863913,
+                "delivered_energy": 0,
+                "unmet_energy": 43.86380467863913,
+                "penalty_cost": 43863.80467863913
+            },
+            "209": {
+                "required_energy": 74.04711632533655,
+                "delivered_energy": 0,
+                "unmet_energy": 74.04711632533655,
+                "penalty_cost": 74047.11632533655
+            },
+            "210": {
+                "required_energy": 11.598313418520691,
+                "delivered_energy": 0,
+                "unmet_energy": 11.598313418520691,
+                "penalty_cost": 11598.31341852069
+            },
+            "211": {
+                "required_energy": 33.34767629866984,
+                "delivered_energy": 0,
+                "unmet_energy": 33.34767629866984,
+                "penalty_cost": 33347.67629866984
+            },
+            "212": {
+                "required_energy": 53.657182186304404,
+                "delivered_energy": 0,
+                "unmet_energy": 53.657182186304404,
+                "penalty_cost": 53657.1821863044
+            },
+            "213": {
+                "required_energy": 28.096269103701623,
+                "delivered_energy": 0,
+                "unmet_energy": 28.096269103701623,
+                "penalty_cost": 28096.269103701623
+            },
+            "214": {
+                "required_energy": 26.96063833675504,
+                "delivered_energy": 0,
+                "unmet_energy": 26.96063833675504,
+                "penalty_cost": 26960.63833675504
+            },
+            "215": {
+                "required_energy": 32.94191536414332,
+                "delivered_energy": 0,
+                "unmet_energy": 32.94191536414332,
+                "penalty_cost": 32941.91536414332
+            },
+            "216": {
+                "required_energy": 36.26492753371357,
+                "delivered_energy": 0,
+                "unmet_energy": 36.26492753371357,
+                "penalty_cost": 36264.92753371357
+            },
+            "217": {
+                "required_energy": 18.95437543720826,
+                "delivered_energy": 0,
+                "unmet_energy": 18.95437543720826,
+                "penalty_cost": 18954.37543720826
+            },
+            "218": {
+                "required_energy": 17.63184446199396,
+                "delivered_energy": 0,
+                "unmet_energy": 17.63184446199396,
+                "penalty_cost": 17631.844461993962
+            },
+            "219": {
+                "required_energy": 12.409671413434879,
+                "delivered_energy": 0,
+                "unmet_energy": 12.409671413434879,
+                "penalty_cost": 12409.671413434879
+            },
+            "220": {
+                "required_energy": 13.451466173670855,
+                "delivered_energy": 0,
+                "unmet_energy": 13.451466173670855,
+                "penalty_cost": 13451.466173670855
+            },
+            "221": {
+                "required_energy": 18.648062972147923,
+                "delivered_energy": 0,
+                "unmet_energy": 18.648062972147923,
+                "penalty_cost": 18648.062972147924
+            },
+            "222": {
+                "required_energy": 26.571063312642387,
+                "delivered_energy": 0,
+                "unmet_energy": 26.571063312642387,
+                "penalty_cost": 26571.063312642385
+            },
+            "223": {
+                "required_energy": 49.260693199651264,
+                "delivered_energy": 0,
+                "unmet_energy": 49.260693199651264,
+                "penalty_cost": 49260.693199651265
+            },
+            "225": {
+                "required_energy": 43.169619089773214,
+                "delivered_energy": 0,
+                "unmet_energy": 43.169619089773214,
+                "penalty_cost": 43169.619089773216
+            },
+            "227": {
+                "required_energy": 16.79551239753225,
+                "delivered_energy": 0,
+                "unmet_energy": 16.79551239753225,
+                "penalty_cost": 16795.51239753225
+            },
+            "228": {
+                "required_energy": 21.28680539633162,
+                "delivered_energy": 0,
+                "unmet_energy": 21.28680539633162,
+                "penalty_cost": 21286.80539633162
+            },
+            "229": {
+                "required_energy": 25.7215583766893,
+                "delivered_energy": 0,
+                "unmet_energy": 25.7215583766893,
+                "penalty_cost": 25721.5583766893
+            },
+            "230": {
+                "required_energy": 24.973282336416244,
+                "delivered_energy": 0,
+                "unmet_energy": 24.973282336416244,
+                "penalty_cost": 24973.282336416243
+            },
+            "231": {
+                "required_energy": 55.678222433590626,
+                "delivered_energy": 0,
+                "unmet_energy": 55.678222433590626,
+                "penalty_cost": 55678.22243359063
+            },
+            "232": {
+                "required_energy": 28.45718884771436,
+                "delivered_energy": 0,
+                "unmet_energy": 28.45718884771436,
+                "penalty_cost": 28457.18884771436
+            },
+            "233": {
+                "required_energy": 45.319440405834804,
+                "delivered_energy": 0,
+                "unmet_energy": 45.319440405834804,
+                "penalty_cost": 45319.4404058348
+            },
+            "234": {
+                "required_energy": 5.709935656025621,
+                "delivered_energy": 0,
+                "unmet_energy": 5.709935656025621,
+                "penalty_cost": 5709.935656025621
+            },
+            "235": {
+                "required_energy": 17.842369570122816,
+                "delivered_energy": 0,
+                "unmet_energy": 17.842369570122816,
+                "penalty_cost": 17842.369570122817
+            },
+            "236": {
+                "required_energy": 28.761810154409627,
+                "delivered_energy": 0,
+                "unmet_energy": 28.761810154409627,
+                "penalty_cost": 28761.810154409628
+            },
+            "237": {
+                "required_energy": 25.186448422773747,
+                "delivered_energy": 0,
+                "unmet_energy": 25.186448422773747,
+                "penalty_cost": 25186.44842277375
+            },
+            "238": {
+                "required_energy": 27.667260003349927,
+                "delivered_energy": 0,
+                "unmet_energy": 27.667260003349927,
+                "penalty_cost": 27667.260003349926
+            },
+            "239": {
+                "required_energy": 21.35775948077896,
+                "delivered_energy": 13.773678,
+                "unmet_energy": 7.584081480778959,
+                "penalty_cost": 7584.081480778959
+            },
+            "240": {
+                "required_energy": 27.878278722739026,
+                "delivered_energy": 0,
+                "unmet_energy": 27.878278722739026,
+                "penalty_cost": 27878.278722739025
+            },
+            "241": {
+                "required_energy": 29.06726085959156,
+                "delivered_energy": 0,
+                "unmet_energy": 29.06726085959156,
+                "penalty_cost": 29067.26085959156
+            },
+            "243": {
+                "required_energy": 29.966491828082056,
+                "delivered_energy": 0,
+                "unmet_energy": 29.966491828082056,
+                "penalty_cost": 29966.491828082057
+            },
+            "244": {
+                "required_energy": 54.70296742462147,
+                "delivered_energy": 0,
+                "unmet_energy": 54.70296742462147,
+                "penalty_cost": 54702.96742462147
+            },
+            "245": {
+                "required_energy": 14.420377967957908,
+                "delivered_energy": 0,
+                "unmet_energy": 14.420377967957908,
+                "penalty_cost": 14420.377967957907
+            },
+            "246": {
+                "required_energy": 68.337891608511,
+                "delivered_energy": 0,
+                "unmet_energy": 68.337891608511,
+                "penalty_cost": 68337.891608511
+            },
+            "247": {
+                "required_energy": 39.03225683137128,
+                "delivered_energy": 0,
+                "unmet_energy": 39.03225683137128,
+                "penalty_cost": 39032.256831371276
+            },
+            "248": {
+                "required_energy": 10.510698431129432,
+                "delivered_energy": 0,
+                "unmet_energy": 10.510698431129432,
+                "penalty_cost": 10510.698431129433
+            },
+            "249": {
+                "required_energy": 21.609591379018262,
+                "delivered_energy": 0,
+                "unmet_energy": 21.609591379018262,
+                "penalty_cost": 21609.59137901826
+            },
+            "250": {
+                "required_energy": 46.98180961132115,
+                "delivered_energy": 22.0,
+                "unmet_energy": 24.981809611321147,
+                "penalty_cost": 24981.809611321147
+            },
+            "251": {
+                "required_energy": 8.633189114958384,
+                "delivered_energy": 0,
+                "unmet_energy": 8.633189114958384,
+                "penalty_cost": 8633.189114958384
+            },
+            "253": {
+                "required_energy": 45.58080284755131,
+                "delivered_energy": 0,
+                "unmet_energy": 45.58080284755131,
+                "penalty_cost": 45580.80284755131
+            },
+            "254": {
+                "required_energy": 8.213883347502403,
+                "delivered_energy": 0,
+                "unmet_energy": 8.213883347502403,
+                "penalty_cost": 8213.883347502402
+            },
+            "255": {
+                "required_energy": 11.838474060383838,
+                "delivered_energy": 0,
+                "unmet_energy": 11.838474060383838,
+                "penalty_cost": 11838.474060383838
+            },
+            "256": {
+                "required_energy": 20.36588980493519,
+                "delivered_energy": 0,
+                "unmet_energy": 20.36588980493519,
+                "penalty_cost": 20365.88980493519
+            },
+            "257": {
+                "required_energy": 23.16274425323991,
+                "delivered_energy": 0,
+                "unmet_energy": 23.16274425323991,
+                "penalty_cost": 23162.74425323991
+            },
+            "259": {
+                "required_energy": 37.709708017676455,
+                "delivered_energy": 0,
+                "unmet_energy": 37.709708017676455,
+                "penalty_cost": 37709.70801767646
+            },
+            "260": {
+                "required_energy": 34.309686670855754,
+                "delivered_energy": 5.4801802,
+                "unmet_energy": 28.829506470855755,
+                "penalty_cost": 28829.506470855755
+            },
+            "261": {
+                "required_energy": 36.60678739016771,
+                "delivered_energy": 0,
+                "unmet_energy": 36.60678739016771,
+                "penalty_cost": 36606.78739016771
+            },
+            "262": {
+                "required_energy": 32.94248493311264,
+                "delivered_energy": 0,
+                "unmet_energy": 32.94248493311264,
+                "penalty_cost": 32942.48493311264
+            },
+            "264": {
+                "required_energy": 31.000835587550682,
+                "delivered_energy": 0,
+                "unmet_energy": 31.000835587550682,
+                "penalty_cost": 31000.835587550682
+            },
+            "265": {
+                "required_energy": 28.89361192382969,
+                "delivered_energy": 0,
+                "unmet_energy": 28.89361192382969,
+                "penalty_cost": 28893.61192382969
+            },
+            "266": {
+                "required_energy": 15.507453096200832,
+                "delivered_energy": 0,
+                "unmet_energy": 15.507453096200832,
+                "penalty_cost": 15507.453096200832
+            },
+            "267": {
+                "required_energy": 49.58747272543532,
+                "delivered_energy": 0,
+                "unmet_energy": 49.58747272543532,
+                "penalty_cost": 49587.47272543532
+            },
+            "268": {
+                "required_energy": 43.82210205544301,
+                "delivered_energy": 0,
+                "unmet_energy": 43.82210205544301,
+                "penalty_cost": 43822.102055443014
+            },
+            "270": {
+                "required_energy": 11.134604516956564,
+                "delivered_energy": 0,
+                "unmet_energy": 11.134604516956564,
+                "penalty_cost": 11134.604516956564
+            },
+            "271": {
+                "required_energy": 31.766126445775985,
+                "delivered_energy": 0,
+                "unmet_energy": 31.766126445775985,
+                "penalty_cost": 31766.126445775986
+            },
+            "272": {
+                "required_energy": 43.76482208911503,
+                "delivered_energy": 0,
+                "unmet_energy": 43.76482208911503,
+                "penalty_cost": 43764.82208911503
+            },
+            "273": {
+                "required_energy": 42.79518946859187,
+                "delivered_energy": 0,
+                "unmet_energy": 42.79518946859187,
+                "penalty_cost": 42795.189468591874
+            },
+            "274": {
+                "required_energy": 40.76196071052161,
+                "delivered_energy": 22.0,
+                "unmet_energy": 18.761960710521613,
+                "penalty_cost": 18761.960710521613
+            },
+            "275": {
+                "required_energy": 40.4241027424462,
+                "delivered_energy": 0,
+                "unmet_energy": 40.4241027424462,
+                "penalty_cost": 40424.1027424462
+            },
+            "276": {
+                "required_energy": 25.879727906919605,
+                "delivered_energy": 0,
+                "unmet_energy": 25.879727906919605,
+                "penalty_cost": 25879.727906919605
+            },
+            "277": {
+                "required_energy": 42.93584759913404,
+                "delivered_energy": 0,
+                "unmet_energy": 42.93584759913404,
+                "penalty_cost": 42935.847599134046
+            },
+            "278": {
+                "required_energy": 18.232921717447958,
+                "delivered_energy": 0,
+                "unmet_energy": 18.232921717447958,
+                "penalty_cost": 18232.921717447956
+            },
+            "279": {
+                "required_energy": 26.13041073246528,
+                "delivered_energy": 0,
+                "unmet_energy": 26.13041073246528,
+                "penalty_cost": 26130.41073246528
+            },
+            "280": {
+                "required_energy": 45.56570604190753,
+                "delivered_energy": 0,
+                "unmet_energy": 45.56570604190753,
+                "penalty_cost": 45565.706041907535
+            },
+            "282": {
+                "required_energy": 41.469531475075584,
+                "delivered_energy": 22.0,
+                "unmet_energy": 19.469531475075584,
+                "penalty_cost": 19469.531475075582
+            },
+            "284": {
+                "required_energy": 44.277735414288124,
+                "delivered_energy": 0,
+                "unmet_energy": 44.277735414288124,
+                "penalty_cost": 44277.73541428812
+            },
+            "285": {
+                "required_energy": 16.647432335983652,
+                "delivered_energy": 0,
+                "unmet_energy": 16.647432335983652,
+                "penalty_cost": 16647.432335983653
+            },
+            "287": {
+                "required_energy": 18.641651765474467,
+                "delivered_energy": 0,
+                "unmet_energy": 18.641651765474467,
+                "penalty_cost": 18641.651765474468
+            },
+            "288": {
+                "required_energy": 29.327067822684647,
+                "delivered_energy": 0,
+                "unmet_energy": 29.327067822684647,
+                "penalty_cost": 29327.067822684647
+            },
+            "289": {
+                "required_energy": 27.818873287789486,
+                "delivered_energy": 0,
+                "unmet_energy": 27.818873287789486,
+                "penalty_cost": 27818.873287789487
+            },
+            "290": {
+                "required_energy": 44.009218509297924,
+                "delivered_energy": 0,
+                "unmet_energy": 44.009218509297924,
+                "penalty_cost": 44009.21850929793
+            },
+            "291": {
+                "required_energy": 33.80397005516088,
+                "delivered_energy": 0,
+                "unmet_energy": 33.80397005516088,
+                "penalty_cost": 33803.970055160884
+            },
+            "292": {
+                "required_energy": 32.301032902845314,
+                "delivered_energy": 0,
+                "unmet_energy": 32.301032902845314,
+                "penalty_cost": 32301.032902845312
+            },
+            "293": {
+                "required_energy": 64.6392986385205,
+                "delivered_energy": 56.0,
+                "unmet_energy": 8.6392986385205,
+                "penalty_cost": 8639.2986385205
+            },
+            "294": {
+                "required_energy": 11.837055484312227,
+                "delivered_energy": 0,
+                "unmet_energy": 11.837055484312227,
+                "penalty_cost": 11837.055484312226
+            },
+            "295": {
+                "required_energy": 31.448232519073727,
+                "delivered_energy": 0,
+                "unmet_energy": 31.448232519073727,
+                "penalty_cost": 31448.23251907373
+            },
+            "296": {
+                "required_energy": 25.640257059522693,
+                "delivered_energy": 0,
+                "unmet_energy": 25.640257059522693,
+                "penalty_cost": 25640.257059522693
+            },
+            "297": {
+                "required_energy": 46.34666255310457,
+                "delivered_energy": 0,
+                "unmet_energy": 46.34666255310457,
+                "penalty_cost": 46346.66255310457
+            },
+            "298": {
+                "required_energy": 6.401471487688315,
+                "delivered_energy": 0,
+                "unmet_energy": 6.401471487688315,
+                "penalty_cost": 6401.471487688315
+            },
+            "299": {
+                "required_energy": 50.26144053031438,
+                "delivered_energy": 0,
+                "unmet_energy": 50.26144053031438,
+                "penalty_cost": 50261.44053031438
+            },
+            "300": {
+                "required_energy": 18.36763333192026,
+                "delivered_energy": 0,
+                "unmet_energy": 18.36763333192026,
+                "penalty_cost": 18367.63333192026
+            },
+            "301": {
+                "required_energy": 27.010385226430653,
+                "delivered_energy": 0,
+                "unmet_energy": 27.010385226430653,
+                "penalty_cost": 27010.38522643065
+            },
+            "302": {
+                "required_energy": 10.004660027302073,
+                "delivered_energy": 0,
+                "unmet_energy": 10.004660027302073,
+                "penalty_cost": 10004.660027302072
+            },
+            "303": {
+                "required_energy": 38.498834030418976,
+                "delivered_energy": 0,
+                "unmet_energy": 38.498834030418976,
+                "penalty_cost": 38498.83403041898
+            },
+            "304": {
+                "required_energy": 23.035165909879886,
+                "delivered_energy": 0,
+                "unmet_energy": 23.035165909879886,
+                "penalty_cost": 23035.165909879885
+            },
+            "306": {
+                "required_energy": 19.950255814819876,
+                "delivered_energy": 0,
+                "unmet_energy": 19.950255814819876,
+                "penalty_cost": 19950.255814819877
+            },
+            "307": {
+                "required_energy": 28.28644894239138,
+                "delivered_energy": 0,
+                "unmet_energy": 28.28644894239138,
+                "penalty_cost": 28286.44894239138
+            },
+            "308": {
+                "required_energy": 18.471731912720912,
+                "delivered_energy": 0,
+                "unmet_energy": 18.471731912720912,
+                "penalty_cost": 18471.731912720912
+            },
+            "309": {
+                "required_energy": 26.620498006324656,
+                "delivered_energy": 0,
+                "unmet_energy": 26.620498006324656,
+                "penalty_cost": 26620.498006324655
+            },
+            "310": {
+                "required_energy": 10.999713822972495,
+                "delivered_energy": 0,
+                "unmet_energy": 10.999713822972495,
+                "penalty_cost": 10999.713822972495
+            },
+            "311": {
+                "required_energy": 22.925904638095464,
+                "delivered_energy": 0,
+                "unmet_energy": 22.925904638095464,
+                "penalty_cost": 22925.904638095464
+            },
+            "312": {
+                "required_energy": 56.06348437366151,
+                "delivered_energy": 50.0,
+                "unmet_energy": 6.06348437366151,
+                "penalty_cost": 6063.484373661509
+            },
+            "313": {
+                "required_energy": 77.02772980743563,
+                "delivered_energy": 0,
+                "unmet_energy": 77.02772980743563,
+                "penalty_cost": 77027.72980743564
+            },
+            "315": {
+                "required_energy": 39.589434282853375,
+                "delivered_energy": 0,
+                "unmet_energy": 39.589434282853375,
+                "penalty_cost": 39589.43428285338
+            },
+            "317": {
+                "required_energy": 49.18657910318369,
+                "delivered_energy": 0,
+                "unmet_energy": 49.18657910318369,
+                "penalty_cost": 49186.57910318369
+            },
+            "318": {
+                "required_energy": 30.856295212479633,
+                "delivered_energy": 0,
+                "unmet_energy": 30.856295212479633,
+                "penalty_cost": 30856.295212479632
+            },
+            "319": {
+                "required_energy": 9.409426738785413,
+                "delivered_energy": 0,
+                "unmet_energy": 9.409426738785413,
+                "penalty_cost": 9409.426738785412
+            },
+            "320": {
+                "required_energy": 28.35482430872314,
+                "delivered_energy": 0,
+                "unmet_energy": 28.35482430872314,
+                "penalty_cost": 28354.82430872314
+            },
+            "321": {
+                "required_energy": 88.4548748894018,
+                "delivered_energy": 0,
+                "unmet_energy": 88.4548748894018,
+                "penalty_cost": 88454.87488940179
+            },
+            "322": {
+                "required_energy": 36.063088372839175,
+                "delivered_energy": 0,
+                "unmet_energy": 36.063088372839175,
+                "penalty_cost": 36063.08837283918
+            },
+            "323": {
+                "required_energy": 16.37236069011484,
+                "delivered_energy": 0,
+                "unmet_energy": 16.37236069011484,
+                "penalty_cost": 16372.360690114838
+            },
+            "324": {
+                "required_energy": 48.46930119680888,
+                "delivered_energy": 0,
+                "unmet_energy": 48.46930119680888,
+                "penalty_cost": 48469.301196808876
+            },
+            "327": {
+                "required_energy": 31.245527594907276,
+                "delivered_energy": 0,
+                "unmet_energy": 31.245527594907276,
+                "penalty_cost": 31245.527594907275
+            },
+            "328": {
+                "required_energy": 13.211305713749955,
+                "delivered_energy": 0,
+                "unmet_energy": 13.211305713749955,
+                "penalty_cost": 13211.305713749955
+            },
+            "329": {
+                "required_energy": 13.002986514973855,
+                "delivered_energy": 0,
+                "unmet_energy": 13.002986514973855,
+                "penalty_cost": 13002.986514973856
+            },
+            "330": {
+                "required_energy": 53.504391379467755,
+                "delivered_energy": 0,
+                "unmet_energy": 53.504391379467755,
+                "penalty_cost": 53504.39137946776
+            },
+            "331": {
+                "required_energy": 29.211304359334033,
+                "delivered_energy": 0,
+                "unmet_energy": 29.211304359334033,
+                "penalty_cost": 29211.304359334034
+            },
+            "332": {
+                "required_energy": 6.5875501482777725,
+                "delivered_energy": 0,
+                "unmet_energy": 6.5875501482777725,
+                "penalty_cost": 6587.550148277773
+            },
+            "333": {
+                "required_energy": 29.97093698432886,
+                "delivered_energy": 0,
+                "unmet_energy": 29.97093698432886,
+                "penalty_cost": 29970.93698432886
+            },
+            "334": {
+                "required_energy": 7.4118887375180975,
+                "delivered_energy": 0,
+                "unmet_energy": 7.4118887375180975,
+                "penalty_cost": 7411.8887375180975
+            },
+            "335": {
+                "required_energy": 59.109637085075896,
+                "delivered_energy": 22.0,
+                "unmet_energy": 37.109637085075896,
+                "penalty_cost": 37109.6370850759
+            },
+            "336": {
+                "required_energy": 89.4169811900848,
+                "delivered_energy": 0,
+                "unmet_energy": 89.4169811900848,
+                "penalty_cost": 89416.9811900848
+            },
+            "337": {
+                "required_energy": 56.19448534739174,
+                "delivered_energy": 0,
+                "unmet_energy": 56.19448534739174,
+                "penalty_cost": 56194.48534739174
+            },
+            "338": {
+                "required_energy": 31.80290637075968,
+                "delivered_energy": 19.813599,
+                "unmet_energy": 11.98930737075968,
+                "penalty_cost": 11989.30737075968
+            },
+            "339": {
+                "required_energy": 9.891644455913234,
+                "delivered_energy": 0,
+                "unmet_energy": 9.891644455913234,
+                "penalty_cost": 9891.644455913234
+            },
+            "340": {
+                "required_energy": 23.81617210266841,
+                "delivered_energy": 0,
+                "unmet_energy": 23.81617210266841,
+                "penalty_cost": 23816.17210266841
+            },
+            "341": {
+                "required_energy": 37.164444196716836,
+                "delivered_energy": 0,
+                "unmet_energy": 37.164444196716836,
+                "penalty_cost": 37164.44419671684
+            },
+            "342": {
+                "required_energy": 10.69211554765226,
+                "delivered_energy": 0,
+                "unmet_energy": 10.69211554765226,
+                "penalty_cost": 10692.11554765226
+            },
+            "343": {
+                "required_energy": 28.340147895232903,
+                "delivered_energy": 0,
+                "unmet_energy": 28.340147895232903,
+                "penalty_cost": 28340.1478952329
+            },
+            "344": {
+                "required_energy": 30.300526077445934,
+                "delivered_energy": 22.0,
+                "unmet_energy": 8.300526077445934,
+                "penalty_cost": 8300.526077445933
+            },
+            "345": {
+                "required_energy": 15.465046854669925,
+                "delivered_energy": 0,
+                "unmet_energy": 15.465046854669925,
+                "penalty_cost": 15465.046854669925
+            },
+            "346": {
+                "required_energy": 25.322390835177636,
+                "delivered_energy": 0,
+                "unmet_energy": 25.322390835177636,
+                "penalty_cost": 25322.390835177637
+            },
+            "347": {
+                "required_energy": 13.383649272819486,
+                "delivered_energy": 0,
+                "unmet_energy": 13.383649272819486,
+                "penalty_cost": 13383.649272819486
+            },
+            "348": {
+                "required_energy": 28.158454118471305,
+                "delivered_energy": 0,
+                "unmet_energy": 28.158454118471305,
+                "penalty_cost": 28158.454118471305
+            },
+            "349": {
+                "required_energy": 19.946213111354865,
+                "delivered_energy": 0,
+                "unmet_energy": 19.946213111354865,
+                "penalty_cost": 19946.213111354864
+            },
+            "350": {
+                "required_energy": 44.23769335278793,
+                "delivered_energy": 28.0,
+                "unmet_energy": 16.23769335278793,
+                "penalty_cost": 16237.693352787928
+            },
+            "352": {
+                "required_energy": 31.528871694148123,
+                "delivered_energy": 0,
+                "unmet_energy": 31.528871694148123,
+                "penalty_cost": 31528.87169414812
+            },
+            "353": {
+                "required_energy": 23.48026216827806,
+                "delivered_energy": 0,
+                "unmet_energy": 23.48026216827806,
+                "penalty_cost": 23480.26216827806
+            },
+            "354": {
+                "required_energy": 18.748180373739952,
+                "delivered_energy": 0,
+                "unmet_energy": 18.748180373739952,
+                "penalty_cost": 18748.180373739953
+            },
+            "355": {
+                "required_energy": 33.5407468355261,
+                "delivered_energy": 0,
+                "unmet_energy": 33.5407468355261,
+                "penalty_cost": 33540.7468355261
+            },
+            "356": {
+                "required_energy": 49.475801621946424,
+                "delivered_energy": 0,
+                "unmet_energy": 49.475801621946424,
+                "penalty_cost": 49475.801621946426
+            },
+            "357": {
+                "required_energy": 22.785165723943194,
+                "delivered_energy": 0,
+                "unmet_energy": 22.785165723943194,
+                "penalty_cost": 22785.165723943195
+            },
+            "358": {
+                "required_energy": 26.17380775767193,
+                "delivered_energy": 0,
+                "unmet_energy": 26.17380775767193,
+                "penalty_cost": 26173.80775767193
+            },
+            "359": {
+                "required_energy": 21.068809943834545,
+                "delivered_energy": 0,
+                "unmet_energy": 21.068809943834545,
+                "penalty_cost": 21068.809943834545
+            },
+            "360": {
+                "required_energy": 35.1776339189331,
+                "delivered_energy": 0,
+                "unmet_energy": 35.1776339189331,
+                "penalty_cost": 35177.6339189331
+            },
+            "361": {
+                "required_energy": 21.63922669711091,
+                "delivered_energy": 0,
+                "unmet_energy": 21.63922669711091,
+                "penalty_cost": 21639.22669711091
+            },
+            "362": {
+                "required_energy": 61.598886469867665,
+                "delivered_energy": 0,
+                "unmet_energy": 61.598886469867665,
+                "penalty_cost": 61598.88646986766
+            },
+            "363": {
+                "required_energy": 6.243743446498938,
+                "delivered_energy": 0,
+                "unmet_energy": 6.243743446498938,
+                "penalty_cost": 6243.743446498937
+            },
+            "364": {
+                "required_energy": 18.498264398621387,
+                "delivered_energy": 0,
+                "unmet_energy": 18.498264398621387,
+                "penalty_cost": 18498.264398621388
+            },
+            "365": {
+                "required_energy": 17.37510094649428,
+                "delivered_energy": 0,
+                "unmet_energy": 17.37510094649428,
+                "penalty_cost": 17375.10094649428
+            },
+            "366": {
+                "required_energy": 6.598596253520704,
+                "delivered_energy": 0,
+                "unmet_energy": 6.598596253520704,
+                "penalty_cost": 6598.596253520704
+            },
+            "367": {
+                "required_energy": 32.379214925600735,
+                "delivered_energy": 0,
+                "unmet_energy": 32.379214925600735,
+                "penalty_cost": 32379.214925600736
+            },
+            "368": {
+                "required_energy": 12.327930547049588,
+                "delivered_energy": 0,
+                "unmet_energy": 12.327930547049588,
+                "penalty_cost": 12327.930547049587
+            },
+            "369": {
+                "required_energy": 31.722769731097888,
+                "delivered_energy": 0,
+                "unmet_energy": 31.722769731097888,
+                "penalty_cost": 31722.769731097887
+            },
+            "370": {
+                "required_energy": 8.743084645089898,
+                "delivered_energy": 0,
+                "unmet_energy": 8.743084645089898,
+                "penalty_cost": 8743.084645089897
+            },
+            "371": {
+                "required_energy": 48.45249268440996,
+                "delivered_energy": 0,
+                "unmet_energy": 48.45249268440996,
+                "penalty_cost": 48452.49268440996
+            },
+            "372": {
+                "required_energy": 47.75914672503824,
+                "delivered_energy": 0,
+                "unmet_energy": 47.75914672503824,
+                "penalty_cost": 47759.14672503824
+            },
+            "373": {
+                "required_energy": 9.63881989459048,
+                "delivered_energy": 0,
+                "unmet_energy": 9.63881989459048,
+                "penalty_cost": 9638.81989459048
+            },
+            "374": {
+                "required_energy": 19.602876650724866,
+                "delivered_energy": 0,
+                "unmet_energy": 19.602876650724866,
+                "penalty_cost": 19602.876650724866
+            },
+            "375": {
+                "required_energy": 30.785278174338103,
+                "delivered_energy": 0,
+                "unmet_energy": 30.785278174338103,
+                "penalty_cost": 30785.278174338102
+            },
+            "376": {
+                "required_energy": 26.940338188149628,
+                "delivered_energy": 0,
+                "unmet_energy": 26.940338188149628,
+                "penalty_cost": 26940.338188149628
+            },
+            "377": {
+                "required_energy": 31.650644499242475,
+                "delivered_energy": 0,
+                "unmet_energy": 31.650644499242475,
+                "penalty_cost": 31650.644499242473
+            },
+            "378": {
+                "required_energy": 30.388839463970346,
+                "delivered_energy": 0,
+                "unmet_energy": 30.388839463970346,
+                "penalty_cost": 30388.839463970347
+            },
+            "379": {
+                "required_energy": 23.36430386075806,
+                "delivered_energy": 0,
+                "unmet_energy": 23.36430386075806,
+                "penalty_cost": 23364.30386075806
+            },
+            "380": {
+                "required_energy": 8.479889727785398,
+                "delivered_energy": 0,
+                "unmet_energy": 8.479889727785398,
+                "penalty_cost": 8479.889727785398
+            },
+            "381": {
+                "required_energy": 12.166206043394636,
+                "delivered_energy": 0,
+                "unmet_energy": 12.166206043394636,
+                "penalty_cost": 12166.206043394635
+            },
+            "382": {
+                "required_energy": 10.238723533162693,
+                "delivered_energy": 0,
+                "unmet_energy": 10.238723533162693,
+                "penalty_cost": 10238.723533162693
+            },
+            "383": {
+                "required_energy": 78.62649210486899,
+                "delivered_energy": 0,
+                "unmet_energy": 78.62649210486899,
+                "penalty_cost": 78626.49210486899
+            },
+            "384": {
+                "required_energy": 17.41503103152709,
+                "delivered_energy": 0,
+                "unmet_energy": 17.41503103152709,
+                "penalty_cost": 17415.03103152709
+            },
+            "385": {
+                "required_energy": 38.48168499944233,
+                "delivered_energy": 0,
+                "unmet_energy": 38.48168499944233,
+                "penalty_cost": 38481.68499944233
+            },
+            "386": {
+                "required_energy": 72.51355880818052,
+                "delivered_energy": 0,
+                "unmet_energy": 72.51355880818052,
+                "penalty_cost": 72513.55880818052
+            },
+            "387": {
+                "required_energy": 31.73000814724987,
+                "delivered_energy": 0,
+                "unmet_energy": 31.73000814724987,
+                "penalty_cost": 31730.008147249868
+            },
+            "388": {
+                "required_energy": 20.490913025045806,
+                "delivered_energy": 0,
+                "unmet_energy": 20.490913025045806,
+                "penalty_cost": 20490.913025045807
+            },
+            "389": {
+                "required_energy": 18.88432745275637,
+                "delivered_energy": 0,
+                "unmet_energy": 18.88432745275637,
+                "penalty_cost": 18884.32745275637
+            },
+            "390": {
+                "required_energy": 18.703847480390134,
+                "delivered_energy": 0,
+                "unmet_energy": 18.703847480390134,
+                "penalty_cost": 18703.847480390134
+            },
+            "391": {
+                "required_energy": 28.581541751609322,
+                "delivered_energy": 0,
+                "unmet_energy": 28.581541751609322,
+                "penalty_cost": 28581.541751609322
+            },
+            "392": {
+                "required_energy": 25.166800197120274,
+                "delivered_energy": 0,
+                "unmet_energy": 25.166800197120274,
+                "penalty_cost": 25166.800197120276
+            },
+            "393": {
+                "required_energy": 5.05526078668824,
+                "delivered_energy": 0,
+                "unmet_energy": 5.05526078668824,
+                "penalty_cost": 5055.260786688241
+            },
+            "394": {
+                "required_energy": 21.152239687721877,
+                "delivered_energy": 0,
+                "unmet_energy": 21.152239687721877,
+                "penalty_cost": 21152.239687721878
+            },
+            "395": {
+                "required_energy": 39.25911848769419,
+                "delivered_energy": 0,
+                "unmet_energy": 39.25911848769419,
+                "penalty_cost": 39259.11848769419
+            },
+            "396": {
+                "required_energy": 44.43795505269494,
+                "delivered_energy": 0,
+                "unmet_energy": 44.43795505269494,
+                "penalty_cost": 44437.95505269494
+            },
+            "397": {
+                "required_energy": 32.97143682127124,
+                "delivered_energy": 0,
+                "unmet_energy": 32.97143682127124,
+                "penalty_cost": 32971.43682127124
+            },
+            "398": {
+                "required_energy": 46.9092091549993,
+                "delivered_energy": 0,
+                "unmet_energy": 46.9092091549993,
+                "penalty_cost": 46909.209154999306
+            },
+            "399": {
+                "required_energy": 20.314131948718842,
+                "delivered_energy": 0,
+                "unmet_energy": 20.314131948718842,
+                "penalty_cost": 20314.13194871884
+            },
+            "400": {
+                "required_energy": 20.808978243054405,
+                "delivered_energy": 0,
+                "unmet_energy": 20.808978243054405,
+                "penalty_cost": 20808.978243054404
+            },
+            "401": {
+                "required_energy": 26.485768094147424,
+                "delivered_energy": 0,
+                "unmet_energy": 26.485768094147424,
+                "penalty_cost": 26485.768094147425
+            },
+            "402": {
+                "required_energy": 7.301785598800859,
+                "delivered_energy": 0,
+                "unmet_energy": 7.301785598800859,
+                "penalty_cost": 7301.78559880086
+            },
+            "403": {
+                "required_energy": 10.29475531968834,
+                "delivered_energy": 0,
+                "unmet_energy": 10.29475531968834,
+                "penalty_cost": 10294.75531968834
+            },
+            "404": {
+                "required_energy": 32.08857188584647,
+                "delivered_energy": 0,
+                "unmet_energy": 32.08857188584647,
+                "penalty_cost": 32088.57188584647
+            },
+            "405": {
+                "required_energy": 22.275472713394826,
+                "delivered_energy": 0,
+                "unmet_energy": 22.275472713394826,
+                "penalty_cost": 22275.472713394825
+            },
+            "406": {
+                "required_energy": 31.320037700807056,
+                "delivered_energy": 0,
+                "unmet_energy": 31.320037700807056,
+                "penalty_cost": 31320.037700807057
+            },
+            "407": {
+                "required_energy": 36.48447356896697,
+                "delivered_energy": 0,
+                "unmet_energy": 36.48447356896697,
+                "penalty_cost": 36484.47356896697
+            },
+            "408": {
+                "required_energy": 43.00501362655619,
+                "delivered_energy": 0,
+                "unmet_energy": 43.00501362655619,
+                "penalty_cost": 43005.01362655619
+            },
+            "409": {
+                "required_energy": 40.24620683179679,
+                "delivered_energy": 0,
+                "unmet_energy": 40.24620683179679,
+                "penalty_cost": 40246.20683179679
+            },
+            "410": {
+                "required_energy": 7.519372501179761,
+                "delivered_energy": 0,
+                "unmet_energy": 7.519372501179761,
+                "penalty_cost": 7519.3725011797615
+            },
+            "411": {
+                "required_energy": 12.841786499609073,
+                "delivered_energy": 0,
+                "unmet_energy": 12.841786499609073,
+                "penalty_cost": 12841.786499609074
+            },
+            "412": {
+                "required_energy": 9.128852099457744,
+                "delivered_energy": 0,
+                "unmet_energy": 9.128852099457744,
+                "penalty_cost": 9128.852099457743
+            },
+            "413": {
+                "required_energy": 4.021421013765313,
+                "delivered_energy": 0,
+                "unmet_energy": 4.021421013765313,
+                "penalty_cost": 4021.4210137653126
+            },
+            "414": {
+                "required_energy": 26.625307755277525,
+                "delivered_energy": 0,
+                "unmet_energy": 26.625307755277525,
+                "penalty_cost": 26625.307755277525
+            },
+            "415": {
+                "required_energy": 32.203252645267135,
+                "delivered_energy": 0,
+                "unmet_energy": 32.203252645267135,
+                "penalty_cost": 32203.252645267134
+            },
+            "416": {
+                "required_energy": 5.925201187713898,
+                "delivered_energy": 0,
+                "unmet_energy": 5.925201187713898,
+                "penalty_cost": 5925.201187713898
+            },
+            "417": {
+                "required_energy": 32.21720385792071,
+                "delivered_energy": 0,
+                "unmet_energy": 32.21720385792071,
+                "penalty_cost": 32217.203857920707
+            },
+            "418": {
+                "required_energy": 27.664355290903153,
+                "delivered_energy": 0,
+                "unmet_energy": 27.664355290903153,
+                "penalty_cost": 27664.355290903153
+            },
+            "419": {
+                "required_energy": 50.96896751293258,
+                "delivered_energy": 0,
+                "unmet_energy": 50.96896751293258,
+                "penalty_cost": 50968.96751293258
+            },
+            "420": {
+                "required_energy": 44.28678438609201,
+                "delivered_energy": 0,
+                "unmet_energy": 44.28678438609201,
+                "penalty_cost": 44286.78438609201
+            },
+            "421": {
+                "required_energy": 24.176746390962396,
+                "delivered_energy": 0,
+                "unmet_energy": 24.176746390962396,
+                "penalty_cost": 24176.746390962395
+            },
+            "422": {
+                "required_energy": 23.146901386922373,
+                "delivered_energy": 0,
+                "unmet_energy": 23.146901386922373,
+                "penalty_cost": 23146.901386922375
+            },
+            "423": {
+                "required_energy": 22.962256833768034,
+                "delivered_energy": 0,
+                "unmet_energy": 22.962256833768034,
+                "penalty_cost": 22962.256833768035
+            },
+            "424": {
+                "required_energy": 26.856463927635467,
+                "delivered_energy": 0,
+                "unmet_energy": 26.856463927635467,
+                "penalty_cost": 26856.46392763547
+            },
+            "425": {
+                "required_energy": 12.740424956028932,
+                "delivered_energy": 0,
+                "unmet_energy": 12.740424956028932,
+                "penalty_cost": 12740.424956028932
+            },
+            "426": {
+                "required_energy": 32.30804152518704,
+                "delivered_energy": 0,
+                "unmet_energy": 32.30804152518704,
+                "penalty_cost": 32308.041525187044
+            },
+            "427": {
+                "required_energy": 49.6405670100619,
+                "delivered_energy": 0,
+                "unmet_energy": 49.6405670100619,
+                "penalty_cost": 49640.5670100619
+            },
+            "428": {
+                "required_energy": 20.91231960941976,
+                "delivered_energy": 0,
+                "unmet_energy": 20.91231960941976,
+                "penalty_cost": 20912.31960941976
+            },
+            "429": {
+                "required_energy": 55.93678087443872,
+                "delivered_energy": 0,
+                "unmet_energy": 55.93678087443872,
+                "penalty_cost": 55936.780874438715
+            },
+            "430": {
+                "required_energy": 8.205714930799061,
+                "delivered_energy": 0,
+                "unmet_energy": 8.205714930799061,
+                "penalty_cost": 8205.714930799062
+            },
+            "431": {
+                "required_energy": 21.698529858307616,
+                "delivered_energy": 0,
+                "unmet_energy": 21.698529858307616,
+                "penalty_cost": 21698.529858307615
+            },
+            "432": {
+                "required_energy": 42.00893965007645,
+                "delivered_energy": 0,
+                "unmet_energy": 42.00893965007645,
+                "penalty_cost": 42008.93965007645
+            },
+            "433": {
+                "required_energy": 68.07914382059104,
+                "delivered_energy": 0,
+                "unmet_energy": 68.07914382059104,
+                "penalty_cost": 68079.14382059104
+            },
+            "434": {
+                "required_energy": 18.805029484844216,
+                "delivered_energy": 0,
+                "unmet_energy": 18.805029484844216,
+                "penalty_cost": 18805.029484844217
+            },
+            "435": {
+                "required_energy": 37.52666212632293,
+                "delivered_energy": 0,
+                "unmet_energy": 37.52666212632293,
+                "penalty_cost": 37526.66212632293
+            },
+            "436": {
+                "required_energy": 33.84890421744268,
+                "delivered_energy": 0,
+                "unmet_energy": 33.84890421744268,
+                "penalty_cost": 33848.90421744268
+            },
+            "437": {
+                "required_energy": 45.060708907235245,
+                "delivered_energy": 0,
+                "unmet_energy": 45.060708907235245,
+                "penalty_cost": 45060.70890723525
+            },
+            "438": {
+                "required_energy": 44.81708436425553,
+                "delivered_energy": 0,
+                "unmet_energy": 44.81708436425553,
+                "penalty_cost": 44817.08436425553
+            },
+            "439": {
+                "required_energy": 47.520618439791136,
+                "delivered_energy": 0,
+                "unmet_energy": 47.520618439791136,
+                "penalty_cost": 47520.618439791135
+            },
+            "440": {
+                "required_energy": 14.628582575048846,
+                "delivered_energy": 0,
+                "unmet_energy": 14.628582575048846,
+                "penalty_cost": 14628.582575048846
+            },
+            "441": {
+                "required_energy": 32.969298928431805,
+                "delivered_energy": 0,
+                "unmet_energy": 32.969298928431805,
+                "penalty_cost": 32969.2989284318
+            },
+            "442": {
+                "required_energy": 41.825086367887266,
+                "delivered_energy": 0,
+                "unmet_energy": 41.825086367887266,
+                "penalty_cost": 41825.08636788726
+            },
+            "443": {
+                "required_energy": 12.525216607539411,
+                "delivered_energy": 0,
+                "unmet_energy": 12.525216607539411,
+                "penalty_cost": 12525.21660753941
+            },
+            "444": {
+                "required_energy": 16.31869113204866,
+                "delivered_energy": 0,
+                "unmet_energy": 16.31869113204866,
+                "penalty_cost": 16318.69113204866
+            },
+            "445": {
+                "required_energy": 28.911239159674555,
+                "delivered_energy": 0,
+                "unmet_energy": 28.911239159674555,
+                "penalty_cost": 28911.239159674555
+            },
+            "446": {
+                "required_energy": 21.961978341811882,
+                "delivered_energy": 0,
+                "unmet_energy": 21.961978341811882,
+                "penalty_cost": 21961.978341811882
+            },
+            "447": {
+                "required_energy": 15.020868140617871,
+                "delivered_energy": 0,
+                "unmet_energy": 15.020868140617871,
+                "penalty_cost": 15020.868140617871
+            },
+            "448": {
+                "required_energy": 27.928820945725718,
+                "delivered_energy": 0,
+                "unmet_energy": 27.928820945725718,
+                "penalty_cost": 27928.820945725718
+            },
+            "449": {
+                "required_energy": 31.61911122818414,
+                "delivered_energy": 0,
+                "unmet_energy": 31.61911122818414,
+                "penalty_cost": 31619.111228184138
+            },
+            "450": {
+                "required_energy": 6.054250319436629,
+                "delivered_energy": 0,
+                "unmet_energy": 6.054250319436629,
+                "penalty_cost": 6054.250319436629
+            },
+            "451": {
+                "required_energy": 29.96188766057174,
+                "delivered_energy": 0,
+                "unmet_energy": 29.96188766057174,
+                "penalty_cost": 29961.88766057174
+            },
+            "452": {
+                "required_energy": 17.805216795882426,
+                "delivered_energy": 0,
+                "unmet_energy": 17.805216795882426,
+                "penalty_cost": 17805.216795882425
+            },
+            "453": {
+                "required_energy": 56.02423180195907,
+                "delivered_energy": 0,
+                "unmet_energy": 56.02423180195907,
+                "penalty_cost": 56024.23180195907
+            },
+            "454": {
+                "required_energy": 20.8678704597178,
+                "delivered_energy": 0,
+                "unmet_energy": 20.8678704597178,
+                "penalty_cost": 20867.8704597178
+            },
+            "455": {
+                "required_energy": 31.403374278059868,
+                "delivered_energy": 0,
+                "unmet_energy": 31.403374278059868,
+                "penalty_cost": 31403.37427805987
+            },
+            "456": {
+                "required_energy": 21.811715001615365,
+                "delivered_energy": 0,
+                "unmet_energy": 21.811715001615365,
+                "penalty_cost": 21811.715001615365
+            },
+            "457": {
+                "required_energy": 10.81609856820521,
+                "delivered_energy": 0,
+                "unmet_energy": 10.81609856820521,
+                "penalty_cost": 10816.098568205209
+            },
+            "458": {
+                "required_energy": 63.23097721944399,
+                "delivered_energy": 0,
+                "unmet_energy": 63.23097721944399,
+                "penalty_cost": 63230.977219443994
+            },
+            "459": {
+                "required_energy": 19.707965922706872,
+                "delivered_energy": 0,
+                "unmet_energy": 19.707965922706872,
+                "penalty_cost": 19707.965922706873
+            },
+            "460": {
+                "required_energy": 46.32348485834559,
+                "delivered_energy": 0,
+                "unmet_energy": 46.32348485834559,
+                "penalty_cost": 46323.48485834559
+            },
+            "461": {
+                "required_energy": 25.07376203765662,
+                "delivered_energy": 0,
+                "unmet_energy": 25.07376203765662,
+                "penalty_cost": 25073.762037656623
+            },
+            "462": {
+                "required_energy": 26.142811641777364,
+                "delivered_energy": 0,
+                "unmet_energy": 26.142811641777364,
+                "penalty_cost": 26142.811641777364
+            },
+            "463": {
+                "required_energy": 25.12173185992176,
+                "delivered_energy": 0,
+                "unmet_energy": 25.12173185992176,
+                "penalty_cost": 25121.731859921758
+            },
+            "464": {
+                "required_energy": 23.64823722671647,
+                "delivered_energy": 0,
+                "unmet_energy": 23.64823722671647,
+                "penalty_cost": 23648.237226716472
+            },
+            "465": {
+                "required_energy": 44.998063235259735,
+                "delivered_energy": 0,
+                "unmet_energy": 44.998063235259735,
+                "penalty_cost": 44998.06323525974
+            },
+            "466": {
+                "required_energy": 18.06130147484089,
+                "delivered_energy": 0,
+                "unmet_energy": 18.06130147484089,
+                "penalty_cost": 18061.30147484089
+            },
+            "467": {
+                "required_energy": 35.10524440475724,
+                "delivered_energy": 0,
+                "unmet_energy": 35.10524440475724,
+                "penalty_cost": 35105.244404757235
+            },
+            "468": {
+                "required_energy": 46.50970335501056,
+                "delivered_energy": 0,
+                "unmet_energy": 46.50970335501056,
+                "penalty_cost": 46509.703355010555
+            },
+            "469": {
+                "required_energy": 47.04833804700811,
+                "delivered_energy": 0,
+                "unmet_energy": 47.04833804700811,
+                "penalty_cost": 47048.33804700811
+            },
+            "470": {
+                "required_energy": 24.42848098333223,
+                "delivered_energy": 0,
+                "unmet_energy": 24.42848098333223,
+                "penalty_cost": 24428.48098333223
+            },
+            "471": {
+                "required_energy": 33.82180442951538,
+                "delivered_energy": 0,
+                "unmet_energy": 33.82180442951538,
+                "penalty_cost": 33821.80442951538
+            },
+            "472": {
+                "required_energy": 36.35963554030616,
+                "delivered_energy": 0,
+                "unmet_energy": 36.35963554030616,
+                "penalty_cost": 36359.63554030616
+            },
+            "473": {
+                "required_energy": 16.01971418137518,
+                "delivered_energy": 0,
+                "unmet_energy": 16.01971418137518,
+                "penalty_cost": 16019.714181375179
+            },
+            "474": {
+                "required_energy": 6.260391846064906,
+                "delivered_energy": 0,
+                "unmet_energy": 6.260391846064906,
+                "penalty_cost": 6260.3918460649065
+            },
+            "475": {
+                "required_energy": 36.598188718645915,
+                "delivered_energy": 0,
+                "unmet_energy": 36.598188718645915,
+                "penalty_cost": 36598.18871864591
+            },
+            "476": {
+                "required_energy": 7.471236677557818,
+                "delivered_energy": 0,
+                "unmet_energy": 7.471236677557818,
+                "penalty_cost": 7471.236677557818
+            },
+            "477": {
+                "required_energy": 42.95796695549835,
+                "delivered_energy": 0,
+                "unmet_energy": 42.95796695549835,
+                "penalty_cost": 42957.96695549835
+            },
+            "478": {
+                "required_energy": 41.62001256582006,
+                "delivered_energy": 0,
+                "unmet_energy": 41.62001256582006,
+                "penalty_cost": 41620.01256582006
+            },
+            "479": {
+                "required_energy": 40.954671450750894,
+                "delivered_energy": 0,
+                "unmet_energy": 40.954671450750894,
+                "penalty_cost": 40954.671450750895
+            },
+            "480": {
+                "required_energy": 19.671214034330973,
+                "delivered_energy": 0,
+                "unmet_energy": 19.671214034330973,
+                "penalty_cost": 19671.214034330973
+            },
+            "481": {
+                "required_energy": 6.518230592723893,
+                "delivered_energy": 0,
+                "unmet_energy": 6.518230592723893,
+                "penalty_cost": 6518.230592723893
+            },
+            "482": {
+                "required_energy": 12.688041968466592,
+                "delivered_energy": 0,
+                "unmet_energy": 12.688041968466592,
+                "penalty_cost": 12688.041968466592
+            },
+            "483": {
+                "required_energy": 10.374110545145179,
+                "delivered_energy": 0,
+                "unmet_energy": 10.374110545145179,
+                "penalty_cost": 10374.110545145179
+            },
+            "484": {
+                "required_energy": 28.111180360227515,
+                "delivered_energy": 0,
+                "unmet_energy": 28.111180360227515,
+                "penalty_cost": 28111.180360227514
+            },
+            "485": {
+                "required_energy": 15.775860903518538,
+                "delivered_energy": 0,
+                "unmet_energy": 15.775860903518538,
+                "penalty_cost": 15775.860903518538
+            },
+            "486": {
+                "required_energy": 47.83196193702445,
+                "delivered_energy": 0,
+                "unmet_energy": 47.83196193702445,
+                "penalty_cost": 47831.961937024455
+            },
+            "487": {
+                "required_energy": 22.61773189667245,
+                "delivered_energy": 0,
+                "unmet_energy": 22.61773189667245,
+                "penalty_cost": 22617.73189667245
+            },
+            "488": {
+                "required_energy": 13.336631982575275,
+                "delivered_energy": 0,
+                "unmet_energy": 13.336631982575275,
+                "penalty_cost": 13336.631982575274
+            },
+            "489": {
+                "required_energy": 43.6142687831449,
+                "delivered_energy": 0,
+                "unmet_energy": 43.6142687831449,
+                "penalty_cost": 43614.2687831449
+            },
+            "490": {
+                "required_energy": 20.136135852925705,
+                "delivered_energy": 0,
+                "unmet_energy": 20.136135852925705,
+                "penalty_cost": 20136.135852925705
+            },
+            "491": {
+                "required_energy": 49.44338673668868,
+                "delivered_energy": 0,
+                "unmet_energy": 49.44338673668868,
+                "penalty_cost": 49443.38673668868
+            },
+            "492": {
+                "required_energy": 36.46510975319871,
+                "delivered_energy": 0,
+                "unmet_energy": 36.46510975319871,
+                "penalty_cost": 36465.10975319871
+            },
+            "493": {
+                "required_energy": 6.235708535017679,
+                "delivered_energy": 0,
+                "unmet_energy": 6.235708535017679,
+                "penalty_cost": 6235.7085350176785
+            },
+            "494": {
+                "required_energy": 35.123271929604215,
+                "delivered_energy": 0,
+                "unmet_energy": 35.123271929604215,
+                "penalty_cost": 35123.27192960421
+            },
+            "495": {
+                "required_energy": 36.078034153721774,
+                "delivered_energy": 0,
+                "unmet_energy": 36.078034153721774,
+                "penalty_cost": 36078.034153721776
+            },
+            "496": {
+                "required_energy": 5.357247093814217,
+                "delivered_energy": 0,
+                "unmet_energy": 5.357247093814217,
+                "penalty_cost": 5357.247093814217
+            },
+            "497": {
+                "required_energy": 44.527976800930105,
+                "delivered_energy": 0,
+                "unmet_energy": 44.527976800930105,
+                "penalty_cost": 44527.976800930104
+            },
+            "498": {
+                "required_energy": 6.109760821132299,
+                "delivered_energy": 0,
+                "unmet_energy": 6.109760821132299,
+                "penalty_cost": 6109.760821132299
+            },
+            "499": {
+                "required_energy": 8.60546457871718,
+                "delivered_energy": 0,
+                "unmet_energy": 8.60546457871718,
+                "penalty_cost": 8605.464578717181
+            },
+            "500": {
+                "required_energy": 8.492377574766206,
+                "delivered_energy": 0,
+                "unmet_energy": 8.492377574766206,
+                "penalty_cost": 8492.377574766206
+            },
+            "501": {
+                "required_energy": 36.09558219053971,
+                "delivered_energy": 0,
+                "unmet_energy": 36.09558219053971,
+                "penalty_cost": 36095.58219053971
+            },
+            "502": {
+                "required_energy": 29.09284346670432,
+                "delivered_energy": 0,
+                "unmet_energy": 29.09284346670432,
+                "penalty_cost": 29092.84346670432
+            },
+            "503": {
+                "required_energy": 14.406745772518757,
+                "delivered_energy": 0,
+                "unmet_energy": 14.406745772518757,
+                "penalty_cost": 14406.745772518758
+            },
+            "504": {
+                "required_energy": 11.15118148139604,
+                "delivered_energy": 0,
+                "unmet_energy": 11.15118148139604,
+                "penalty_cost": 11151.18148139604
+            },
+            "505": {
+                "required_energy": 33.240301759529856,
+                "delivered_energy": 0,
+                "unmet_energy": 33.240301759529856,
+                "penalty_cost": 33240.30175952986
+            },
+            "506": {
+                "required_energy": 29.092000697413834,
+                "delivered_energy": 0,
+                "unmet_energy": 29.092000697413834,
+                "penalty_cost": 29092.000697413834
+            },
+            "507": {
+                "required_energy": 27.139520944464522,
+                "delivered_energy": 0,
+                "unmet_energy": 27.139520944464522,
+                "penalty_cost": 27139.520944464522
+            },
+            "508": {
+                "required_energy": 41.94015789337243,
+                "delivered_energy": 0,
+                "unmet_energy": 41.94015789337243,
+                "penalty_cost": 41940.15789337243
+            },
+            "509": {
+                "required_energy": 10.733603274113072,
+                "delivered_energy": 0,
+                "unmet_energy": 10.733603274113072,
+                "penalty_cost": 10733.603274113073
+            },
+            "510": {
+                "required_energy": 24.748622728613277,
+                "delivered_energy": 0,
+                "unmet_energy": 24.748622728613277,
+                "penalty_cost": 24748.622728613278
+            },
+            "511": {
+                "required_energy": 18.00662800576037,
+                "delivered_energy": 0,
+                "unmet_energy": 18.00662800576037,
+                "penalty_cost": 18006.62800576037
+            },
+            "512": {
+                "required_energy": 12.611484474373112,
+                "delivered_energy": 0,
+                "unmet_energy": 12.611484474373112,
+                "penalty_cost": 12611.484474373112
+            },
+            "513": {
+                "required_energy": 41.204806756373614,
+                "delivered_energy": 0,
+                "unmet_energy": 41.204806756373614,
+                "penalty_cost": 41204.80675637361
+            },
+            "514": {
+                "required_energy": 28.19815035876983,
+                "delivered_energy": 0,
+                "unmet_energy": 28.19815035876983,
+                "penalty_cost": 28198.15035876983
+            },
+            "515": {
+                "required_energy": 41.403673436968596,
+                "delivered_energy": 0,
+                "unmet_energy": 41.403673436968596,
+                "penalty_cost": 41403.673436968595
+            },
+            "516": {
+                "required_energy": 16.339049989449844,
+                "delivered_energy": 0,
+                "unmet_energy": 16.339049989449844,
+                "penalty_cost": 16339.049989449844
+            },
+            "517": {
+                "required_energy": 34.130994589677385,
+                "delivered_energy": 0,
+                "unmet_energy": 34.130994589677385,
+                "penalty_cost": 34130.994589677386
+            },
+            "518": {
+                "required_energy": 26.345396525381584,
+                "delivered_energy": 0,
+                "unmet_energy": 26.345396525381584,
+                "penalty_cost": 26345.396525381584
+            },
+            "519": {
+                "required_energy": 8.427605783381605,
+                "delivered_energy": 0,
+                "unmet_energy": 8.427605783381605,
+                "penalty_cost": 8427.605783381605
+            },
+            "520": {
+                "required_energy": 26.906734691795155,
+                "delivered_energy": 0,
+                "unmet_energy": 26.906734691795155,
+                "penalty_cost": 26906.734691795155
+            },
+            "521": {
+                "required_energy": 22.57567919830443,
+                "delivered_energy": 0,
+                "unmet_energy": 22.57567919830443,
+                "penalty_cost": 22575.67919830443
+            },
+            "522": {
+                "required_energy": 30.242946415869888,
+                "delivered_energy": 0,
+                "unmet_energy": 30.242946415869888,
+                "penalty_cost": 30242.946415869887
+            },
+            "523": {
+                "required_energy": 57.05346933219379,
+                "delivered_energy": 0,
+                "unmet_energy": 57.05346933219379,
+                "penalty_cost": 57053.469332193796
+            },
+            "524": {
+                "required_energy": 13.66742255500671,
+                "delivered_energy": 0,
+                "unmet_energy": 13.66742255500671,
+                "penalty_cost": 13667.42255500671
+            },
+            "525": {
+                "required_energy": 43.54254752380871,
+                "delivered_energy": 0,
+                "unmet_energy": 43.54254752380871,
+                "penalty_cost": 43542.54752380871
+            },
+            "526": {
+                "required_energy": 17.96637604387314,
+                "delivered_energy": 0,
+                "unmet_energy": 17.96637604387314,
+                "penalty_cost": 17966.37604387314
+            },
+            "527": {
+                "required_energy": 35.28974666155596,
+                "delivered_energy": 0,
+                "unmet_energy": 35.28974666155596,
+                "penalty_cost": 35289.74666155596
+            },
+            "528": {
+                "required_energy": 56.38197022373096,
+                "delivered_energy": 0,
+                "unmet_energy": 56.38197022373096,
+                "penalty_cost": 56381.97022373096
+            },
+            "529": {
+                "required_energy": 30.645342701000278,
+                "delivered_energy": 0,
+                "unmet_energy": 30.645342701000278,
+                "penalty_cost": 30645.342701000278
+            },
+            "530": {
+                "required_energy": 7.818773854203785,
+                "delivered_energy": 0,
+                "unmet_energy": 7.818773854203785,
+                "penalty_cost": 7818.773854203785
+            },
+            "531": {
+                "required_energy": 52.0191132719656,
+                "delivered_energy": 0,
+                "unmet_energy": 52.0191132719656,
+                "penalty_cost": 52019.1132719656
+            },
+            "532": {
+                "required_energy": 56.271975978155616,
+                "delivered_energy": 0,
+                "unmet_energy": 56.271975978155616,
+                "penalty_cost": 56271.97597815561
+            },
+            "533": {
+                "required_energy": 13.128291783977916,
+                "delivered_energy": 0,
+                "unmet_energy": 13.128291783977916,
+                "penalty_cost": 13128.291783977917
+            },
+            "534": {
+                "required_energy": 9.134244215859587,
+                "delivered_energy": 0,
+                "unmet_energy": 9.134244215859587,
+                "penalty_cost": 9134.244215859588
+            },
+            "535": {
+                "required_energy": 25.303176602367508,
+                "delivered_energy": 0,
+                "unmet_energy": 25.303176602367508,
+                "penalty_cost": 25303.176602367508
+            },
+            "536": {
+                "required_energy": 29.857272658489567,
+                "delivered_energy": 0,
+                "unmet_energy": 29.857272658489567,
+                "penalty_cost": 29857.272658489568
+            },
+            "537": {
+                "required_energy": 46.62123292749663,
+                "delivered_energy": 0,
+                "unmet_energy": 46.62123292749663,
+                "penalty_cost": 46621.232927496625
+            },
+            "538": {
+                "required_energy": 25.230572075399742,
+                "delivered_energy": 0,
+                "unmet_energy": 25.230572075399742,
+                "penalty_cost": 25230.57207539974
+            },
+            "539": {
+                "required_energy": 20.94705815811072,
+                "delivered_energy": 0,
+                "unmet_energy": 20.94705815811072,
+                "penalty_cost": 20947.05815811072
+            },
+            "540": {
+                "required_energy": 36.579074531127134,
+                "delivered_energy": 0,
+                "unmet_energy": 36.579074531127134,
+                "penalty_cost": 36579.07453112713
+            },
+            "541": {
+                "required_energy": 15.313048167154683,
+                "delivered_energy": 0,
+                "unmet_energy": 15.313048167154683,
+                "penalty_cost": 15313.048167154684
+            },
+            "542": {
+                "required_energy": 34.84332081936001,
+                "delivered_energy": 0,
+                "unmet_energy": 34.84332081936001,
+                "penalty_cost": 34843.32081936001
+            },
+            "543": {
+                "required_energy": 37.85380592934568,
+                "delivered_energy": 0,
+                "unmet_energy": 37.85380592934568,
+                "penalty_cost": 37853.80592934568
+            },
+            "544": {
+                "required_energy": 5.097618228775428,
+                "delivered_energy": 0,
+                "unmet_energy": 5.097618228775428,
+                "penalty_cost": 5097.618228775427
+            },
+            "545": {
+                "required_energy": 7.358501376509597,
+                "delivered_energy": 0,
+                "unmet_energy": 7.358501376509597,
+                "penalty_cost": 7358.501376509597
+            },
+            "546": {
+                "required_energy": 12.649048580804154,
+                "delivered_energy": 0,
+                "unmet_energy": 12.649048580804154,
+                "penalty_cost": 12649.048580804154
+            },
+            "547": {
+                "required_energy": 64.90265109281462,
+                "delivered_energy": 0,
+                "unmet_energy": 64.90265109281462,
+                "penalty_cost": 64902.65109281462
+            },
+            "548": {
+                "required_energy": 35.99670649229,
+                "delivered_energy": 0,
+                "unmet_energy": 35.99670649229,
+                "penalty_cost": 35996.70649229
+            },
+            "549": {
+                "required_energy": 32.25034087842335,
+                "delivered_energy": 0,
+                "unmet_energy": 32.25034087842335,
+                "penalty_cost": 32250.34087842335
+            },
+            "550": {
+                "required_energy": 10.44178498698394,
+                "delivered_energy": 0,
+                "unmet_energy": 10.44178498698394,
+                "penalty_cost": 10441.78498698394
+            },
+            "551": {
+                "required_energy": 25.093882741365555,
+                "delivered_energy": 0,
+                "unmet_energy": 25.093882741365555,
+                "penalty_cost": 25093.882741365556
+            },
+            "552": {
+                "required_energy": 23.746319510109192,
+                "delivered_energy": 0,
+                "unmet_energy": 23.746319510109192,
+                "penalty_cost": 23746.31951010919
+            },
+            "553": {
+                "required_energy": 28.056323102153897,
+                "delivered_energy": 0,
+                "unmet_energy": 28.056323102153897,
+                "penalty_cost": 28056.323102153896
+            }
+        },
+        "milp_time": 111.76893496513367,
+        "total_time": 136.78502202033997
+    }
+}
