@@ -1,0 +1,1 @@
+config_name,population_size,quality_size,diversity_size,max_iterations,final_cost

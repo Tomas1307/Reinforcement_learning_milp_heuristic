@@ -1,0 +1,26 @@
+2025-05-11 12:36:27,663 - INFO - Logger configurado. Archivo: hyperparameter/hyperparameter_results_scatter\logs\scatter_search_tuning_20250511_123627.log
+2025-05-11 12:36:27,664 - INFO - Iniciando tuning con args: Namespace(config_path='.\\results\\cluster_results\\representative_files\\test_system_2.json', n_trials=3, no_resume=False)
+2025-05-11 12:36:27,664 - INFO - Iniciando búsqueda en cuadrícula para .\results\cluster_results\representative_files\test_system_2.json
+2025-05-11 12:36:27,664 - INFO - Parámetros a explorar: {'population_size': [15], 'quality_size': [5], 'diversity_size': [5], 'max_iterations': [30]}
+2025-05-11 12:36:27,666 - INFO - Procesando configuración: test_system_2
+2025-05-11 12:36:27,666 - INFO - Búsqueda en cuadrícula con 1 combinaciones de parámetros
+2025-05-11 12:36:27,666 - INFO - Determinando punto de continuación...
+2025-05-11 12:36:27,669 - INFO - Evaluando combinación: population_size_15_quality_size_5_diversity_size_5_max_iterations_30
+2025-05-11 12:36:27,669 - INFO - Ejecutando prueba 1/3 para combinación 1/1
+2025-05-11 12:36:27,669 - INFO - Parámetros: N=15, m1=5, m2=5, max_iter=30
+2025-05-11 12:38:23,824 - DEBUG - Resultado completo: {'cost': inf, 'schedule': [], 'error': "Error crítico: unsupported operand type(s) for +: 'int' and 'NoneType'"}
+2025-05-11 12:38:23,826 - INFO - Prueba 1 completada. Costo: inf. Tiempo: 116.15 segundos
+2025-05-11 12:38:23,826 - INFO - Resultado parcial guardado en: hyperparameter/hyperparameter_results_scatter\partial_results\instancia_test_system_2_scatter_search_partial.txt
+2025-05-11 12:38:23,827 - INFO - Ejecutando prueba 2/3 para combinación 1/1
+2025-05-11 12:38:23,827 - INFO - Parámetros: N=15, m1=5, m2=5, max_iter=30
+2025-05-11 12:40:04,068 - DEBUG - Resultado completo: {'cost': inf, 'schedule': [], 'error': "Error crítico: unsupported operand type(s) for +: 'int' and 'NoneType'"}
+2025-05-11 12:40:04,077 - INFO - Prueba 2 completada. Costo: inf. Tiempo: 100.24 segundos
+2025-05-11 12:40:04,077 - INFO - Resultado parcial guardado en: hyperparameter/hyperparameter_results_scatter\partial_results\instancia_test_system_2_scatter_search_partial.txt
+2025-05-11 12:40:04,077 - INFO - Ejecutando prueba 3/3 para combinación 1/1
+2025-05-11 12:40:04,077 - INFO - Parámetros: N=15, m1=5, m2=5, max_iter=30
+2025-05-11 12:41:36,025 - DEBUG - Resultado completo: {'cost': inf, 'schedule': [], 'error': "Error crítico: unsupported operand type(s) for +: 'int' and 'NoneType'"}
+2025-05-11 12:41:36,035 - INFO - Prueba 3 completada. Costo: inf. Tiempo: 91.95 segundos
+2025-05-11 12:41:36,035 - INFO - Resultado parcial guardado en: hyperparameter/hyperparameter_results_scatter\partial_results\instancia_test_system_2_scatter_search_partial.txt
+2025-05-11 12:41:36,035 - INFO - Resultados para combinación 1 guardados en: hyperparameter/hyperparameter_results_scatter\instancia_test_system_2_scatter_search_grid_complete.txt
+2025-05-11 12:41:36,035 - INFO - Parámetros: {'population_size': 15, 'quality_size': 5, 'diversity_size': 5, 'max_iterations': 30}, Costo promedio: inf
+2025-05-11 12:41:36,035 - INFO - Tuning completado. Resultados guardados en: hyperparameter/hyperparameter_results_scatter
