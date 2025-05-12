@@ -1,0 +1,284 @@
+
+
+--- Nueva sesión de entrenamiento: 2025-03-20 16:15:54.440981 ---
+
+==================================================
+Entrenando en sistema 1 (1/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 50...
+Episodio 1/50, Recompensa: 335.51, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
+Episodio 2/50, Recompensa: 273.01, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
+Episodio 3/50, Recompensa: 333.68, Epsilon: 0.7256, EVs asignados: 17, EVs saltados: 15
+
+
+--- Nueva sesión de entrenamiento: 2025-03-20 16:36:32.621241 ---
+
+==================================================
+Entrenando en sistema 1 (1/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 335.51, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
+Nuevo mejor modelo guardado con recompensa: 335.51
+Episodio 2/20, Recompensa: 325.65, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 3/20, Recompensa: 348.01, Epsilon: 0.7256, EVs asignados: 18, EVs saltados: 14
+Nuevo mejor modelo guardado con recompensa: 348.01
+Episodio 4/20, Recompensa: 333.11, Epsilon: 0.5264, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 5/20, Recompensa: 348.01, Epsilon: 0.3820, EVs asignados: 18, EVs saltados: 14
+Checkpoint guardado en ./checkpoints\checkpoint_sys_0_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 6/20, Recompensa: 282.26, Epsilon: 0.2771, EVs asignados: 17, EVs saltados: 15
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 7/20, Recompensa: 360.51, Epsilon: 0.2011, EVs asignados: 18, EVs saltados: 14
+Nuevo mejor modelo guardado con recompensa: 360.51
+Episodio 8/20, Recompensa: 370.91, Epsilon: 0.1459, EVs asignados: 18, EVs saltados: 14
+Nuevo mejor modelo guardado con recompensa: 370.91
+Episodio 9/20, Recompensa: 385.51, Epsilon: 0.1059, EVs asignados: 18, EVs saltados: 14
+Nuevo mejor modelo guardado con recompensa: 385.51
+Episodio 10/20, Recompensa: 373.01, Epsilon: 0.0768, EVs asignados: 18, EVs saltados: 14
+Checkpoint guardado en ./checkpoints\checkpoint_sys_0_ep_10.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 11/20, Recompensa: 360.51, Epsilon: 0.0557, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 12/20, Recompensa: 360.51, Epsilon: 0.0404, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 13/20, Recompensa: 373.01, Epsilon: 0.0293, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 4/5
+Episodio 14/20, Recompensa: 348.01, Epsilon: 0.0213, EVs asignados: 18, EVs saltados: 14
+No hay mejora en el episodio. Contador de paciencia: 5/5
+Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
+
+==================================================
+Entrenando en sistema 2 (2/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 932.45, Epsilon: 0.0167, EVs asignados: 39, EVs saltados: 10
+Nuevo mejor modelo guardado con recompensa: 932.45
+Episodio 2/20, Recompensa: 944.95, Epsilon: 0.0110, EVs asignados: 39, EVs saltados: 10
+Nuevo mejor modelo guardado con recompensa: 944.95
+Episodio 3/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 4/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 5/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
+Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-20 21:28:39.587566 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_1_ep_5.h5
+
+==================================================
+Entrenando en sistema 2 (2/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 7 hasta 20...
+Episodio 7/20, Recompensa: 837.59, Epsilon: 1.0000, EVs asignados: 38, EVs saltados: 11
+Nuevo mejor modelo guardado con recompensa: 837.59
+Episodio 8/20, Recompensa: 876.12, Epsilon: 0.7112, EVs asignados: 38, EVs saltados: 11
+Nuevo mejor modelo guardado con recompensa: 876.12
+Episodio 9/20, Recompensa: 878.30, Epsilon: 0.4351, EVs asignados: 39, EVs saltados: 10
+Nuevo mejor modelo guardado con recompensa: 878.30
+Episodio 10/20, Recompensa: 973.34, Epsilon: 0.2663, EVs asignados: 40, EVs saltados: 9
+Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_10.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+Nuevo mejor modelo guardado con recompensa: 973.34
+Episodio 11/20, Recompensa: 919.95, Epsilon: 0.1629, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 12/20, Recompensa: 969.95, Epsilon: 0.0997, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 13/20, Recompensa: 944.95, Epsilon: 0.0610, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 14/20, Recompensa: 957.45, Epsilon: 0.0373, EVs asignados: 39, EVs saltados: 10
+No hay mejora en el episodio. Contador de paciencia: 4/5
+Episodio 15/20, Recompensa: 944.95, Epsilon: 0.0228, EVs asignados: 39, EVs saltados: 10
+Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_15.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 5/5
+Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
+
+==================================================
+Entrenando en sistema 3 (3/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 559.63, Epsilon: 0.0206, EVs asignados: 21, EVs saltados: 0
+Nuevo mejor modelo guardado con recompensa: 559.63
+Episodio 2/20, Recompensa: 572.13, Epsilon: 0.0185, EVs asignados: 21, EVs saltados: 0
+Nuevo mejor modelo guardado con recompensa: 572.13
+Episodio 3/20, Recompensa: 572.13, Epsilon: 0.0167, EVs asignados: 21, EVs saltados: 0
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 4/20, Recompensa: 572.13, Epsilon: 0.0136, EVs asignados: 21, EVs saltados: 0
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 5/20, Recompensa: 572.13, Epsilon: 0.0110, EVs asignados: 21, EVs saltados: 0
+Checkpoint guardado en ./checkpoints\checkpoint_sys_2_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 6/20, Recompensa: 572.13, Epsilon: 0.0100, EVs asignados: 21, EVs saltados: 0
+No hay mejora en el episodio. Contador de paciencia: 4/5
+Episodio 7/20, Recompensa: 572.13, Epsilon: 0.0100, EVs asignados: 21, EVs saltados: 0
+No hay mejora en el episodio. Contador de paciencia: 5/5
+Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
+
+==================================================
+Entrenando en sistema 4 (4/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+Nuevo mejor modelo guardado con recompensa: 130.59
+Episodio 2/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 3/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 4/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 5/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+Checkpoint guardado en ./checkpoints\checkpoint_sys_3_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 4/5
+Episodio 6/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
+No hay mejora en el episodio. Contador de paciencia: 5/5
+Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
+
+==================================================
+Entrenando en sistema 5 (5/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+Nuevo mejor modelo guardado con recompensa: 989.26
+Episodio 2/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 3/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 4/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 5/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+Checkpoint guardado en ./checkpoints\checkpoint_sys_4_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+No hay mejora en el episodio. Contador de paciencia: 4/5
+Episodio 6/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
+No hay mejora en el episodio. Contador de paciencia: 5/5
+Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
+
+==================================================
+Entrenando en sistema 6 (6/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
+Nuevo mejor modelo guardado con recompensa: 1814.40
+Episodio 2/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 3/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
+No hay mejora en el episodio. Contador de paciencia: 2/5
+Episodio 4/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
+No hay mejora en el episodio. Contador de paciencia: 3/5
+Episodio 5/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
+Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-21 09:55:50.991493 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_5.h5
+
+==================================================
+Entrenando en sistema 6 (6/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 7 hasta 20...
+Episodio 7/20, Recompensa: 1749.96, Epsilon: 0.4621, EVs asignados: 83, EVs saltados: 78
+Nuevo mejor modelo guardado con recompensa: 1749.96
+Episodio 8/20, Recompensa: 1907.62, Epsilon: 0.0920, EVs asignados: 92, EVs saltados: 69
+Nuevo mejor modelo guardado con recompensa: 1907.62
+Episodio 9/20, Recompensa: 1639.45, Epsilon: 0.0183, EVs asignados: 98, EVs saltados: 63
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 10/20, Recompensa: 2036.90, Epsilon: 0.0100, EVs asignados: 98, EVs saltados: 63
+Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_10.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-21 16:41:54.595521 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_10.h5
+
+==================================================
+Entrenando en sistema 6 (6/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 12 hasta 20...
+Episodio 12/20, Recompensa: 1712.04, Epsilon: 0.4440, EVs asignados: 83, EVs saltados: 78
+Nuevo mejor modelo guardado con recompensa: 1712.04
+Episodio 13/20, Recompensa: 1465.23, Epsilon: 0.0884, EVs asignados: 78, EVs saltados: 83
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 14/20, Recompensa: 2216.87, Epsilon: 0.0176, EVs asignados: 94, EVs saltados: 67
+Nuevo mejor modelo guardado con recompensa: 2216.87
+Episodio 15/20, Recompensa: 2311.80, Epsilon: 0.0100, EVs asignados: 103, EVs saltados: 58
+Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_15.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+Nuevo mejor modelo guardado con recompensa: 2311.80
+
+
+--- Nueva sesión de entrenamiento: 2025-03-21 21:52:16.479899 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_15.h5
+
+==================================================
+Entrenando en sistema 6 (6/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 17 hasta 20...
+Episodio 17/20, Recompensa: 1767.11, Epsilon: 0.4715, EVs asignados: 83, EVs saltados: 78
+Nuevo mejor modelo guardado con recompensa: 1767.11
+Episodio 18/20, Recompensa: 2158.77, Epsilon: 0.0939, EVs asignados: 99, EVs saltados: 62
+Nuevo mejor modelo guardado con recompensa: 2158.77
+Episodio 19/20, Recompensa: 1446.19, Epsilon: 0.0187, EVs asignados: 89, EVs saltados: 72
+No hay mejora en el episodio. Contador de paciencia: 1/5
+Episodio 20/20, Recompensa: 1578.37, Epsilon: 0.0100, EVs asignados: 78, EVs saltados: 83
+Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_20.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-22 22:41:47.908821 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_20.h5
+
+==================================================
+Entrenando en sistema 7 (7/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 20...
+Episodio 1/20, Recompensa: 3017.30, Epsilon: 0.1696, EVs asignados: 143, EVs saltados: 140
+Nuevo mejor modelo guardado con recompensa: 3017.30
+Episodio 2/20, Recompensa: 3070.66, Epsilon: 0.0100, EVs asignados: 141, EVs saltados: 142
+Nuevo mejor modelo guardado con recompensa: 3070.66
+Episodio 3/20, Recompensa: 1179.13, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 191
+Checkpoint guardado en ./checkpoints\checkpoint_sys_6_ep_3.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-23 10:56:34.635790 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_6_ep_3.h5
+
+==================================================
+Entrenando en sistema 7 (7/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 5 hasta 5...
+Episodio 5/5, Recompensa: 3131.38, Epsilon: 0.2093, EVs asignados: 148, EVs saltados: 135
+Checkpoint guardado en ./checkpoints\checkpoint_sys_6_ep_5.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+Nuevo mejor modelo guardado con recompensa: 3131.38
+
+==================================================
+Entrenando en sistema 8 (8/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 1 hasta 5...
+Episodio 1/5, Recompensa: 2128.77, Epsilon: 0.0100, EVs asignados: 141, EVs saltados: 287
+Nuevo mejor modelo guardado con recompensa: 2128.77
+Episodio 2/5, Recompensa: 3036.81, Epsilon: 0.0100, EVs asignados: 157, EVs saltados: 271
+Checkpoint guardado en ./checkpoints\checkpoint_sys_7_ep_2.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
+
+
+--- Nueva sesión de entrenamiento: 2025-03-23 20:14:22.793771 ---
+Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_7_ep_2.h5
+
+==================================================
+Entrenando en sistema 8 (8/10)
+==================================================
+Ejecutando episodios de entrenamiento desde 4 hasta 5...
+Episodio 4/5, Recompensa: 1665.88, Epsilon: 0.0293, EVs asignados: 131, EVs saltados: 297
+Checkpoint guardado en ./checkpoints\checkpoint_sys_7_ep_4.h5
+Modelo principal actualizado en ev_scheduler_generalized_model.h5
