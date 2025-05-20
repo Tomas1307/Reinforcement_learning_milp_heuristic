@@ -1,0 +1,10 @@
+2025-05-15 16:09:45,954 - INFO - Logger configurado. Archivo: hyperparameter/hyperparameter_results_scatter\logs\scatter_search_tuning_20250515_160945.log
+2025-05-15 16:09:45,955 - INFO - Iniciando tuning con args: Namespace(config_path='.\\results\\cluster_results\\representative_files\\test_system_9.json', n_trials=3, no_resume=False)
+2025-05-15 16:09:45,955 - INFO - Iniciando búsqueda en cuadrícula para .\results\cluster_results\representative_files\test_system_9.json
+2025-05-15 16:09:45,955 - INFO - Parámetros a explorar: {'population_size': [100, 150, 200], 'quality_size': [5], 'diversity_size': [5], 'max_iterations': [5]}
+2025-05-15 16:09:45,956 - INFO - Procesando configuración: test_system_9
+2025-05-15 16:09:45,956 - INFO - Búsqueda en cuadrícula con 3 combinaciones de parámetros
+2025-05-15 16:09:45,957 - INFO - Determinando punto de continuación...
+2025-05-15 16:09:45,965 - INFO - Evaluando combinación: population_size_100_quality_size_5_diversity_size_5_max_iterations_5
+2025-05-15 16:09:45,965 - INFO - Ejecutando prueba 2/3 para combinación 1/3
+2025-05-15 16:09:45,966 - INFO - Parámetros: N=100, m1=5, m2=5, max_iter=5

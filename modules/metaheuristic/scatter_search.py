@@ -251,7 +251,7 @@ def combine_solutions(u_schedule, v_schedule, time_slots):
         print("Error en combine_solutions:", e)
 
 
-def scatter_search(config_path, N=20, m1=5, m2=5, max_iter=30, save_results=True):
+def scatter_search(config_path, N=20, m1=5, m2=5, max_iter=5, save_results=True):
     """
     Ejecuta el algoritmo de Scatter Search y guarda los resultados en formato JSON.
 
@@ -290,30 +290,31 @@ def scatter_search(config_path, N=20, m1=5, m2=5, max_iter=30, save_results=True
                 seed = random.randint(0, 2 ** 32 - 1)
                 random.seed(seed)
                 np.random.seed(seed)
-                
-                # Determinar qué método de generación usar
-                method = i % 4  # Usar 4 métodos diferentes
-                
-                if method == 0:
-                    # Heurística original (prioridad por urgencia)
-                    logger.debug(f"Población {i+1}/{N}: Usando heurística constructiva")
-                    heur = HeuristicaConstructivaEVs(data)
-                    sched = heur.run(track_progress=False)
-                elif method == 1:
-                    # Heurística con prioridad por precio
-                    logger.debug(f"Población {i+1}/{N}: Usando heurística por precio")
-                    heur = HeuristicaPorPrecio(data)  # Nueva heurística 
-                    sched = heur.run(track_progress=False)
-                elif method == 2:
-                    # Heurística con prioridad por ventana de tiempo
-                    logger.debug(f"Población {i+1}/{N}: Usando heurística por ventana de tiempo")
-                    heur = HeuristicaPorVentanaTiempo(data)  # Nueva heurística
-                    sched = heur.run(track_progress=False)
-                else:
-                    # Solución aleatoria
-                    logger.debug(f"Población {i+1}/{N}: Usando solución aleatoria")
-                    sched = generar_solucion_aleatoria(data)  # Nueva función
-                
+
+                # === MODO RESTRINGIDO: solo heurística constructiva base ===
+                logger.debug(f"Población {i+1}/{N}: Usando solo heurística constructiva")
+                heur = HeuristicaConstructivaEVs(data)
+                sched = heur.run(track_progress=False)
+
+                # === MODO COMPLETO: heurísticas diversas y aleatoria (comentado) ===
+                # method = i % 4  # Usar 4 métodos diferentes
+                #
+                # if method == 0:
+                #     logger.debug(f"Población {i+1}/{N}: Usando heurística constructiva")
+                #     heur = HeuristicaConstructivaEVs(data)
+                #     sched = heur.run(track_progress=False)
+                # elif method == 1:
+                #     logger.debug(f"Población {i+1}/{N}: Usando heurística por precio")
+                #     heur = HeuristicaPorPrecio(data)
+                #     sched = heur.run(track_progress=False)
+                # elif method == 2:
+                #     logger.debug(f"Población {i+1}/{N}: Usando heurística por ventana de tiempo")
+                #     heur = HeuristicaPorVentanaTiempo(data)
+                #     sched = heur.run(track_progress=False)
+                # else:
+                #     logger.debug(f"Población {i+1}/{N}: Usando solución aleatoria")
+                #     sched = generar_solucion_aleatoria(data)
+
                 # Verificar que se haya generado una solución válida
                 if not sched:
                     logger.warning(f"Solución vacía generada para población {i+1}. Intentando heurística constructiva.")
@@ -322,7 +323,7 @@ def scatter_search(config_path, N=20, m1=5, m2=5, max_iter=30, save_results=True
                     if not sched:
                         logger.error(f"No se pudo generar una solución para la población {i+1}")
                         continue
-                
+
                 cost = evaluar_costo(sched, data)
                 population.append({'schedule': sched, 'cost': cost})
 
@@ -340,6 +341,7 @@ def scatter_search(config_path, N=20, m1=5, m2=5, max_iter=30, save_results=True
         # Ajustar m1 y m2 si no hay suficientes soluciones
         m1 = min(m1, len(population))
         m2 = min(m2, len(population) - m1)
+
         
         if m1 <= 0 or m2 <= 0:
             logger.error(f"No hay suficientes soluciones para formar el RefSet (m1={m1}, m2={m2})")

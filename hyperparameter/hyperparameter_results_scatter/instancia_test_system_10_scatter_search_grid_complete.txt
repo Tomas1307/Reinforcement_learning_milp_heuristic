@@ -1,1 +1,4 @@
 config_name,population_size,quality_size,diversity_size,max_iterations,final_cost
+test_system_10,100,5,5,5,12619620.198879411
+test_system_10,150,5,5,5,12636544.7156827
+test_system_10,200,5,5,5,12629405.61052604

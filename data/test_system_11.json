@@ -1,0 +1,2056 @@
+{
+    "test_number": 1,
+    "energy_prices": [
+        {
+            "time": 0.0,
+            "price": 25.558748605287573
+        },
+        {
+            "time": 0.25,
+            "price": 27.48795753861652
+        },
+        {
+            "time": 0.5,
+            "price": 33.16724620744336
+        },
+        {
+            "time": 0.75,
+            "price": 38.52928841246679
+        },
+        {
+            "time": 1.0,
+            "price": 45.96443719566697
+        },
+        {
+            "time": 1.25,
+            "price": 47.95083034650353
+        },
+        {
+            "time": 1.5,
+            "price": 50.747288275887925
+        },
+        {
+            "time": 1.75,
+            "price": 51.585663565297494
+        },
+        {
+            "time": 2.0,
+            "price": 46.57169372179985
+        },
+        {
+            "time": 2.25,
+            "price": 38.67309160155795
+        },
+        {
+            "time": 2.5,
+            "price": 33.21614531961331
+        },
+        {
+            "time": 2.75,
+            "price": 29.53605143224078
+        },
+        {
+            "time": 3.0,
+            "price": 22.676363908850185
+        },
+        {
+            "time": 3.25,
+            "price": 21.4663609443054
+        },
+        {
+            "time": 3.5,
+            "price": 22.101224103251493
+        },
+        {
+            "time": 3.75,
+            "price": 20.4899664455159
+        },
+        {
+            "time": 4.0,
+            "price": 23.352154685193156
+        },
+        {
+            "time": 4.25,
+            "price": 19.609731577075372
+        },
+        {
+            "time": 4.5,
+            "price": 19.334994982353614
+        },
+        {
+            "time": 4.75,
+            "price": 20.264586254914313
+        },
+        {
+            "time": 5.0,
+            "price": 22.729859557843827
+        },
+        {
+            "time": 5.25,
+            "price": 24.08456675572216
+        },
+        {
+            "time": 5.5,
+            "price": 29.838700620010183
+        },
+        {
+            "time": 5.75,
+            "price": 28.55801597533934
+        },
+        {
+            "time": 6.0,
+            "price": 32.21228407992385
+        },
+        {
+            "time": 6.25,
+            "price": 36.42306542621176
+        },
+        {
+            "time": 6.5,
+            "price": 37.48796730985144
+        },
+        {
+            "time": 6.75,
+            "price": 40.21807519037334
+        },
+        {
+            "time": 7.0,
+            "price": 40.592360037903134
+        },
+        {
+            "time": 7.25,
+            "price": 40.64047277658578
+        },
+        {
+            "time": 7.5,
+            "price": 35.538124163289574
+        },
+        {
+            "time": 7.75,
+            "price": 36.30858475831246
+        },
+        {
+            "time": 8.0,
+            "price": 31.92328089362059
+        },
+        {
+            "time": 8.25,
+            "price": 29.43785840374419
+        },
+        {
+            "time": 8.5,
+            "price": 25.9148063833268
+        },
+        {
+            "time": 8.75,
+            "price": 26.820395150902456
+        },
+        {
+            "time": 9.0,
+            "price": 19.658197625766846
+        },
+        {
+            "time": 9.25,
+            "price": 23.758092272056906
+        },
+        {
+            "time": 9.5,
+            "price": 20.04961992677136
+        },
+        {
+            "time": 9.75,
+            "price": 23.228290615494412
+        },
+        {
+            "time": 10.0,
+            "price": 23.152427216230233
+        },
+        {
+            "time": 10.25,
+            "price": 23.909048043695485
+        },
+        {
+            "time": 10.5,
+            "price": 25.596485393232033
+        },
+        {
+            "time": 10.75,
+            "price": 30.792681992815062
+        },
+        {
+            "time": 11.0,
+            "price": 30.560109791648266
+        },
+        {
+            "time": 11.25,
+            "price": 35.24020607200889
+        },
+        {
+            "time": 11.5,
+            "price": 39.581399146638674
+        },
+        {
+            "time": 11.75,
+            "price": 45.19659541951826
+        },
+        {
+            "time": 12.0,
+            "price": 43.05133251668716
+        },
+        {
+            "time": 12.25,
+            "price": 45.325390995279776
+        },
+        {
+            "time": 12.5,
+            "price": 40.13178418497361
+        },
+        {
+            "time": 12.75,
+            "price": 34.50814984571725
+        },
+        {
+            "time": 13.0,
+            "price": 29.829433002555408
+        },
+        {
+            "time": 13.25,
+            "price": 26.180405825706238
+        },
+        {
+            "time": 13.5,
+            "price": 22.081476737936416
+        },
+        {
+            "time": 13.75,
+            "price": 23.05603703496574
+        }
+    ],
+    "arrivals": [
+        {
+            "id": 0,
+            "arrival_time": 0.07116598578899658,
+            "departure_time": 5.329109954661162,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 36.202798215900586,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 2,
+            "willingness_to_pay": 1.4744423866457064,
+            "efficiency": 0.93
+        },
+        {
+            "id": 1,
+            "arrival_time": 0.33836074972762464,
+            "departure_time": 4.515985668442194,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 31.73541020306799,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 0.8400728510999379,
+            "efficiency": 0.9
+        },
+        {
+            "id": 2,
+            "arrival_time": 0.36347176924723,
+            "departure_time": 2.69848179244093,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 44.48544645838387,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 0.8323176403959996,
+            "efficiency": 0.92
+        },
+        {
+            "id": 3,
+            "arrival_time": 0.4061935419410456,
+            "departure_time": 4.976170251185835,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 28.043566548259285,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.2989204545330968,
+            "efficiency": 0.9
+        },
+        {
+            "id": 4,
+            "arrival_time": 0.6258616341004568,
+            "departure_time": 3.6155336449645343,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 30.388948580346767,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 0.9518509798553096,
+            "efficiency": 0.88
+        },
+        {
+            "id": 5,
+            "arrival_time": 0.6264397361855834,
+            "departure_time": 4.621982046769428,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 18.614841268065817,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.0551275355920944,
+            "efficiency": 0.85
+        },
+        {
+            "id": 6,
+            "arrival_time": 0.7963891131161251,
+            "departure_time": 3.2069123080858084,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 52.61846329124237,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.3736652648333014,
+            "efficiency": 0.89
+        },
+        {
+            "id": 7,
+            "arrival_time": 0.8450896209217513,
+            "departure_time": 5.129809922519547,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 14.74780055034928,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 1.3958046652659917,
+            "efficiency": 0.92
+        },
+        {
+            "id": 8,
+            "arrival_time": 0.8920879564424036,
+            "departure_time": 6.4913525442898115,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 18.536923997502612,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.4277746067635064,
+            "efficiency": 0.89
+        },
+        {
+            "id": 9,
+            "arrival_time": 0.9819030824853205,
+            "departure_time": 3.8185799610888456,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 22.324940081536006,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.280718538167543,
+            "efficiency": 0.85
+        },
+        {
+            "id": 10,
+            "arrival_time": 1.0732777999502616,
+            "departure_time": 5.89889437056185,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 12.475807378162838,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.4943287627416262,
+            "efficiency": 0.85
+        },
+        {
+            "id": 11,
+            "arrival_time": 1.1429759071520675,
+            "departure_time": 5.54490194671974,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 34.73343361184398,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.153654200753646,
+            "efficiency": 0.9
+        },
+        {
+            "id": 12,
+            "arrival_time": 1.1550006957601757,
+            "departure_time": 6.0914578114763955,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 26.234127628939653,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 0.85020511515353,
+            "efficiency": 0.89
+        },
+        {
+            "id": 13,
+            "arrival_time": 1.280302833007285,
+            "departure_time": 6.448140662817155,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 30.708257542574092,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 0.939168694719959,
+            "efficiency": 0.85
+        },
+        {
+            "id": 14,
+            "arrival_time": 1.3251965190021073,
+            "departure_time": 4.901525830646165,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 15.745816392765484,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.4137811978537989,
+            "efficiency": 0.89
+        },
+        {
+            "id": 15,
+            "arrival_time": 1.4383989000249635,
+            "departure_time": 5.784051358907576,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 42.627499719902936,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 1.2081493720965055,
+            "efficiency": 0.92
+        },
+        {
+            "id": 16,
+            "arrival_time": 1.4562652979666806,
+            "departure_time": 3.9778071062580107,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 35.96459649305479,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.3730033566164361,
+            "efficiency": 0.9
+        },
+        {
+            "id": 17,
+            "arrival_time": 1.4786408896361571,
+            "departure_time": 5.918778540131788,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 48.76208118978256,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 0.8719600984904925,
+            "efficiency": 0.92
+        },
+        {
+            "id": 18,
+            "arrival_time": 1.7956447820650254,
+            "departure_time": 3.7684009215798073,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 32.631170525197895,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 0.8976425282522766,
+            "efficiency": 0.85
+        },
+        {
+            "id": 19,
+            "arrival_time": 1.867473498603836,
+            "departure_time": 6.204451830052833,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 27.891713688919342,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.3582907384307257,
+            "efficiency": 0.88
+        },
+        {
+            "id": 20,
+            "arrival_time": 2.0226972979196023,
+            "departure_time": 7.070967821680254,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 8.686422566473356,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 1.1429049510470908,
+            "efficiency": 0.92
+        },
+        {
+            "id": 21,
+            "arrival_time": 2.3249824296229553,
+            "departure_time": 7.285562052865609,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 15.197603720139728,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.04622862383004,
+            "efficiency": 0.85
+        },
+        {
+            "id": 22,
+            "arrival_time": 2.4027874628511388,
+            "departure_time": 7.04126501967851,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 16.526202747023753,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.258859300003094,
+            "efficiency": 0.88
+        },
+        {
+            "id": 23,
+            "arrival_time": 2.585981405687243,
+            "departure_time": 5.615332016414062,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 14.741293018403292,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.2278102533781934,
+            "efficiency": 0.89
+        },
+        {
+            "id": 24,
+            "arrival_time": 2.7801183821083946,
+            "departure_time": 6.254673679957706,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 17.192202740265476,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 0.9308547936906915,
+            "efficiency": 0.92
+        },
+        {
+            "id": 25,
+            "arrival_time": 2.7882606727178265,
+            "departure_time": 6.514154316395243,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 43.01870774192308,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.3261608145726136,
+            "efficiency": 0.88
+        },
+        {
+            "id": 26,
+            "arrival_time": 2.865887026389173,
+            "departure_time": 7.40740569906761,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 7.484349638309787,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.373285441858417,
+            "efficiency": 0.85
+        },
+        {
+            "id": 27,
+            "arrival_time": 2.885145912786225,
+            "departure_time": 6.183549557329245,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 6.544325063489104,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.2163473398872937,
+            "efficiency": 0.85
+        },
+        {
+            "id": 28,
+            "arrival_time": 2.8964791988071132,
+            "departure_time": 9.089877350460497,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 17.66095695578627,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 1,
+            "willingness_to_pay": 1.4510988320690132,
+            "efficiency": 0.92
+        },
+        {
+            "id": 29,
+            "arrival_time": 2.9621340896877455,
+            "departure_time": 6.307803905011594,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 12.751882153758539,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.1846525964955708,
+            "efficiency": 0.9
+        },
+        {
+            "id": 30,
+            "arrival_time": 3.094405942381198,
+            "departure_time": 6.5208663007944425,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.919518629227447,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.3771900447975198,
+            "efficiency": 0.85
+        },
+        {
+            "id": 31,
+            "arrival_time": 3.4348055414870373,
+            "departure_time": 8.756971279475794,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 46.6559062061453,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 0.9351559466500929,
+            "efficiency": 0.92
+        },
+        {
+            "id": 32,
+            "arrival_time": 4.079917655430512,
+            "departure_time": 7.067917718159724,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 32.99628334709743,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.2635733717113338,
+            "efficiency": 0.9
+        },
+        {
+            "id": 33,
+            "arrival_time": 4.090765619864115,
+            "departure_time": 8.347970041474714,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 40.83209187096682,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 0.8704739145164363,
+            "efficiency": 0.92
+        },
+        {
+            "id": 34,
+            "arrival_time": 4.194634861298348,
+            "departure_time": 9.264093503941428,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 39.056694291642344,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.304321595583014,
+            "efficiency": 0.88
+        },
+        {
+            "id": 35,
+            "arrival_time": 4.425350594254922,
+            "departure_time": 7.7196493664728125,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 35.79157000390657,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.3012305758261014,
+            "efficiency": 0.9
+        },
+        {
+            "id": 36,
+            "arrival_time": 4.498082238076185,
+            "departure_time": 6.53799193630449,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 74.48953937860894,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 1,
+            "willingness_to_pay": 1.1367924040214032,
+            "efficiency": 0.93
+        },
+        {
+            "id": 37,
+            "arrival_time": 4.579946781355957,
+            "departure_time": 9.602938297097271,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 34.470180540068306,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.3352404684813894,
+            "efficiency": 0.85
+        },
+        {
+            "id": 38,
+            "arrival_time": 5.655393337726573,
+            "departure_time": 8.48003104892916,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 44.68646206678078,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.2095977673202218,
+            "efficiency": 0.9
+        },
+        {
+            "id": 39,
+            "arrival_time": 5.669852272661635,
+            "departure_time": 11.452696768887524,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 29.86173029718577,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.3758939865326405,
+            "efficiency": 0.85
+        },
+        {
+            "id": 40,
+            "arrival_time": 6.085496495215274,
+            "departure_time": 11.422446605857488,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 30.767617597154015,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.3020087976369572,
+            "efficiency": 0.85
+        },
+        {
+            "id": 41,
+            "arrival_time": 6.232983401851415,
+            "departure_time": 11.265363875747006,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 43.309053699911416,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 0.8098433391427086,
+            "efficiency": 0.92
+        },
+        {
+            "id": 42,
+            "arrival_time": 6.258855728963787,
+            "departure_time": 9.5039335178552,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 19.240956159682906,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.2870088808491589,
+            "efficiency": 0.85
+        },
+        {
+            "id": 43,
+            "arrival_time": 6.554714684978952,
+            "departure_time": 12.012800650200424,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 21.653936498971195,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 0.8091263599808842,
+            "efficiency": 0.89
+        },
+        {
+            "id": 44,
+            "arrival_time": 6.658349138101544,
+            "departure_time": 10.192190630572558,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 28.466082548290817,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.059562813688224,
+            "efficiency": 0.9
+        },
+        {
+            "id": 45,
+            "arrival_time": 6.71307030016935,
+            "departure_time": 11.393491966637752,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 29.832361360908607,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 0.8595092185320585,
+            "efficiency": 0.9
+        },
+        {
+            "id": 46,
+            "arrival_time": 6.738246668374432,
+            "departure_time": 10.884419880602325,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 7.858013070351443,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.0727758517636112,
+            "efficiency": 0.9
+        },
+        {
+            "id": 47,
+            "arrival_time": 6.785610854450771,
+            "departure_time": 12.096063532173542,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 26.68785488908202,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 2,
+            "willingness_to_pay": 1.1761973335884937,
+            "efficiency": 0.93
+        },
+        {
+            "id": 48,
+            "arrival_time": 6.804217336838198,
+            "departure_time": 12.656618312343237,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.358522683292758,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 0.9435926733163722,
+            "efficiency": 0.85
+        },
+        {
+            "id": 49,
+            "arrival_time": 6.816686467249209,
+            "departure_time": 11.866894481412178,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 11.092296795411556,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.1252927934114396,
+            "efficiency": 0.89
+        },
+        {
+            "id": 50,
+            "arrival_time": 6.861535254966875,
+            "departure_time": 11.149730315191341,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 44.21507698996357,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 0.8066078772373297,
+            "efficiency": 0.88
+        },
+        {
+            "id": 51,
+            "arrival_time": 7.034110687004189,
+            "departure_time": 11.618621472894887,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 9.157254711321784,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.1074773114261074,
+            "efficiency": 0.85
+        },
+        {
+            "id": 52,
+            "arrival_time": 7.046754860498946,
+            "departure_time": 11.931477785878668,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 89.7142265762743,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 1,
+            "willingness_to_pay": 1.066323083668069,
+            "efficiency": 0.93
+        },
+        {
+            "id": 53,
+            "arrival_time": 7.117613050049691,
+            "departure_time": 9.792214647436507,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 19.96606518956922,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 0.9673614280525965,
+            "efficiency": 0.88
+        },
+        {
+            "id": 54,
+            "arrival_time": 7.319166628581411,
+            "departure_time": 12.206417138259962,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 28.038157517735506,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 0.8798442140345061,
+            "efficiency": 0.92
+        },
+        {
+            "id": 55,
+            "arrival_time": 7.353579395500036,
+            "departure_time": 12.421841680448907,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 52.61472040176493,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.369401883258532,
+            "efficiency": 0.89
+        },
+        {
+            "id": 56,
+            "arrival_time": 7.560482498543184,
+            "departure_time": 10.33394942788774,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 62.32717794477741,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 1,
+            "willingness_to_pay": 1.3354995881812965,
+            "efficiency": 0.93
+        },
+        {
+            "id": 57,
+            "arrival_time": 7.576270971967653,
+            "departure_time": 12.120166800540236,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 15.406513921015389,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.3482303670830396,
+            "efficiency": 0.85
+        },
+        {
+            "id": 58,
+            "arrival_time": 7.604835213925684,
+            "departure_time": 11.36606368741024,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 51.15267053493113,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 1,
+            "willingness_to_pay": 1.2422356117338786,
+            "efficiency": 0.92
+        },
+        {
+            "id": 59,
+            "arrival_time": 7.73169805815965,
+            "departure_time": 11.961482703478186,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 31.738403773288894,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.198705910138855,
+            "efficiency": 0.89
+        },
+        {
+            "id": 60,
+            "arrival_time": 7.849284372212289,
+            "departure_time": 10.449231098068514,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 12.400879326370195,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.126961719710885,
+            "efficiency": 0.89
+        },
+        {
+            "id": 61,
+            "arrival_time": 8.177971629990216,
+            "departure_time": 12.764255794535652,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 34.40614084080981,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 1,
+            "willingness_to_pay": 0.9564493408247801,
+            "efficiency": 0.92
+        },
+        {
+            "id": 62,
+            "arrival_time": 8.233456597217266,
+            "departure_time": 10.699731104724819,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 46.80805607819425,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 3,
+            "willingness_to_pay": 1.4250313080817554,
+            "efficiency": 0.93
+        },
+        {
+            "id": 63,
+            "arrival_time": 8.32228861545803,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 6.522988845256033,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 1.4771732162598523,
+            "efficiency": 0.92
+        },
+        {
+            "id": 64,
+            "arrival_time": 8.34857772247612,
+            "departure_time": 11.123564237285517,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 38.67112852169307,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 0.8135031462141591,
+            "efficiency": 0.88
+        },
+        {
+            "id": 65,
+            "arrival_time": 8.374633912149774,
+            "departure_time": 13.059218936744942,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 25.15121115251371,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 0.8267961118018871,
+            "efficiency": 0.85
+        },
+        {
+            "id": 66,
+            "arrival_time": 8.41483217585063,
+            "departure_time": 11.013505323952188,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 27.83326498742166,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 1.1690799858490606,
+            "efficiency": 0.92
+        },
+        {
+            "id": 67,
+            "arrival_time": 8.909231486001318,
+            "departure_time": 13.136905272082316,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 61.015998585305844,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 2,
+            "willingness_to_pay": 1.0272844776737249,
+            "efficiency": 0.93
+        },
+        {
+            "id": 68,
+            "arrival_time": 9.376145124105308,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 11.773740045237888,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 0.8923202176072148,
+            "efficiency": 0.85
+        },
+        {
+            "id": 69,
+            "arrival_time": 9.38909678295751,
+            "departure_time": 12.463412566449822,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 22.413883032338187,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 0.936259602699047,
+            "efficiency": 0.9
+        },
+        {
+            "id": 70,
+            "arrival_time": 9.410481912666466,
+            "departure_time": 12.959018370440715,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 35.8185087743486,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 1,
+            "willingness_to_pay": 1.4964391391782135,
+            "efficiency": 0.93
+        },
+        {
+            "id": 71,
+            "arrival_time": 9.81365965206626,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 56.766883618092145,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.3168019511339404,
+            "efficiency": 0.89
+        },
+        {
+            "id": 72,
+            "arrival_time": 9.849548045842287,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 28.77773778411076,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.1030336554611115,
+            "efficiency": 0.88
+        },
+        {
+            "id": 73,
+            "arrival_time": 10.166963432650851,
+            "departure_time": 13.211631217707662,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 47.661472318068114,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 2,
+            "willingness_to_pay": 1.3249442640409876,
+            "efficiency": 0.9
+        },
+        {
+            "id": 74,
+            "arrival_time": 10.27247614792396,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 43.08044570502876,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 0.8036872920710304,
+            "efficiency": 0.88
+        },
+        {
+            "id": 75,
+            "arrival_time": 10.30017914109969,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 47.07495690618571,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 0.9040073329015896,
+            "efficiency": 0.89
+        },
+        {
+            "id": 76,
+            "arrival_time": 10.429399757451215,
+            "departure_time": 13.294208885193454,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 7.76424203388177,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 1.0448735174636996,
+            "efficiency": 0.92
+        },
+        {
+            "id": 77,
+            "arrival_time": 10.468788565100084,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 24.907367075944393,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.038858852539805,
+            "efficiency": 0.88
+        },
+        {
+            "id": 78,
+            "arrival_time": 10.52855560912435,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 80.63006397469637,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 2,
+            "willingness_to_pay": 1.2601975351421084,
+            "efficiency": 0.93
+        },
+        {
+            "id": 79,
+            "arrival_time": 11.131058889993888,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 31.525650504044386,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 1.2360046310829422,
+            "efficiency": 0.85
+        },
+        {
+            "id": 80,
+            "arrival_time": 11.22865966080133,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 39.8067380821981,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 0.8852412838984072,
+            "efficiency": 0.88
+        },
+        {
+            "id": 81,
+            "arrival_time": 11.731027401376037,
+            "departure_time": 14.0,
+            "brand": "Renault Zoe 52kWh",
+            "battery_capacity": 52,
+            "required_energy": 31.72428730598245,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.1415833462198122,
+            "efficiency": 0.88
+        },
+        {
+            "id": 82,
+            "arrival_time": 11.805145719215865,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 51.79276233883952,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.474686056618184,
+            "efficiency": 0.89
+        },
+        {
+            "id": 83,
+            "arrival_time": 11.828570426075988,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 46.904700697013375,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 1.3464603954268197,
+            "efficiency": 0.92
+        },
+        {
+            "id": 84,
+            "arrival_time": 12.027924873280368,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 32.539192205265266,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 1.3808563553430022,
+            "efficiency": 0.89
+        },
+        {
+            "id": 85,
+            "arrival_time": 12.110239688500544,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 31.16383843367355,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 1.3870552651415786,
+            "efficiency": 0.92
+        },
+        {
+            "id": 86,
+            "arrival_time": 12.133080972588804,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 30.256359573102998,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 1.0197392308543112,
+            "efficiency": 0.85
+        },
+        {
+            "id": 87,
+            "arrival_time": 12.182540678484253,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 29.324289603183107,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 3,
+            "willingness_to_pay": 1.067796833644457,
+            "efficiency": 0.93
+        },
+        {
+            "id": 88,
+            "arrival_time": 12.37042050963445,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 31.828402469401173,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 3,
+            "willingness_to_pay": 1.094691663127361,
+            "efficiency": 0.93
+        },
+        {
+            "id": 89,
+            "arrival_time": 12.402592937670228,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 5.391885735722615,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 2,
+            "willingness_to_pay": 1.2963157244793273,
+            "efficiency": 0.85
+        },
+        {
+            "id": 90,
+            "arrival_time": 12.422068283247047,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 46.239701785721884,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 0.8728905041202261,
+            "efficiency": 0.89
+        },
+        {
+            "id": 91,
+            "arrival_time": 12.554461776372076,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 11.529825316786841,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 1,
+            "willingness_to_pay": 0.9774208463482804,
+            "efficiency": 0.85
+        },
+        {
+            "id": 92,
+            "arrival_time": 12.59543067114378,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 37.69736927338433,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 2,
+            "willingness_to_pay": 0.9175744353930272,
+            "efficiency": 0.92
+        },
+        {
+            "id": 93,
+            "arrival_time": 12.669596528865508,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 52.88117809575228,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.4205640425660597,
+            "efficiency": 0.89
+        },
+        {
+            "id": 94,
+            "arrival_time": 12.721278609635227,
+            "departure_time": 14.0,
+            "brand": "Tesla Model S 100kWh",
+            "battery_capacity": 100,
+            "required_energy": 35.56496796597649,
+            "min_charge_rate": 4.4,
+            "max_charge_rate": 250,
+            "ac_charge_rate": 22.0,
+            "dc_charge_rate": 250,
+            "priority": 2,
+            "willingness_to_pay": 1.21075322981689,
+            "efficiency": 0.93
+        },
+        {
+            "id": 95,
+            "arrival_time": 12.742143060922192,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 22.88370076883609,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 0.8180106157871758,
+            "efficiency": 0.85
+        },
+        {
+            "id": 96,
+            "arrival_time": 12.914852772822567,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 9.358780346360268,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 0.8108072683260503,
+            "efficiency": 0.92
+        },
+        {
+            "id": 97,
+            "arrival_time": 12.941848518401132,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 12.340384118073516,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 1,
+            "willingness_to_pay": 1.209478990745,
+            "efficiency": 0.92
+        },
+        {
+            "id": 98,
+            "arrival_time": 13.083839774183847,
+            "departure_time": 14.0,
+            "brand": "Hyundai Kona 64kWh",
+            "battery_capacity": 64,
+            "required_energy": 32.496101133006405,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 0.9568346056252792,
+            "efficiency": 0.89
+        },
+        {
+            "id": 99,
+            "arrival_time": 13.600511280095432,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 50.678925306488146,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 1,
+            "willingness_to_pay": 1.1141035170485247,
+            "efficiency": 0.9
+        },
+        {
+            "id": 100,
+            "arrival_time": 13.694857877148086,
+            "departure_time": 14.0,
+            "brand": "Nissan Leaf 40kWh",
+            "battery_capacity": 40,
+            "required_energy": 32.96724538685324,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 50,
+            "ac_charge_rate": 6.6,
+            "dc_charge_rate": 50,
+            "priority": 3,
+            "willingness_to_pay": 0.8346175413963108,
+            "efficiency": 0.85
+        },
+        {
+            "id": 101,
+            "arrival_time": 13.910014893517449,
+            "departure_time": 14.0,
+            "brand": "Tesla Model 3 57kWh",
+            "battery_capacity": 57,
+            "required_energy": 50.858788583709135,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 170,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 170,
+            "priority": 3,
+            "willingness_to_pay": 0.8821453768365296,
+            "efficiency": 0.92
+        },
+        {
+            "id": 102,
+            "arrival_time": 13.927404121486918,
+            "departure_time": 14.0,
+            "brand": "VW ID.3 58kWh",
+            "battery_capacity": 58,
+            "required_energy": 50.613021117584964,
+            "min_charge_rate": 3.5,
+            "max_charge_rate": 100,
+            "ac_charge_rate": 11.0,
+            "dc_charge_rate": 100,
+            "priority": 3,
+            "willingness_to_pay": 0.9787584145656028,
+            "efficiency": 0.9
+        }
+    ],
+    "parking_config": {
+        "n_spots": 10,
+        "chargers": [
+            {
+                "charger_id": 0,
+                "power": 7,
+                "type": "AC",
+                "installation_cost": 7000,
+                "operation_cost_per_hour": 0.35,
+                "efficiency": 0.92,
+                "compatible_vehicles": [
+                    "Nissan Leaf",
+                    "Renault Zoe",
+                    "VW ID.3",
+                    "Tesla Model 3",
+                    "Hyundai Kona",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 1,
+                "power": 7,
+                "type": "AC",
+                "installation_cost": 7000,
+                "operation_cost_per_hour": 0.35,
+                "efficiency": 0.92,
+                "compatible_vehicles": [
+                    "Nissan Leaf",
+                    "Renault Zoe",
+                    "VW ID.3",
+                    "Tesla Model 3",
+                    "Hyundai Kona",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 2,
+                "power": 7,
+                "type": "AC",
+                "installation_cost": 7000,
+                "operation_cost_per_hour": 0.35,
+                "efficiency": 0.92,
+                "compatible_vehicles": [
+                    "Nissan Leaf",
+                    "Renault Zoe",
+                    "VW ID.3",
+                    "Tesla Model 3",
+                    "Hyundai Kona",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 3,
+                "power": 7,
+                "type": "AC",
+                "installation_cost": 7000,
+                "operation_cost_per_hour": 0.35,
+                "efficiency": 0.92,
+                "compatible_vehicles": [
+                    "Nissan Leaf",
+                    "Renault Zoe",
+                    "VW ID.3",
+                    "Tesla Model 3",
+                    "Hyundai Kona",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 4,
+                "power": 7,
+                "type": "AC",
+                "installation_cost": 7000,
+                "operation_cost_per_hour": 0.35,
+                "efficiency": 0.92,
+                "compatible_vehicles": [
+                    "Nissan Leaf",
+                    "Renault Zoe",
+                    "VW ID.3",
+                    "Tesla Model 3",
+                    "Hyundai Kona",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 5,
+                "power": 22,
+                "type": "AC",
+                "installation_cost": 22000,
+                "operation_cost_per_hour": 1.1,
+                "efficiency": 0.93,
+                "compatible_vehicles": [
+                    "Renault Zoe",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 6,
+                "power": 22,
+                "type": "AC",
+                "installation_cost": 22000,
+                "operation_cost_per_hour": 1.1,
+                "efficiency": 0.93,
+                "compatible_vehicles": [
+                    "Renault Zoe",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 7,
+                "power": 22,
+                "type": "AC",
+                "installation_cost": 22000,
+                "operation_cost_per_hour": 1.1,
+                "efficiency": 0.93,
+                "compatible_vehicles": [
+                    "Renault Zoe",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 8,
+                "power": 22,
+                "type": "AC",
+                "installation_cost": 22000,
+                "operation_cost_per_hour": 1.1,
+                "efficiency": 0.93,
+                "compatible_vehicles": [
+                    "Renault Zoe",
+                    "Tesla Model S"
+                ]
+            },
+            {
+                "charger_id": 9,
+                "power": 22,
+                "type": "AC",
+                "installation_cost": 22000,
+                "operation_cost_per_hour": 1.1,
+                "efficiency": 0.93,
+                "compatible_vehicles": [
+                    "Renault Zoe",
+                    "Tesla Model S"
+                ]
+            }
+        ],
+        "transformer_limit": 70,
+        "efficiency": 0.92,
+        "time_resolution": 0.25,
+        "grid_constraints": {
+            "max_power_per_phase": 23.333333333333332,
+            "voltage_drop_limit": 0.05,
+            "power_factor_limit": 0.95,
+            "system_efficiency": null
+        }
+    },
+    "car_brands": [
+        [
+            "Nissan Leaf 40kWh",
+            40,
+            0.2,
+            6.6,
+            50,
+            0.85
+        ],
+        [
+            "Renault Zoe 52kWh",
+            52,
+            0.15,
+            22,
+            50,
+            0.88
+        ],
+        [
+            "VW ID.3 58kWh",
+            58,
+            0.15,
+            11,
+            100,
+            0.9
+        ],
+        [
+            "Tesla Model 3 57kWh",
+            57,
+            0.2,
+            11,
+            170,
+            0.92
+        ],
+        [
+            "Hyundai Kona 64kWh",
+            64,
+            0.2,
+            11,
+            100,
+            0.89
+        ],
+        [
+            "Tesla Model S 100kWh",
+            100,
+            0.1,
+            22,
+            250,
+            0.93
+        ]
+    ],
+    "charger_types": {
+        "AC_7kW": {
+            "power": 7,
+            "type": "AC",
+            "installation_cost": 7000,
+            "operation_cost": 0.35,
+            "efficiency": 0.92,
+            "compatible_vehicles": [
+                "Nissan Leaf",
+                "Renault Zoe",
+                "VW ID.3",
+                "Tesla Model 3",
+                "Hyundai Kona",
+                "Tesla Model S"
+            ]
+        },
+        "AC_22kW": {
+            "power": 22,
+            "type": "AC",
+            "installation_cost": 22000,
+            "operation_cost": 1.1,
+            "efficiency": 0.93,
+            "compatible_vehicles": [
+                "Renault Zoe",
+                "Tesla Model S"
+            ]
+        },
+        "DC_50kW": {
+            "power": 50,
+            "type": "DC",
+            "installation_cost": 105000,
+            "operation_cost": 5.0,
+            "efficiency": 0.94,
+            "compatible_vehicles": [
+                "Nissan Leaf",
+                "Renault Zoe",
+                "VW ID.3",
+                "Tesla Model 3",
+                "Hyundai Kona"
+            ]
+        },
+        "DC_150kW": {
+            "power": 150,
+            "type": "DC",
+            "installation_cost": 310000,
+            "operation_cost": 15.0,
+            "efficiency": 0.95,
+            "compatible_vehicles": [
+                "VW ID.3",
+                "Tesla Model 3",
+                "Hyundai Kona",
+                "Tesla Model S"
+            ]
+        },
+        "DC_250kW": {
+            "power": 250,
+            "type": "DC",
+            "installation_cost": 510000,
+            "operation_cost": 25.0,
+            "efficiency": 0.95,
+            "compatible_vehicles": [
+                "Tesla Model 3",
+                "Tesla Model S"
+            ]
+        },
+        "DC_350kW": {
+            "power": 350,
+            "type": "DC",
+            "installation_cost": 710000,
+            "operation_cost": 35.0,
+            "efficiency": 0.96,
+            "compatible_vehicles": [
+                "Tesla Model S"
+            ]
+        }
+    }
+}

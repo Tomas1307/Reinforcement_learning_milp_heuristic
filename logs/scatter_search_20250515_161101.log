@@ -1,0 +1,954 @@
+2025-05-15 16:11:01,392 - INFO - Logger configurado. Archivo: logs\scatter_search_20250515_161101.log
+2025-05-15 16:11:01,398 - INFO - Iniciando Scatter Search con N=150, m1=5, m2=5, max_iter=5
+2025-05-15 16:11:01,399 - INFO - Datos cargados desde .\results\cluster_results\representative_files\test_system_9.json
+2025-05-15 16:11:01,399 - INFO - Generando población inicial...
+2025-05-15 16:11:01,399 - DEBUG - Población 1/150: Usando heurística constructiva
+2025-05-15 16:27:13,128 - INFO - Población inicial 1/150: Costo = 1136710.37
+2025-05-15 16:27:13,129 - DEBUG - Población 2/150: Usando heurística por precio
+2025-05-15 17:07:23,952 - INFO - Población inicial 2/150: Costo = 1677170.92
+2025-05-15 17:07:23,952 - DEBUG - Población 3/150: Usando heurística por ventana de tiempo
+2025-05-15 17:09:38,783 - INFO - Población inicial 3/150: Costo = 1009253.84
+2025-05-15 17:09:38,783 - DEBUG - Población 4/150: Usando solución aleatoria
+2025-05-15 17:09:38,783 - INFO - Generando solución completamente aleatoria...
+2025-05-15 17:09:38,802 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 17:09:38,803 - INFO - Población inicial 4/150: Costo = 1594572.32
+2025-05-15 17:09:38,803 - DEBUG - Población 5/150: Usando heurística constructiva
+2025-05-15 17:24:21,659 - INFO - Población inicial 5/150: Costo = 1161379.29
+2025-05-15 17:24:21,659 - DEBUG - Población 6/150: Usando heurística por precio
+2025-05-15 17:56:17,274 - INFO - Población inicial 6/150: Costo = 1677500.60
+2025-05-15 17:56:17,274 - DEBUG - Población 7/150: Usando heurística por ventana de tiempo
+2025-05-15 17:58:35,555 - INFO - Población inicial 7/150: Costo = 1009528.46
+2025-05-15 17:58:35,556 - DEBUG - Población 8/150: Usando solución aleatoria
+2025-05-15 17:58:35,556 - INFO - Generando solución completamente aleatoria...
+2025-05-15 17:58:35,575 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 17:58:35,576 - INFO - Población inicial 8/150: Costo = 1594589.69
+2025-05-15 17:58:35,576 - DEBUG - Población 9/150: Usando heurística constructiva
+2025-05-15 18:14:01,195 - INFO - Población inicial 9/150: Costo = 1256505.03
+2025-05-15 18:14:01,195 - DEBUG - Población 10/150: Usando heurística por precio
+2025-05-15 18:49:02,937 - INFO - Población inicial 10/150: Costo = 1681774.91
+2025-05-15 18:49:02,937 - DEBUG - Población 11/150: Usando heurística por ventana de tiempo
+2025-05-15 18:51:02,901 - INFO - Población inicial 11/150: Costo = 1016369.90
+2025-05-15 18:51:02,902 - DEBUG - Población 12/150: Usando solución aleatoria
+2025-05-15 18:51:02,902 - INFO - Generando solución completamente aleatoria...
+2025-05-15 18:51:02,920 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 18:51:02,921 - INFO - Población inicial 12/150: Costo = 1593079.48
+2025-05-15 18:51:02,921 - DEBUG - Población 13/150: Usando heurística constructiva
+2025-05-15 19:06:29,756 - INFO - Población inicial 13/150: Costo = 1177330.40
+2025-05-15 19:06:29,756 - DEBUG - Población 14/150: Usando heurística por precio
+2025-05-15 19:39:00,547 - INFO - Población inicial 14/150: Costo = 1675561.23
+2025-05-15 19:39:00,547 - DEBUG - Población 15/150: Usando heurística por ventana de tiempo
+2025-05-15 19:41:10,825 - INFO - Población inicial 15/150: Costo = 992085.67
+2025-05-15 19:41:10,825 - DEBUG - Población 16/150: Usando solución aleatoria
+2025-05-15 19:41:10,825 - INFO - Generando solución completamente aleatoria...
+2025-05-15 19:41:10,844 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 19:41:10,845 - INFO - Población inicial 16/150: Costo = 1705052.51
+2025-05-15 19:41:10,845 - DEBUG - Población 17/150: Usando heurística constructiva
+2025-05-15 20:00:50,060 - INFO - Población inicial 17/150: Costo = 1220897.73
+2025-05-15 20:00:50,060 - DEBUG - Población 18/150: Usando heurística por precio
+2025-05-15 20:33:18,394 - INFO - Población inicial 18/150: Costo = 1677308.56
+2025-05-15 20:33:18,394 - DEBUG - Población 19/150: Usando heurística por ventana de tiempo
+2025-05-15 20:35:20,523 - INFO - Población inicial 19/150: Costo = 1016734.19
+2025-05-15 20:35:20,523 - DEBUG - Población 20/150: Usando solución aleatoria
+2025-05-15 20:35:20,523 - INFO - Generando solución completamente aleatoria...
+2025-05-15 20:35:20,541 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 20:35:20,542 - INFO - Población inicial 20/150: Costo = 1633973.84
+2025-05-15 20:35:20,542 - DEBUG - Población 21/150: Usando heurística constructiva
+2025-05-15 20:51:06,762 - INFO - Población inicial 21/150: Costo = 1264207.92
+2025-05-15 20:51:06,763 - DEBUG - Población 22/150: Usando heurística por precio
+2025-05-15 21:24:45,401 - INFO - Población inicial 22/150: Costo = 1675762.58
+2025-05-15 21:24:45,402 - DEBUG - Población 23/150: Usando heurística por ventana de tiempo
+2025-05-15 21:27:03,699 - INFO - Población inicial 23/150: Costo = 1002617.99
+2025-05-15 21:27:03,700 - DEBUG - Población 24/150: Usando solución aleatoria
+2025-05-15 21:27:03,700 - INFO - Generando solución completamente aleatoria...
+2025-05-15 21:27:03,719 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 21:27:03,720 - INFO - Población inicial 24/150: Costo = 1609318.64
+2025-05-15 21:27:03,720 - DEBUG - Población 25/150: Usando heurística constructiva
+2025-05-15 21:42:16,817 - INFO - Población inicial 25/150: Costo = 1199137.93
+2025-05-15 21:42:16,817 - DEBUG - Población 26/150: Usando heurística por precio
+2025-05-15 22:13:23,341 - INFO - Población inicial 26/150: Costo = 1678917.55
+2025-05-15 22:13:23,341 - DEBUG - Población 27/150: Usando heurística por ventana de tiempo
+2025-05-15 22:15:23,348 - INFO - Población inicial 27/150: Costo = 1078556.14
+2025-05-15 22:15:23,348 - DEBUG - Población 28/150: Usando solución aleatoria
+2025-05-15 22:15:23,348 - INFO - Generando solución completamente aleatoria...
+2025-05-15 22:15:23,364 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 22:15:23,364 - INFO - Población inicial 28/150: Costo = 1763544.93
+2025-05-15 22:15:23,364 - DEBUG - Población 29/150: Usando heurística constructiva
+2025-05-15 22:34:22,751 - INFO - Población inicial 29/150: Costo = 1290571.49
+2025-05-15 22:34:22,766 - DEBUG - Población 30/150: Usando heurística por precio
+2025-05-15 23:05:05,480 - INFO - Población inicial 30/150: Costo = 1680947.55
+2025-05-15 23:05:05,480 - DEBUG - Población 31/150: Usando heurística por ventana de tiempo
+2025-05-15 23:07:15,353 - INFO - Población inicial 31/150: Costo = 1061678.23
+2025-05-15 23:07:15,353 - DEBUG - Población 32/150: Usando solución aleatoria
+2025-05-15 23:07:15,353 - INFO - Generando solución completamente aleatoria...
+2025-05-15 23:07:15,387 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 23:07:15,387 - INFO - Población inicial 32/150: Costo = 1642802.28
+2025-05-15 23:07:15,387 - DEBUG - Población 33/150: Usando heurística constructiva
+2025-05-15 23:21:24,674 - INFO - Población inicial 33/150: Costo = 1220593.05
+2025-05-15 23:21:24,674 - DEBUG - Población 34/150: Usando heurística por precio
+2025-05-15 23:55:07,531 - INFO - Población inicial 34/150: Costo = 1678762.15
+2025-05-15 23:55:07,531 - DEBUG - Población 35/150: Usando heurística por ventana de tiempo
+2025-05-15 23:57:13,554 - INFO - Población inicial 35/150: Costo = 1033908.91
+2025-05-15 23:57:13,554 - DEBUG - Población 36/150: Usando solución aleatoria
+2025-05-15 23:57:13,554 - INFO - Generando solución completamente aleatoria...
+2025-05-15 23:57:13,585 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-15 23:57:13,585 - INFO - Población inicial 36/150: Costo = 1626317.67
+2025-05-15 23:57:13,585 - DEBUG - Población 37/150: Usando heurística constructiva
+2025-05-16 00:12:28,429 - INFO - Población inicial 37/150: Costo = 1201451.56
+2025-05-16 00:12:28,429 - DEBUG - Población 38/150: Usando heurística por precio
+2025-05-16 00:44:36,502 - INFO - Población inicial 38/150: Costo = 1675296.82
+2025-05-16 00:44:36,502 - DEBUG - Población 39/150: Usando heurística por ventana de tiempo
+2025-05-16 00:46:55,138 - INFO - Población inicial 39/150: Costo = 999864.20
+2025-05-16 00:46:55,138 - DEBUG - Población 40/150: Usando solución aleatoria
+2025-05-16 00:46:55,138 - INFO - Generando solución completamente aleatoria...
+2025-05-16 00:46:55,154 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 00:46:55,154 - INFO - Población inicial 40/150: Costo = 1753940.30
+2025-05-16 00:46:55,154 - DEBUG - Población 41/150: Usando heurística constructiva
+2025-05-16 01:03:08,169 - INFO - Población inicial 41/150: Costo = 1149295.63
+2025-05-16 01:03:08,169 - DEBUG - Población 42/150: Usando heurística por precio
+2025-05-16 01:34:32,121 - INFO - Población inicial 42/150: Costo = 1670539.18
+2025-05-16 01:34:32,121 - DEBUG - Población 43/150: Usando heurística por ventana de tiempo
+2025-05-16 01:36:44,306 - INFO - Población inicial 43/150: Costo = 1021399.88
+2025-05-16 01:36:44,306 - DEBUG - Población 44/150: Usando solución aleatoria
+2025-05-16 01:36:44,306 - INFO - Generando solución completamente aleatoria...
+2025-05-16 01:36:44,337 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 01:36:44,337 - INFO - Población inicial 44/150: Costo = 1671952.22
+2025-05-16 01:36:44,337 - DEBUG - Población 45/150: Usando heurística constructiva
+2025-05-16 01:55:56,568 - INFO - Población inicial 45/150: Costo = 1211899.75
+2025-05-16 01:55:56,568 - DEBUG - Población 46/150: Usando heurística por precio
+2025-05-16 02:30:11,797 - INFO - Población inicial 46/150: Costo = 1681022.92
+2025-05-16 02:30:11,810 - DEBUG - Población 47/150: Usando heurística por ventana de tiempo
+2025-05-16 02:32:27,251 - INFO - Población inicial 47/150: Costo = 1044246.35
+2025-05-16 02:32:27,251 - DEBUG - Población 48/150: Usando solución aleatoria
+2025-05-16 02:32:27,251 - INFO - Generando solución completamente aleatoria...
+2025-05-16 02:32:27,267 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 02:32:27,267 - INFO - Población inicial 48/150: Costo = 1533914.51
+2025-05-16 02:32:27,267 - DEBUG - Población 49/150: Usando heurística constructiva
+2025-05-16 02:51:47,894 - INFO - Población inicial 49/150: Costo = 1279906.58
+2025-05-16 02:51:47,894 - DEBUG - Población 50/150: Usando heurística por precio
+2025-05-16 03:23:47,329 - INFO - Población inicial 50/150: Costo = 1673943.33
+2025-05-16 03:23:47,329 - DEBUG - Población 51/150: Usando heurística por ventana de tiempo
+2025-05-16 03:25:58,306 - INFO - Población inicial 51/150: Costo = 1004141.63
+2025-05-16 03:25:58,306 - DEBUG - Población 52/150: Usando solución aleatoria
+2025-05-16 03:25:58,306 - INFO - Generando solución completamente aleatoria...
+2025-05-16 03:25:58,338 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 03:25:58,338 - INFO - Población inicial 52/150: Costo = 1530485.74
+2025-05-16 03:25:58,338 - DEBUG - Población 53/150: Usando heurística constructiva
+2025-05-16 03:43:06,534 - INFO - Población inicial 53/150: Costo = 1224622.90
+2025-05-16 03:43:06,534 - DEBUG - Población 54/150: Usando heurística por precio
+2025-05-16 04:14:18,934 - INFO - Población inicial 54/150: Costo = 1676774.28
+2025-05-16 04:14:18,934 - DEBUG - Población 55/150: Usando heurística por ventana de tiempo
+2025-05-16 04:16:27,371 - INFO - Población inicial 55/150: Costo = 1026487.57
+2025-05-16 04:16:27,371 - DEBUG - Población 56/150: Usando solución aleatoria
+2025-05-16 04:16:27,371 - INFO - Generando solución completamente aleatoria...
+2025-05-16 04:16:27,386 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 04:16:27,402 - INFO - Población inicial 56/150: Costo = 1600913.40
+2025-05-16 04:16:27,402 - DEBUG - Población 57/150: Usando heurística constructiva
+2025-05-16 04:33:21,850 - INFO - Población inicial 57/150: Costo = 1253610.75
+2025-05-16 04:33:21,850 - DEBUG - Población 58/150: Usando heurística por precio
+2025-05-16 05:07:20,596 - INFO - Población inicial 58/150: Costo = 1677295.56
+2025-05-16 05:07:20,596 - DEBUG - Población 59/150: Usando heurística por ventana de tiempo
+2025-05-16 05:09:19,113 - INFO - Población inicial 59/150: Costo = 1049362.85
+2025-05-16 05:09:19,113 - DEBUG - Población 60/150: Usando solución aleatoria
+2025-05-16 05:09:19,113 - INFO - Generando solución completamente aleatoria...
+2025-05-16 05:09:19,128 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 05:09:19,128 - INFO - Población inicial 60/150: Costo = 1662232.68
+2025-05-16 05:09:19,128 - DEBUG - Población 61/150: Usando heurística constructiva
+2025-05-16 05:27:37,419 - INFO - Población inicial 61/150: Costo = 1275962.56
+2025-05-16 05:27:37,419 - DEBUG - Población 62/150: Usando heurística por precio
+2025-05-16 05:59:53,133 - INFO - Población inicial 62/150: Costo = 1679939.65
+2025-05-16 05:59:53,133 - DEBUG - Población 63/150: Usando heurística por ventana de tiempo
+2025-05-16 06:01:46,488 - INFO - Población inicial 63/150: Costo = 1007969.80
+2025-05-16 06:01:46,488 - DEBUG - Población 64/150: Usando solución aleatoria
+2025-05-16 06:01:46,488 - INFO - Generando solución completamente aleatoria...
+2025-05-16 06:01:46,517 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 06:01:46,519 - INFO - Población inicial 64/150: Costo = 1548854.86
+2025-05-16 06:01:46,519 - DEBUG - Población 65/150: Usando heurística constructiva
+2025-05-16 06:16:07,606 - INFO - Población inicial 65/150: Costo = 1171144.05
+2025-05-16 06:16:07,606 - DEBUG - Población 66/150: Usando heurística por precio
+2025-05-16 06:52:34,460 - INFO - Población inicial 66/150: Costo = 1697106.78
+2025-05-16 06:52:34,460 - DEBUG - Población 67/150: Usando heurística por ventana de tiempo
+2025-05-16 06:54:28,546 - INFO - Población inicial 67/150: Costo = 1036493.50
+2025-05-16 06:54:28,546 - DEBUG - Población 68/150: Usando solución aleatoria
+2025-05-16 06:54:28,546 - INFO - Generando solución completamente aleatoria...
+2025-05-16 06:54:28,561 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 06:54:28,561 - INFO - Población inicial 68/150: Costo = 1670438.43
+2025-05-16 06:54:28,561 - DEBUG - Población 69/150: Usando heurística constructiva
+2025-05-16 07:11:22,208 - INFO - Población inicial 69/150: Costo = 1170639.59
+2025-05-16 07:11:22,208 - DEBUG - Población 70/150: Usando heurística por precio
+2025-05-16 07:41:23,358 - INFO - Población inicial 70/150: Costo = 1680819.96
+2025-05-16 07:41:23,358 - DEBUG - Población 71/150: Usando heurística por ventana de tiempo
+2025-05-16 07:43:58,415 - INFO - Población inicial 71/150: Costo = 998632.49
+2025-05-16 07:43:58,415 - DEBUG - Población 72/150: Usando solución aleatoria
+2025-05-16 07:43:58,415 - INFO - Generando solución completamente aleatoria...
+2025-05-16 07:43:58,443 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 07:43:58,443 - INFO - Población inicial 72/150: Costo = 1631337.98
+2025-05-16 07:43:58,443 - DEBUG - Población 73/150: Usando heurística constructiva
+2025-05-16 07:58:50,660 - INFO - Población inicial 73/150: Costo = 1220945.23
+2025-05-16 07:58:50,660 - DEBUG - Población 74/150: Usando heurística por precio
+2025-05-16 08:32:52,351 - INFO - Población inicial 74/150: Costo = 1683113.60
+2025-05-16 08:32:52,351 - DEBUG - Población 75/150: Usando heurística por ventana de tiempo
+2025-05-16 08:35:06,099 - INFO - Población inicial 75/150: Costo = 984824.27
+2025-05-16 08:35:06,099 - DEBUG - Población 76/150: Usando solución aleatoria
+2025-05-16 08:35:06,099 - INFO - Generando solución completamente aleatoria...
+2025-05-16 08:35:06,115 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 08:35:06,115 - INFO - Población inicial 76/150: Costo = 1692892.57
+2025-05-16 08:35:06,115 - DEBUG - Población 77/150: Usando heurística constructiva
+2025-05-16 08:50:34,037 - INFO - Población inicial 77/150: Costo = 1238511.91
+2025-05-16 08:50:34,037 - DEBUG - Población 78/150: Usando heurística por precio
+2025-05-16 09:35:14,841 - INFO - Población inicial 78/150: Costo = 1697106.78
+2025-05-16 09:35:14,841 - DEBUG - Población 79/150: Usando heurística por ventana de tiempo
+2025-05-16 09:37:39,770 - INFO - Población inicial 79/150: Costo = 977709.40
+2025-05-16 09:37:39,770 - DEBUG - Población 80/150: Usando solución aleatoria
+2025-05-16 09:37:39,770 - INFO - Generando solución completamente aleatoria...
+2025-05-16 09:37:39,792 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 09:37:39,794 - INFO - Población inicial 80/150: Costo = 1559089.28
+2025-05-16 09:37:39,794 - DEBUG - Población 81/150: Usando heurística constructiva
+2025-05-16 09:56:00,622 - INFO - Población inicial 81/150: Costo = 1272129.47
+2025-05-16 09:56:00,622 - DEBUG - Población 82/150: Usando heurística por precio
+2025-05-16 10:34:41,375 - INFO - Población inicial 82/150: Costo = 1679354.46
+2025-05-16 10:34:41,376 - DEBUG - Población 83/150: Usando heurística por ventana de tiempo
+2025-05-16 10:37:17,216 - INFO - Población inicial 83/150: Costo = 997895.43
+2025-05-16 10:37:17,216 - DEBUG - Población 84/150: Usando solución aleatoria
+2025-05-16 10:37:17,216 - INFO - Generando solución completamente aleatoria...
+2025-05-16 10:37:17,242 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 10:37:17,244 - INFO - Población inicial 84/150: Costo = 1546568.99
+2025-05-16 10:37:17,244 - DEBUG - Población 85/150: Usando heurística constructiva
+2025-05-16 10:57:42,770 - INFO - Población inicial 85/150: Costo = 1255454.28
+2025-05-16 10:57:42,770 - DEBUG - Población 86/150: Usando heurística por precio
+2025-05-16 11:32:57,570 - INFO - Población inicial 86/150: Costo = 1678980.67
+2025-05-16 11:32:57,570 - DEBUG - Población 87/150: Usando heurística por ventana de tiempo
+2025-05-16 11:35:15,877 - INFO - Población inicial 87/150: Costo = 1086770.72
+2025-05-16 11:35:15,877 - DEBUG - Población 88/150: Usando solución aleatoria
+2025-05-16 11:35:15,877 - INFO - Generando solución completamente aleatoria...
+2025-05-16 11:35:15,896 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 11:35:15,897 - INFO - Población inicial 88/150: Costo = 1562355.36
+2025-05-16 11:35:15,897 - DEBUG - Población 89/150: Usando heurística constructiva
+2025-05-16 11:52:18,922 - INFO - Población inicial 89/150: Costo = 1170061.46
+2025-05-16 11:52:18,922 - DEBUG - Población 90/150: Usando heurística por precio
+2025-05-16 12:25:31,380 - INFO - Población inicial 90/150: Costo = 1676654.61
+2025-05-16 12:25:31,381 - DEBUG - Población 91/150: Usando heurística por ventana de tiempo
+2025-05-16 12:27:58,352 - INFO - Población inicial 91/150: Costo = 998787.49
+2025-05-16 12:27:58,352 - DEBUG - Población 92/150: Usando solución aleatoria
+2025-05-16 12:27:58,352 - INFO - Generando solución completamente aleatoria...
+2025-05-16 12:27:58,371 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 12:27:58,373 - INFO - Población inicial 92/150: Costo = 1658959.11
+2025-05-16 12:27:58,373 - DEBUG - Población 93/150: Usando heurística constructiva
+2025-05-16 12:46:54,854 - INFO - Población inicial 93/150: Costo = 1187122.98
+2025-05-16 12:46:54,855 - DEBUG - Población 94/150: Usando heurística por precio
+2025-05-16 13:22:57,488 - INFO - Población inicial 94/150: Costo = 1673436.05
+2025-05-16 13:22:57,489 - DEBUG - Población 95/150: Usando heurística por ventana de tiempo
+2025-05-16 13:25:39,471 - INFO - Población inicial 95/150: Costo = 1022642.09
+2025-05-16 13:25:39,471 - DEBUG - Población 96/150: Usando solución aleatoria
+2025-05-16 13:25:39,472 - INFO - Generando solución completamente aleatoria...
+2025-05-16 13:25:39,491 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 13:25:39,493 - INFO - Población inicial 96/150: Costo = 1616959.88
+2025-05-16 13:25:39,493 - DEBUG - Población 97/150: Usando heurística constructiva
+2025-05-16 13:41:37,803 - INFO - Población inicial 97/150: Costo = 1242224.44
+2025-05-16 13:41:37,804 - DEBUG - Población 98/150: Usando heurística por precio
+2025-05-16 14:20:49,460 - INFO - Población inicial 98/150: Costo = 1673778.97
+2025-05-16 14:20:49,460 - DEBUG - Población 99/150: Usando heurística por ventana de tiempo
+2025-05-16 14:24:26,170 - INFO - Población inicial 99/150: Costo = 1021338.97
+2025-05-16 14:24:26,170 - DEBUG - Población 100/150: Usando solución aleatoria
+2025-05-16 14:24:26,170 - INFO - Generando solución completamente aleatoria...
+2025-05-16 14:24:26,206 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 14:24:26,210 - INFO - Población inicial 100/150: Costo = 1743620.24
+2025-05-16 14:24:26,211 - DEBUG - Población 101/150: Usando heurística constructiva
+2025-05-16 14:51:17,662 - INFO - Población inicial 101/150: Costo = 1154369.18
+2025-05-16 14:51:17,662 - DEBUG - Población 102/150: Usando heurística por precio
+2025-05-16 15:33:30,806 - INFO - Población inicial 102/150: Costo = 1677169.32
+2025-05-16 15:33:30,806 - DEBUG - Población 103/150: Usando heurística por ventana de tiempo
+2025-05-16 15:36:07,117 - INFO - Población inicial 103/150: Costo = 1009250.80
+2025-05-16 15:36:07,117 - DEBUG - Población 104/150: Usando solución aleatoria
+2025-05-16 15:36:07,117 - INFO - Generando solución completamente aleatoria...
+2025-05-16 15:36:07,137 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 15:36:07,138 - INFO - Población inicial 104/150: Costo = 1728437.18
+2025-05-16 15:36:07,139 - DEBUG - Población 105/150: Usando heurística constructiva
+2025-05-16 15:58:44,384 - INFO - Población inicial 105/150: Costo = 1261762.08
+2025-05-16 15:58:44,384 - DEBUG - Población 106/150: Usando heurística por precio
+2025-05-16 16:33:12,711 - INFO - Población inicial 106/150: Costo = 1679972.89
+2025-05-16 16:33:12,711 - DEBUG - Población 107/150: Usando heurística por ventana de tiempo
+2025-05-16 16:35:54,477 - INFO - Población inicial 107/150: Costo = 977116.25
+2025-05-16 16:35:54,478 - DEBUG - Población 108/150: Usando solución aleatoria
+2025-05-16 16:35:54,478 - INFO - Generando solución completamente aleatoria...
+2025-05-16 16:35:54,516 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 16:35:54,519 - INFO - Población inicial 108/150: Costo = 1532352.16
+2025-05-16 16:35:54,519 - DEBUG - Población 109/150: Usando heurística constructiva
+2025-05-16 16:57:38,254 - INFO - Población inicial 109/150: Costo = 1219386.91
+2025-05-16 16:57:38,254 - DEBUG - Población 110/150: Usando heurística por precio
+2025-05-16 17:37:53,419 - INFO - Población inicial 110/150: Costo = 1682902.62
+2025-05-16 17:37:53,419 - DEBUG - Población 111/150: Usando heurística por ventana de tiempo
+2025-05-16 17:40:14,006 - INFO - Población inicial 111/150: Costo = 1021748.25
+2025-05-16 17:40:14,006 - DEBUG - Población 112/150: Usando solución aleatoria
+2025-05-16 17:40:14,006 - INFO - Generando solución completamente aleatoria...
+2025-05-16 17:40:14,027 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 17:40:14,028 - INFO - Población inicial 112/150: Costo = 1572642.24
+2025-05-16 17:40:14,029 - DEBUG - Población 113/150: Usando heurística constructiva
+2025-05-16 18:00:03,210 - INFO - Población inicial 113/150: Costo = 1217388.62
+2025-05-16 18:00:03,210 - DEBUG - Población 114/150: Usando heurística por precio
+2025-05-16 18:33:33,813 - INFO - Población inicial 114/150: Costo = 1679352.26
+2025-05-16 18:33:33,813 - DEBUG - Población 115/150: Usando heurística por ventana de tiempo
+2025-05-16 18:35:47,564 - INFO - Población inicial 115/150: Costo = 976594.91
+2025-05-16 18:35:47,564 - DEBUG - Población 116/150: Usando solución aleatoria
+2025-05-16 18:35:47,564 - INFO - Generando solución completamente aleatoria...
+2025-05-16 18:35:47,585 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 18:35:47,586 - INFO - Población inicial 116/150: Costo = 1600454.31
+2025-05-16 18:35:47,586 - DEBUG - Población 117/150: Usando heurística constructiva
+2025-05-16 18:54:46,471 - INFO - Población inicial 117/150: Costo = 1233338.20
+2025-05-16 18:54:46,471 - DEBUG - Población 118/150: Usando heurística por precio
+2025-05-16 19:27:33,271 - INFO - Población inicial 118/150: Costo = 1679178.96
+2025-05-16 19:27:33,272 - DEBUG - Población 119/150: Usando heurística por ventana de tiempo
+2025-05-16 19:29:40,527 - INFO - Población inicial 119/150: Costo = 1022820.78
+2025-05-16 19:29:40,527 - DEBUG - Población 120/150: Usando solución aleatoria
+2025-05-16 19:29:40,528 - INFO - Generando solución completamente aleatoria...
+2025-05-16 19:29:40,547 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 19:29:40,548 - INFO - Población inicial 120/150: Costo = 1581524.77
+2025-05-16 19:29:40,548 - DEBUG - Población 121/150: Usando heurística constructiva
+2025-05-16 19:48:08,271 - INFO - Población inicial 121/150: Costo = 1228374.48
+2025-05-16 19:48:08,272 - DEBUG - Población 122/150: Usando heurística por precio
+2025-05-16 20:21:15,535 - INFO - Población inicial 122/150: Costo = 1675721.56
+2025-05-16 20:21:15,536 - DEBUG - Población 123/150: Usando heurística por ventana de tiempo
+2025-05-16 20:23:30,186 - INFO - Población inicial 123/150: Costo = 990030.16
+2025-05-16 20:23:30,186 - DEBUG - Población 124/150: Usando solución aleatoria
+2025-05-16 20:23:30,186 - INFO - Generando solución completamente aleatoria...
+2025-05-16 20:23:30,205 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 20:23:30,206 - INFO - Población inicial 124/150: Costo = 1650404.66
+2025-05-16 20:23:30,206 - DEBUG - Población 125/150: Usando heurística constructiva
+2025-05-16 20:38:54,878 - INFO - Población inicial 125/150: Costo = 1236367.80
+2025-05-16 20:38:54,878 - DEBUG - Población 126/150: Usando heurística por precio
+2025-05-16 21:10:16,164 - INFO - Población inicial 126/150: Costo = 1677870.11
+2025-05-16 21:10:16,164 - DEBUG - Población 127/150: Usando heurística por ventana de tiempo
+2025-05-16 21:12:25,800 - INFO - Población inicial 127/150: Costo = 1002102.17
+2025-05-16 21:12:25,800 - DEBUG - Población 128/150: Usando solución aleatoria
+2025-05-16 21:12:25,800 - INFO - Generando solución completamente aleatoria...
+2025-05-16 21:12:25,819 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 21:12:25,820 - INFO - Población inicial 128/150: Costo = 1602788.36
+2025-05-16 21:12:25,820 - DEBUG - Población 129/150: Usando heurística constructiva
+2025-05-16 21:28:56,085 - INFO - Población inicial 129/150: Costo = 1153972.44
+2025-05-16 21:28:56,085 - DEBUG - Población 130/150: Usando heurística por precio
+2025-05-16 22:01:02,575 - INFO - Población inicial 130/150: Costo = 1682551.00
+2025-05-16 22:01:02,575 - DEBUG - Población 131/150: Usando heurística por ventana de tiempo
+2025-05-16 22:03:23,628 - INFO - Población inicial 131/150: Costo = 995476.00
+2025-05-16 22:03:23,628 - DEBUG - Población 132/150: Usando solución aleatoria
+2025-05-16 22:03:23,628 - INFO - Generando solución completamente aleatoria...
+2025-05-16 22:03:23,647 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 22:03:23,648 - INFO - Población inicial 132/150: Costo = 1738313.32
+2025-05-16 22:03:23,648 - DEBUG - Población 133/150: Usando heurística constructiva
+2025-05-16 22:21:27,451 - INFO - Población inicial 133/150: Costo = 1223689.67
+2025-05-16 22:21:27,452 - DEBUG - Población 134/150: Usando heurística por precio
+2025-05-16 22:53:09,238 - INFO - Población inicial 134/150: Costo = 1674898.35
+2025-05-16 22:53:09,238 - DEBUG - Población 135/150: Usando heurística por ventana de tiempo
+2025-05-16 22:55:20,636 - INFO - Población inicial 135/150: Costo = 1012203.96
+2025-05-16 22:55:20,636 - DEBUG - Población 136/150: Usando solución aleatoria
+2025-05-16 22:55:20,637 - INFO - Generando solución completamente aleatoria...
+2025-05-16 22:55:20,656 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 22:55:20,657 - INFO - Población inicial 136/150: Costo = 1655629.20
+2025-05-16 22:55:20,657 - DEBUG - Población 137/150: Usando heurística constructiva
+2025-05-16 23:10:46,920 - INFO - Población inicial 137/150: Costo = 1239531.50
+2025-05-16 23:10:46,920 - DEBUG - Población 138/150: Usando heurística por precio
+2025-05-16 23:44:09,239 - INFO - Población inicial 138/150: Costo = 1677600.65
+2025-05-16 23:44:09,239 - DEBUG - Población 139/150: Usando heurística por ventana de tiempo
+2025-05-16 23:46:04,313 - INFO - Población inicial 139/150: Costo = 1051792.05
+2025-05-16 23:46:04,313 - DEBUG - Población 140/150: Usando solución aleatoria
+2025-05-16 23:46:04,313 - INFO - Generando solución completamente aleatoria...
+2025-05-16 23:46:04,332 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-16 23:46:04,333 - INFO - Población inicial 140/150: Costo = 1664995.81
+2025-05-16 23:46:04,333 - DEBUG - Población 141/150: Usando heurística constructiva
+2025-05-17 00:04:37,558 - INFO - Población inicial 141/150: Costo = 1229898.54
+2025-05-17 00:04:37,558 - DEBUG - Población 142/150: Usando heurística por precio
+2025-05-17 00:35:49,273 - INFO - Población inicial 142/150: Costo = 1673670.34
+2025-05-17 00:35:49,273 - DEBUG - Población 143/150: Usando heurística por ventana de tiempo
+2025-05-17 00:37:41,258 - INFO - Población inicial 143/150: Costo = 978187.83
+2025-05-17 00:37:41,258 - DEBUG - Población 144/150: Usando solución aleatoria
+2025-05-17 00:37:41,258 - INFO - Generando solución completamente aleatoria...
+2025-05-17 00:37:41,277 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-17 00:37:41,279 - INFO - Población inicial 144/150: Costo = 1579206.51
+2025-05-17 00:37:41,279 - DEBUG - Población 145/150: Usando heurística constructiva
+2025-05-17 00:53:55,039 - INFO - Población inicial 145/150: Costo = 1169867.49
+2025-05-17 00:53:55,039 - DEBUG - Población 146/150: Usando heurística por precio
+2025-05-17 01:27:39,337 - INFO - Población inicial 146/150: Costo = 1676071.60
+2025-05-17 01:27:39,337 - DEBUG - Población 147/150: Usando heurística por ventana de tiempo
+2025-05-17 01:29:50,853 - INFO - Población inicial 147/150: Costo = 987793.78
+2025-05-17 01:29:50,853 - DEBUG - Población 148/150: Usando solución aleatoria
+2025-05-17 01:29:50,853 - INFO - Generando solución completamente aleatoria...
+2025-05-17 01:29:50,872 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-17 01:29:50,873 - INFO - Población inicial 148/150: Costo = 1706158.81
+2025-05-17 01:29:50,873 - DEBUG - Población 149/150: Usando heurística constructiva
+2025-05-17 01:45:08,742 - INFO - Población inicial 149/150: Costo = 1177030.00
+2025-05-17 01:45:08,742 - DEBUG - Población 150/150: Usando heurística por precio
+2025-05-17 02:20:50,565 - INFO - Población inicial 150/150: Costo = 1693420.91
+2025-05-17 02:21:01,496 - INFO - Mejor solución inicial: Costo = 976594.91
+2025-05-17 02:21:01,497 - INFO - Iniciando iteración 1/5
+2025-05-17 02:28:43,919 - DEBUG - Nueva solución candidata generada: Costo = 763465.50
+2025-05-17 02:37:00,232 - DEBUG - Nueva solución candidata generada: Costo = 812949.41
+2025-05-17 02:45:06,750 - DEBUG - Nueva solución candidata generada: Costo = 773446.07
+2025-05-17 02:53:33,636 - DEBUG - Nueva solución candidata generada: Costo = 754653.44
+2025-05-17 03:01:30,313 - DEBUG - Nueva solución candidata generada: Costo = 963325.15
+2025-05-17 03:08:36,768 - DEBUG - Nueva solución candidata generada: Costo = 950924.96
+2025-05-17 03:16:10,820 - DEBUG - Nueva solución candidata generada: Costo = 1004927.99
+2025-05-17 03:33:00,384 - DEBUG - Nueva solución candidata generada: Costo = 1307519.79
+2025-05-17 03:38:36,787 - DEBUG - Nueva solución candidata generada: Costo = 1044204.89
+2025-05-17 03:46:46,688 - DEBUG - Nueva solución candidata generada: Costo = 768500.81
+2025-05-17 03:55:07,137 - DEBUG - Nueva solución candidata generada: Costo = 753620.37
+2025-05-17 04:02:46,341 - DEBUG - Nueva solución candidata generada: Costo = 783313.95
+2025-05-17 04:08:18,648 - DEBUG - Nueva solución candidata generada: Costo = 1012827.26
+2025-05-17 04:15:26,711 - DEBUG - Nueva solución candidata generada: Costo = 1022664.29
+2025-05-17 04:23:50,366 - DEBUG - Nueva solución candidata generada: Costo = 1007030.03
+2025-05-17 04:44:53,652 - DEBUG - Nueva solución candidata generada: Costo = 1225246.32
+2025-05-17 04:50:41,422 - DEBUG - Nueva solución candidata generada: Costo = 969887.24
+2025-05-17 04:58:54,016 - DEBUG - Nueva solución candidata generada: Costo = 763195.50
+2025-05-17 05:06:44,061 - DEBUG - Nueva solución candidata generada: Costo = 753419.22
+2025-05-17 05:13:26,954 - DEBUG - Nueva solución candidata generada: Costo = 923274.68
+2025-05-17 05:20:27,998 - DEBUG - Nueva solución candidata generada: Costo = 974576.96
+2025-05-17 05:26:20,821 - DEBUG - Nueva solución candidata generada: Costo = 971091.33
+2025-05-17 05:42:39,502 - DEBUG - Nueva solución candidata generada: Costo = 1318585.32
+2025-05-17 05:48:18,679 - DEBUG - Nueva solución candidata generada: Costo = 986088.23
+2025-05-17 05:56:07,290 - DEBUG - Nueva solución candidata generada: Costo = 768452.52
+2025-05-17 06:04:30,648 - DEBUG - Nueva solución candidata generada: Costo = 1021285.17
+2025-05-17 06:10:13,456 - DEBUG - Nueva solución candidata generada: Costo = 1060152.71
+2025-05-17 06:18:15,090 - DEBUG - Nueva solución candidata generada: Costo = 1018841.01
+2025-05-17 06:39:11,611 - DEBUG - Nueva solución candidata generada: Costo = 1246789.38
+2025-05-17 06:44:51,830 - DEBUG - Nueva solución candidata generada: Costo = 1023486.30
+2025-05-17 06:50:24,582 - DEBUG - Nueva solución candidata generada: Costo = 1021909.33
+2025-05-17 06:56:15,280 - DEBUG - Nueva solución candidata generada: Costo = 896302.83
+2025-05-17 07:04:19,436 - DEBUG - Nueva solución candidata generada: Costo = 1024099.61
+2025-05-17 07:22:45,865 - DEBUG - Nueva solución candidata generada: Costo = 1373608.42
+2025-05-17 07:28:33,826 - DEBUG - Nueva solución candidata generada: Costo = 986466.58
+2025-05-17 07:37:07,288 - DEBUG - Nueva solución candidata generada: Costo = 1026293.39
+2025-05-17 07:45:37,978 - DEBUG - Nueva solución candidata generada: Costo = 1028580.13
+2025-05-17 08:01:11,832 - DEBUG - Nueva solución candidata generada: Costo = 1310764.26
+2025-05-17 08:10:26,087 - DEBUG - Nueva solución candidata generada: Costo = 1109470.67
+2025-05-17 08:15:48,627 - DEBUG - Nueva solución candidata generada: Costo = 1172131.02
+2025-05-17 08:32:50,190 - DEBUG - Nueva solución candidata generada: Costo = 1323351.64
+2025-05-17 08:40:53,254 - DEBUG - Nueva solución candidata generada: Costo = 1056920.95
+2025-05-17 08:57:01,532 - DEBUG - Nueva solución candidata generada: Costo = 1355881.99
+2025-05-17 09:02:37,269 - DEBUG - Nueva solución candidata generada: Costo = 1029388.53
+2025-05-17 09:12:50,941 - DEBUG - Nueva solución candidata generada: Costo = 1142095.32
+2025-05-17 09:12:55,423 - INFO - Nueva mejor solución encontrada: Costo = 753419.22
+2025-05-17 09:12:55,423 - INFO - Iteración 1/5: Mejor costo = 753419.22
+2025-05-17 09:12:55,423 - INFO - Iniciando iteración 2/5
+2025-05-17 09:21:34,918 - DEBUG - Nueva solución candidata generada: Costo = 750064.98
+2025-05-17 09:30:02,538 - DEBUG - Nueva solución candidata generada: Costo = 775430.21
+2025-05-17 09:37:55,729 - DEBUG - Nueva solución candidata generada: Costo = 772161.93
+2025-05-17 09:45:37,924 - DEBUG - Nueva solución candidata generada: Costo = 725723.01
+2025-05-17 10:03:02,243 - DEBUG - Nueva solución candidata generada: Costo = 1407540.27
+2025-05-17 10:08:41,541 - DEBUG - Nueva solución candidata generada: Costo = 1022526.20
+2025-05-17 10:15:33,954 - DEBUG - Nueva solución candidata generada: Costo = 1011409.91
+2025-05-17 10:21:20,554 - DEBUG - Nueva solución candidata generada: Costo = 1004761.13
+2025-05-17 10:27:20,501 - DEBUG - Nueva solución candidata generada: Costo = 1012272.93
+2025-05-17 10:36:00,635 - DEBUG - Nueva solución candidata generada: Costo = 757955.64
+2025-05-17 10:44:41,874 - DEBUG - Nueva solución candidata generada: Costo = 771318.10
+2025-05-17 10:52:37,940 - DEBUG - Nueva solución candidata generada: Costo = 771870.31
+2025-05-17 11:18:20,484 - DEBUG - Nueva solución candidata generada: Costo = 1331949.77
+2025-05-17 11:29:04,043 - DEBUG - Nueva solución candidata generada: Costo = 970180.72
+2025-05-17 11:37:46,079 - DEBUG - Nueva solución candidata generada: Costo = 1070793.06
+2025-05-17 11:47:43,438 - DEBUG - Nueva solución candidata generada: Costo = 1033051.44
+2025-05-17 11:56:31,393 - DEBUG - Nueva solución candidata generada: Costo = 954397.41
+2025-05-17 12:05:24,686 - DEBUG - Nueva solución candidata generada: Costo = 771107.67
+2025-05-17 12:13:24,252 - DEBUG - Nueva solución candidata generada: Costo = 765540.31
+2025-05-17 12:34:43,148 - DEBUG - Nueva solución candidata generada: Costo = 1362678.72
+2025-05-17 12:40:48,356 - DEBUG - Nueva solución candidata generada: Costo = 1065876.20
+2025-05-17 12:50:34,251 - DEBUG - Nueva solución candidata generada: Costo = 1016503.73
+2025-05-17 12:56:48,547 - DEBUG - Nueva solución candidata generada: Costo = 1037417.85
+2025-05-17 13:02:50,204 - DEBUG - Nueva solución candidata generada: Costo = 1018222.04
+2025-05-17 13:10:49,932 - DEBUG - Nueva solución candidata generada: Costo = 769975.76
+2025-05-17 13:28:57,853 - DEBUG - Nueva solución candidata generada: Costo = 1279078.29
+2025-05-17 13:37:15,465 - DEBUG - Nueva solución candidata generada: Costo = 973133.15
+2025-05-17 13:45:58,097 - DEBUG - Nueva solución candidata generada: Costo = 1087660.16
+2025-05-17 13:52:29,375 - DEBUG - Nueva solución candidata generada: Costo = 1037721.78
+2025-05-17 13:58:11,531 - DEBUG - Nueva solución candidata generada: Costo = 942467.16
+2025-05-17 14:20:02,631 - DEBUG - Nueva solución candidata generada: Costo = 1212637.61
+2025-05-17 14:25:45,506 - DEBUG - Nueva solución candidata generada: Costo = 1000332.81
+2025-05-17 14:32:44,152 - DEBUG - Nueva solución candidata generada: Costo = 1089274.42
+2025-05-17 14:40:40,462 - DEBUG - Nueva solución candidata generada: Costo = 976108.68
+2025-05-17 14:47:05,729 - DEBUG - Nueva solución candidata generada: Costo = 1004980.45
+2025-05-17 14:56:08,790 - DEBUG - Nueva solución candidata generada: Costo = 1111269.95
+2025-05-17 15:06:18,034 - DEBUG - Nueva solución candidata generada: Costo = 1122520.05
+2025-05-17 15:16:22,815 - DEBUG - Nueva solución candidata generada: Costo = 1203139.99
+2025-05-17 15:26:07,029 - DEBUG - Nueva solución candidata generada: Costo = 1148741.80
+2025-05-17 15:35:45,940 - DEBUG - Nueva solución candidata generada: Costo = 1156124.84
+2025-05-17 15:41:20,247 - DEBUG - Nueva solución candidata generada: Costo = 1132309.95
+2025-05-17 15:50:26,123 - DEBUG - Nueva solución candidata generada: Costo = 1029320.50
+2025-05-17 16:00:12,582 - DEBUG - Nueva solución candidata generada: Costo = 1097821.39
+2025-05-17 16:10:44,118 - DEBUG - Nueva solución candidata generada: Costo = 1091999.98
+2025-05-17 16:16:24,717 - DEBUG - Nueva solución candidata generada: Costo = 1026199.00
+2025-05-17 16:16:29,425 - INFO - Nueva mejor solución encontrada: Costo = 725723.01
+2025-05-17 16:16:29,425 - INFO - Iteración 2/5: Mejor costo = 725723.01
+2025-05-17 16:16:29,425 - INFO - Iniciando iteración 3/5
+2025-05-17 16:24:38,840 - DEBUG - Nueva solución candidata generada: Costo = 767015.67
+2025-05-17 16:32:52,529 - DEBUG - Nueva solución candidata generada: Costo = 733007.80
+2025-05-17 16:41:04,959 - DEBUG - Nueva solución candidata generada: Costo = 783800.99
+2025-05-17 16:49:09,263 - DEBUG - Nueva solución candidata generada: Costo = 718118.21
+2025-05-17 16:56:53,037 - DEBUG - Nueva solución candidata generada: Costo = 955572.11
+2025-05-17 17:05:36,413 - DEBUG - Nueva solución candidata generada: Costo = 978098.58
+2025-05-17 17:26:57,020 - DEBUG - Nueva solución candidata generada: Costo = 1359728.59
+2025-05-17 17:33:30,040 - DEBUG - Nueva solución candidata generada: Costo = 1097568.71
+2025-05-17 17:39:46,258 - DEBUG - Nueva solución candidata generada: Costo = 990996.50
+2025-05-17 17:48:47,346 - DEBUG - Nueva solución candidata generada: Costo = 771290.59
+2025-05-17 17:56:50,422 - DEBUG - Nueva solución candidata generada: Costo = 764547.67
+2025-05-17 18:05:24,459 - DEBUG - Nueva solución candidata generada: Costo = 756103.42
+2025-05-17 18:12:14,044 - DEBUG - Nueva solución candidata generada: Costo = 972414.16
+2025-05-17 18:21:08,497 - DEBUG - Nueva solución candidata generada: Costo = 1007444.69
+2025-05-17 18:44:37,124 - DEBUG - Nueva solución candidata generada: Costo = 1323535.44
+2025-05-17 18:52:33,366 - DEBUG - Nueva solución candidata generada: Costo = 1033207.67
+2025-05-17 19:00:17,998 - DEBUG - Nueva solución candidata generada: Costo = 1007872.49
+2025-05-17 19:08:18,928 - DEBUG - Nueva solución candidata generada: Costo = 754039.50
+2025-05-17 19:16:33,869 - DEBUG - Nueva solución candidata generada: Costo = 803084.65
+2025-05-17 19:24:24,316 - DEBUG - Nueva solución candidata generada: Costo = 1054552.15
+2025-05-17 19:33:22,586 - DEBUG - Nueva solución candidata generada: Costo = 984492.56
+2025-05-17 19:58:19,920 - DEBUG - Nueva solución candidata generada: Costo = 1133120.26
+2025-05-17 20:06:06,870 - DEBUG - Nueva solución candidata generada: Costo = 952737.26
+2025-05-17 20:14:05,071 - DEBUG - Nueva solución candidata generada: Costo = 961057.24
+2025-05-17 20:24:40,292 - DEBUG - Nueva solución candidata generada: Costo = 743416.69
+2025-05-17 20:33:42,280 - DEBUG - Nueva solución candidata generada: Costo = 1049452.83
+2025-05-17 20:47:41,698 - DEBUG - Nueva solución candidata generada: Costo = 960043.87
+2025-05-17 21:10:51,092 - DEBUG - Nueva solución candidata generada: Costo = 1225110.56
+2025-05-17 21:21:34,754 - DEBUG - Nueva solución candidata generada: Costo = 1079587.66
+2025-05-17 21:32:56,981 - DEBUG - Nueva solución candidata generada: Costo = 960149.55
+2025-05-17 21:43:39,600 - DEBUG - Nueva solución candidata generada: Costo = 1030636.56
+2025-05-17 21:55:37,921 - DEBUG - Nueva solución candidata generada: Costo = 992647.71
+2025-05-17 22:21:22,925 - DEBUG - Nueva solución candidata generada: Costo = 1325490.16
+2025-05-17 22:27:24,618 - DEBUG - Nueva solución candidata generada: Costo = 1034472.75
+2025-05-17 22:37:25,926 - DEBUG - Nueva solución candidata generada: Costo = 953574.00
+2025-05-17 22:47:28,230 - DEBUG - Nueva solución candidata generada: Costo = 1027648.10
+2025-05-17 23:05:27,110 - DEBUG - Nueva solución candidata generada: Costo = 1275407.67
+2025-05-17 23:14:31,926 - DEBUG - Nueva solución candidata generada: Costo = 1041319.06
+2025-05-17 23:22:42,467 - DEBUG - Nueva solución candidata generada: Costo = 1025314.59
+2025-05-17 23:39:51,722 - DEBUG - Nueva solución candidata generada: Costo = 1326073.67
+2025-05-17 23:45:47,041 - DEBUG - Nueva solución candidata generada: Costo = 1056248.85
+2025-05-17 23:53:41,915 - DEBUG - Nueva solución candidata generada: Costo = 1037436.49
+2025-05-18 00:03:39,401 - DEBUG - Nueva solución candidata generada: Costo = 1088871.26
+2025-05-18 00:15:04,532 - DEBUG - Nueva solución candidata generada: Costo = 1119694.26
+2025-05-18 00:23:21,001 - DEBUG - Nueva solución candidata generada: Costo = 988291.22
+2025-05-18 00:23:25,679 - INFO - Nueva mejor solución encontrada: Costo = 718118.21
+2025-05-18 00:23:25,679 - INFO - Iteración 3/5: Mejor costo = 718118.21
+2025-05-18 00:23:25,679 - INFO - Iniciando iteración 4/5
+2025-05-18 00:31:05,870 - DEBUG - Nueva solución candidata generada: Costo = 729161.00
+2025-05-18 00:39:20,441 - DEBUG - Nueva solución candidata generada: Costo = 736177.53
+2025-05-18 00:46:57,576 - DEBUG - Nueva solución candidata generada: Costo = 763947.53
+2025-05-18 00:56:54,703 - DEBUG - Nueva solución candidata generada: Costo = 827461.19
+2025-05-18 01:05:29,308 - DEBUG - Nueva solución candidata generada: Costo = 892999.18
+2025-05-18 01:12:53,395 - DEBUG - Nueva solución candidata generada: Costo = 953832.03
+2025-05-18 01:18:37,886 - DEBUG - Nueva solución candidata generada: Costo = 943477.90
+2025-05-18 01:25:51,239 - DEBUG - Nueva solución candidata generada: Costo = 985815.43
+2025-05-18 01:44:31,750 - DEBUG - Nueva solución candidata generada: Costo = 1310480.61
+2025-05-18 01:52:55,980 - DEBUG - Nueva solución candidata generada: Costo = 712424.65
+2025-05-18 02:00:50,142 - DEBUG - Nueva solución candidata generada: Costo = 744629.95
+2025-05-18 02:09:32,619 - DEBUG - Nueva solución candidata generada: Costo = 803858.55
+2025-05-18 02:18:49,170 - DEBUG - Nueva solución candidata generada: Costo = 1000293.88
+2025-05-18 02:24:49,645 - DEBUG - Nueva solución candidata generada: Costo = 894285.24
+2025-05-18 02:31:14,162 - DEBUG - Nueva solución candidata generada: Costo = 943531.82
+2025-05-18 02:38:20,888 - DEBUG - Nueva solución candidata generada: Costo = 913978.88
+2025-05-18 02:59:12,084 - DEBUG - Nueva solución candidata generada: Costo = 1264037.02
+2025-05-18 03:06:55,760 - DEBUG - Nueva solución candidata generada: Costo = 759513.62
+2025-05-18 03:15:34,555 - DEBUG - Nueva solución candidata generada: Costo = 766561.89
+2025-05-18 03:24:27,507 - DEBUG - Nueva solución candidata generada: Costo = 921343.74
+2025-05-18 03:30:34,432 - DEBUG - Nueva solución candidata generada: Costo = 951268.21
+2025-05-18 03:37:26,029 - DEBUG - Nueva solución candidata generada: Costo = 1025926.83
+2025-05-18 03:43:53,017 - DEBUG - Nueva solución candidata generada: Costo = 999449.71
+2025-05-18 04:02:05,913 - DEBUG - Nueva solución candidata generada: Costo = 1310914.63
+2025-05-18 04:10:10,187 - DEBUG - Nueva solución candidata generada: Costo = 758348.66
+2025-05-18 04:18:57,835 - DEBUG - Nueva solución candidata generada: Costo = 1023759.40
+2025-05-18 04:24:37,505 - DEBUG - Nueva solución candidata generada: Costo = 1002866.97
+2025-05-18 04:30:50,006 - DEBUG - Nueva solución candidata generada: Costo = 991557.49
+2025-05-18 04:37:02,829 - DEBUG - Nueva solución candidata generada: Costo = 1010641.72
+2025-05-18 04:55:02,507 - DEBUG - Nueva solución candidata generada: Costo = 1282337.72
+2025-05-18 05:04:22,481 - DEBUG - Nueva solución candidata generada: Costo = 1041682.89
+2025-05-18 05:10:16,094 - DEBUG - Nueva solución candidata generada: Costo = 1023167.43
+2025-05-18 05:17:12,465 - DEBUG - Nueva solución candidata generada: Costo = 980462.47
+2025-05-18 05:23:30,860 - DEBUG - Nueva solución candidata generada: Costo = 994910.01
+2025-05-18 05:46:00,019 - DEBUG - Nueva solución candidata generada: Costo = 1302836.57
+2025-05-18 05:54:13,243 - DEBUG - Nueva solución candidata generada: Costo = 999506.77
+2025-05-18 06:02:28,731 - DEBUG - Nueva solución candidata generada: Costo = 1049635.91
+2025-05-18 06:10:15,645 - DEBUG - Nueva solución candidata generada: Costo = 1030770.22
+2025-05-18 06:31:53,385 - DEBUG - Nueva solución candidata generada: Costo = 1352988.52
+2025-05-18 06:40:34,361 - DEBUG - Nueva solución candidata generada: Costo = 999649.11
+2025-05-18 06:47:49,675 - DEBUG - Nueva solución candidata generada: Costo = 975009.88
+2025-05-18 07:06:48,604 - DEBUG - Nueva solución candidata generada: Costo = 1358299.77
+2025-05-18 07:14:50,591 - DEBUG - Nueva solución candidata generada: Costo = 989987.67
+2025-05-18 07:30:43,018 - DEBUG - Nueva solución candidata generada: Costo = 1252263.93
+2025-05-18 07:49:40,303 - DEBUG - Nueva solución candidata generada: Costo = 1328605.20
+2025-05-18 07:49:44,766 - INFO - Nueva mejor solución encontrada: Costo = 712424.65
+2025-05-18 07:49:44,766 - INFO - Iteración 4/5: Mejor costo = 712424.65
+2025-05-18 07:49:44,766 - INFO - Iniciando iteración 5/5
+2025-05-18 07:57:53,745 - DEBUG - Nueva solución candidata generada: Costo = 730682.63
+2025-05-18 08:05:39,418 - DEBUG - Nueva solución candidata generada: Costo = 734886.95
+2025-05-18 08:13:36,979 - DEBUG - Nueva solución candidata generada: Costo = 762672.27
+2025-05-18 08:21:16,937 - DEBUG - Nueva solución candidata generada: Costo = 726215.39
+2025-05-18 08:30:14,533 - DEBUG - Nueva solución candidata generada: Costo = 967321.34
+2025-05-18 08:37:02,321 - DEBUG - Nueva solución candidata generada: Costo = 904114.03
+2025-05-18 08:59:58,088 - DEBUG - Nueva solución candidata generada: Costo = 1222343.03
+2025-05-18 09:08:03,657 - DEBUG - Nueva solución candidata generada: Costo = 1029407.38
+2025-05-18 09:16:26,054 - DEBUG - Nueva solución candidata generada: Costo = 1029690.90
+2025-05-18 09:24:23,618 - DEBUG - Nueva solución candidata generada: Costo = 734987.38
+2025-05-18 09:33:09,171 - DEBUG - Nueva solución candidata generada: Costo = 728985.27
+2025-05-18 09:42:30,813 - DEBUG - Nueva solución candidata generada: Costo = 754019.93
+2025-05-18 09:51:58,851 - DEBUG - Nueva solución candidata generada: Costo = 898412.17
+2025-05-18 09:57:46,823 - DEBUG - Nueva solución candidata generada: Costo = 1079946.28
+2025-05-18 10:23:31,579 - DEBUG - Nueva solución candidata generada: Costo = 1340501.49
+2025-05-18 10:31:38,229 - DEBUG - Nueva solución candidata generada: Costo = 983644.62
+2025-05-18 10:39:30,060 - DEBUG - Nueva solución candidata generada: Costo = 915230.18
+2025-05-18 10:47:05,845 - DEBUG - Nueva solución candidata generada: Costo = 738749.98
+2025-05-18 10:55:21,799 - DEBUG - Nueva solución candidata generada: Costo = 743056.84
+2025-05-18 11:04:22,612 - DEBUG - Nueva solución candidata generada: Costo = 1012649.10
+2025-05-18 11:10:05,574 - DEBUG - Nueva solución candidata generada: Costo = 1020867.79
+2025-05-18 11:32:10,189 - DEBUG - Nueva solución candidata generada: Costo = 1352179.96
+2025-05-18 11:41:15,067 - DEBUG - Nueva solución candidata generada: Costo = 1015691.39
+2025-05-18 11:49:30,551 - DEBUG - Nueva solución candidata generada: Costo = 966039.05
+2025-05-18 11:57:33,029 - DEBUG - Nueva solución candidata generada: Costo = 718995.04
+2025-05-18 12:05:44,311 - DEBUG - Nueva solución candidata generada: Costo = 970584.80
+2025-05-18 12:13:37,226 - DEBUG - Nueva solución candidata generada: Costo = 989637.97
+2025-05-18 12:37:06,339 - DEBUG - Nueva solución candidata generada: Costo = 1349736.15
+2025-05-18 12:44:16,496 - DEBUG - Nueva solución candidata generada: Costo = 951920.88
+2025-05-18 12:52:38,614 - DEBUG - Nueva solución candidata generada: Costo = 935321.30
+2025-05-18 13:02:37,330 - DEBUG - Nueva solución candidata generada: Costo = 953108.30
+2025-05-18 13:12:23,311 - DEBUG - Nueva solución candidata generada: Costo = 974060.28
+2025-05-18 13:29:09,051 - DEBUG - Nueva solución candidata generada: Costo = 1330854.49
+2025-05-18 13:38:18,218 - DEBUG - Nueva solución candidata generada: Costo = 976661.14
+2025-05-18 13:45:20,002 - DEBUG - Nueva solución candidata generada: Costo = 940928.25
+2025-05-18 13:54:07,644 - DEBUG - Nueva solución candidata generada: Costo = 1037382.24
+2025-05-18 14:18:11,464 - DEBUG - Nueva solución candidata generada: Costo = 1457963.10
+2025-05-18 14:25:15,966 - DEBUG - Nueva solución candidata generada: Costo = 1027635.14
+2025-05-18 14:33:55,617 - DEBUG - Nueva solución candidata generada: Costo = 1013873.43
+2025-05-18 14:49:07,269 - DEBUG - Nueva solución candidata generada: Costo = 1301356.04
+2025-05-18 14:56:33,909 - DEBUG - Nueva solución candidata generada: Costo = 1025025.68
+2025-05-18 15:05:00,721 - DEBUG - Nueva solución candidata generada: Costo = 949327.62
+2025-05-18 15:16:22,517 - DEBUG - Nueva solución candidata generada: Costo = 1099925.80
+2025-05-18 15:26:27,642 - DEBUG - Nueva solución candidata generada: Costo = 1006381.36
+2025-05-18 15:36:01,149 - DEBUG - Nueva solución candidata generada: Costo = 986117.26
+2025-05-18 15:36:05,911 - INFO - Iteración 5/5: Mejor costo = 712424.65
+2025-05-18 15:36:06,052 - INFO - Iniciando Scatter Search con N=150, m1=5, m2=5, max_iter=5
+2025-05-18 15:36:06,063 - INFO - Datos cargados desde .\results\cluster_results\representative_files\test_system_9.json
+2025-05-18 15:36:06,063 - INFO - Generando población inicial...
+2025-05-18 15:36:06,063 - DEBUG - Población 1/150: Usando heurística constructiva
+2025-05-18 15:53:38,751 - INFO - Población inicial 1/150: Costo = 1203089.48
+2025-05-18 15:53:38,751 - DEBUG - Población 2/150: Usando heurística por precio
+2025-05-18 16:25:57,512 - INFO - Población inicial 2/150: Costo = 1677967.66
+2025-05-18 16:25:57,513 - DEBUG - Población 3/150: Usando heurística por ventana de tiempo
+2025-05-18 16:27:50,164 - INFO - Población inicial 3/150: Costo = 1040572.06
+2025-05-18 16:27:50,165 - DEBUG - Población 4/150: Usando solución aleatoria
+2025-05-18 16:27:50,165 - INFO - Generando solución completamente aleatoria...
+2025-05-18 16:27:50,185 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 16:27:50,186 - INFO - Población inicial 4/150: Costo = 1585184.95
+2025-05-18 16:27:50,186 - DEBUG - Población 5/150: Usando heurística constructiva
+2025-05-18 16:43:38,080 - INFO - Población inicial 5/150: Costo = 1194222.90
+2025-05-18 16:43:38,080 - DEBUG - Población 6/150: Usando heurística por precio
+2025-05-18 17:16:13,345 - INFO - Población inicial 6/150: Costo = 1671997.34
+2025-05-18 17:16:13,345 - DEBUG - Población 7/150: Usando heurística por ventana de tiempo
+2025-05-18 17:19:13,482 - INFO - Población inicial 7/150: Costo = 992988.46
+2025-05-18 17:19:13,483 - DEBUG - Población 8/150: Usando solución aleatoria
+2025-05-18 17:19:13,483 - INFO - Generando solución completamente aleatoria...
+2025-05-18 17:19:13,503 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 17:19:13,504 - INFO - Población inicial 8/150: Costo = 1683662.79
+2025-05-18 17:19:13,504 - DEBUG - Población 9/150: Usando heurística constructiva
+2025-05-18 17:36:25,087 - INFO - Población inicial 9/150: Costo = 1156203.43
+2025-05-18 17:36:25,087 - DEBUG - Población 10/150: Usando heurística por precio
+2025-05-18 18:11:57,773 - INFO - Población inicial 10/150: Costo = 1677911.60
+2025-05-18 18:11:57,774 - DEBUG - Población 11/150: Usando heurística por ventana de tiempo
+2025-05-18 18:14:02,421 - INFO - Población inicial 11/150: Costo = 1004259.12
+2025-05-18 18:14:02,422 - DEBUG - Población 12/150: Usando solución aleatoria
+2025-05-18 18:14:02,422 - INFO - Generando solución completamente aleatoria...
+2025-05-18 18:14:02,455 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 18:14:02,457 - INFO - Población inicial 12/150: Costo = 1654173.72
+2025-05-18 18:14:02,457 - DEBUG - Población 13/150: Usando heurística constructiva
+2025-05-18 18:32:54,507 - INFO - Población inicial 13/150: Costo = 1203806.14
+2025-05-18 18:32:54,507 - DEBUG - Población 14/150: Usando heurística por precio
+2025-05-18 19:06:39,666 - INFO - Población inicial 14/150: Costo = 1676974.36
+2025-05-18 19:06:39,666 - DEBUG - Población 15/150: Usando heurística por ventana de tiempo
+2025-05-18 19:08:44,021 - INFO - Población inicial 15/150: Costo = 1027731.93
+2025-05-18 19:08:44,021 - DEBUG - Población 16/150: Usando solución aleatoria
+2025-05-18 19:08:44,021 - INFO - Generando solución completamente aleatoria...
+2025-05-18 19:08:44,048 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 19:08:44,051 - INFO - Población inicial 16/150: Costo = 1641042.39
+2025-05-18 19:08:44,051 - DEBUG - Población 17/150: Usando heurística constructiva
+2025-05-18 19:27:24,870 - INFO - Población inicial 17/150: Costo = 1231289.17
+2025-05-18 19:27:24,870 - DEBUG - Población 18/150: Usando heurística por precio
+2025-05-18 20:04:33,140 - INFO - Población inicial 18/150: Costo = 1678100.64
+2025-05-18 20:04:33,140 - DEBUG - Población 19/150: Usando heurística por ventana de tiempo
+2025-05-18 20:06:43,047 - INFO - Población inicial 19/150: Costo = 1024445.43
+2025-05-18 20:06:43,048 - DEBUG - Población 20/150: Usando solución aleatoria
+2025-05-18 20:06:43,048 - INFO - Generando solución completamente aleatoria...
+2025-05-18 20:06:43,068 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 20:06:43,070 - INFO - Población inicial 20/150: Costo = 1659387.41
+2025-05-18 20:06:43,070 - DEBUG - Población 21/150: Usando heurística constructiva
+2025-05-18 20:26:32,082 - INFO - Población inicial 21/150: Costo = 1187693.23
+2025-05-18 20:26:32,083 - DEBUG - Población 22/150: Usando heurística por precio
+2025-05-18 21:12:27,949 - INFO - Población inicial 22/150: Costo = 1677323.77
+2025-05-18 21:12:27,956 - DEBUG - Población 23/150: Usando heurística por ventana de tiempo
+2025-05-18 21:15:29,508 - INFO - Población inicial 23/150: Costo = 935369.91
+2025-05-18 21:15:29,508 - DEBUG - Población 24/150: Usando solución aleatoria
+2025-05-18 21:15:29,508 - INFO - Generando solución completamente aleatoria...
+2025-05-18 21:15:29,538 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 21:15:29,541 - INFO - Población inicial 24/150: Costo = 1495671.66
+2025-05-18 21:15:29,541 - DEBUG - Población 25/150: Usando heurística constructiva
+2025-05-18 21:35:48,652 - INFO - Población inicial 25/150: Costo = 1210318.97
+2025-05-18 21:35:48,653 - DEBUG - Población 26/150: Usando heurística por precio
+2025-05-18 22:17:14,238 - INFO - Población inicial 26/150: Costo = 1691877.12
+2025-05-18 22:17:14,239 - DEBUG - Población 27/150: Usando heurística por ventana de tiempo
+2025-05-18 22:19:54,512 - INFO - Población inicial 27/150: Costo = 998503.40
+2025-05-18 22:19:54,512 - DEBUG - Población 28/150: Usando solución aleatoria
+2025-05-18 22:19:54,512 - INFO - Generando solución completamente aleatoria...
+2025-05-18 22:19:54,535 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 22:19:54,537 - INFO - Población inicial 28/150: Costo = 1593509.71
+2025-05-18 22:19:54,537 - DEBUG - Población 29/150: Usando heurística constructiva
+2025-05-18 22:38:36,050 - INFO - Población inicial 29/150: Costo = 1191968.89
+2025-05-18 22:38:36,050 - DEBUG - Población 30/150: Usando heurística por precio
+2025-05-18 23:20:45,229 - INFO - Población inicial 30/150: Costo = 1674345.45
+2025-05-18 23:20:45,229 - DEBUG - Población 31/150: Usando heurística por ventana de tiempo
+2025-05-18 23:23:43,460 - INFO - Población inicial 31/150: Costo = 988302.70
+2025-05-18 23:23:43,460 - DEBUG - Población 32/150: Usando solución aleatoria
+2025-05-18 23:23:43,460 - INFO - Generando solución completamente aleatoria...
+2025-05-18 23:23:43,489 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-18 23:23:43,491 - INFO - Población inicial 32/150: Costo = 1685409.80
+2025-05-18 23:23:43,491 - DEBUG - Población 33/150: Usando heurística constructiva
+2025-05-18 23:42:59,463 - INFO - Población inicial 33/150: Costo = 1158682.27
+2025-05-18 23:42:59,463 - DEBUG - Población 34/150: Usando heurística por precio
+2025-05-19 00:24:20,857 - INFO - Población inicial 34/150: Costo = 1677924.52
+2025-05-19 00:24:20,858 - DEBUG - Población 35/150: Usando heurística por ventana de tiempo
+2025-05-19 00:27:00,212 - INFO - Población inicial 35/150: Costo = 1034110.81
+2025-05-19 00:27:00,212 - DEBUG - Población 36/150: Usando solución aleatoria
+2025-05-19 00:27:00,212 - INFO - Generando solución completamente aleatoria...
+2025-05-19 00:27:00,234 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 00:27:00,236 - INFO - Población inicial 36/150: Costo = 1601113.57
+2025-05-19 00:27:00,236 - DEBUG - Población 37/150: Usando heurística constructiva
+2025-05-19 00:50:04,252 - INFO - Población inicial 37/150: Costo = 1265871.23
+2025-05-19 00:50:04,253 - DEBUG - Población 38/150: Usando heurística por precio
+2025-05-19 01:35:18,649 - INFO - Población inicial 38/150: Costo = 1694069.56
+2025-05-19 01:35:18,649 - DEBUG - Población 39/150: Usando heurística por ventana de tiempo
+2025-05-19 01:37:18,625 - INFO - Población inicial 39/150: Costo = 1047174.99
+2025-05-19 01:37:18,625 - DEBUG - Población 40/150: Usando solución aleatoria
+2025-05-19 01:37:18,625 - INFO - Generando solución completamente aleatoria...
+2025-05-19 01:37:18,644 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 01:37:18,646 - INFO - Población inicial 40/150: Costo = 1669544.80
+2025-05-19 01:37:18,646 - DEBUG - Población 41/150: Usando heurística constructiva
+2025-05-19 01:52:24,392 - INFO - Población inicial 41/150: Costo = 1222615.16
+2025-05-19 01:52:24,392 - DEBUG - Población 42/150: Usando heurística por precio
+2025-05-19 02:23:45,065 - INFO - Población inicial 42/150: Costo = 1681487.68
+2025-05-19 02:23:45,065 - DEBUG - Población 43/150: Usando heurística por ventana de tiempo
+2025-05-19 02:25:48,916 - INFO - Población inicial 43/150: Costo = 1016699.91
+2025-05-19 02:25:48,916 - DEBUG - Población 44/150: Usando solución aleatoria
+2025-05-19 02:25:48,916 - INFO - Generando solución completamente aleatoria...
+2025-05-19 02:25:48,935 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 02:25:48,936 - INFO - Población inicial 44/150: Costo = 1671395.66
+2025-05-19 02:25:48,937 - DEBUG - Población 45/150: Usando heurística constructiva
+2025-05-19 02:40:29,237 - INFO - Población inicial 45/150: Costo = 1173299.45
+2025-05-19 02:40:29,237 - DEBUG - Población 46/150: Usando heurística por precio
+2025-05-19 03:13:23,263 - INFO - Población inicial 46/150: Costo = 1678874.57
+2025-05-19 03:13:23,263 - DEBUG - Población 47/150: Usando heurística por ventana de tiempo
+2025-05-19 03:15:22,548 - INFO - Población inicial 47/150: Costo = 997541.22
+2025-05-19 03:15:22,548 - DEBUG - Población 48/150: Usando solución aleatoria
+2025-05-19 03:15:22,548 - INFO - Generando solución completamente aleatoria...
+2025-05-19 03:15:22,567 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 03:15:22,569 - INFO - Población inicial 48/150: Costo = 1719149.34
+2025-05-19 03:15:22,569 - DEBUG - Población 49/150: Usando heurística constructiva
+2025-05-19 03:30:49,824 - INFO - Población inicial 49/150: Costo = 1241277.17
+2025-05-19 03:30:49,825 - DEBUG - Población 50/150: Usando heurística por precio
+2025-05-19 04:04:07,043 - INFO - Población inicial 50/150: Costo = 1675104.20
+2025-05-19 04:04:07,043 - DEBUG - Población 51/150: Usando heurística por ventana de tiempo
+2025-05-19 04:06:33,354 - INFO - Población inicial 51/150: Costo = 989377.70
+2025-05-19 04:06:33,355 - DEBUG - Población 52/150: Usando solución aleatoria
+2025-05-19 04:06:33,355 - INFO - Generando solución completamente aleatoria...
+2025-05-19 04:06:33,375 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 04:06:33,376 - INFO - Población inicial 52/150: Costo = 1566958.50
+2025-05-19 04:06:33,376 - DEBUG - Población 53/150: Usando heurística constructiva
+2025-05-19 04:24:56,074 - INFO - Población inicial 53/150: Costo = 1208298.83
+2025-05-19 04:24:56,074 - DEBUG - Población 54/150: Usando heurística por precio
+2025-05-19 04:57:04,953 - INFO - Población inicial 54/150: Costo = 1678201.51
+2025-05-19 04:57:04,954 - DEBUG - Población 55/150: Usando heurística por ventana de tiempo
+2025-05-19 04:59:02,459 - INFO - Población inicial 55/150: Costo = 1023809.56
+2025-05-19 04:59:02,459 - DEBUG - Población 56/150: Usando solución aleatoria
+2025-05-19 04:59:02,459 - INFO - Generando solución completamente aleatoria...
+2025-05-19 04:59:02,478 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 04:59:02,479 - INFO - Población inicial 56/150: Costo = 1735051.05
+2025-05-19 04:59:02,479 - DEBUG - Población 57/150: Usando heurística constructiva
+2025-05-19 05:14:19,051 - INFO - Población inicial 57/150: Costo = 1261167.41
+2025-05-19 05:14:19,051 - DEBUG - Población 58/150: Usando heurística por precio
+2025-05-19 05:49:42,508 - INFO - Población inicial 58/150: Costo = 1694069.56
+2025-05-19 05:49:42,509 - DEBUG - Población 59/150: Usando heurística por ventana de tiempo
+2025-05-19 05:51:56,121 - INFO - Población inicial 59/150: Costo = 1074509.24
+2025-05-19 05:51:56,121 - DEBUG - Población 60/150: Usando solución aleatoria
+2025-05-19 05:51:56,121 - INFO - Generando solución completamente aleatoria...
+2025-05-19 05:51:56,140 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 05:51:56,141 - INFO - Población inicial 60/150: Costo = 1687746.83
+2025-05-19 05:51:56,141 - DEBUG - Población 61/150: Usando heurística constructiva
+2025-05-19 06:09:14,365 - INFO - Población inicial 61/150: Costo = 1185382.79
+2025-05-19 06:09:14,365 - DEBUG - Población 62/150: Usando heurística por precio
+2025-05-19 06:42:28,592 - INFO - Población inicial 62/150: Costo = 1678439.69
+2025-05-19 06:42:28,592 - DEBUG - Población 63/150: Usando heurística por ventana de tiempo
+2025-05-19 06:44:40,961 - INFO - Población inicial 63/150: Costo = 983705.93
+2025-05-19 06:44:40,961 - DEBUG - Población 64/150: Usando solución aleatoria
+2025-05-19 06:44:40,961 - INFO - Generando solución completamente aleatoria...
+2025-05-19 06:44:40,981 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 06:44:40,982 - INFO - Población inicial 64/150: Costo = 1713030.26
+2025-05-19 06:44:40,982 - DEBUG - Población 65/150: Usando heurística constructiva
+2025-05-19 07:04:41,826 - INFO - Población inicial 65/150: Costo = 1183341.08
+2025-05-19 07:04:41,826 - DEBUG - Población 66/150: Usando heurística por precio
+2025-05-19 07:40:45,307 - INFO - Población inicial 66/150: Costo = 1673787.51
+2025-05-19 07:40:45,308 - DEBUG - Población 67/150: Usando heurística por ventana de tiempo
+2025-05-19 07:43:09,479 - INFO - Población inicial 67/150: Costo = 996864.97
+2025-05-19 07:43:09,479 - DEBUG - Población 68/150: Usando solución aleatoria
+2025-05-19 07:43:09,479 - INFO - Generando solución completamente aleatoria...
+2025-05-19 07:43:09,501 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 07:43:09,502 - INFO - Población inicial 68/150: Costo = 1722056.42
+2025-05-19 07:43:09,502 - DEBUG - Población 69/150: Usando heurística constructiva
+2025-05-19 08:00:21,303 - INFO - Población inicial 69/150: Costo = 1234587.85
+2025-05-19 08:00:21,307 - DEBUG - Población 70/150: Usando heurística por precio
+2025-05-19 08:38:29,254 - INFO - Población inicial 70/150: Costo = 1682243.36
+2025-05-19 08:38:29,254 - DEBUG - Población 71/150: Usando heurística por ventana de tiempo
+2025-05-19 08:40:46,058 - INFO - Población inicial 71/150: Costo = 1030116.69
+2025-05-19 08:40:46,058 - DEBUG - Población 72/150: Usando solución aleatoria
+2025-05-19 08:40:46,058 - INFO - Generando solución completamente aleatoria...
+2025-05-19 08:40:46,078 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 08:40:46,079 - INFO - Población inicial 72/150: Costo = 1499071.96
+2025-05-19 08:40:46,079 - DEBUG - Población 73/150: Usando heurística constructiva
+2025-05-19 08:58:37,744 - INFO - Población inicial 73/150: Costo = 1159311.83
+2025-05-19 08:58:37,744 - DEBUG - Población 74/150: Usando heurística por precio
+2025-05-19 09:34:19,860 - INFO - Población inicial 74/150: Costo = 1677652.25
+2025-05-19 09:34:19,860 - DEBUG - Población 75/150: Usando heurística por ventana de tiempo
+2025-05-19 09:36:29,195 - INFO - Población inicial 75/150: Costo = 1013188.59
+2025-05-19 09:36:29,195 - DEBUG - Población 76/150: Usando solución aleatoria
+2025-05-19 09:36:29,195 - INFO - Generando solución completamente aleatoria...
+2025-05-19 09:36:29,213 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 09:36:29,214 - INFO - Población inicial 76/150: Costo = 1631989.61
+2025-05-19 09:36:29,214 - DEBUG - Población 77/150: Usando heurística constructiva
+2025-05-19 09:51:41,141 - INFO - Población inicial 77/150: Costo = 1196464.25
+2025-05-19 09:51:41,141 - DEBUG - Población 78/150: Usando heurística por precio
+2025-05-19 10:23:24,906 - INFO - Población inicial 78/150: Costo = 1678463.30
+2025-05-19 10:23:24,906 - DEBUG - Población 79/150: Usando heurística por ventana de tiempo
+2025-05-19 10:25:30,612 - INFO - Población inicial 79/150: Costo = 1027486.48
+2025-05-19 10:25:30,612 - DEBUG - Población 80/150: Usando solución aleatoria
+2025-05-19 10:25:30,612 - INFO - Generando solución completamente aleatoria...
+2025-05-19 10:25:30,631 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 10:25:30,632 - INFO - Población inicial 80/150: Costo = 1635392.26
+2025-05-19 10:25:30,632 - DEBUG - Población 81/150: Usando heurística constructiva
+2025-05-19 10:45:22,385 - INFO - Población inicial 81/150: Costo = 1286719.45
+2025-05-19 10:45:22,386 - DEBUG - Población 82/150: Usando heurística por precio
+2025-05-19 11:19:05,704 - INFO - Población inicial 82/150: Costo = 1676984.63
+2025-05-19 11:19:05,704 - DEBUG - Población 83/150: Usando heurística por ventana de tiempo
+2025-05-19 11:21:03,920 - INFO - Población inicial 83/150: Costo = 1038219.95
+2025-05-19 11:21:03,920 - DEBUG - Población 84/150: Usando solución aleatoria
+2025-05-19 11:21:03,920 - INFO - Generando solución completamente aleatoria...
+2025-05-19 11:21:03,938 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 11:21:03,939 - INFO - Población inicial 84/150: Costo = 1589746.46
+2025-05-19 11:21:03,940 - DEBUG - Población 85/150: Usando heurística constructiva
+2025-05-19 11:36:54,400 - INFO - Población inicial 85/150: Costo = 1217263.65
+2025-05-19 11:36:54,400 - DEBUG - Población 86/150: Usando heurística por precio
+2025-05-19 12:12:50,278 - INFO - Población inicial 86/150: Costo = 1697106.78
+2025-05-19 12:12:50,278 - DEBUG - Población 87/150: Usando heurística por ventana de tiempo
+2025-05-19 12:14:44,819 - INFO - Población inicial 87/150: Costo = 1012428.62
+2025-05-19 12:14:44,819 - DEBUG - Población 88/150: Usando solución aleatoria
+2025-05-19 12:14:44,819 - INFO - Generando solución completamente aleatoria...
+2025-05-19 12:14:44,839 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 12:14:44,840 - INFO - Población inicial 88/150: Costo = 1644433.16
+2025-05-19 12:14:44,840 - DEBUG - Población 89/150: Usando heurística constructiva
+2025-05-19 12:29:57,276 - INFO - Población inicial 89/150: Costo = 1229250.82
+2025-05-19 12:29:57,276 - DEBUG - Población 90/150: Usando heurística por precio
+2025-05-19 13:01:00,547 - INFO - Población inicial 90/150: Costo = 1676880.15
+2025-05-19 13:01:00,547 - DEBUG - Población 91/150: Usando heurística por ventana de tiempo
+2025-05-19 13:02:54,579 - INFO - Población inicial 91/150: Costo = 1100942.51
+2025-05-19 13:02:54,580 - DEBUG - Población 92/150: Usando solución aleatoria
+2025-05-19 13:02:54,580 - INFO - Generando solución completamente aleatoria...
+2025-05-19 13:02:54,599 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 13:02:54,600 - INFO - Población inicial 92/150: Costo = 1549060.99
+2025-05-19 13:02:54,600 - DEBUG - Población 93/150: Usando heurística constructiva
+2025-05-19 13:21:43,816 - INFO - Población inicial 93/150: Costo = 1253903.98
+2025-05-19 13:21:43,816 - DEBUG - Población 94/150: Usando heurística por precio
+2025-05-19 13:52:48,911 - INFO - Población inicial 94/150: Costo = 1676421.39
+2025-05-19 13:52:48,911 - DEBUG - Población 95/150: Usando heurística por ventana de tiempo
+2025-05-19 13:54:52,156 - INFO - Población inicial 95/150: Costo = 993729.23
+2025-05-19 13:54:52,157 - DEBUG - Población 96/150: Usando solución aleatoria
+2025-05-19 13:54:52,157 - INFO - Generando solución completamente aleatoria...
+2025-05-19 13:54:52,176 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 13:54:52,177 - INFO - Población inicial 96/150: Costo = 1650973.69
+2025-05-19 13:54:52,177 - DEBUG - Población 97/150: Usando heurística constructiva
+2025-05-19 14:10:02,752 - INFO - Población inicial 97/150: Costo = 1204764.18
+2025-05-19 14:10:02,752 - DEBUG - Población 98/150: Usando heurística por precio
+2025-05-19 14:40:40,295 - INFO - Población inicial 98/150: Costo = 1677196.21
+2025-05-19 14:40:40,296 - DEBUG - Población 99/150: Usando heurística por ventana de tiempo
+2025-05-19 14:42:53,046 - INFO - Población inicial 99/150: Costo = 1007811.25
+2025-05-19 14:42:53,046 - DEBUG - Población 100/150: Usando solución aleatoria
+2025-05-19 14:42:53,046 - INFO - Generando solución completamente aleatoria...
+2025-05-19 14:42:53,065 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 14:42:53,066 - INFO - Población inicial 100/150: Costo = 1647514.79
+2025-05-19 14:42:53,066 - DEBUG - Población 101/150: Usando heurística constructiva
+2025-05-19 14:59:36,659 - INFO - Población inicial 101/150: Costo = 1288880.18
+2025-05-19 14:59:36,660 - DEBUG - Población 102/150: Usando heurística por precio
+2025-05-19 15:31:12,214 - INFO - Población inicial 102/150: Costo = 1678200.46
+2025-05-19 15:31:12,214 - DEBUG - Población 103/150: Usando heurística por ventana de tiempo
+2025-05-19 15:32:50,577 - INFO - Población inicial 103/150: Costo = 1093400.43
+2025-05-19 15:32:50,577 - DEBUG - Población 104/150: Usando solución aleatoria
+2025-05-19 15:32:50,578 - INFO - Generando solución completamente aleatoria...
+2025-05-19 15:32:50,596 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 15:32:50,597 - INFO - Población inicial 104/150: Costo = 1556386.10
+2025-05-19 15:32:50,597 - DEBUG - Población 105/150: Usando heurística constructiva
+2025-05-19 15:48:26,951 - INFO - Población inicial 105/150: Costo = 1206185.69
+2025-05-19 15:48:26,952 - DEBUG - Población 106/150: Usando heurística por precio
+2025-05-19 16:20:06,015 - INFO - Población inicial 106/150: Costo = 1676216.27
+2025-05-19 16:20:06,015 - DEBUG - Población 107/150: Usando heurística por ventana de tiempo
+2025-05-19 16:22:01,482 - INFO - Población inicial 107/150: Costo = 1065002.21
+2025-05-19 16:22:01,483 - DEBUG - Población 108/150: Usando solución aleatoria
+2025-05-19 16:22:01,483 - INFO - Generando solución completamente aleatoria...
+2025-05-19 16:22:01,501 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 16:22:01,502 - INFO - Población inicial 108/150: Costo = 1667915.25
+2025-05-19 16:22:01,502 - DEBUG - Población 109/150: Usando heurística constructiva
+2025-05-19 16:36:21,779 - INFO - Población inicial 109/150: Costo = 1174621.47
+2025-05-19 16:36:21,779 - DEBUG - Población 110/150: Usando heurística por precio
+2025-05-19 17:07:04,875 - INFO - Población inicial 110/150: Costo = 1680220.52
+2025-05-19 17:07:04,875 - DEBUG - Población 111/150: Usando heurística por ventana de tiempo
+2025-05-19 17:09:18,856 - INFO - Población inicial 111/150: Costo = 1023695.04
+2025-05-19 17:09:18,856 - DEBUG - Población 112/150: Usando solución aleatoria
+2025-05-19 17:09:18,857 - INFO - Generando solución completamente aleatoria...
+2025-05-19 17:09:18,875 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 17:09:18,876 - INFO - Población inicial 112/150: Costo = 1519900.48
+2025-05-19 17:09:18,877 - DEBUG - Población 113/150: Usando heurística constructiva
+2025-05-19 17:25:43,858 - INFO - Población inicial 113/150: Costo = 1241615.42
+2025-05-19 17:25:43,858 - DEBUG - Población 114/150: Usando heurística por precio
+2025-05-19 17:57:32,572 - INFO - Población inicial 114/150: Costo = 1676345.72
+2025-05-19 17:57:32,572 - DEBUG - Población 115/150: Usando heurística por ventana de tiempo
+2025-05-19 17:59:38,107 - INFO - Población inicial 115/150: Costo = 1030482.65
+2025-05-19 17:59:38,107 - DEBUG - Población 116/150: Usando solución aleatoria
+2025-05-19 17:59:38,107 - INFO - Generando solución completamente aleatoria...
+2025-05-19 17:59:38,125 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 17:59:38,126 - INFO - Población inicial 116/150: Costo = 1513985.09
+2025-05-19 17:59:38,126 - DEBUG - Población 117/150: Usando heurística constructiva
+2025-05-19 18:14:57,934 - INFO - Población inicial 117/150: Costo = 1211993.09
+2025-05-19 18:14:57,934 - DEBUG - Población 118/150: Usando heurística por precio
+2025-05-19 18:48:48,153 - INFO - Población inicial 118/150: Costo = 1678963.18
+2025-05-19 18:48:48,154 - DEBUG - Población 119/150: Usando heurística por ventana de tiempo
+2025-05-19 18:50:47,621 - INFO - Población inicial 119/150: Costo = 1019986.03
+2025-05-19 18:50:47,622 - DEBUG - Población 120/150: Usando solución aleatoria
+2025-05-19 18:50:47,622 - INFO - Generando solución completamente aleatoria...
+2025-05-19 18:50:47,640 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 18:50:47,641 - INFO - Población inicial 120/150: Costo = 1645464.35
+2025-05-19 18:50:47,641 - DEBUG - Población 121/150: Usando heurística constructiva
+2025-05-19 19:05:21,237 - INFO - Población inicial 121/150: Costo = 1251330.84
+2025-05-19 19:05:21,237 - DEBUG - Población 122/150: Usando heurística por precio
+2025-05-19 19:34:41,419 - INFO - Población inicial 122/150: Costo = 1674669.76
+2025-05-19 19:34:41,420 - DEBUG - Población 123/150: Usando heurística por ventana de tiempo
+2025-05-19 19:36:33,021 - INFO - Población inicial 123/150: Costo = 1046034.79
+2025-05-19 19:36:33,021 - DEBUG - Población 124/150: Usando solución aleatoria
+2025-05-19 19:36:33,021 - INFO - Generando solución completamente aleatoria...
+2025-05-19 19:36:33,040 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 19:36:33,041 - INFO - Población inicial 124/150: Costo = 1805219.45
+2025-05-19 19:36:33,041 - DEBUG - Población 125/150: Usando heurística constructiva
+2025-05-19 19:56:41,418 - INFO - Población inicial 125/150: Costo = 1205879.13
+2025-05-19 19:56:41,418 - DEBUG - Población 126/150: Usando heurística por precio
+2025-05-19 20:30:17,419 - INFO - Población inicial 126/150: Costo = 1679215.45
+2025-05-19 20:30:17,419 - DEBUG - Población 127/150: Usando heurística por ventana de tiempo
+2025-05-19 20:32:25,689 - INFO - Población inicial 127/150: Costo = 999795.83
+2025-05-19 20:32:25,689 - DEBUG - Población 128/150: Usando solución aleatoria
+2025-05-19 20:32:25,689 - INFO - Generando solución completamente aleatoria...
+2025-05-19 20:32:25,708 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 20:32:25,709 - INFO - Población inicial 128/150: Costo = 1695339.95
+2025-05-19 20:32:25,709 - DEBUG - Población 129/150: Usando heurística constructiva
+2025-05-19 20:50:09,427 - INFO - Población inicial 129/150: Costo = 1211533.07
+2025-05-19 20:50:09,427 - DEBUG - Población 130/150: Usando heurística por precio
+2025-05-19 21:28:48,270 - INFO - Población inicial 130/150: Costo = 1678462.35
+2025-05-19 21:28:48,270 - DEBUG - Población 131/150: Usando heurística por ventana de tiempo
+2025-05-19 21:32:34,196 - INFO - Población inicial 131/150: Costo = 988496.70
+2025-05-19 21:32:34,197 - DEBUG - Población 132/150: Usando solución aleatoria
+2025-05-19 21:32:34,197 - INFO - Generando solución completamente aleatoria...
+2025-05-19 21:32:34,227 - INFO - Solución aleatoria generada con 5389 asignaciones
+2025-05-19 21:32:34,229 - INFO - Población inicial 132/150: Costo = 1705939.97
+2025-05-19 21:32:34,229 - DEBUG - Población 133/150: Usando heurística constructiva
+2025-05-19 21:56:55,024 - INFO - Población inicial 133/150: Costo = 1182549.97
+2025-05-19 21:56:55,024 - DEBUG - Población 134/150: Usando heurística por precio

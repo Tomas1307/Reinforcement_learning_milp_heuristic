@@ -283,10 +283,10 @@ def main():
 
     # Definir parámetros para la búsqueda en cuadrícula
     param_grid = {
-        "population_size": [10],  # Desde pequeña hasta muy grande
+        "population_size": [150,200],  # Desde pequeña hasta muy grande
         "quality_size": [5],  # Diferentes tamaños para subpoblación de calidad
         "diversity_size": [5],  # Diferentes tamaños para subpoblación de diversidad
-        "max_iterations": [30]  # Desde pocas hasta muchas iteraciones
+        "max_iterations": [5]  # Desde pocas hasta muchas iteraciones
     }
 
     # Ejecutar búsqueda en cuadrícula para el archivo específico
