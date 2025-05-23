@@ -191,6 +191,11 @@ def evaluar_costo(schedule, config):
         prices = config["prices"]
         dt = config["dt"]
         arrivals = config["arrivals"]
+        alpha_cost = config.get("alpha_cost", 0.6)
+        alpha_satisfaction = config.get("alpha_satisfaction", 0.4)
+        priority = {arr["id"]: arr.get("priority", 1) for arr in arrivals}
+        willingness = {arr["id"]: arr.get("willingness_to_pay", 1.0) for arr in arrivals}
+
         
         # Mapeos para facilitar el acceso
         required_energy = {arr["id"]: arr["required_energy"] for arr in arrivals}
@@ -219,11 +224,13 @@ def evaluar_costo(schedule, config):
             if energia_no_entregada > 0:
                 # Penalización progresiva
                 porcentaje_no_entregado = energia_no_entregada / energia_requerida
-                factor_penalizacion = penalizacion_base * porcentaje_no_entregado
+                factor_penalizacion = penalizacion_base * porcentaje_no_entregado * priority[ev_id] * willingness[ev_id]
+
                 
                 costo_penalizacion += energia_no_entregada * factor_penalizacion
         
-        costo_total = costo_operacion + costo_penalizacion
+        costo_total = alpha_cost * costo_operacion + alpha_satisfaction * costo_penalizacion
+
         return costo_total
     except Exception as e:
         logger.error(f"Error en evaluar_costo: {str(e)}")

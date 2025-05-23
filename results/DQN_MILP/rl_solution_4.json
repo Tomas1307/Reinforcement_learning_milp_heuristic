@@ -1,0 +1,544 @@
+{
+  "schedule": [],
+  "metrics": {
+    "energy_metrics": {
+      "total_required_energy": 2218.4913785017247,
+      "total_delivered_energy": 0,
+      "total_satisfaction_pct": 0.0,
+      "ev_metrics": {
+        "0": {
+          "required_energy": 47.4894942995359,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "1": {
+          "required_energy": 46.50889159740791,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "2": {
+          "required_energy": 39.828678387754884,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "3": {
+          "required_energy": 25.79327796720471,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "4": {
+          "required_energy": 24.888443112245007,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "5": {
+          "required_energy": 12.31500758491765,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "6": {
+          "required_energy": 48.53721659814515,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "7": {
+          "required_energy": 49.15967699249735,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "8": {
+          "required_energy": 12.322052648650113,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "9": {
+          "required_energy": 17.805091869794843,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "10": {
+          "required_energy": 14.285807805939923,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "11": {
+          "required_energy": 15.932915805735583,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "12": {
+          "required_energy": 29.77303704588724,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "13": {
+          "required_energy": 26.293155717919895,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "14": {
+          "required_energy": 29.462870852087207,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "15": {
+          "required_energy": 36.08285446033667,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "16": {
+          "required_energy": 32.88684746532428,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "17": {
+          "required_energy": 34.97166328165709,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "18": {
+          "required_energy": 18.495825598033548,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "19": {
+          "required_energy": 12.04157395101928,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "20": {
+          "required_energy": 38.939966770561036,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "21": {
+          "required_energy": 27.95350330324872,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "22": {
+          "required_energy": 10.304450748875427,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "23": {
+          "required_energy": 41.50346293464042,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "24": {
+          "required_energy": 36.5853413711185,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "25": {
+          "required_energy": 43.912208002316596,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "26": {
+          "required_energy": 17.013037381972822,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "27": {
+          "required_energy": 49.92059819678421,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "28": {
+          "required_energy": 38.39450606957492,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "29": {
+          "required_energy": 13.075555796047155,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "30": {
+          "required_energy": 15.167787849391097,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "31": {
+          "required_energy": 28.981096843819852,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "32": {
+          "required_energy": 30.708983920031564,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "33": {
+          "required_energy": 36.05908515988541,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "34": {
+          "required_energy": 10.910852675639532,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "35": {
+          "required_energy": 47.13619603646379,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "36": {
+          "required_energy": 40.344120047669236,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "37": {
+          "required_energy": 11.336617649306135,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "38": {
+          "required_energy": 34.959656816897684,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "39": {
+          "required_energy": 45.0665015872585,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "40": {
+          "required_energy": 32.44638196555428,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "41": {
+          "required_energy": 34.259215567051434,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "42": {
+          "required_energy": 46.62732229820469,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "43": {
+          "required_energy": 22.14655584827038,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "44": {
+          "required_energy": 15.063232122042617,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "45": {
+          "required_energy": 15.879723837990811,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "46": {
+          "required_energy": 42.99119113591694,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "47": {
+          "required_energy": 28.83464395577559,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "48": {
+          "required_energy": 37.84380542371018,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "49": {
+          "required_energy": 47.718378017612224,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "50": {
+          "required_energy": 12.285760462307604,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "51": {
+          "required_energy": 44.228921612156505,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "52": {
+          "required_energy": 28.439070307250077,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "53": {
+          "required_energy": 38.7208439456423,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "54": {
+          "required_energy": 10.450010248751802,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "55": {
+          "required_energy": 23.8597548604389,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "56": {
+          "required_energy": 12.077739756601966,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "57": {
+          "required_energy": 12.20387171207651,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "58": {
+          "required_energy": 40.000531605631714,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "59": {
+          "required_energy": 15.443166582576797,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "60": {
+          "required_energy": 46.78094812062087,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "61": {
+          "required_energy": 44.863008115619294,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "62": {
+          "required_energy": 10.527697415151884,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "63": {
+          "required_energy": 31.894037175749563,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "64": {
+          "required_energy": 19.51896744332968,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "65": {
+          "required_energy": 14.624374297197003,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "66": {
+          "required_energy": 42.850739472463076,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "67": {
+          "required_energy": 39.640069063617936,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "68": {
+          "required_energy": 18.464748063415513,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "69": {
+          "required_energy": 43.151012338080875,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "70": {
+          "required_energy": 17.524090204929145,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "71": {
+          "required_energy": 19.907484721954347,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "72": {
+          "required_energy": 20.922721558485566,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "73": {
+          "required_energy": 44.4962264840709,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "74": {
+          "required_energy": 48.65722055787864,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        }
+      }
+    },
+    "total_cost": 0,
+    "cost_per_kwh": 0,
+    "schedule_size": 0,
+    "evs_served": 0,
+    "total_evs": 75,
+    "execution_time": 1748033616.2639086
+  },
+  "timestamp": "2025-05-23 15:54:21"
+}
