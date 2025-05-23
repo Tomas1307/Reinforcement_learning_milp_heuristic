@@ -763,7 +763,7 @@ def main():
     # Subcomando para búsqueda de hiperparámetros estilo CLI (no interactivo)
     search_parser = subparsers.add_parser("search", help="Ejecutar búsqueda de hiperparámetros (modo CLI)")
     search_parser.add_argument("--config", type=str, help="Ruta a un archivo JSON específico")
-    search_parser.add_argument("--data_dir", type=str, default="./cluster_results/representative_files", 
+    search_parser.add_argument("--data_dir", type=str, default="./results/cluster_results/representative_files", 
                         help="Directorio con archivos JSON")
     search_parser.add_argument("--output_dir", type=str, default="hyperparameter/hyperparameter_results_constructive",
                         help="Directorio para resultados")

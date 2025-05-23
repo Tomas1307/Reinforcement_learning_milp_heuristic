@@ -1,284 +1,1579 @@
 
 
---- Nueva sesión de entrenamiento: 2025-03-20 16:15:54.440981 ---
+--- Nueva sesión de entrenamiento optimizado: 2025-05-22 21:07:05 ---
 
-==================================================
-Entrenando en sistema 1 (1/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 50...
-Episodio 1/50, Recompensa: 335.51, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
-Episodio 2/50, Recompensa: 273.01, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
-Episodio 3/50, Recompensa: 333.68, Epsilon: 0.7256, EVs asignados: 17, EVs saltados: 15
+============================================================
+SISTEMA 1 (1/17)
+============================================================
+Info del sistema: 32 vehículos, 10 plazas, 5 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 916.62 (promedio últimos 3: 916.62)
+   Satisfacción energética: 42.2% (promedio últimos 3: 42.2%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.2s
+   Pasos: 32
+Nuevo mejor modelo! Métrica combinada: 958.81
+Episodio 2 completado:
+   Recompensa: 975.30 (promedio últimos 3: 975.30)
+   Satisfacción energética: 43.6% (promedio últimos 3: 43.6%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.0s
+   Pasos: 32
+Nuevo mejor modelo! Métrica combinada: 1018.93
+Episodio 3 completado:
+   Recompensa: 948.18 (promedio últimos 3: 946.70)
+   Satisfacción energética: 39.3% (promedio últimos 3: 41.7%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.5s
+   Pasos: 32
+Sin mejora. Paciencia: 1/8
+Episodio 4 completado:
+   Recompensa: 962.64 (promedio últimos 3: 962.04)
+   Satisfacción energética: 42.5% (promedio últimos 3: 41.8%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 2/8
+Episodio 5 completado:
+   Recompensa: 1062.81 (promedio últimos 3: 991.21)
+   Satisfacción energética: 44.3% (promedio últimos 3: 42.1%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Checkpoint guardado: ./checkpoints\checkpoint_sys_0_ep_5.h5
+Sin mejora. Paciencia: 3/8
+Episodio 6 completado:
+   Recompensa: 932.36 (promedio últimos 3: 985.94)
+   Satisfacción energética: 43.3% (promedio últimos 3: 43.4%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 4/8
+Episodio 7 completado:
+   Recompensa: 1059.96 (promedio últimos 3: 1018.38)
+   Satisfacción energética: 44.2% (promedio últimos 3: 43.9%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Nuevo mejor modelo! Métrica combinada: 1035.92
+Episodio 8 completado:
+   Recompensa: 964.31 (promedio últimos 3: 985.54)
+   Satisfacción energética: 41.6% (promedio últimos 3: 43.0%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 1/8
+Episodio 9 completado:
+   Recompensa: 932.68 (promedio últimos 3: 985.65)
+   Satisfacción energética: 43.0% (promedio últimos 3: 42.9%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 2/8
+Episodio 10 completado:
+   Recompensa: 874.10 (promedio últimos 3: 923.70)
+   Satisfacción energética: 42.4% (promedio últimos 3: 42.4%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Checkpoint guardado: ./checkpoints\checkpoint_sys_0_ep_10.h5
+Sin mejora. Paciencia: 3/8
+Episodio 11 completado:
+   Recompensa: 750.74 (promedio últimos 3: 852.51)
+   Satisfacción energética: 37.0% (promedio últimos 3: 40.8%)
+   Vehículos asignados: 17/32 (53.1%)
+   Vehículos saltados: 15/32 (46.9%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 4/8
+Episodio 12 completado:
+   Recompensa: 987.10 (promedio últimos 3: 870.65)
+   Satisfacción energética: 43.0% (promedio últimos 3: 40.8%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 5/8
+Episodio 13 completado:
+   Recompensa: 1015.66 (promedio últimos 3: 917.83)
+   Satisfacción energética: 41.1% (promedio últimos 3: 40.4%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 6/8
+Episodio 14 completado:
+   Recompensa: 1165.53 (promedio últimos 3: 1056.10)
+   Satisfacción energética: 46.1% (promedio últimos 3: 43.4%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 7/8
+Episodio 15 completado:
+   Recompensa: 1107.52 (promedio últimos 3: 1096.24)
+   Satisfacción energética: 44.3% (promedio últimos 3: 43.8%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Checkpoint guardado: ./checkpoints\checkpoint_sys_0_ep_15.h5
+Nuevo mejor modelo! Métrica combinada: 1047.62
+Episodio 16 completado:
+   Recompensa: 1037.31 (promedio últimos 3: 1103.45)
+   Satisfacción energética: 41.9% (promedio últimos 3: 44.1%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Nuevo mejor modelo! Métrica combinada: 1105.92
+Episodio 17 completado:
+   Recompensa: 1001.26 (promedio últimos 3: 1048.70)
+   Satisfacción energética: 40.9% (promedio últimos 3: 42.4%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 1/8
+Episodio 18 completado:
+   Recompensa: 665.89 (promedio últimos 3: 901.49)
+   Satisfacción energética: 31.7% (promedio últimos 3: 38.2%)
+   Vehículos asignados: 17/32 (53.1%)
+   Vehículos saltados: 15/32 (46.9%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 2/8
+Episodio 19 completado:
+   Recompensa: 920.73 (promedio últimos 3: 862.63)
+   Satisfacción energética: 38.4% (promedio últimos 3: 37.0%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 3/8
+Episodio 20 completado:
+   Recompensa: 854.59 (promedio últimos 3: 813.74)
+   Satisfacción energética: 40.4% (promedio últimos 3: 36.8%)
+   Vehículos asignados: 17/32 (53.1%)
+   Vehículos saltados: 15/32 (46.9%)
+   Tiempo: 0.1s
+   Pasos: 32
+Checkpoint guardado: ./checkpoints\checkpoint_sys_0_ep_20.h5
+Sin mejora. Paciencia: 4/8
+Episodio 21 completado:
+   Recompensa: 1197.29 (promedio últimos 3: 990.87)
+   Satisfacción energética: 45.8% (promedio últimos 3: 41.5%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 5/8
+Episodio 22 completado:
+   Recompensa: 943.23 (promedio últimos 3: 998.37)
+   Satisfacción energética: 39.9% (promedio últimos 3: 42.0%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 6/8
+Episodio 23 completado:
+   Recompensa: 1128.15 (promedio últimos 3: 1089.56)
+   Satisfacción energética: 45.7% (promedio últimos 3: 43.8%)
+   Vehículos asignados: 19/32 (59.4%)
+   Vehículos saltados: 13/32 (40.6%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 7/8
+Episodio 24 completado:
+   Recompensa: 1034.38 (promedio últimos 3: 1035.25)
+   Satisfacción energética: 44.6% (promedio últimos 3: 43.4%)
+   Vehículos asignados: 18/32 (56.2%)
+   Vehículos saltados: 14/32 (43.8%)
+   Tiempo: 0.1s
+   Pasos: 32
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
 
-
---- Nueva sesión de entrenamiento: 2025-03-20 16:36:32.621241 ---
-
-==================================================
-Entrenando en sistema 1 (1/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 335.51, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
-Nuevo mejor modelo guardado con recompensa: 335.51
-Episodio 2/20, Recompensa: 325.65, Epsilon: 1.0000, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 3/20, Recompensa: 348.01, Epsilon: 0.7256, EVs asignados: 18, EVs saltados: 14
-Nuevo mejor modelo guardado con recompensa: 348.01
-Episodio 4/20, Recompensa: 333.11, Epsilon: 0.5264, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 5/20, Recompensa: 348.01, Epsilon: 0.3820, EVs asignados: 18, EVs saltados: 14
-Checkpoint guardado en ./checkpoints\checkpoint_sys_0_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 6/20, Recompensa: 282.26, Epsilon: 0.2771, EVs asignados: 17, EVs saltados: 15
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 7/20, Recompensa: 360.51, Epsilon: 0.2011, EVs asignados: 18, EVs saltados: 14
-Nuevo mejor modelo guardado con recompensa: 360.51
-Episodio 8/20, Recompensa: 370.91, Epsilon: 0.1459, EVs asignados: 18, EVs saltados: 14
-Nuevo mejor modelo guardado con recompensa: 370.91
-Episodio 9/20, Recompensa: 385.51, Epsilon: 0.1059, EVs asignados: 18, EVs saltados: 14
-Nuevo mejor modelo guardado con recompensa: 385.51
-Episodio 10/20, Recompensa: 373.01, Epsilon: 0.0768, EVs asignados: 18, EVs saltados: 14
-Checkpoint guardado en ./checkpoints\checkpoint_sys_0_ep_10.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 11/20, Recompensa: 360.51, Epsilon: 0.0557, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 12/20, Recompensa: 360.51, Epsilon: 0.0404, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 13/20, Recompensa: 373.01, Epsilon: 0.0293, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 4/5
-Episodio 14/20, Recompensa: 348.01, Epsilon: 0.0213, EVs asignados: 18, EVs saltados: 14
-No hay mejora en el episodio. Contador de paciencia: 5/5
-Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
-
-==================================================
-Entrenando en sistema 2 (2/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 932.45, Epsilon: 0.0167, EVs asignados: 39, EVs saltados: 10
-Nuevo mejor modelo guardado con recompensa: 932.45
-Episodio 2/20, Recompensa: 944.95, Epsilon: 0.0110, EVs asignados: 39, EVs saltados: 10
-Nuevo mejor modelo guardado con recompensa: 944.95
-Episodio 3/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 4/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 5/20, Recompensa: 944.95, Epsilon: 0.0100, EVs asignados: 39, EVs saltados: 10
-Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-
-
---- Nueva sesión de entrenamiento: 2025-03-20 21:28:39.587566 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_1_ep_5.h5
-
-==================================================
-Entrenando en sistema 2 (2/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 7 hasta 20...
-Episodio 7/20, Recompensa: 837.59, Epsilon: 1.0000, EVs asignados: 38, EVs saltados: 11
-Nuevo mejor modelo guardado con recompensa: 837.59
-Episodio 8/20, Recompensa: 876.12, Epsilon: 0.7112, EVs asignados: 38, EVs saltados: 11
-Nuevo mejor modelo guardado con recompensa: 876.12
-Episodio 9/20, Recompensa: 878.30, Epsilon: 0.4351, EVs asignados: 39, EVs saltados: 10
-Nuevo mejor modelo guardado con recompensa: 878.30
-Episodio 10/20, Recompensa: 973.34, Epsilon: 0.2663, EVs asignados: 40, EVs saltados: 9
-Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_10.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-Nuevo mejor modelo guardado con recompensa: 973.34
-Episodio 11/20, Recompensa: 919.95, Epsilon: 0.1629, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 12/20, Recompensa: 969.95, Epsilon: 0.0997, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 13/20, Recompensa: 944.95, Epsilon: 0.0610, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 14/20, Recompensa: 957.45, Epsilon: 0.0373, EVs asignados: 39, EVs saltados: 10
-No hay mejora en el episodio. Contador de paciencia: 4/5
-Episodio 15/20, Recompensa: 944.95, Epsilon: 0.0228, EVs asignados: 39, EVs saltados: 10
-Checkpoint guardado en ./checkpoints\checkpoint_sys_1_ep_15.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 5/5
-Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
-
-==================================================
-Entrenando en sistema 3 (3/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 559.63, Epsilon: 0.0206, EVs asignados: 21, EVs saltados: 0
-Nuevo mejor modelo guardado con recompensa: 559.63
-Episodio 2/20, Recompensa: 572.13, Epsilon: 0.0185, EVs asignados: 21, EVs saltados: 0
-Nuevo mejor modelo guardado con recompensa: 572.13
-Episodio 3/20, Recompensa: 572.13, Epsilon: 0.0167, EVs asignados: 21, EVs saltados: 0
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 4/20, Recompensa: 572.13, Epsilon: 0.0136, EVs asignados: 21, EVs saltados: 0
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 5/20, Recompensa: 572.13, Epsilon: 0.0110, EVs asignados: 21, EVs saltados: 0
-Checkpoint guardado en ./checkpoints\checkpoint_sys_2_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 6/20, Recompensa: 572.13, Epsilon: 0.0100, EVs asignados: 21, EVs saltados: 0
-No hay mejora en el episodio. Contador de paciencia: 4/5
-Episodio 7/20, Recompensa: 572.13, Epsilon: 0.0100, EVs asignados: 21, EVs saltados: 0
-No hay mejora en el episodio. Contador de paciencia: 5/5
-Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
-
-==================================================
-Entrenando en sistema 4 (4/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-Nuevo mejor modelo guardado con recompensa: 130.59
-Episodio 2/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 3/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 4/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 5/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-Checkpoint guardado en ./checkpoints\checkpoint_sys_3_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 4/5
-Episodio 6/20, Recompensa: 130.59, Epsilon: 0.0100, EVs asignados: 26, EVs saltados: 49
-No hay mejora en el episodio. Contador de paciencia: 5/5
-Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
-
-==================================================
-Entrenando en sistema 5 (5/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-Nuevo mejor modelo guardado con recompensa: 989.26
-Episodio 2/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 3/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 4/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 5/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-Checkpoint guardado en ./checkpoints\checkpoint_sys_4_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-No hay mejora en el episodio. Contador de paciencia: 4/5
-Episodio 6/20, Recompensa: 989.26, Epsilon: 0.0100, EVs asignados: 47, EVs saltados: 24
-No hay mejora en el episodio. Contador de paciencia: 5/5
-Early stopping activado tras 5 episodios sin mejora. Cargando mejor modelo...
-
-==================================================
-Entrenando en sistema 6 (6/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
-Nuevo mejor modelo guardado con recompensa: 1814.40
-Episodio 2/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 3/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
-No hay mejora en el episodio. Contador de paciencia: 2/5
-Episodio 4/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
-No hay mejora en el episodio. Contador de paciencia: 3/5
-Episodio 5/20, Recompensa: 1814.40, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 69
-Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-
-
---- Nueva sesión de entrenamiento: 2025-03-21 09:55:50.991493 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_5.h5
-
-==================================================
-Entrenando en sistema 6 (6/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 7 hasta 20...
-Episodio 7/20, Recompensa: 1749.96, Epsilon: 0.4621, EVs asignados: 83, EVs saltados: 78
-Nuevo mejor modelo guardado con recompensa: 1749.96
-Episodio 8/20, Recompensa: 1907.62, Epsilon: 0.0920, EVs asignados: 92, EVs saltados: 69
-Nuevo mejor modelo guardado con recompensa: 1907.62
-Episodio 9/20, Recompensa: 1639.45, Epsilon: 0.0183, EVs asignados: 98, EVs saltados: 63
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 10/20, Recompensa: 2036.90, Epsilon: 0.0100, EVs asignados: 98, EVs saltados: 63
-Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_10.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-
-
---- Nueva sesión de entrenamiento: 2025-03-21 16:41:54.595521 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_10.h5
-
-==================================================
-Entrenando en sistema 6 (6/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 12 hasta 20...
-Episodio 12/20, Recompensa: 1712.04, Epsilon: 0.4440, EVs asignados: 83, EVs saltados: 78
-Nuevo mejor modelo guardado con recompensa: 1712.04
-Episodio 13/20, Recompensa: 1465.23, Epsilon: 0.0884, EVs asignados: 78, EVs saltados: 83
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 14/20, Recompensa: 2216.87, Epsilon: 0.0176, EVs asignados: 94, EVs saltados: 67
-Nuevo mejor modelo guardado con recompensa: 2216.87
-Episodio 15/20, Recompensa: 2311.80, Epsilon: 0.0100, EVs asignados: 103, EVs saltados: 58
-Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_15.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-Nuevo mejor modelo guardado con recompensa: 2311.80
-
-
---- Nueva sesión de entrenamiento: 2025-03-21 21:52:16.479899 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_15.h5
-
-==================================================
-Entrenando en sistema 6 (6/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 17 hasta 20...
-Episodio 17/20, Recompensa: 1767.11, Epsilon: 0.4715, EVs asignados: 83, EVs saltados: 78
-Nuevo mejor modelo guardado con recompensa: 1767.11
-Episodio 18/20, Recompensa: 2158.77, Epsilon: 0.0939, EVs asignados: 99, EVs saltados: 62
-Nuevo mejor modelo guardado con recompensa: 2158.77
-Episodio 19/20, Recompensa: 1446.19, Epsilon: 0.0187, EVs asignados: 89, EVs saltados: 72
-No hay mejora en el episodio. Contador de paciencia: 1/5
-Episodio 20/20, Recompensa: 1578.37, Epsilon: 0.0100, EVs asignados: 78, EVs saltados: 83
-Checkpoint guardado en ./checkpoints\checkpoint_sys_5_ep_20.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
+RESUMEN SISTEMA 1:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: 976.60
+   Mejor métrica combinada: 1105.92
+   Satisfacción promedio: 42.0%
+   Mejor satisfacción: 46.1%
+   Episodios completados: 24
+   Epsilon final: 0.5134
 
 
---- Nueva sesión de entrenamiento: 2025-03-22 22:41:47.908821 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_5_ep_20.h5
+============================================================
+SISTEMA 2 (2/17)
+============================================================
+Info del sistema: 103 vehículos, 10 plazas, 10 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -5004.02 (promedio últimos 3: -5004.02)
+   Satisfacción energética: 17.2% (promedio últimos 3: 17.2%)
+   Vehículos asignados: 26/103 (25.2%)
+   Vehículos saltados: 75/103 (72.8%)
+   Tiempo: 0.2s
+   Pasos: 101
+Nuevo mejor modelo! Métrica combinada: -4986.82
+Episodio 2 completado:
+   Recompensa: -5147.45 (promedio últimos 3: -5147.45)
+   Satisfacción energética: 16.5% (promedio últimos 3: 16.5%)
+   Vehículos asignados: 23/103 (22.3%)
+   Vehículos saltados: 78/103 (75.7%)
+   Tiempo: 0.2s
+   Pasos: 101
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -5616.49 (promedio últimos 3: -5255.99)
+   Satisfacción energética: 16.0% (promedio últimos 3: 16.6%)
+   Vehículos asignados: 24/103 (23.3%)
+   Vehículos saltados: 77/103 (74.8%)
+   Tiempo: 0.2s
+   Pasos: 101
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -5403.19 (promedio últimos 3: -5389.04)
+   Satisfacción energética: 15.2% (promedio últimos 3: 15.9%)
+   Vehículos asignados: 23/103 (22.3%)
+   Vehículos saltados: 78/103 (75.7%)
+   Tiempo: 0.2s
+   Pasos: 101
+Sin mejora. Paciencia: 3/8
+Episodio 5 completado:
+   Recompensa: -4897.43 (promedio últimos 3: -5305.70)
+   Satisfacción energética: 18.7% (promedio últimos 3: 16.7%)
+   Vehículos asignados: 27/103 (26.2%)
+   Vehículos saltados: 74/103 (71.8%)
+   Tiempo: 0.2s
+   Pasos: 101
+Checkpoint guardado: ./checkpoints\checkpoint_sys_1_ep_5.h5
+Sin mejora. Paciencia: 4/8
+Episodio 6 completado:
+   Recompensa: -5306.53 (promedio últimos 3: -5202.38)
+   Satisfacción energética: 15.2% (promedio últimos 3: 16.4%)
+   Vehículos asignados: 23/103 (22.3%)
+   Vehículos saltados: 78/103 (75.7%)
+   Tiempo: 0.3s
+   Pasos: 101
+Sin mejora. Paciencia: 5/8
+Episodio 7 completado:
+   Recompensa: -5281.42 (promedio últimos 3: -5161.79)
+   Satisfacción energética: 15.3% (promedio últimos 3: 16.4%)
+   Vehículos asignados: 22/103 (21.4%)
+   Vehículos saltados: 79/103 (76.7%)
+   Tiempo: 0.3s
+   Pasos: 101
+Sin mejora. Paciencia: 6/8
+Episodio 8 completado:
+   Recompensa: -5084.58 (promedio últimos 3: -5224.18)
+   Satisfacción energética: 15.1% (promedio últimos 3: 15.2%)
+   Vehículos asignados: 24/103 (23.3%)
+   Vehículos saltados: 77/103 (74.8%)
+   Tiempo: 0.3s
+   Pasos: 101
+Sin mejora. Paciencia: 7/8
+Episodio 9 completado:
+   Recompensa: -4981.22 (promedio últimos 3: -5115.74)
+   Satisfacción energética: 16.4% (promedio últimos 3: 15.6%)
+   Vehículos asignados: 24/103 (23.3%)
+   Vehículos saltados: 77/103 (74.8%)
+   Tiempo: 0.3s
+   Pasos: 101
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
 
-==================================================
-Entrenando en sistema 7 (7/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 20...
-Episodio 1/20, Recompensa: 3017.30, Epsilon: 0.1696, EVs asignados: 143, EVs saltados: 140
-Nuevo mejor modelo guardado con recompensa: 3017.30
-Episodio 2/20, Recompensa: 3070.66, Epsilon: 0.0100, EVs asignados: 141, EVs saltados: 142
-Nuevo mejor modelo guardado con recompensa: 3070.66
-Episodio 3/20, Recompensa: 1179.13, Epsilon: 0.0100, EVs asignados: 92, EVs saltados: 191
-Checkpoint guardado en ./checkpoints\checkpoint_sys_6_ep_3.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
+RESUMEN SISTEMA 2:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -5191.37
+   Mejor métrica combinada: -4986.82
+   Satisfacción promedio: 16.2%
+   Mejor satisfacción: 18.7%
+   Episodios completados: 9
+   Epsilon final: 0.8348
 
 
---- Nueva sesión de entrenamiento: 2025-03-23 10:56:34.635790 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_6_ep_3.h5
+============================================================
+SISTEMA 3 (3/17)
+============================================================
+Info del sistema: 49 vehículos, 30 plazas, 12 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 2662.66 (promedio últimos 3: 2662.66)
+   Satisfacción energética: 56.7% (promedio últimos 3: 56.7%)
+   Vehículos asignados: 38/49 (77.6%)
+   Vehículos saltados: 11/49 (22.4%)
+   Tiempo: 0.1s
+   Pasos: 49
+Nuevo mejor modelo! Métrica combinada: 2719.38
+Episodio 2 completado:
+   Recompensa: 2776.87 (promedio últimos 3: 2776.87)
+   Satisfacción energética: 57.4% (promedio últimos 3: 57.4%)
+   Vehículos asignados: 40/49 (81.6%)
+   Vehículos saltados: 9/49 (18.4%)
+   Tiempo: 0.1s
+   Pasos: 49
+Nuevo mejor modelo! Métrica combinada: 2834.26
+Episodio 3 completado:
+   Recompensa: 2349.78 (promedio últimos 3: 2596.44)
+   Satisfacción energética: 51.5% (promedio últimos 3: 55.2%)
+   Vehículos asignados: 37/49 (75.5%)
+   Vehículos saltados: 12/49 (24.5%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 1/8
+Episodio 4 completado:
+   Recompensa: 2536.44 (promedio últimos 3: 2554.36)
+   Satisfacción energética: 54.6% (promedio últimos 3: 54.5%)
+   Vehículos asignados: 38/49 (77.6%)
+   Vehículos saltados: 11/49 (22.4%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 2/8
+Episodio 5 completado:
+   Recompensa: 2443.01 (promedio últimos 3: 2443.08)
+   Satisfacción energética: 53.2% (promedio últimos 3: 53.1%)
+   Vehículos asignados: 36/49 (73.5%)
+   Vehículos saltados: 13/49 (26.5%)
+   Tiempo: 0.1s
+   Pasos: 49
+Checkpoint guardado: ./checkpoints\checkpoint_sys_2_ep_5.h5
+Sin mejora. Paciencia: 3/8
+Episodio 6 completado:
+   Recompensa: 2262.19 (promedio últimos 3: 2413.88)
+   Satisfacción energética: 53.6% (promedio últimos 3: 53.8%)
+   Vehículos asignados: 36/49 (73.5%)
+   Vehículos saltados: 13/49 (26.5%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 4/8
+Episodio 7 completado:
+   Recompensa: 2111.70 (promedio últimos 3: 2272.30)
+   Satisfacción energética: 50.8% (promedio últimos 3: 52.6%)
+   Vehículos asignados: 34/49 (69.4%)
+   Vehículos saltados: 15/49 (30.6%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 5/8
+Episodio 8 completado:
+   Recompensa: 2381.17 (promedio últimos 3: 2251.69)
+   Satisfacción energética: 53.4% (promedio últimos 3: 52.6%)
+   Vehículos asignados: 37/49 (75.5%)
+   Vehículos saltados: 12/49 (24.5%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 6/8
+Episodio 9 completado:
+   Recompensa: 2575.80 (promedio últimos 3: 2356.22)
+   Satisfacción energética: 55.6% (promedio últimos 3: 53.3%)
+   Vehículos asignados: 38/49 (77.6%)
+   Vehículos saltados: 11/49 (22.4%)
+   Tiempo: 0.1s
+   Pasos: 49
+Sin mejora. Paciencia: 7/8
+Episodio 10 completado:
+   Recompensa: 2242.69 (promedio últimos 3: 2399.89)
+   Satisfacción energética: 53.5% (promedio últimos 3: 54.2%)
+   Vehículos asignados: 36/49 (73.5%)
+   Vehículos saltados: 13/49 (26.5%)
+   Tiempo: 0.1s
+   Pasos: 49
+Checkpoint guardado: ./checkpoints\checkpoint_sys_2_ep_10.h5
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
 
-==================================================
-Entrenando en sistema 7 (7/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 5 hasta 5...
-Episodio 5/5, Recompensa: 3131.38, Epsilon: 0.2093, EVs asignados: 148, EVs saltados: 135
-Checkpoint guardado en ./checkpoints\checkpoint_sys_6_ep_5.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
-Nuevo mejor modelo guardado con recompensa: 3131.38
-
-==================================================
-Entrenando en sistema 8 (8/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 1 hasta 5...
-Episodio 1/5, Recompensa: 2128.77, Epsilon: 0.0100, EVs asignados: 141, EVs saltados: 287
-Nuevo mejor modelo guardado con recompensa: 2128.77
-Episodio 2/5, Recompensa: 3036.81, Epsilon: 0.0100, EVs asignados: 157, EVs saltados: 271
-Checkpoint guardado en ./checkpoints\checkpoint_sys_7_ep_2.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
+RESUMEN SISTEMA 3:
+   Tiempo total: 0.0 minutos
+   Recompensa promedio: 2434.23
+   Mejor métrica combinada: 2834.26
+   Satisfacción promedio: 54.0%
+   Mejor satisfacción: 57.4%
+   Episodios completados: 10
+   Epsilon final: 0.8224
 
 
---- Nueva sesión de entrenamiento: 2025-03-23 20:14:22.793771 ---
-Reanudando desde checkpoint: ./checkpoints\checkpoint_sys_7_ep_2.h5
+============================================================
+SISTEMA 4 (4/17)
+============================================================
+Info del sistema: 183 vehículos, 20 plazas, 15 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -12160.06 (promedio últimos 3: -12160.06)
+   Satisfacción energética: 13.1% (promedio últimos 3: 13.1%)
+   Vehículos asignados: 35/183 (19.1%)
+   Vehículos saltados: 147/183 (80.3%)
+   Tiempo: 0.4s
+   Pasos: 182
+Nuevo mejor modelo! Métrica combinada: -12146.97
+Episodio 2 completado:
+   Recompensa: -11817.33 (promedio últimos 3: -11817.33)
+   Satisfacción energética: 13.4% (promedio últimos 3: 13.4%)
+   Vehículos asignados: 41/183 (22.4%)
+   Vehículos saltados: 141/183 (77.0%)
+   Tiempo: 0.4s
+   Pasos: 182
+Nuevo mejor modelo! Métrica combinada: -11803.93
+Episodio 3 completado:
+   Recompensa: -11591.25 (promedio últimos 3: -11856.22)
+   Satisfacción energética: 13.9% (promedio últimos 3: 13.5%)
+   Vehículos asignados: 43/183 (23.5%)
+   Vehículos saltados: 139/183 (76.0%)
+   Tiempo: 0.4s
+   Pasos: 182
+Nuevo mejor modelo! Métrica combinada: -11577.35
+Episodio 4 completado:
+   Recompensa: -12631.96 (promedio últimos 3: -12013.51)
+   Satisfacción energética: 12.7% (promedio últimos 3: 13.3%)
+   Vehículos asignados: 35/183 (19.1%)
+   Vehículos saltados: 147/183 (80.3%)
+   Tiempo: 0.5s
+   Pasos: 182
+Sin mejora. Paciencia: 1/8
+Episodio 5 completado:
+   Recompensa: -11094.55 (promedio últimos 3: -11772.59)
+   Satisfacción energética: 15.3% (promedio últimos 3: 14.0%)
+   Vehículos asignados: 44/183 (24.0%)
+   Vehículos saltados: 138/183 (75.4%)
+   Tiempo: 0.5s
+   Pasos: 182
+Checkpoint guardado: ./checkpoints\checkpoint_sys_3_ep_5.h5
+Sin mejora. Paciencia: 2/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
 
-==================================================
-Entrenando en sistema 8 (8/10)
-==================================================
-Ejecutando episodios de entrenamiento desde 4 hasta 5...
-Episodio 4/5, Recompensa: 1665.88, Epsilon: 0.0293, EVs asignados: 131, EVs saltados: 297
-Checkpoint guardado en ./checkpoints\checkpoint_sys_7_ep_4.h5
-Modelo principal actualizado en ev_scheduler_generalized_model.h5
+RESUMEN SISTEMA 4:
+   Tiempo total: 0.0 minutos
+   Recompensa promedio: -11859.03
+   Mejor métrica combinada: -11577.35
+   Satisfacción promedio: 13.7%
+   Mejor satisfacción: 15.3%
+   Episodios completados: 5
+   Epsilon final: 0.5057
+
+
+============================================================
+SISTEMA 5 (5/17)
+============================================================
+Info del sistema: 21 vehículos, 60 plazas, 25 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 1757.59 (promedio últimos 3: 1757.59)
+   Satisfacción energética: 77.2% (promedio últimos 3: 77.2%)
+   Vehículos asignados: 18/21 (85.7%)
+   Vehículos saltados: 3/21 (14.3%)
+   Tiempo: 0.1s
+   Pasos: 21
+Nuevo mejor modelo! Métrica combinada: 1834.74
+Episodio 2 completado:
+   Recompensa: 1855.12 (promedio últimos 3: 1855.12)
+   Satisfacción energética: 81.3% (promedio últimos 3: 81.3%)
+   Vehículos asignados: 19/21 (90.5%)
+   Vehículos saltados: 2/21 (9.5%)
+   Tiempo: 0.1s
+   Pasos: 21
+Nuevo mejor modelo! Métrica combinada: 1936.46
+Episodio 3 completado:
+   Recompensa: 1766.50 (promedio últimos 3: 1793.07)
+   Satisfacción energética: 76.5% (promedio últimos 3: 78.3%)
+   Vehículos asignados: 19/21 (90.5%)
+   Vehículos saltados: 2/21 (9.5%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 1/8
+Episodio 4 completado:
+   Recompensa: 1880.72 (promedio últimos 3: 1834.11)
+   Satisfacción energética: 82.9% (promedio últimos 3: 80.2%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Nuevo mejor modelo! Métrica combinada: 1963.58
+Episodio 5 completado:
+   Recompensa: 1901.04 (promedio últimos 3: 1849.42)
+   Satisfacción energética: 81.3% (promedio últimos 3: 80.2%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Checkpoint guardado: ./checkpoints\checkpoint_sys_4_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Episodio 6 completado:
+   Recompensa: 1916.31 (promedio últimos 3: 1899.36)
+   Satisfacción energética: 81.6% (promedio últimos 3: 81.9%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 2/8
+Episodio 7 completado:
+   Recompensa: 1646.41 (promedio últimos 3: 1821.25)
+   Satisfacción energética: 78.7% (promedio últimos 3: 80.5%)
+   Vehículos asignados: 18/21 (85.7%)
+   Vehículos saltados: 3/21 (14.3%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 3/8
+Episodio 8 completado:
+   Recompensa: 1999.05 (promedio últimos 3: 1853.92)
+   Satisfacción energética: 83.1% (promedio últimos 3: 81.1%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 4/8
+Episodio 9 completado:
+   Recompensa: 1874.14 (promedio últimos 3: 1839.87)
+   Satisfacción energética: 77.9% (promedio últimos 3: 79.9%)
+   Vehículos asignados: 19/21 (90.5%)
+   Vehículos saltados: 2/21 (9.5%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 5/8
+Episodio 10 completado:
+   Recompensa: 1973.02 (promedio últimos 3: 1948.74)
+   Satisfacción energética: 82.3% (promedio últimos 3: 81.1%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Checkpoint guardado: ./checkpoints\checkpoint_sys_4_ep_10.h5
+Sin mejora. Paciencia: 6/8
+Episodio 11 completado:
+   Recompensa: 1955.13 (promedio últimos 3: 1934.10)
+   Satisfacción energética: 84.0% (promedio últimos 3: 81.4%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 7/8
+Episodio 12 completado:
+   Recompensa: 1874.28 (promedio últimos 3: 1934.14)
+   Satisfacción energética: 77.2% (promedio últimos 3: 81.2%)
+   Vehículos asignados: 21/21 (100.0%)
+   Vehículos saltados: 0/21 (0.0%)
+   Tiempo: 0.1s
+   Pasos: 21
+Nuevo mejor modelo! Métrica combinada: 2016.04
+Episodio 13 completado:
+   Recompensa: 1951.27 (promedio últimos 3: 1926.89)
+   Satisfacción energética: 80.8% (promedio últimos 3: 80.7%)
+   Vehículos asignados: 21/21 (100.0%)
+   Vehículos saltados: 0/21 (0.0%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 1/8
+Episodio 14 completado:
+   Recompensa: 1566.04 (promedio últimos 3: 1797.20)
+   Satisfacción energética: 68.1% (promedio últimos 3: 75.4%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 2/8
+Episodio 15 completado:
+   Recompensa: 1513.78 (promedio últimos 3: 1677.03)
+   Satisfacción energética: 69.2% (promedio últimos 3: 72.7%)
+   Vehículos asignados: 19/21 (90.5%)
+   Vehículos saltados: 2/21 (9.5%)
+   Tiempo: 0.1s
+   Pasos: 21
+Checkpoint guardado: ./checkpoints\checkpoint_sys_4_ep_15.h5
+Sin mejora. Paciencia: 3/8
+Episodio 16 completado:
+   Recompensa: 1796.76 (promedio últimos 3: 1625.53)
+   Satisfacción energética: 77.3% (promedio últimos 3: 71.5%)
+   Vehículos asignados: 21/21 (100.0%)
+   Vehículos saltados: 0/21 (0.0%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 4/8
+Episodio 17 completado:
+   Recompensa: 2027.29 (promedio últimos 3: 1779.28)
+   Satisfacción energética: 87.4% (promedio últimos 3: 78.0%)
+   Vehículos asignados: 21/21 (100.0%)
+   Vehículos saltados: 0/21 (0.0%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 5/8
+Episodio 18 completado:
+   Recompensa: 1833.20 (promedio últimos 3: 1885.75)
+   Satisfacción energética: 75.3% (promedio últimos 3: 80.0%)
+   Vehículos asignados: 19/21 (90.5%)
+   Vehículos saltados: 2/21 (9.5%)
+   Tiempo: 0.1s
+   Pasos: 21
+Sin mejora. Paciencia: 6/8
+Episodio 19 completado:
+   Recompensa: 1818.28 (promedio últimos 3: 1892.92)
+   Satisfacción energética: 72.9% (promedio últimos 3: 78.6%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.2s
+   Pasos: 21
+Sin mejora. Paciencia: 7/8
+Episodio 20 completado:
+   Recompensa: 1662.11 (promedio últimos 3: 1771.19)
+   Satisfacción energética: 73.0% (promedio últimos 3: 73.8%)
+   Vehículos asignados: 20/21 (95.2%)
+   Vehículos saltados: 1/21 (4.8%)
+   Tiempo: 0.1s
+   Pasos: 21
+Checkpoint guardado: ./checkpoints\checkpoint_sys_4_ep_20.h5
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 5:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: 1828.40
+   Mejor métrica combinada: 2016.04
+   Satisfacción promedio: 78.4%
+   Mejor satisfacción: 87.4%
+   Episodios completados: 20
+   Epsilon final: 0.5907
+
+
+============================================================
+SISTEMA 6 (6/17)
+============================================================
+Info del sistema: 217 vehículos, 30 plazas, 22 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -12209.11 (promedio últimos 3: -12209.11)
+   Satisfacción energética: 18.8% (promedio últimos 3: 18.8%)
+   Vehículos asignados: 48/217 (22.1%)
+   Vehículos saltados: 168/217 (77.4%)
+   Tiempo: 0.5s
+   Pasos: 216
+Nuevo mejor modelo! Métrica combinada: -12190.34
+Episodio 2 completado:
+   Recompensa: -10803.62 (promedio últimos 3: -10803.62)
+   Satisfacción energética: 24.2% (promedio últimos 3: 24.2%)
+   Vehículos asignados: 56/217 (25.8%)
+   Vehículos saltados: 160/217 (73.7%)
+   Tiempo: 0.6s
+   Pasos: 216
+Nuevo mejor modelo! Métrica combinada: -10779.44
+Episodio 3 completado:
+   Recompensa: -11927.32 (promedio últimos 3: -11646.69)
+   Satisfacción energética: 18.8% (promedio últimos 3: 20.6%)
+   Vehículos asignados: 47/217 (21.7%)
+   Vehículos saltados: 169/217 (77.9%)
+   Tiempo: 0.6s
+   Pasos: 216
+Sin mejora. Paciencia: 1/8
+Episodio 4 completado:
+   Recompensa: -13889.62 (promedio últimos 3: -12206.85)
+   Satisfacción energética: 14.4% (promedio últimos 3: 19.1%)
+   Vehículos asignados: 40/217 (18.4%)
+   Vehículos saltados: 176/217 (81.1%)
+   Tiempo: 0.6s
+   Pasos: 216
+Sin mejora. Paciencia: 2/8
+Episodio 5 completado:
+   Recompensa: -13629.33 (promedio últimos 3: -13148.76)
+   Satisfacción energética: 16.2% (promedio últimos 3: 16.5%)
+   Vehículos asignados: 40/217 (18.4%)
+   Vehículos saltados: 176/217 (81.1%)
+   Tiempo: 0.6s
+   Pasos: 216
+Checkpoint guardado: ./checkpoints\checkpoint_sys_5_ep_5.h5
+Sin mejora. Paciencia: 3/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 6:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -12491.80
+   Mejor métrica combinada: -10779.44
+   Satisfacción promedio: 18.5%
+   Mejor satisfacción: 24.2%
+   Episodios completados: 5
+   Epsilon final: 0.4691
+
+
+============================================================
+SISTEMA 7 (7/17)
+============================================================
+Info del sistema: 75 vehículos, 20 plazas, 10 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 107.12 (promedio últimos 3: 107.12)
+   Satisfacción energética: 25.6% (promedio últimos 3: 25.6%)
+   Vehículos asignados: 31/75 (41.3%)
+   Vehículos saltados: 44/75 (58.7%)
+   Tiempo: 0.2s
+   Pasos: 75
+Nuevo mejor modelo! Métrica combinada: 132.76
+Episodio 2 completado:
+   Recompensa: -327.87 (promedio últimos 3: -327.87)
+   Satisfacción energética: 24.2% (promedio últimos 3: 24.2%)
+   Vehículos asignados: 26/75 (34.7%)
+   Vehículos saltados: 49/75 (65.3%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -401.78 (promedio últimos 3: -207.51)
+   Satisfacción energética: 25.0% (promedio últimos 3: 25.0%)
+   Vehículos asignados: 25/75 (33.3%)
+   Vehículos saltados: 50/75 (66.7%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -127.07 (promedio últimos 3: -285.58)
+   Satisfacción energética: 24.4% (promedio últimos 3: 24.5%)
+   Vehículos asignados: 28/75 (37.3%)
+   Vehículos saltados: 47/75 (62.7%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 3/8
+Episodio 5 completado:
+   Recompensa: -294.21 (promedio últimos 3: -274.36)
+   Satisfacción energética: 24.0% (promedio últimos 3: 24.5%)
+   Vehículos asignados: 28/75 (37.3%)
+   Vehículos saltados: 47/75 (62.7%)
+   Tiempo: 0.2s
+   Pasos: 75
+Checkpoint guardado: ./checkpoints\checkpoint_sys_6_ep_5.h5
+Sin mejora. Paciencia: 4/8
+Episodio 6 completado:
+   Recompensa: -18.96 (promedio últimos 3: -146.75)
+   Satisfacción energética: 26.7% (promedio últimos 3: 25.0%)
+   Vehículos asignados: 28/75 (37.3%)
+   Vehículos saltados: 47/75 (62.7%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 5/8
+Episodio 7 completado:
+   Recompensa: -266.34 (promedio últimos 3: -193.17)
+   Satisfacción energética: 23.9% (promedio últimos 3: 24.9%)
+   Vehículos asignados: 26/75 (34.7%)
+   Vehículos saltados: 49/75 (65.3%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 6/8
+Episodio 8 completado:
+   Recompensa: -380.00 (promedio últimos 3: -221.77)
+   Satisfacción energética: 24.8% (promedio últimos 3: 25.2%)
+   Vehículos asignados: 24/75 (32.0%)
+   Vehículos saltados: 51/75 (68.0%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 7/8
+Episodio 9 completado:
+   Recompensa: -314.01 (promedio últimos 3: -320.12)
+   Satisfacción energética: 22.6% (promedio últimos 3: 23.8%)
+   Vehículos asignados: 26/75 (34.7%)
+   Vehículos saltados: 49/75 (65.3%)
+   Tiempo: 0.2s
+   Pasos: 75
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 7:
+   Tiempo total: 0.0 minutos
+   Recompensa promedio: -224.79
+   Mejor métrica combinada: 132.76
+   Satisfacción promedio: 24.6%
+   Mejor satisfacción: 26.7%
+   Episodios completados: 9
+   Epsilon final: 0.8475
+
+
+============================================================
+SISTEMA 8 (8/17)
+============================================================
+Info del sistema: 286 vehículos, 50 plazas, 38 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -13540.63 (promedio últimos 3: -13540.63)
+   Satisfacción energética: 24.3% (promedio últimos 3: 24.3%)
+   Vehículos asignados: 84/286 (29.4%)
+   Vehículos saltados: 201/286 (70.3%)
+   Tiempo: 0.9s
+   Pasos: 285
+Nuevo mejor modelo! Métrica combinada: -13516.33
+Episodio 2 completado:
+   Recompensa: -14983.37 (promedio últimos 3: -14983.37)
+   Satisfacción energética: 22.7% (promedio últimos 3: 22.7%)
+   Vehículos asignados: 76/286 (26.6%)
+   Vehículos saltados: 209/286 (73.1%)
+   Tiempo: 0.8s
+   Pasos: 285
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -14160.84 (promedio últimos 3: -14228.28)
+   Satisfacción energética: 22.3% (promedio últimos 3: 23.1%)
+   Vehículos asignados: 81/286 (28.3%)
+   Vehículos saltados: 204/286 (71.3%)
+   Tiempo: 0.8s
+   Pasos: 285
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -10120.30 (promedio últimos 3: -13088.17)
+   Satisfacción energética: 30.6% (promedio últimos 3: 25.2%)
+   Vehículos asignados: 94/286 (32.9%)
+   Vehículos saltados: 191/286 (66.8%)
+   Tiempo: 0.9s
+   Pasos: 285
+Nuevo mejor modelo! Métrica combinada: -10089.74
+Episodio 5 completado:
+   Recompensa: -14630.12 (promedio últimos 3: -12970.42)
+   Satisfacción energética: 21.7% (promedio últimos 3: 24.9%)
+   Vehículos asignados: 75/286 (26.2%)
+   Vehículos saltados: 210/286 (73.4%)
+   Tiempo: 0.9s
+   Pasos: 285
+Checkpoint guardado: ./checkpoints\checkpoint_sys_7_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 8:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -13487.05
+   Mejor métrica combinada: -10089.74
+   Satisfacción promedio: 24.3%
+   Mejor satisfacción: 30.6%
+   Episodios completados: 5
+   Epsilon final: 0.3936
+
+
+============================================================
+SISTEMA 9 (9/17)
+============================================================
+Info del sistema: 72 vehículos, 40 plazas, 27 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -386.15 (promedio últimos 3: -386.15)
+   Satisfacción energética: 22.3% (promedio últimos 3: 22.3%)
+   Vehículos asignados: 22/72 (30.6%)
+   Vehículos saltados: 49/72 (68.1%)
+   Tiempo: 0.2s
+   Pasos: 71
+Nuevo mejor modelo! Métrica combinada: -363.87
+Episodio 2 completado:
+   Recompensa: 217.23 (promedio últimos 3: 217.23)
+   Satisfacción energética: 26.2% (promedio últimos 3: 26.2%)
+   Vehículos asignados: 27/72 (37.5%)
+   Vehículos saltados: 44/72 (61.1%)
+   Tiempo: 0.2s
+   Pasos: 71
+Nuevo mejor modelo! Métrica combinada: 243.46
+Episodio 3 completado:
+   Recompensa: 14.70 (promedio últimos 3: -51.40)
+   Satisfacción energética: 22.7% (promedio últimos 3: 23.8%)
+   Vehículos asignados: 28/72 (38.9%)
+   Vehículos saltados: 43/72 (59.7%)
+   Tiempo: 0.3s
+   Pasos: 71
+Sin mejora. Paciencia: 1/8
+Episodio 4 completado:
+   Recompensa: 908.84 (promedio últimos 3: 380.26)
+   Satisfacción energética: 28.1% (promedio últimos 3: 25.7%)
+   Vehículos asignados: 35/72 (48.6%)
+   Vehículos saltados: 36/72 (50.0%)
+   Tiempo: 0.2s
+   Pasos: 71
+Nuevo mejor modelo! Métrica combinada: 936.90
+Episodio 5 completado:
+   Recompensa: -495.68 (promedio últimos 3: 142.62)
+   Satisfacción energética: 19.2% (promedio últimos 3: 23.3%)
+   Vehículos asignados: 24/72 (33.3%)
+   Vehículos saltados: 47/72 (65.3%)
+   Tiempo: 0.2s
+   Pasos: 71
+Checkpoint guardado: ./checkpoints\checkpoint_sys_8_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Episodio 6 completado:
+   Recompensa: 672.72 (promedio últimos 3: 361.96)
+   Satisfacción energética: 29.4% (promedio últimos 3: 25.6%)
+   Vehículos asignados: 31/72 (43.1%)
+   Vehículos saltados: 40/72 (55.6%)
+   Tiempo: 0.2s
+   Pasos: 71
+Sin mejora. Paciencia: 2/8
+Episodio 7 completado:
+   Recompensa: 763.38 (promedio últimos 3: 313.47)
+   Satisfacción energética: 30.1% (promedio últimos 3: 26.2%)
+   Vehículos asignados: 32/72 (44.4%)
+   Vehículos saltados: 39/72 (54.2%)
+   Tiempo: 0.2s
+   Pasos: 71
+Sin mejora. Paciencia: 3/8
+Episodio 8 completado:
+   Recompensa: 118.45 (promedio últimos 3: 518.18)
+   Satisfacción energética: 25.0% (promedio últimos 3: 28.1%)
+   Vehículos asignados: 27/72 (37.5%)
+   Vehículos saltados: 44/72 (61.1%)
+   Tiempo: 0.2s
+   Pasos: 71
+Sin mejora. Paciencia: 4/8
+Episodio 9 completado:
+   Recompensa: 192.55 (promedio últimos 3: 358.13)
+   Satisfacción energética: 25.1% (promedio últimos 3: 26.7%)
+   Vehículos asignados: 28/72 (38.9%)
+   Vehículos saltados: 43/72 (59.7%)
+   Tiempo: 0.2s
+   Pasos: 71
+Sin mejora. Paciencia: 5/8
+Episodio 10 completado:
+   Recompensa: 331.07 (promedio últimos 3: 214.02)
+   Satisfacción energética: 28.6% (promedio últimos 3: 26.2%)
+   Vehículos asignados: 28/72 (38.9%)
+   Vehículos saltados: 43/72 (59.7%)
+   Tiempo: 0.2s
+   Pasos: 71
+Checkpoint guardado: ./checkpoints\checkpoint_sys_8_ep_10.h5
+Sin mejora. Paciencia: 6/8
+Episodio 11 completado:
+   Recompensa: -265.22 (promedio últimos 3: 86.13)
+   Satisfacción energética: 23.3% (promedio últimos 3: 25.7%)
+   Vehículos asignados: 24/72 (33.3%)
+   Vehículos saltados: 47/72 (65.3%)
+   Tiempo: 0.2s
+   Pasos: 71
+Sin mejora. Paciencia: 7/8
+Episodio 12 completado:
+   Recompensa: 885.86 (promedio últimos 3: 317.23)
+   Satisfacción energética: 30.5% (promedio últimos 3: 27.5%)
+   Vehículos asignados: 32/72 (44.4%)
+   Vehículos saltados: 39/72 (54.2%)
+   Tiempo: 0.3s
+   Pasos: 71
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 9:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: 246.48
+   Mejor métrica combinada: 936.90
+   Satisfacción promedio: 25.9%
+   Mejor satisfacción: 30.5%
+   Episodios completados: 12
+   Epsilon final: 0.7075
+
+
+============================================================
+SISTEMA 10 (10/17)
+============================================================
+Info del sistema: 341 vehículos, 100 plazas, 62 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -13851.68 (promedio últimos 3: -13851.68)
+   Satisfacción energética: 26.6% (promedio últimos 3: 26.6%)
+   Vehículos asignados: 117/341 (34.3%)
+   Vehículos saltados: 221/341 (64.8%)
+   Tiempo: 1.1s
+   Pasos: 338
+Nuevo mejor modelo! Métrica combinada: -13825.09
+Episodio 2 completado:
+   Recompensa: -11036.71 (promedio últimos 3: -11036.71)
+   Satisfacción energética: 29.8% (promedio últimos 3: 29.8%)
+   Vehículos asignados: 126/341 (37.0%)
+   Vehículos saltados: 212/341 (62.2%)
+   Tiempo: 1.3s
+   Pasos: 338
+Nuevo mejor modelo! Métrica combinada: -11006.94
+Episodio 3 completado:
+   Recompensa: -10935.18 (promedio últimos 3: -11941.19)
+   Satisfacción energética: 30.3% (promedio últimos 3: 28.9%)
+   Vehículos asignados: 125/341 (36.7%)
+   Vehículos saltados: 213/341 (62.5%)
+   Tiempo: 1.3s
+   Pasos: 338
+Nuevo mejor modelo! Métrica combinada: -10904.85
+Episodio 4 completado:
+   Recompensa: -9400.58 (promedio últimos 3: -10457.49)
+   Satisfacción energética: 33.4% (promedio últimos 3: 31.2%)
+   Vehículos asignados: 137/341 (40.2%)
+   Vehículos saltados: 201/341 (58.9%)
+   Tiempo: 1.5s
+   Pasos: 338
+Nuevo mejor modelo! Métrica combinada: -9367.14
+Episodio 5 completado:
+   Recompensa: -7515.78 (promedio últimos 3: -9283.85)
+   Satisfacción energética: 33.8% (promedio últimos 3: 32.5%)
+   Vehículos asignados: 143/341 (41.9%)
+   Vehículos saltados: 195/341 (57.2%)
+   Tiempo: 1.5s
+   Pasos: 338
+Checkpoint guardado: ./checkpoints\checkpoint_sys_9_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 10:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -10547.99
+   Mejor métrica combinada: -9367.14
+   Satisfacción promedio: 30.8%
+   Mejor satisfacción: 33.8%
+   Episodios completados: 5
+   Epsilon final: 0.3472
+
+
+============================================================
+SISTEMA 11 (11/17)
+============================================================
+Info del sistema: 163 vehículos, 80 plazas, 45 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 2395.87 (promedio últimos 3: 2395.87)
+   Satisfacción energética: 37.2% (promedio últimos 3: 37.2%)
+   Vehículos asignados: 70/163 (42.9%)
+   Vehículos saltados: 91/163 (55.8%)
+   Tiempo: 0.8s
+   Pasos: 161
+Nuevo mejor modelo! Métrica combinada: 2433.05
+Episodio 2 completado:
+   Recompensa: 91.39 (promedio últimos 3: 91.39)
+   Satisfacción energética: 27.8% (promedio últimos 3: 27.8%)
+   Vehículos asignados: 54/163 (33.1%)
+   Vehículos saltados: 107/163 (65.6%)
+   Tiempo: 0.6s
+   Pasos: 161
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: 2963.27 (promedio últimos 3: 1816.84)
+   Satisfacción energética: 37.2% (promedio últimos 3: 34.1%)
+   Vehículos asignados: 75/163 (46.0%)
+   Vehículos saltados: 86/163 (52.8%)
+   Tiempo: 0.7s
+   Pasos: 161
+Nuevo mejor modelo! Métrica combinada: 3000.50
+Episodio 4 completado:
+   Recompensa: 986.91 (promedio últimos 3: 1347.19)
+   Satisfacción energética: 31.2% (promedio últimos 3: 32.1%)
+   Vehículos asignados: 61/163 (37.4%)
+   Vehículos saltados: 100/163 (61.3%)
+   Tiempo: 0.7s
+   Pasos: 161
+Sin mejora. Paciencia: 1/8
+Episodio 5 completado:
+   Recompensa: 2399.25 (promedio últimos 3: 2116.47)
+   Satisfacción energética: 36.4% (promedio últimos 3: 34.9%)
+   Vehículos asignados: 70/163 (42.9%)
+   Vehículos saltados: 91/163 (55.8%)
+   Tiempo: 0.7s
+   Pasos: 161
+Checkpoint guardado: ./checkpoints\checkpoint_sys_10_ep_5.h5
+Sin mejora. Paciencia: 2/8
+Episodio 6 completado:
+   Recompensa: 2257.56 (promedio últimos 3: 1881.24)
+   Satisfacción energética: 35.9% (promedio últimos 3: 34.5%)
+   Vehículos asignados: 72/163 (44.2%)
+   Vehículos saltados: 89/163 (54.6%)
+   Tiempo: 0.7s
+   Pasos: 161
+Sin mejora. Paciencia: 3/8
+Episodio 7 completado:
+   Recompensa: 1742.98 (promedio últimos 3: 2133.26)
+   Satisfacción energética: 32.2% (promedio últimos 3: 34.8%)
+   Vehículos asignados: 67/163 (41.1%)
+   Vehículos saltados: 94/163 (57.7%)
+   Tiempo: 0.8s
+   Pasos: 161
+Sin mejora. Paciencia: 4/8
+Episodio 8 completado:
+   Recompensa: 1143.85 (promedio últimos 3: 1714.80)
+   Satisfacción energética: 33.0% (promedio últimos 3: 33.7%)
+   Vehículos asignados: 60/163 (36.8%)
+   Vehículos saltados: 101/163 (62.0%)
+   Tiempo: 0.8s
+   Pasos: 161
+Sin mejora. Paciencia: 5/8
+Episodio 9 completado:
+   Recompensa: 2283.18 (promedio últimos 3: 1723.34)
+   Satisfacción energética: 35.2% (promedio últimos 3: 33.5%)
+   Vehículos asignados: 69/163 (42.3%)
+   Vehículos saltados: 92/163 (56.4%)
+   Tiempo: 0.8s
+   Pasos: 161
+Sin mejora. Paciencia: 6/8
+Episodio 10 completado:
+   Recompensa: 2108.05 (promedio últimos 3: 1845.03)
+   Satisfacción energética: 35.5% (promedio últimos 3: 34.5%)
+   Vehículos asignados: 66/163 (40.5%)
+   Vehículos saltados: 95/163 (58.3%)
+   Tiempo: 0.8s
+   Pasos: 161
+Checkpoint guardado: ./checkpoints\checkpoint_sys_10_ep_10.h5
+Sin mejora. Paciencia: 7/8
+Episodio 11 completado:
+   Recompensa: 3144.67 (promedio últimos 3: 2511.97)
+   Satisfacción energética: 37.9% (promedio últimos 3: 36.2%)
+   Vehículos asignados: 73/163 (44.8%)
+   Vehículos saltados: 88/163 (54.0%)
+   Tiempo: 0.9s
+   Pasos: 161
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 11:
+   Tiempo total: 0.2 minutos
+   Recompensa promedio: 1956.09
+   Mejor métrica combinada: 3000.50
+   Satisfacción promedio: 34.5%
+   Mejor satisfacción: 37.9%
+   Episodios completados: 11
+   Epsilon final: 0.6563
+
+
+============================================================
+SISTEMA 12 (12/17)
+============================================================
+Info del sistema: 462 vehículos, 150 plazas, 86 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -14225.80 (promedio últimos 3: -14225.80)
+   Satisfacción energética: 28.2% (promedio últimos 3: 28.2%)
+   Vehículos asignados: 165/462 (35.7%)
+   Vehículos saltados: 292/462 (63.2%)
+   Tiempo: 1.9s
+   Pasos: 457
+Nuevo mejor modelo! Métrica combinada: -14197.59
+Episodio 2 completado:
+   Recompensa: -16355.81 (promedio últimos 3: -16355.81)
+   Satisfacción energética: 27.0% (promedio últimos 3: 27.0%)
+   Vehículos asignados: 156/462 (33.8%)
+   Vehículos saltados: 301/462 (65.2%)
+   Tiempo: 2.0s
+   Pasos: 457
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -15684.96 (promedio últimos 3: -15422.19)
+   Satisfacción energética: 28.7% (promedio últimos 3: 28.0%)
+   Vehículos asignados: 165/462 (35.7%)
+   Vehículos saltados: 292/462 (63.2%)
+   Tiempo: 2.3s
+   Pasos: 457
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -12120.99 (promedio últimos 3: -14720.59)
+   Satisfacción energética: 31.5% (promedio últimos 3: 29.1%)
+   Vehículos asignados: 180/462 (39.0%)
+   Vehículos saltados: 277/462 (60.0%)
+   Tiempo: 2.4s
+   Pasos: 457
+Nuevo mejor modelo! Métrica combinada: -12089.52
+Episodio 5 completado:
+   Recompensa: -8807.91 (promedio últimos 3: -12204.62)
+   Satisfacción energética: 35.8% (promedio últimos 3: 32.0%)
+   Vehículos asignados: 199/462 (43.1%)
+   Vehículos saltados: 258/462 (55.8%)
+   Tiempo: 2.4s
+   Pasos: 457
+Checkpoint guardado: ./checkpoints\checkpoint_sys_11_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 12:
+   Tiempo total: 0.2 minutos
+   Recompensa promedio: -13439.10
+   Mejor métrica combinada: -12089.52
+   Satisfacción promedio: 30.2%
+   Mejor satisfacción: 35.8%
+   Episodios completados: 5
+   Epsilon final: 0.2570
+
+
+============================================================
+SISTEMA 13 (13/17)
+============================================================
+Info del sistema: 289 vehículos, 200 plazas, 85 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 3237.39 (promedio últimos 3: 3237.39)
+   Satisfacción energética: 33.0% (promedio últimos 3: 33.0%)
+   Vehículos asignados: 118/289 (40.8%)
+   Vehículos saltados: 165/289 (57.1%)
+   Tiempo: 1.5s
+   Pasos: 283
+Nuevo mejor modelo! Métrica combinada: 3270.43
+Episodio 2 completado:
+   Recompensa: 4230.02 (promedio últimos 3: 4230.02)
+   Satisfacción energética: 34.0% (promedio últimos 3: 34.0%)
+   Vehículos asignados: 125/289 (43.3%)
+   Vehículos saltados: 158/289 (54.7%)
+   Tiempo: 1.5s
+   Pasos: 283
+Nuevo mejor modelo! Métrica combinada: 4264.03
+Episodio 3 completado:
+   Recompensa: 8325.50 (promedio últimos 3: 5264.30)
+   Satisfacción energética: 42.1% (promedio últimos 3: 36.4%)
+   Vehículos asignados: 157/289 (54.3%)
+   Vehículos saltados: 126/289 (43.6%)
+   Tiempo: 1.7s
+   Pasos: 283
+Nuevo mejor modelo! Métrica combinada: 8367.65
+Episodio 4 completado:
+   Recompensa: 6093.10 (promedio últimos 3: 6216.21)
+   Satisfacción energética: 37.6% (promedio últimos 3: 37.9%)
+   Vehículos asignados: 139/289 (48.1%)
+   Vehículos saltados: 144/289 (49.8%)
+   Tiempo: 1.7s
+   Pasos: 283
+Sin mejora. Paciencia: 1/8
+Episodio 5 completado:
+   Recompensa: 3900.28 (promedio últimos 3: 6106.29)
+   Satisfacción energética: 31.8% (promedio últimos 3: 37.2%)
+   Vehículos asignados: 126/289 (43.6%)
+   Vehículos saltados: 157/289 (54.3%)
+   Tiempo: 1.6s
+   Pasos: 283
+Checkpoint guardado: ./checkpoints\checkpoint_sys_12_ep_5.h5
+Sin mejora. Paciencia: 2/8
+Episodio 6 completado:
+   Recompensa: 1222.18 (promedio últimos 3: 3738.52)
+   Satisfacción energética: 28.2% (promedio últimos 3: 32.6%)
+   Vehículos asignados: 106/289 (36.7%)
+   Vehículos saltados: 177/289 (61.2%)
+   Tiempo: 1.6s
+   Pasos: 283
+Sin mejora. Paciencia: 3/8
+Episodio 7 completado:
+   Recompensa: 1796.01 (promedio últimos 3: 2306.15)
+   Satisfacción energética: 29.6% (promedio últimos 3: 29.9%)
+   Vehículos asignados: 109/289 (37.7%)
+   Vehículos saltados: 174/289 (60.2%)
+   Tiempo: 1.6s
+   Pasos: 283
+Sin mejora. Paciencia: 4/8
+Episodio 8 completado:
+   Recompensa: -1982.25 (promedio últimos 3: 345.31)
+   Satisfacción energética: 20.7% (promedio últimos 3: 26.2%)
+   Vehículos asignados: 82/289 (28.4%)
+   Vehículos saltados: 201/289 (69.6%)
+   Tiempo: 1.6s
+   Pasos: 283
+Sin mejora. Paciencia: 5/8
+Episodio 9 completado:
+   Recompensa: 3229.55 (promedio últimos 3: 1014.44)
+   Satisfacción energética: 31.3% (promedio últimos 3: 27.2%)
+   Vehículos asignados: 120/289 (41.5%)
+   Vehículos saltados: 163/289 (56.4%)
+   Tiempo: 1.7s
+   Pasos: 283
+Sin mejora. Paciencia: 6/8
+Episodio 10 completado:
+   Recompensa: 4816.02 (promedio últimos 3: 2021.11)
+   Satisfacción energética: 35.8% (promedio últimos 3: 29.3%)
+   Vehículos asignados: 127/289 (43.9%)
+   Vehículos saltados: 156/289 (54.0%)
+   Tiempo: 1.8s
+   Pasos: 283
+Checkpoint guardado: ./checkpoints\checkpoint_sys_12_ep_10.h5
+Sin mejora. Paciencia: 7/8
+Episodio 11 completado:
+   Recompensa: 8176.87 (promedio últimos 3: 5407.48)
+   Satisfacción energética: 42.6% (promedio últimos 3: 36.6%)
+   Vehículos asignados: 154/289 (53.3%)
+   Vehículos saltados: 129/289 (44.6%)
+   Tiempo: 1.9s
+   Pasos: 283
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 13:
+   Tiempo total: 0.3 minutos
+   Recompensa promedio: 3913.15
+   Mejor métrica combinada: 8367.65
+   Satisfacción promedio: 33.4%
+   Mejor satisfacción: 42.6%
+   Episodios completados: 11
+   Epsilon final: 0.5479
+
+
+============================================================
+SISTEMA 14 (14/17)
+============================================================
+Info del sistema: 592 vehículos, 200 plazas, 132 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -19822.18 (promedio últimos 3: -19822.18)
+   Satisfacción energética: 30.7% (promedio últimos 3: 30.7%)
+   Vehículos asignados: 212/592 (35.8%)
+   Vehículos saltados: 372/592 (62.8%)
+   Tiempo: 2.8s
+   Pasos: 584
+Nuevo mejor modelo! Métrica combinada: -19791.45
+Episodio 2 completado:
+   Recompensa: -21417.21 (promedio últimos 3: -21417.21)
+   Satisfacción energética: 28.1% (promedio últimos 3: 28.1%)
+   Vehículos asignados: 206/592 (34.8%)
+   Vehículos saltados: 378/592 (63.9%)
+   Tiempo: 3.1s
+   Pasos: 584
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -20215.64 (promedio últimos 3: -20485.01)
+   Satisfacción energética: 28.6% (promedio últimos 3: 29.1%)
+   Vehículos asignados: 212/592 (35.8%)
+   Vehículos saltados: 372/592 (62.8%)
+   Tiempo: 3.4s
+   Pasos: 584
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -21435.57 (promedio últimos 3: -21022.81)
+   Satisfacción energética: 28.7% (promedio últimos 3: 28.5%)
+   Vehículos asignados: 208/592 (35.1%)
+   Vehículos saltados: 376/592 (63.5%)
+   Tiempo: 3.4s
+   Pasos: 584
+Sin mejora. Paciencia: 3/8
+Episodio 5 completado:
+   Recompensa: -23182.98 (promedio últimos 3: -21611.40)
+   Satisfacción energética: 26.4% (promedio últimos 3: 27.9%)
+   Vehículos asignados: 191/592 (32.3%)
+   Vehículos saltados: 393/592 (66.4%)
+   Tiempo: 3.4s
+   Pasos: 584
+Checkpoint guardado: ./checkpoints\checkpoint_sys_13_ep_5.h5
+Sin mejora. Paciencia: 4/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 14:
+   Tiempo total: 0.3 minutos
+   Recompensa promedio: -21214.72
+   Mejor métrica combinada: -19791.45
+   Satisfacción promedio: 28.5%
+   Mejor satisfacción: 30.7%
+   Episodios completados: 5
+   Epsilon final: 0.1856
+
+
+============================================================
+SISTEMA 15 (15/17)
+============================================================
+Info del sistema: 431 vehículos, 100 plazas, 55 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -8709.91 (promedio últimos 3: -8709.91)
+   Satisfacción energética: 15.2% (promedio últimos 3: 15.2%)
+   Vehículos asignados: 92/431 (21.3%)
+   Vehículos saltados: 336/431 (78.0%)
+   Tiempo: 1.5s
+   Pasos: 428
+Nuevo mejor modelo! Métrica combinada: -8694.72
+Episodio 2 completado:
+   Recompensa: -12115.39 (promedio últimos 3: -12115.39)
+   Satisfacción energética: 11.3% (promedio últimos 3: 11.3%)
+   Vehículos asignados: 66/431 (15.3%)
+   Vehículos saltados: 362/431 (84.0%)
+   Tiempo: 1.6s
+   Pasos: 428
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -7642.02 (promedio últimos 3: -9489.11)
+   Satisfacción energética: 18.0% (promedio últimos 3: 14.8%)
+   Vehículos asignados: 95/431 (22.0%)
+   Vehículos saltados: 333/431 (77.3%)
+   Tiempo: 1.7s
+   Pasos: 428
+Nuevo mejor modelo! Métrica combinada: -7624.05
+Episodio 4 completado:
+   Recompensa: -6935.24 (promedio últimos 3: -8897.55)
+   Satisfacción energética: 18.1% (promedio últimos 3: 15.8%)
+   Vehículos asignados: 100/431 (23.2%)
+   Vehículos saltados: 328/431 (76.1%)
+   Tiempo: 1.7s
+   Pasos: 428
+Nuevo mejor modelo! Métrica combinada: -6917.11
+Episodio 5 completado:
+   Recompensa: -6488.09 (promedio últimos 3: -7021.78)
+   Satisfacción energética: 19.2% (promedio últimos 3: 18.4%)
+   Vehículos asignados: 104/431 (24.1%)
+   Vehículos saltados: 324/431 (75.2%)
+   Tiempo: 1.8s
+   Pasos: 428
+Checkpoint guardado: ./checkpoints\checkpoint_sys_14_ep_5.h5
+Sin mejora. Paciencia: 1/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 15:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -8378.13
+   Mejor métrica combinada: -6917.11
+   Satisfacción promedio: 16.4%
+   Mejor satisfacción: 19.2%
+   Episodios completados: 5
+   Epsilon final: 0.2771
+
+
+============================================================
+SISTEMA 16 (16/17)
+============================================================
+Info del sistema: 285 vehículos, 150 plazas, 80 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: 1067.15 (promedio últimos 3: 1067.15)
+   Satisfacción energética: 26.8% (promedio últimos 3: 26.8%)
+   Vehículos asignados: 106/285 (37.2%)
+   Vehículos saltados: 177/285 (62.1%)
+   Tiempo: 1.2s
+   Pasos: 283
+Nuevo mejor modelo! Métrica combinada: 1093.97
+Episodio 2 completado:
+   Recompensa: -186.63 (promedio últimos 3: -186.63)
+   Satisfacción energética: 24.7% (promedio últimos 3: 24.7%)
+   Vehículos asignados: 95/285 (33.3%)
+   Vehículos saltados: 188/285 (66.0%)
+   Tiempo: 1.2s
+   Pasos: 283
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: 4156.16 (promedio últimos 3: 1678.89)
+   Satisfacción energética: 33.3% (promedio últimos 3: 28.3%)
+   Vehículos asignados: 128/285 (44.9%)
+   Vehículos saltados: 155/285 (54.4%)
+   Tiempo: 1.3s
+   Pasos: 283
+Nuevo mejor modelo! Métrica combinada: 4189.48
+Episodio 4 completado:
+   Recompensa: -1920.93 (promedio últimos 3: 682.87)
+   Satisfacción energética: 22.3% (promedio últimos 3: 26.8%)
+   Vehículos asignados: 83/285 (29.1%)
+   Vehículos saltados: 200/285 (70.2%)
+   Tiempo: 1.3s
+   Pasos: 283
+Sin mejora. Paciencia: 1/8
+Episodio 5 completado:
+   Recompensa: 455.69 (promedio últimos 3: 896.98)
+   Satisfacción energética: 26.8% (promedio últimos 3: 27.5%)
+   Vehículos asignados: 98/285 (34.4%)
+   Vehículos saltados: 185/285 (64.9%)
+   Tiempo: 1.4s
+   Pasos: 283
+Checkpoint guardado: ./checkpoints\checkpoint_sys_15_ep_5.h5
+Sin mejora. Paciencia: 2/8
+Episodio 6 completado:
+   Recompensa: 1116.91 (promedio últimos 3: -116.11)
+   Satisfacción energética: 26.0% (promedio últimos 3: 25.0%)
+   Vehículos asignados: 105/285 (36.8%)
+   Vehículos saltados: 178/285 (62.5%)
+   Tiempo: 1.4s
+   Pasos: 283
+Sin mejora. Paciencia: 3/8
+Episodio 7 completado:
+   Recompensa: 965.35 (promedio últimos 3: 845.99)
+   Satisfacción energética: 26.1% (promedio últimos 3: 26.3%)
+   Vehículos asignados: 103/285 (36.1%)
+   Vehículos saltados: 180/285 (63.2%)
+   Tiempo: 1.5s
+   Pasos: 283
+Sin mejora. Paciencia: 4/8
+Episodio 8 completado:
+   Recompensa: 645.96 (promedio últimos 3: 909.41)
+   Satisfacción energética: 25.4% (promedio últimos 3: 25.8%)
+   Vehículos asignados: 100/285 (35.1%)
+   Vehículos saltados: 183/285 (64.2%)
+   Tiempo: 1.6s
+   Pasos: 283
+Sin mejora. Paciencia: 5/8
+Episodio 9 completado:
+   Recompensa: -1442.70 (promedio últimos 3: 56.21)
+   Satisfacción energética: 22.3% (promedio últimos 3: 24.6%)
+   Vehículos asignados: 84/285 (29.5%)
+   Vehículos saltados: 199/285 (69.8%)
+   Tiempo: 1.5s
+   Pasos: 283
+Sin mejora. Paciencia: 6/8
+Episodio 10 completado:
+   Recompensa: 1866.92 (promedio últimos 3: 356.73)
+   Satisfacción energética: 27.4% (promedio últimos 3: 25.0%)
+   Vehículos asignados: 112/285 (39.3%)
+   Vehículos saltados: 171/285 (60.0%)
+   Tiempo: 1.6s
+   Pasos: 283
+Checkpoint guardado: ./checkpoints\checkpoint_sys_15_ep_10.h5
+Sin mejora. Paciencia: 7/8
+Episodio 11 completado:
+   Recompensa: -754.89 (promedio últimos 3: -110.22)
+   Satisfacción energética: 22.7% (promedio últimos 3: 24.1%)
+   Vehículos asignados: 90/285 (31.6%)
+   Vehículos saltados: 193/285 (67.7%)
+   Tiempo: 1.6s
+   Pasos: 283
+Sin mejora. Paciencia: 8/8
+Early stopping tras 8 episodios sin mejora
+
+RESUMEN SISTEMA 16:
+   Tiempo total: 0.3 minutos
+   Recompensa promedio: 542.64
+   Mejor métrica combinada: 4189.48
+   Satisfacción promedio: 25.8%
+   Mejor satisfacción: 33.3%
+   Episodios completados: 11
+   Epsilon final: 0.5479
+
+
+============================================================
+SISTEMA 17 (17/17)
+============================================================
+Info del sistema: 554 vehículos, 30 plazas, 17 cargadores
+Ejecutando episodios 1-25...
+Episodio 1 completado:
+   Recompensa: -20518.00 (promedio últimos 3: -20518.00)
+   Satisfacción energética: 6.2% (promedio últimos 3: 6.2%)
+   Vehículos asignados: 45/554 (8.1%)
+   Vehículos saltados: 499/554 (90.1%)
+   Tiempo: 1.5s
+   Pasos: 544
+Nuevo mejor modelo! Métrica combinada: -20511.79
+Episodio 2 completado:
+   Recompensa: -23106.41 (promedio últimos 3: -23106.41)
+   Satisfacción energética: 3.1% (promedio últimos 3: 3.1%)
+   Vehículos asignados: 27/554 (4.9%)
+   Vehículos saltados: 517/554 (93.3%)
+   Tiempo: 1.7s
+   Pasos: 544
+Sin mejora. Paciencia: 1/8
+Episodio 3 completado:
+   Recompensa: -21077.62 (promedio últimos 3: -21567.34)
+   Satisfacción energética: 5.5% (promedio últimos 3: 4.9%)
+   Vehículos asignados: 41/554 (7.4%)
+   Vehículos saltados: 503/554 (90.8%)
+   Tiempo: 1.7s
+   Pasos: 544
+Sin mejora. Paciencia: 2/8
+Episodio 4 completado:
+   Recompensa: -21175.80 (promedio últimos 3: -21786.61)
+   Satisfacción energética: 5.0% (promedio últimos 3: 4.5%)
+   Vehículos asignados: 41/554 (7.4%)
+   Vehículos saltados: 503/554 (90.8%)
+   Tiempo: 1.7s
+   Pasos: 544
+Sin mejora. Paciencia: 3/8
+Episodio 5 completado:
+   Recompensa: -20911.60 (promedio últimos 3: -21055.01)
+   Satisfacción energética: 5.6% (promedio últimos 3: 5.4%)
+   Vehículos asignados: 42/554 (7.6%)
+   Vehículos saltados: 502/554 (90.6%)
+   Tiempo: 1.7s
+   Pasos: 544
+Checkpoint guardado: ./checkpoints\checkpoint_sys_16_ep_5.h5
+Sin mejora. Paciencia: 4/8
+Detención anticipada: todas las recompensas recientes son muy negativas.
+
+RESUMEN SISTEMA 17:
+   Tiempo total: 0.1 minutos
+   Recompensa promedio: -21357.88
+   Mejor métrica combinada: -20511.79
+   Satisfacción promedio: 5.1%
+   Mejor satisfacción: 6.2%
+   Episodios completados: 5
+   Epsilon final: 0.2051
+
+
+
+--- Nueva sesión de entrenamiento optimizado: 2025-05-22 21:18:44 ---

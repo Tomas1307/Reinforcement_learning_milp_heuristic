@@ -1,0 +1,2359 @@
+{
+  "schedule": [
+    [
+      0,
+      1,
+      15,
+      3,
+      50.0
+    ],
+    [
+      0,
+      2,
+      16,
+      22,
+      50.0
+    ],
+    [
+      1,
+      2,
+      18,
+      26,
+      31.276188
+    ],
+    [
+      1,
+      4,
+      20,
+      22,
+      21.0
+    ],
+    [
+      1,
+      5,
+      21,
+      25,
+      102.55087
+    ],
+    [
+      2,
+      2,
+      15,
+      0,
+      50.0
+    ],
+    [
+      2,
+      3,
+      16,
+      20,
+      50.0
+    ],
+    [
+      2,
+      11,
+      19,
+      9,
+      50.0
+    ],
+    [
+      3,
+      2,
+      20,
+      25,
+      49.441525
+    ],
+    [
+      3,
+      4,
+      19,
+      8,
+      50.0
+    ],
+    [
+      4,
+      3,
+      19,
+      18,
+      47.546379
+    ],
+    [
+      5,
+      7,
+      19,
+      23,
+      37.096588
+    ],
+    [
+      6,
+      3,
+      20,
+      10,
+      97.482327
+    ],
+    [
+      7,
+      2,
+      19,
+      9,
+      50.0
+    ],
+    [
+      7,
+      3,
+      1,
+      28,
+      7.0
+    ],
+    [
+      7,
+      4,
+      7,
+      12,
+      7.0
+    ],
+    [
+      7,
+      17,
+      16,
+      5,
+      50.0
+    ],
+    [
+      8,
+      2,
+      21,
+      10,
+      69.282287
+    ],
+    [
+      9,
+      10,
+      15,
+      14,
+      50.0
+    ],
+    [
+      10,
+      3,
+      18,
+      7,
+      50.0
+    ],
+    [
+      10,
+      4,
+      18,
+      14,
+      50.0
+    ],
+    [
+      10,
+      7,
+      13,
+      7,
+      22.0
+    ],
+    [
+      11,
+      3,
+      15,
+      1,
+      47.971294
+    ],
+    [
+      11,
+      4,
+      16,
+      28,
+      50.0
+    ],
+    [
+      11,
+      5,
+      19,
+      24,
+      50.0
+    ],
+    [
+      12,
+      6,
+      18,
+      23,
+      50.0
+    ],
+    [
+      13,
+      4,
+      15,
+      0,
+      50.0
+    ],
+    [
+      13,
+      5,
+      15,
+      17,
+      37.568605
+    ],
+    [
+      14,
+      5,
+      16,
+      11,
+      50.0
+    ],
+    [
+      14,
+      7,
+      8,
+      15,
+      7.0
+    ],
+    [
+      14,
+      8,
+      16,
+      24,
+      50.0
+    ],
+    [
+      14,
+      14,
+      16,
+      29,
+      50.0
+    ],
+    [
+      14,
+      24,
+      16,
+      22,
+      50.0
+    ],
+    [
+      15,
+      4,
+      17,
+      21,
+      50.0
+    ],
+    [
+      15,
+      7,
+      15,
+      18,
+      33.017449
+    ],
+    [
+      16,
+      6,
+      17,
+      15,
+      50.0
+    ],
+    [
+      16,
+      8,
+      19,
+      25,
+      50.0
+    ],
+    [
+      16,
+      10,
+      17,
+      19,
+      50.0
+    ],
+    [
+      17,
+      5,
+      17,
+      13,
+      50.0
+    ],
+    [
+      18,
+      4,
+      14,
+      4,
+      22.0
+    ],
+    [
+      18,
+      9,
+      17,
+      14,
+      50.0
+    ],
+    [
+      18,
+      10,
+      19,
+      25,
+      50.0
+    ],
+    [
+      18,
+      12,
+      18,
+      3,
+      50.0
+    ],
+    [
+      19,
+      11,
+      15,
+      28,
+      28.61853
+    ],
+    [
+      20,
+      10,
+      16,
+      21,
+      50.0
+    ],
+    [
+      21,
+      5,
+      21,
+      21,
+      9.8805205
+    ],
+    [
+      21,
+      6,
+      21,
+      1,
+      7.2689071
+    ],
+    [
+      21,
+      7,
+      21,
+      5,
+      39.489434
+    ],
+    [
+      21,
+      8,
+      18,
+      1,
+      50.0
+    ],
+    [
+      22,
+      8,
+      21,
+      16,
+      95.583364
+    ],
+    [
+      23,
+      6,
+      20,
+      24,
+      142.73109
+    ],
+    [
+      24,
+      16,
+      17,
+      14,
+      50.0
+    ],
+    [
+      25,
+      6,
+      16,
+      21,
+      50.0
+    ],
+    [
+      25,
+      9,
+      18,
+      12,
+      44.269364
+    ],
+    [
+      25,
+      16,
+      19,
+      27,
+      45.467368
+    ],
+    [
+      25,
+      23,
+      17,
+      15,
+      50.0
+    ],
+    [
+      26,
+      15,
+      17,
+      12,
+      50.0
+    ],
+    [
+      27,
+      7,
+      18,
+      10,
+      40.24996
+    ],
+    [
+      27,
+      8,
+      21,
+      28,
+      16.939547
+    ],
+    [
+      27,
+      18,
+      21,
+      7,
+      5.3373974
+    ],
+    [
+      27,
+      28,
+      20,
+      4,
+      63.244096
+    ],
+    [
+      28,
+      9,
+      20,
+      6,
+      114.14439
+    ],
+    [
+      29,
+      11,
+      20,
+      17,
+      128.67899
+    ],
+    [
+      30,
+      13,
+      20,
+      27,
+      82.373615
+    ],
+    [
+      31,
+      7,
+      16,
+      28,
+      50.0
+    ],
+    [
+      31,
+      9,
+      16,
+      1,
+      50.0
+    ],
+    [
+      34,
+      7,
+      17,
+      29,
+      49.146569
+    ],
+    [
+      34,
+      15,
+      18,
+      2,
+      50.0
+    ],
+    [
+      34,
+      29,
+      19,
+      18,
+      50.0
+    ],
+    [
+      36,
+      10,
+      18,
+      6,
+      50.0
+    ],
+    [
+      36,
+      28,
+      16,
+      25,
+      29.059433
+    ],
+    [
+      38,
+      12,
+      20,
+      0,
+      150.0
+    ],
+    [
+      38,
+      18,
+      20,
+      13,
+      139.81594
+    ],
+    [
+      39,
+      12,
+      15,
+      8,
+      36.300621
+    ],
+    [
+      39,
+      19,
+      18,
+      27,
+      50.0
+    ],
+    [
+      41,
+      24,
+      21,
+      20,
+      50.0
+    ],
+    [
+      42,
+      17,
+      17,
+      15,
+      50.0
+    ],
+    [
+      42,
+      19,
+      15,
+      12,
+      50.0
+    ],
+    [
+      43,
+      34,
+      21,
+      3,
+      87.565817
+    ],
+    [
+      45,
+      35,
+      17,
+      18,
+      34.065094
+    ],
+    [
+      46,
+      14,
+      18,
+      1,
+      50.0
+    ],
+    [
+      48,
+      18,
+      21,
+      3,
+      28.083309
+    ],
+    [
+      48,
+      25,
+      21,
+      17,
+      137.80243
+    ],
+    [
+      50,
+      22,
+      16,
+      26,
+      50.0
+    ],
+    [
+      50,
+      29,
+      17,
+      16,
+      50.0
+    ],
+    [
+      51,
+      13,
+      21,
+      8,
+      138.18732
+    ],
+    [
+      51,
+      19,
+      21,
+      4,
+      50.0
+    ],
+    [
+      51,
+      33,
+      20,
+      20,
+      6.0120487
+    ],
+    [
+      52,
+      19,
+      17,
+      17,
+      50.0
+    ],
+    [
+      52,
+      21,
+      18,
+      6,
+      50.0
+    ],
+    [
+      53,
+      15,
+      15,
+      20,
+      29.969448
+    ],
+    [
+      54,
+      19,
+      19,
+      28,
+      50.0
+    ],
+    [
+      54,
+      25,
+      19,
+      28,
+      19.093381
+    ],
+    [
+      56,
+      26,
+      18,
+      1,
+      50.0
+    ],
+    [
+      59,
+      16,
+      11,
+      15,
+      22.0
+    ],
+    [
+      59,
+      22,
+      19,
+      13,
+      50.0
+    ],
+    [
+      60,
+      24,
+      18,
+      28,
+      50.0
+    ],
+    [
+      61,
+      16,
+      21,
+      4,
+      32.532632
+    ],
+    [
+      63,
+      29,
+      16,
+      6,
+      50.0
+    ],
+    [
+      76,
+      21,
+      16,
+      7,
+      50.0
+    ],
+    [
+      77,
+      21,
+      19,
+      0,
+      50.0
+    ],
+    [
+      78,
+      42,
+      16,
+      21,
+      37.555261
+    ],
+    [
+      79,
+      42,
+      17,
+      25,
+      50.0
+    ],
+    [
+      82,
+      34,
+      17,
+      25,
+      50.0
+    ],
+    [
+      83,
+      22,
+      20,
+      6,
+      150.0
+    ],
+    [
+      83,
+      23,
+      21,
+      19,
+      150.0
+    ],
+    [
+      83,
+      27,
+      20,
+      16,
+      4.4
+    ],
+    [
+      85,
+      24,
+      17,
+      27,
+      50.0
+    ],
+    [
+      85,
+      32,
+      17,
+      20,
+      26.491824
+    ],
+    [
+      86,
+      25,
+      15,
+      23,
+      21.104192
+    ],
+    [
+      90,
+      28,
+      19,
+      8,
+      48.093119
+    ],
+    [
+      90,
+      31,
+      18,
+      28,
+      43.198186
+    ],
+    [
+      91,
+      37,
+      18,
+      2,
+      50.0
+    ],
+    [
+      92,
+      29,
+      18,
+      2,
+      50.0
+    ],
+    [
+      93,
+      28,
+      11,
+      28,
+      22.0
+    ],
+    [
+      93,
+      45,
+      17,
+      9,
+      50.0
+    ],
+    [
+      95,
+      29,
+      10,
+      19,
+      22.0
+    ],
+    [
+      96,
+      30,
+      16,
+      21,
+      50.0
+    ],
+    [
+      103,
+      29,
+      12,
+      9,
+      22.0
+    ],
+    [
+      104,
+      44,
+      17,
+      9,
+      50.0
+    ],
+    [
+      106,
+      35,
+      20,
+      13,
+      46.886316
+    ],
+    [
+      106,
+      50,
+      21,
+      1,
+      34.159188
+    ],
+    [
+      108,
+      41,
+      16,
+      7,
+      50.0
+    ],
+    [
+      110,
+      34,
+      16,
+      13,
+      50.0
+    ],
+    [
+      110,
+      43,
+      16,
+      11,
+      50.0
+    ],
+    [
+      112,
+      31,
+      19,
+      3,
+      42.721591
+    ],
+    [
+      125,
+      34,
+      18,
+      27,
+      50.0
+    ],
+    [
+      127,
+      39,
+      19,
+      4,
+      50.0
+    ],
+    [
+      130,
+      33,
+      17,
+      29,
+      50.0
+    ],
+    [
+      134,
+      48,
+      16,
+      5,
+      50.0
+    ],
+    [
+      135,
+      37,
+      16,
+      19,
+      50.0
+    ],
+    [
+      138,
+      36,
+      17,
+      22,
+      50.0
+    ],
+    [
+      138,
+      43,
+      18,
+      2,
+      50.0
+    ],
+    [
+      142,
+      34,
+      21,
+      2,
+      20.779741
+    ],
+    [
+      142,
+      37,
+      21,
+      15,
+      22.506619
+    ],
+    [
+      145,
+      44,
+      15,
+      27,
+      50.0
+    ],
+    [
+      147,
+      47,
+      20,
+      0,
+      106.5006
+    ],
+    [
+      150,
+      49,
+      20,
+      18,
+      100.0
+    ],
+    [
+      158,
+      40,
+      18,
+      5,
+      50.0
+    ],
+    [
+      158,
+      46,
+      21,
+      2,
+      91.516706
+    ],
+    [
+      166,
+      41,
+      17,
+      4,
+      50.0
+    ],
+    [
+      166,
+      46,
+      17,
+      13,
+      36.483294
+    ],
+    [
+      169,
+      47,
+      18,
+      18,
+      50.0
+    ],
+    [
+      170,
+      44,
+      16,
+      12,
+      50.0
+    ],
+    [
+      171,
+      53,
+      18,
+      18,
+      50.0
+    ],
+    [
+      173,
+      48,
+      19,
+      24,
+      50.0
+    ],
+    [
+      173,
+      49,
+      15,
+      7,
+      50.0
+    ],
+    [
+      173,
+      51,
+      18,
+      12,
+      50.0
+    ],
+    [
+      176,
+      46,
+      16,
+      15,
+      50.0
+    ],
+    [
+      178,
+      49,
+      18,
+      12,
+      50.0
+    ],
+    [
+      189,
+      51,
+      20,
+      13,
+      54.202914
+    ],
+    [
+      196,
+      51,
+      16,
+      24,
+      50.0
+    ],
+    [
+      197,
+      52,
+      17,
+      1,
+      50.0
+    ],
+    [
+      197,
+      54,
+      18,
+      2,
+      50.0
+    ],
+    [
+      202,
+      50,
+      16,
+      17,
+      50.0
+    ],
+    [
+      202,
+      52,
+      5,
+      13,
+      7.0
+    ],
+    [
+      207,
+      55,
+      20,
+      3,
+      52.180871
+    ],
+    [
+      211,
+      55,
+      20,
+      13,
+      56.081204
+    ],
+    [
+      214,
+      54,
+      16,
+      5,
+      16.296858
+    ]
+  ],
+  "metrics": {
+    "obj_values": {
+      "energy_cost": 95487.85444768965,
+      "weighted_satisfaction": 310.3209224539873,
+      "total_energy_delivered": 2019.3256529249995,
+      "total_energy_required": 6249.885649583969,
+      "energy_satisfaction_pct": 32.309801589080564
+    },
+    "rejected_details": {
+      "0": {
+        "required_energy": 33.40244747443603,
+        "delivered_energy": 24.99999997443603,
+        "unmet_energy": 8.4024475,
+        "satisfaction": 0.7484481487043528,
+        "priority": 3,
+        "willingness_to_pay": 1.358850824528783,
+        "weighted_satisfaction": 3.0510881519518533
+      },
+      "2": {
+        "required_energy": 48.179056162401054,
+        "delivered_energy": 37.50000016240105,
+        "unmet_energy": 10.679056,
+        "satisfaction": 0.7783465088231858,
+        "priority": 3,
+        "willingness_to_pay": 1.251857024031323,
+        "weighted_satisfaction": 2.9231356326016895
+      },
+      "5": {
+        "required_energy": 12.585991896717271,
+        "delivered_energy": 9.274147096717272,
+        "unmet_energy": 3.3118448,
+        "satisfaction": 0.736862630519903,
+        "priority": 3,
+        "willingness_to_pay": 1.4058985289441894,
+        "weighted_satisfaction": 3.1078622648456324
+      },
+      "7": {
+        "required_energy": 44.91049969110171,
+        "delivered_energy": 40.99999999110171,
+        "unmet_energy": 3.9104997,
+        "satisfaction": 0.9129268272030648,
+        "priority": 3,
+        "willingness_to_pay": 1.2287372559501393,
+        "weighted_satisfaction": 3.3652416136222825
+      },
+      "9": {
+        "required_energy": 35.49083655238766,
+        "delivered_energy": 12.499999552387663,
+        "unmet_energy": 22.990837,
+        "satisfaction": 0.35220357609594644,
+        "priority": 2,
+        "willingness_to_pay": 0.9248426737103891,
+        "weighted_satisfaction": 0.6514657940138712
+      },
+      "10": {
+        "required_energy": 45.43503103960889,
+        "delivered_energy": 43.000000039608885,
+        "unmet_energy": 2.435031,
+        "satisfaction": 0.9464063093106019,
+        "priority": 3,
+        "willingness_to_pay": 0.8667220893585862,
+        "weighted_satisfaction": 2.4608137613634997
+      },
+      "11": {
+        "required_energy": 40.746619923126055,
+        "delivered_energy": 36.992823423126055,
+        "unmet_energy": 3.7537965,
+        "satisfaction": 0.9078746529876088,
+        "priority": 1,
+        "willingness_to_pay": 1.4135486811863447,
+        "weighted_satisfaction": 1.2833250184131448
+      },
+      "12": {
+        "required_energy": 14.940323457394966,
+        "delivered_energy": 12.499999957394966,
+        "unmet_energy": 2.4403235,
+        "satisfaction": 0.8366619366067258,
+        "priority": 2,
+        "willingness_to_pay": 1.202668551068139,
+        "weighted_satisfaction": 2.012453998065348
+      },
+      "14": {
+        "required_energy": 55.86273189986334,
+        "delivered_energy": 51.74999999986334,
+        "unmet_energy": 4.1127319,
+        "satisfaction": 0.9263778952419965,
+        "priority": 2,
+        "willingness_to_pay": 1.3633625745555074,
+        "weighted_satisfaction": 2.525977904536881
+      },
+      "18": {
+        "required_energy": 46.00572192042887,
+        "delivered_energy": 43.00000002042887,
+        "unmet_energy": 3.0057219,
+        "satisfaction": 0.9346663463905931,
+        "priority": 2,
+        "willingness_to_pay": 0.9931278330896478,
+        "weighted_satisfaction": 1.8564863265054157
+      },
+      "19": {
+        "required_energy": 26.752968469045044,
+        "delivered_energy": 19.654632469045044,
+        "unmet_energy": 7.098336,
+        "satisfaction": 0.7346710886228105,
+        "priority": 1,
+        "willingness_to_pay": 1.048181179203866,
+        "weighted_satisfaction": 0.7700684079996455
+      },
+      "20": {
+        "required_energy": 27.998573177264575,
+        "delivered_energy": 24.999999977264576,
+        "unmet_energy": 2.9985732,
+        "satisfaction": 0.8929026425376954,
+        "priority": 3,
+        "willingness_to_pay": 1.3207676202550531,
+        "weighted_satisfaction": 3.537950694911881
+      },
+      "26": {
+        "required_energy": 13.61495366632127,
+        "delivered_energy": 12.499999966321269,
+        "unmet_energy": 1.1149537,
+        "satisfaction": 0.9181081531876224,
+        "priority": 1,
+        "willingness_to_pay": 1.141776579587369,
+        "weighted_satisfaction": 1.0482743868378397
+      },
+      "31": {
+        "required_energy": 28.330116079234386,
+        "delivered_energy": 24.999999979234385,
+        "unmet_energy": 3.3301161,
+        "satisfaction": 0.8824531431256318,
+        "priority": 2,
+        "willingness_to_pay": 0.980876709716118,
+        "weighted_satisfaction": 1.7311554710154324
+      },
+      "32": {
+        "required_energy": 32.26008081829591,
+        "delivered_energy": 23.50000001829591,
+        "unmet_energy": 8.7600808,
+        "satisfaction": 0.7284544682531661,
+        "priority": 3,
+        "willingness_to_pay": 1.16718570472709,
+        "weighted_satisfaction": 2.5507249256690074
+      },
+      "33": {
+        "required_energy": 31.830790351079152,
+        "delivered_energy": 3.510791515282108e-07,
+        "unmet_energy": 31.83079,
+        "satisfaction": 1.1029545499141591e-08,
+        "priority": 2,
+        "willingness_to_pay": 0.8811468406283416,
+        "weighted_satisfaction": 1.9437298340270317e-08
+      },
+      "37": {
+        "required_energy": 10.145957920010972,
+        "delivered_energy": -7.998902873396219e-08,
+        "unmet_energy": 10.145958,
+        "satisfaction": -7.883832031652105e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.284837626189292,
+        "weighted_satisfaction": -1.0129444032822993e-08
+      },
+      "40": {
+        "required_energy": 8.181449665534245,
+        "delivered_energy": -3.446575469467916e-08,
+        "unmet_energy": 8.1814497,
+        "satisfaction": -4.212670878800395e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.3704511411292608,
+        "weighted_satisfaction": -1.1546519226108015e-08
+      },
+      "44": {
+        "required_energy": 27.511480274348592,
+        "delivered_energy": 24.999999974348594,
+        "unmet_energy": 2.5114803,
+        "satisfaction": 0.908711553324098,
+        "priority": 2,
+        "willingness_to_pay": 1.4325698928692174,
+        "weighted_satisfaction": 2.6035856251890466
+      },
+      "46": {
+        "required_energy": 27.03497711146965,
+        "delivered_energy": 25.000000011469652,
+        "unmet_energy": 2.0349771,
+        "satisfaction": 0.9247279887972735,
+        "priority": 2,
+        "willingness_to_pay": 1.090554712521912,
+        "weighted_satisfaction": 2.0169329319675526
+      },
+      "47": {
+        "required_energy": 48.26884096231081,
+        "delivered_energy": -3.768919043523056e-08,
+        "unmet_energy": 48.268841,
+        "satisfaction": -7.808182989066381e-10,
+        "priority": 2,
+        "willingness_to_pay": 1.3229063827693288,
+        "weighted_satisfaction": -2.0658990228133623e-09
+      },
+      "49": {
+        "required_energy": 12.057880659807651,
+        "delivered_energy": 10.999999959807651,
+        "unmet_energy": 1.0578807,
+        "satisfaction": 0.9122664479898016,
+        "priority": 2,
+        "willingness_to_pay": 1.0361214506565737,
+        "weighted_satisfaction": 1.890437670953026
+      },
+      "50": {
+        "required_energy": 37.742837889499526,
+        "delivered_energy": 37.49999999949953,
+        "unmet_energy": 0.24283789,
+        "satisfaction": 0.9935659875203089,
+        "priority": 2,
+        "willingness_to_pay": 1.4301799066016851,
+        "weighted_satisfaction": 2.841956222468813
+      },
+      "55": {
+        "required_energy": 26.413531789818123,
+        "delivered_energy": -2.1018187723598203e-07,
+        "unmet_energy": 26.413532,
+        "satisfaction": -7.957356107368696e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.088682519665124,
+        "weighted_satisfaction": -2.5989103490528445e-08
+      },
+      "56": {
+        "required_energy": 25.137431560528476,
+        "delivered_energy": 25.000000000528477,
+        "unmet_energy": 0.13743156,
+        "satisfaction": 0.994532792275572,
+        "priority": 1,
+        "willingness_to_pay": 0.886494296488556,
+        "weighted_satisfaction": 0.8816476480231324
+      },
+      "60": {
+        "required_energy": 18.591001354441264,
+        "delivered_energy": 12.499999954441265,
+        "unmet_energy": 6.0910014,
+        "satisfaction": 0.6723682988412617,
+        "priority": 3,
+        "willingness_to_pay": 1.4262004320546386,
+        "weighted_satisfaction": 2.8767958749217497
+      },
+      "63": {
+        "required_energy": 56.38871185626414,
+        "delivered_energy": 49.99999995626414,
+        "unmet_energy": 6.3887119,
+        "satisfaction": 0.8867022904108016,
+        "priority": 1,
+        "willingness_to_pay": 1.1295718112805957,
+        "weighted_satisfaction": 1.001593912245982
+      },
+      "65": {
+        "required_energy": 35.16848305631253,
+        "delivered_energy": 12.500000056312533,
+        "unmet_energy": 22.668483,
+        "satisfaction": 0.3554318801950389,
+        "priority": 3,
+        "willingness_to_pay": 1.1427605225882744,
+        "weighted_satisfaction": 1.218520563468647
+      },
+      "66": {
+        "required_energy": 13.989940665248866,
+        "delivered_energy": -3.347511334794717e-07,
+        "unmet_energy": 13.989941,
+        "satisfaction": -2.3927988035410408e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.032336418688095,
+        "weighted_satisfaction": -2.470173347488717e-08
+      },
+      "67": {
+        "required_energy": 37.9702874355657,
+        "delivered_energy": 4.355657026167137e-07,
+        "unmet_energy": 37.970287,
+        "satisfaction": 1.14712247478721e-08,
+        "priority": 2,
+        "willingness_to_pay": 1.3495933385729122,
+        "weighted_satisfaction": 3.096297701000184e-08
+      },
+      "68": {
+        "required_energy": 9.95802001984887,
+        "delivered_energy": 1.9848870991268086e-08,
+        "unmet_energy": 9.95802,
+        "satisfaction": 1.993254783450027e-09,
+        "priority": 3,
+        "willingness_to_pay": 0.8537849409402942,
+        "weighted_satisfaction": 5.10543275270052e-09
+      },
+      "69": {
+        "required_energy": 33.77310786943129,
+        "delivered_energy": -1.3056870784566854e-07,
+        "unmet_energy": 33.773108,
+        "satisfaction": -3.866055475754138e-09,
+        "priority": 3,
+        "willingness_to_pay": 0.9295468077898245,
+        "weighted_satisfaction": -1.078103857867689e-08
+      },
+      "72": {
+        "required_energy": 29.120826168033247,
+        "delivered_energy": 1.6803324598413383e-07,
+        "unmet_energy": 29.120826,
+        "satisfaction": 5.77020875525136e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.9048159262236134,
+        "weighted_satisfaction": 5.220976779386363e-09
+      },
+      "73": {
+        "required_energy": 19.574418688393333,
+        "delivered_energy": 12.499999988393334,
+        "unmet_energy": 7.0744187,
+        "satisfaction": 0.638588567424749,
+        "priority": 2,
+        "willingness_to_pay": 1.18333052737953,
+        "weighted_satisfaction": 1.5113226925385337
+      },
+      "74": {
+        "required_energy": 31.865325619099348,
+        "delivered_energy": 30.87656020909935,
+        "unmet_energy": 0.98876541,
+        "satisfaction": 0.9689704909399276,
+        "priority": 1,
+        "willingness_to_pay": 0.9553061042465658,
+        "weighted_satisfaction": 0.9256634248297045
+      },
+      "77": {
+        "required_energy": 44.667041251635936,
+        "delivered_energy": 42.999999951635935,
+        "unmet_energy": 1.6670413,
+        "satisfaction": 0.9626784928375137,
+        "priority": 3,
+        "willingness_to_pay": 1.0784364813589529,
+        "weighted_satisfaction": 3.1145628194868844
+      },
+      "79": {
+        "required_energy": 42.86317626267036,
+        "delivered_energy": 37.49999996267036,
+        "unmet_energy": 5.3631763,
+        "satisfaction": 0.8748768344386367,
+        "priority": 3,
+        "willingness_to_pay": 1.063465711474823,
+        "weighted_satisfaction": 2.791204545567377
+      },
+      "81": {
+        "required_energy": 31.040981430640425,
+        "delivered_energy": 4.3064042642981804e-07,
+        "unmet_energy": 31.040981,
+        "satisfaction": 1.3873286408561114e-08,
+        "priority": 3,
+        "willingness_to_pay": 0.8152435968525817,
+        "weighted_satisfaction": 3.39303237356442e-08
+      },
+      "82": {
+        "required_energy": 37.46381354793992,
+        "delivered_energy": 36.00000004793992,
+        "unmet_energy": 1.4638135,
+        "satisfaction": 0.9609272692400399,
+        "priority": 1,
+        "willingness_to_pay": 1.3695628680159873,
+        "weighted_satisfaction": 1.3160503068151599
+      },
+      "84": {
+        "required_energy": 15.310427879070538,
+        "delivered_energy": -1.209294619997081e-07,
+        "unmet_energy": 15.310428,
+        "satisfaction": -7.898503184833316e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.334185847195836,
+        "weighted_satisfaction": -3.1614213489707545e-08
+      },
+      "87": {
+        "required_energy": 13.412355314431522,
+        "delivered_energy": 3.1443152259669205e-07,
+        "unmet_energy": 13.412355,
+        "satisfaction": 2.3443423313729284e-08,
+        "priority": 3,
+        "willingness_to_pay": 0.8655355421798121,
+        "weighted_satisfaction": 6.087334832519856e-08
+      },
+      "88": {
+        "required_energy": 29.097278146005042,
+        "delivered_energy": 25.00000004600504,
+        "unmet_energy": 4.0972781,
+        "satisfaction": 0.8591868944084537,
+        "priority": 2,
+        "willingness_to_pay": 1.0861320013798808,
+        "weighted_satisfaction": 1.8663807623664364
+      },
+      "89": {
+        "required_energy": 27.523273611149712,
+        "delivered_energy": -3.8885028885715656e-07,
+        "unmet_energy": 27.523274,
+        "satisfaction": -1.412805383793625e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.1112874879265133,
+        "weighted_satisfaction": -1.5700329458850712e-08
+      },
+      "91": {
+        "required_energy": 26.454524903791405,
+        "delivered_energy": 25.000000003791406,
+        "unmet_energy": 1.4545249,
+        "satisfaction": 0.9450179163946527,
+        "priority": 2,
+        "willingness_to_pay": 0.9931500820633516,
+        "weighted_satisfaction": 1.877089242437374
+      },
+      "92": {
+        "required_energy": 16.88267760870978,
+        "delivered_energy": 12.50000000870978,
+        "unmet_energy": 4.3826776,
+        "satisfaction": 0.7404038801440492,
+        "priority": 1,
+        "willingness_to_pay": 1.3162022863317253,
+        "weighted_satisfaction": 0.9745212798544783
+      },
+      "94": {
+        "required_energy": 36.199777695829404,
+        "delivered_energy": 11.056561695829405,
+        "unmet_energy": 25.143216,
+        "satisfaction": 0.30543175675643,
+        "priority": 1,
+        "willingness_to_pay": 0.9916026121008983,
+        "weighted_satisfaction": 0.30286692781824215
+      },
+      "95": {
+        "required_energy": 22.07301610563919,
+        "delivered_energy": 17.736126605639193,
+        "unmet_energy": 4.3368895,
+        "satisfaction": 0.8035207567808544,
+        "priority": 2,
+        "willingness_to_pay": 1.0382095859084477,
+        "weighted_satisfaction": 1.6684459043325868
+      },
+      "96": {
+        "required_energy": 25.653757489834767,
+        "delivered_energy": 24.999999999834767,
+        "unmet_energy": 0.65375749,
+        "satisfaction": 0.9745161117134966,
+        "priority": 1,
+        "willingness_to_pay": 1.0178701856928796,
+        "weighted_satisfaction": 0.9919308955905197
+      },
+      "97": {
+        "required_energy": 27.974859145306205,
+        "delivered_energy": 1.453062061784749e-07,
+        "unmet_energy": 27.974859,
+        "satisfaction": 5.194171093236832e-09,
+        "priority": 2,
+        "willingness_to_pay": 0.9191702163804564,
+        "weighted_satisfaction": 9.548654735375222e-09
+      },
+      "98": {
+        "required_energy": 30.60910195133714,
+        "delivered_energy": -4.866285863158737e-08,
+        "unmet_energy": 30.609102,
+        "satisfaction": -1.5898165006689169e-09,
+        "priority": 2,
+        "willingness_to_pay": 0.9820444179478316,
+        "weighted_satisfaction": -3.12254084008653e-09
+      },
+      "99": {
+        "required_energy": 26.55570078913948,
+        "delivered_energy": -2.1086052015562018e-07,
+        "unmet_energy": 26.555701,
+        "satisfaction": -7.940310853271626e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.8800042331677695,
+        "weighted_satisfaction": -6.987507163547015e-09
+      },
+      "100": {
+        "required_energy": 14.601593359466172,
+        "delivered_energy": 12.499999959466171,
+        "unmet_energy": 2.1015934,
+        "satisfaction": 0.8560709541580582,
+        "priority": 3,
+        "willingness_to_pay": 0.9378799903183492,
+        "weighted_satisfaction": 2.408675454592739
+      },
+      "102": {
+        "required_energy": 14.370917719368295,
+        "delivered_energy": 12.500000019368295,
+        "unmet_energy": 1.8709177,
+        "satisfaction": 0.8698122321389061,
+        "priority": 1,
+        "willingness_to_pay": 1.4884749438980203,
+        "weighted_satisfaction": 1.29469371343477
+      },
+      "104": {
+        "required_energy": 16.934767690075955,
+        "delivered_energy": 12.499999990075954,
+        "unmet_energy": 4.4347677,
+        "satisfaction": 0.7381264519737791,
+        "priority": 3,
+        "willingness_to_pay": 0.8664250488255518,
+        "weighted_satisfaction": 1.9185937415724388
+      },
+      "107": {
+        "required_energy": 17.142138126962255,
+        "delivered_energy": 12.500000026962255,
+        "unmet_energy": 4.6421381,
+        "satisfaction": 0.7291972526636834,
+        "priority": 3,
+        "willingness_to_pay": 0.8583687460512524,
+        "weighted_satisfaction": 1.8777603941788326
+      },
+      "109": {
+        "required_energy": 46.724925259355324,
+        "delivered_energy": 2.5935532477205925e-07,
+        "unmet_energy": 46.724925,
+        "satisfaction": 5.5506846896591355e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.1664854238362539,
+        "weighted_satisfaction": 6.474792782798442e-09
+      },
+      "111": {
+        "required_energy": 14.850256273543248,
+        "delivered_energy": 12.499999973543249,
+        "unmet_energy": 2.3502563,
+        "satisfaction": 0.8417363137236128,
+        "priority": 1,
+        "willingness_to_pay": 0.8422034774040257,
+        "weighted_satisfaction": 0.7089132504752726
+      },
+      "113": {
+        "required_energy": 24.95801135797917,
+        "delivered_energy": 3.579791716390446e-07,
+        "unmet_energy": 24.958011,
+        "satisfaction": 1.4343257026538936e-08,
+        "priority": 2,
+        "willingness_to_pay": 1.44459824748286,
+        "weighted_satisfaction": 4.144048792746873e-08
+      },
+      "114": {
+        "required_energy": 30.78527193964577,
+        "delivered_energy": -6.035422828176706e-08,
+        "unmet_energy": 30.785272,
+        "satisfaction": -1.9604904366588016e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.9644840920725772,
+        "weighted_satisfaction": -1.890861838817835e-09
+      },
+      "115": {
+        "required_energy": 25.056893439136346,
+        "delivered_energy": 4.391363468414511e-07,
+        "unmet_energy": 25.056893,
+        "satisfaction": 1.752557032830282e-08,
+        "priority": 2,
+        "willingness_to_pay": 1.1224502588557468,
+        "weighted_satisfaction": 3.9343161903196193e-08
+      },
+      "116": {
+        "required_energy": 16.267451129691118,
+        "delivered_energy": 1.2969111651273124e-07,
+        "unmet_energy": 16.267451,
+        "satisfaction": 7.972430049463242e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.3472261738798326,
+        "weighted_satisfaction": 1.0740666432062968e-08
+      },
+      "118": {
+        "required_energy": 21.071282692036778,
+        "delivered_energy": -3.0796322292303557e-07,
+        "unmet_energy": 21.071283,
+        "satisfaction": -1.461530496627006e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.1049739748177139,
+        "weighted_satisfaction": -1.6149531621752503e-08
+      },
+      "119": {
+        "required_energy": 18.8872673746776,
+        "delivered_energy": 18.0000000046776,
+        "unmet_energy": 0.88726737,
+        "satisfaction": 0.9530229888528199,
+        "priority": 2,
+        "willingness_to_pay": 1.0080789269693928,
+        "weighted_satisfaction": 1.9214447839598285
+      },
+      "121": {
+        "required_energy": 41.57330434720876,
+        "delivered_energy": 3.472087612976793e-07,
+        "unmet_energy": 41.573304,
+        "satisfaction": 8.351723979060921e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.1380092595292113,
+        "weighted_satisfaction": 1.9008678442406954e-08
+      },
+      "122": {
+        "required_energy": 20.17595599211219,
+        "delivered_energy": -7.887809516660127e-09,
+        "unmet_energy": 20.175956,
+        "satisfaction": -3.909510493116386e-10,
+        "priority": 2,
+        "willingness_to_pay": 0.8329403033472562,
+        "weighted_satisfaction": -6.512777712151288e-10
+      },
+      "124": {
+        "required_energy": 17.85302863999989,
+        "delivered_energy": 12.500000039999891,
+        "unmet_energy": 5.3530286,
+        "satisfaction": 0.7001613167187507,
+        "priority": 3,
+        "willingness_to_pay": 0.9795276785117234,
+        "weighted_satisfaction": 2.057482167447688
+      },
+      "131": {
+        "required_energy": 17.954780225752344,
+        "delivered_energy": 2.2575234481791995e-07,
+        "unmet_energy": 17.95478,
+        "satisfaction": 1.2573383889602496e-08,
+        "priority": 3,
+        "willingness_to_pay": 1.4544356754821317,
+        "weighted_satisfaction": 5.4861534271710477e-08
+      },
+      "133": {
+        "required_energy": 32.9909554849772,
+        "delivered_energy": 4.849771997328389e-07,
+        "unmet_energy": 32.990955,
+        "satisfaction": 1.4700307748860553e-08,
+        "priority": 3,
+        "willingness_to_pay": 0.9411255948504531,
+        "weighted_satisfaction": 4.150450762389334e-08
+      },
+      "134": {
+        "required_energy": 14.754090245772893,
+        "delivered_energy": 12.500000045772893,
+        "unmet_energy": 2.2540902,
+        "satisfaction": 0.8472226913044805,
+        "priority": 3,
+        "willingness_to_pay": 1.3744722789765924,
+        "weighted_satisfaction": 3.4934523099538537
+      },
+      "135": {
+        "required_energy": 16.26042972370922,
+        "delivered_energy": 12.50000002370922,
+        "unmet_energy": 3.7604297,
+        "satisfaction": 0.7687373726343195,
+        "priority": 3,
+        "willingness_to_pay": 1.1776560191285488,
+        "weighted_satisfaction": 2.7159245820356173
+      },
+      "136": {
+        "required_energy": 9.94912405707222,
+        "delivered_energy": -4.292778044145962e-08,
+        "unmet_energy": 9.9491241,
+        "satisfaction": -4.314729684651297e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.3489837740634993,
+        "weighted_satisfaction": -5.8205003340647196e-09
+      },
+      "137": {
+        "required_energy": 9.162184438780384,
+        "delivered_energy": 3.878038512539206e-08,
+        "unmet_energy": 9.1621844,
+        "satisfaction": 4.232657113689697e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.4265784732374351,
+        "weighted_satisfaction": 6.038217522985017e-09
+      },
+      "138": {
+        "required_energy": 50.03701625953641,
+        "delivered_energy": 25.000000259536407,
+        "unmet_energy": 25.037016,
+        "satisfaction": 0.49963011642948896,
+        "priority": 3,
+        "willingness_to_pay": 0.8532612934870138,
+        "weighted_satisfaction": 1.2789451182290792
+      },
+      "139": {
+        "required_energy": 23.733359763538324,
+        "delivered_energy": -2.364616769057193e-07,
+        "unmet_energy": 23.73336,
+        "satisfaction": -9.963261771162024e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.0015555735149215,
+        "weighted_satisfaction": -1.9957520714590947e-08
+      },
+      "140": {
+        "required_energy": 10.120037479655203,
+        "delivered_energy": 4.796552026675727e-07,
+        "unmet_energy": 10.120037,
+        "satisfaction": 4.739658365782162e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.4975756040297314,
+        "weighted_satisfaction": 7.097996740030792e-08
+      },
+      "141": {
+        "required_energy": 13.071226461275437,
+        "delivered_energy": 4.612754374022643e-07,
+        "unmet_energy": 13.071226,
+        "satisfaction": 3.5289376865144106e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.141165668187006,
+        "weighted_satisfaction": 4.027102533021524e-08
+      },
+      "143": {
+        "required_energy": 7.757576832211025,
+        "delivered_energy": 3.2211024958428425e-08,
+        "unmet_energy": 7.7575768,
+        "satisfaction": 4.152201915630371e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.3477231330753796,
+        "weighted_satisfaction": 5.596018574894957e-09
+      },
+      "145": {
+        "required_energy": 51.149064635477025,
+        "delivered_energy": 24.999999635477025,
+        "unmet_energy": 26.149065,
+        "satisfaction": 0.48876748409074544,
+        "priority": 2,
+        "willingness_to_pay": 0.9027585197622248,
+        "weighted_satisfaction": 0.8824780208913362
+      },
+      "146": {
+        "required_energy": 16.891084019377608,
+        "delivered_energy": 1.9377608850845718e-08,
+        "unmet_energy": 16.891084,
+        "satisfaction": 1.1472093275344264e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.1151981588125865,
+        "weighted_satisfaction": 2.558731459678036e-09
+      },
+      "147": {
+        "required_energy": 32.159616481638984,
+        "delivered_energy": 26.625149781638985,
+        "unmet_energy": 5.5344667,
+        "satisfaction": 0.8279063214836591,
+        "priority": 1,
+        "willingness_to_pay": 1.0483163479767643,
+        "weighted_satisfaction": 0.8679077314046264
+      },
+      "148": {
+        "required_energy": 15.540824649947629,
+        "delivered_energy": -3.500523710897596e-07,
+        "unmet_energy": 15.540825,
+        "satisfaction": -2.25246972185289e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.0597945562428834,
+        "weighted_satisfaction": -2.3871551493216147e-08
+      },
+      "149": {
+        "required_energy": 33.94075208183866,
+        "delivered_energy": 8.183865674027402e-08,
+        "unmet_energy": 33.940752,
+        "satisfaction": 2.4112211116644744e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.152184980773055,
+        "weighted_satisfaction": 8.33451825054815e-09
+      },
+      "150": {
+        "required_energy": 29.355819412909568,
+        "delivered_energy": 25.000000012909567,
+        "unmet_energy": 4.3558194,
+        "satisfaction": 0.8516199006836622,
+        "priority": 2,
+        "willingness_to_pay": 0.9358345613949319,
+        "weighted_satisfaction": 1.593950672462981
+      },
+      "151": {
+        "required_energy": 34.68723240764606,
+        "delivered_energy": 4.076460555779704e-07,
+        "unmet_energy": 34.687232,
+        "satisfaction": 1.1752049000612885e-08,
+        "priority": 2,
+        "willingness_to_pay": 0.8640602220556773,
+        "weighted_satisfaction": 2.030895613815754e-08
+      },
+      "152": {
+        "required_energy": 5.253724603975485,
+        "delivered_energy": 3.975484830220921e-09,
+        "unmet_energy": 5.2537246,
+        "satisfaction": 7.566983706297492e-10,
+        "priority": 1,
+        "willingness_to_pay": 1.026086057911062,
+        "weighted_satisfaction": 7.764376481472031e-10
+      },
+      "154": {
+        "required_energy": 18.770734069125105,
+        "delivered_energy": 6.912510386314352e-08,
+        "unmet_energy": 18.770734,
+        "satisfaction": 3.682599891696725e-09,
+        "priority": 3,
+        "willingness_to_pay": 0.8664529124712597,
+        "weighted_satisfaction": 9.572398204880919e-09
+      },
+      "155": {
+        "required_energy": 22.27997476261173,
+        "delivered_energy": -2.3738827081842828e-07,
+        "unmet_energy": 22.279975,
+        "satisfaction": -1.0654781945618197e-08,
+        "priority": 3,
+        "willingness_to_pay": 1.1117460046412644,
+        "weighted_satisfaction": -3.553623377509472e-08
+      },
+      "156": {
+        "required_energy": 20.52571647813865,
+        "delivered_energy": 4.781386522267894e-07,
+        "unmet_energy": 20.525716,
+        "satisfaction": 2.3294614459601348e-08,
+        "priority": 2,
+        "willingness_to_pay": 0.8543992677839458,
+        "weighted_satisfaction": 3.9805803075185416e-08
+      },
+      "157": {
+        "required_energy": 41.93882268143972,
+        "delivered_energy": 37.16292278143972,
+        "unmet_energy": 4.7758999,
+        "satisfaction": 0.8861222229275023,
+        "priority": 2,
+        "willingness_to_pay": 1.4042503803442572,
+        "weighted_satisfaction": 2.4886749371548875
+      },
+      "159": {
+        "required_energy": 17.32131248588452,
+        "delivered_energy": 12.499999985884518,
+        "unmet_energy": 4.8213125,
+        "satisfaction": 0.721654320137173,
+        "priority": 3,
+        "willingness_to_pay": 0.8300427547804559,
+        "weighted_satisfaction": 1.7970118196576284
+      },
+      "160": {
+        "required_energy": 20.556530457695306,
+        "delivered_energy": 4.576953074320045e-07,
+        "unmet_energy": 20.55653,
+        "satisfaction": 2.2265202237470305e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.4086779763507031,
+        "weighted_satisfaction": 3.1364500030918816e-08
+      },
+      "161": {
+        "required_energy": 38.28004359881327,
+        "delivered_energy": 37.49999999881327,
+        "unmet_energy": 0.7800436,
+        "satisfaction": 0.9796227086840574,
+        "priority": 2,
+        "willingness_to_pay": 0.8720983695345673,
+        "weighted_satisfaction": 1.7086547340048057
+      },
+      "162": {
+        "required_energy": 27.3744342423671,
+        "delivered_energy": 2.4236710061131816e-07,
+        "unmet_energy": 27.374434,
+        "satisfaction": 8.853775712580614e-09,
+        "priority": 2,
+        "willingness_to_pay": 0.892480209788019,
+        "weighted_satisfaction": 1.5803639210760026e-08
+      },
+      "164": {
+        "required_energy": 22.243724421013738,
+        "delivered_energy": 4.210137376503553e-07,
+        "unmet_energy": 22.243724,
+        "satisfaction": 1.8927304168414594e-08,
+        "priority": 3,
+        "willingness_to_pay": 1.3774465636003979,
+        "weighted_satisfaction": 7.82140502550065e-08
+      },
+      "165": {
+        "required_energy": 43.164757619598355,
+        "delivered_energy": -3.804016444064473e-07,
+        "unmet_energy": 43.164758,
+        "satisfaction": -8.812782947842379e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.0123960181740657,
+        "weighted_satisfaction": -1.7844052730855858e-08
+      },
+      "167": {
+        "required_energy": 25.285463774088676,
+        "delivered_energy": -2.259113252023326e-07,
+        "unmet_energy": 25.285464,
+        "satisfaction": -8.934434747587261e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.1200706217906138,
+        "weighted_satisfaction": -3.0021593649233186e-08
+      },
+      "168": {
+        "required_energy": 18.70684758962873,
+        "delivered_energy": 12.49999998962873,
+        "unmet_energy": 6.2068476,
+        "satisfaction": 0.6682045133333347,
+        "priority": 1,
+        "willingness_to_pay": 1.0808137043626536,
+        "weighted_satisfaction": 0.7222045953276457
+      },
+      "169": {
+        "required_energy": 25.82432000887342,
+        "delivered_energy": 24.99999999887342,
+        "unmet_energy": 0.82432001,
+        "satisfaction": 0.9680797012383382,
+        "priority": 2,
+        "willingness_to_pay": 1.0540989524190714,
+        "weighted_satisfaction": 2.0409035978669996
+      },
+      "170": {
+        "required_energy": 23.101530630184993,
+        "delivered_energy": 12.499999630184993,
+        "unmet_energy": 10.601531,
+        "satisfaction": 0.5410896719480658,
+        "priority": 1,
+        "willingness_to_pay": 1.3604108814114366,
+        "weighted_satisfaction": 0.7361042775374933
+      },
+      "171": {
+        "required_energy": 38.41610418185782,
+        "delivered_energy": 37.50000000185782,
+        "unmet_energy": 0.91610418,
+        "satisfaction": 0.9761531212102285,
+        "priority": 1,
+        "willingness_to_pay": 1.3669289228067403,
+        "weighted_satisfaction": 1.334331934470335
+      },
+      "172": {
+        "required_energy": 33.90335361296922,
+        "delivered_energy": -3.870307807574136e-07,
+        "unmet_energy": 33.903354,
+        "satisfaction": -1.1415707934503416e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.3313129470722533,
+        "weighted_satisfaction": -1.519787977319985e-08
+      },
+      "173": {
+        "required_energy": 43.07393475464112,
+        "delivered_energy": 37.499999954641126,
+        "unmet_energy": 5.5739348,
+        "satisfaction": 0.8705961080233233,
+        "priority": 3,
+        "willingness_to_pay": 1.3012647654566136,
+        "weighted_satisfaction": 3.398628120943231
+      },
+      "175": {
+        "required_energy": 36.714268189965544,
+        "delivered_energy": 1.8996554729255877e-07,
+        "unmet_energy": 36.714268,
+        "satisfaction": 5.174161321619408e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.297005459574029,
+        "weighted_satisfaction": 1.3421830965714292e-08
+      },
+      "177": {
+        "required_energy": 42.4754620426585,
+        "delivered_energy": 4.2658498955461255e-08,
+        "unmet_energy": 42.475462,
+        "satisfaction": 1.0043091913658486e-09,
+        "priority": 2,
+        "willingness_to_pay": 0.9575092655606041,
+        "weighted_satisfaction": 1.923270712440956e-09
+      },
+      "179": {
+        "required_energy": 21.837936014416414,
+        "delivered_energy": 1.44164147286574e-08,
+        "unmet_energy": 21.837936,
+        "satisfaction": 6.601545976536727e-10,
+        "priority": 2,
+        "willingness_to_pay": 0.8285347691125543,
+        "weighted_satisfaction": 1.0939220742911537e-09
+      },
+      "180": {
+        "required_energy": 51.54442183711078,
+        "delivered_energy": 12.499999837110785,
+        "unmet_energy": 39.044422,
+        "satisfaction": 0.24250926466132317,
+        "priority": 3,
+        "willingness_to_pay": 1.1863436270063512,
+        "weighted_satisfaction": 0.8630979618628718
+      },
+      "181": {
+        "required_energy": 34.036979761457914,
+        "delivered_energy": 12.499999761457914,
+        "unmet_energy": 21.53698,
+        "satisfaction": 0.3672476185919529,
+        "priority": 2,
+        "willingness_to_pay": 0.8116625835690066,
+        "weighted_satisfaction": 0.5961623018318192
+      },
+      "182": {
+        "required_energy": 35.70820779250506,
+        "delivered_energy": -2.0749494211713682e-07,
+        "unmet_energy": 35.708208,
+        "satisfaction": -5.8108473588447396e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.377275849257643,
+        "weighted_satisfaction": -2.400941919317826e-08
+      },
+      "184": {
+        "required_energy": 29.684511133516065,
+        "delivered_energy": 25.000000033516066,
+        "unmet_energy": 4.6845111,
+        "satisfaction": 0.8421900539668705,
+        "priority": 2,
+        "willingness_to_pay": 1.0524450860892889,
+        "weighted_satisfaction": 1.7727175677014118
+      },
+      "185": {
+        "required_energy": 36.70341993014732,
+        "delivered_energy": -6.985268186099347e-08,
+        "unmet_energy": 36.70342,
+        "satisfaction": -1.9031654030499112e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.3608276666527677,
+        "weighted_satisfaction": -2.5898801346866847e-09
+      },
+      "186": {
+        "required_energy": 32.151549124720205,
+        "delivered_energy": 1.2472020216591773e-07,
+        "unmet_energy": 32.151549,
+        "satisfaction": 3.879135124229549e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.0877639802982344,
+        "weighted_satisfaction": 8.439166925693241e-09
+      },
+      "188": {
+        "required_energy": 24.097733832777543,
+        "delivered_energy": -1.6722245632649901e-07,
+        "unmet_energy": 24.097734,
+        "satisfaction": -6.9393435442322016e-09,
+        "priority": 3,
+        "willingness_to_pay": 1.3015684234040041,
+        "weighted_satisfaction": -2.7096091308975182e-08
+      },
+      "189": {
+        "required_energy": 41.24889482182676,
+        "delivered_energy": 13.550728821826759,
+        "unmet_energy": 27.698166,
+        "satisfaction": 0.3285113184331043,
+        "priority": 2,
+        "willingness_to_pay": 0.8411385563936837,
+        "weighted_satisfaction": 0.5526470722916142
+      },
+      "190": {
+        "required_energy": 55.62295764826725,
+        "delivered_energy": -3.517327442636997e-07,
+        "unmet_energy": 55.622958,
+        "satisfaction": -6.323517487416552e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.9486223703440628,
+        "weighted_satisfaction": -5.998630147825222e-09
+      },
+      "191": {
+        "required_energy": 30.964157570210283,
+        "delivered_energy": -4.297897184812882e-07,
+        "unmet_energy": 30.964158,
+        "satisfaction": -1.3880232963003891e-08,
+        "priority": 2,
+        "willingness_to_pay": 1.1641787153616483,
+        "weighted_satisfaction": -3.231814355958055e-08
+      },
+      "192": {
+        "required_energy": 29.41099292316968,
+        "delivered_energy": 12.499999923169678,
+        "unmet_energy": 16.910993,
+        "satisfaction": 0.42501114994054845,
+        "priority": 2,
+        "willingness_to_pay": 1.2408437449768257,
+        "weighted_satisfaction": 1.0547448538982747
+      },
+      "193": {
+        "required_energy": 10.158087221213641,
+        "delivered_energy": 2.2121364118277143e-07,
+        "unmet_energy": 10.158087,
+        "satisfaction": 2.177709601536293e-08,
+        "priority": 3,
+        "willingness_to_pay": 1.3916005970118717,
+        "weighted_satisfaction": 9.091505944849171e-08
+      },
+      "194": {
+        "required_energy": 31.004120492823407,
+        "delivered_energy": 4.928234069723203e-07,
+        "unmet_energy": 31.00412,
+        "satisfaction": 1.5895416427547104e-08,
+        "priority": 1,
+        "willingness_to_pay": 1.095063652282743,
+        "weighted_satisfaction": 1.7406492767704843e-08
+      },
+      "195": {
+        "required_energy": 41.641938479079094,
+        "delivered_energy": 37.49999997907909,
+        "unmet_energy": 4.1419385,
+        "satisfaction": 0.9005344455306539,
+        "priority": 2,
+        "willingness_to_pay": 1.3214334962207395,
+        "weighted_satisfaction": 2.379992761649554
+      },
+      "196": {
+        "required_energy": 31.51646937349602,
+        "delivered_energy": 24.999999973496017,
+        "unmet_energy": 6.5164694,
+        "satisfaction": 0.793236059446428,
+        "priority": 1,
+        "willingness_to_pay": 0.9146493590906958,
+        "weighted_satisfaction": 0.7255328533803045
+      },
+      "197": {
+        "required_energy": 33.60742337947522,
+        "delivered_energy": 24.99999997947522,
+        "unmet_energy": 8.6074234,
+        "satisfaction": 0.7438832693952748,
+        "priority": 2,
+        "willingness_to_pay": 1.3398826322767003,
+        "weighted_satisfaction": 1.9934325462078772
+      },
+      "198": {
+        "required_energy": 11.193179681584194,
+        "delivered_energy": 6.524827381584195,
+        "unmet_energy": 4.6683523,
+        "satisfaction": 0.5829288519614582,
+        "priority": 2,
+        "willingness_to_pay": 1.1584088618446702,
+        "weighted_satisfaction": 1.3505398958741859
+      },
+      "199": {
+        "required_energy": 50.97210693642817,
+        "delivered_energy": 49.999999996428166,
+        "unmet_energy": 0.97210694,
+        "satisfaction": 0.9809286490508936,
+        "priority": 2,
+        "willingness_to_pay": 0.9443422272083313,
+        "weighted_satisfaction": 1.8526646903543609
+      },
+      "200": {
+        "required_energy": 12.4817522139657,
+        "delivered_energy": 2.1396570026865902e-07,
+        "unmet_energy": 12.481752,
+        "satisfaction": 1.7142280706039514e-08,
+        "priority": 3,
+        "willingness_to_pay": 1.1504369109324828,
+        "weighted_satisfaction": 5.91633373853808e-08
+      },
+      "202": {
+        "required_energy": 17.100711259486715,
+        "delivered_energy": 14.249999959486715,
+        "unmet_energy": 2.8507113,
+        "satisfaction": 0.8332986706375414,
+        "priority": 2,
+        "willingness_to_pay": 1.1786339547187217,
+        "weighted_satisfaction": 1.9643082152707578
+      },
+      "204": {
+        "required_energy": 27.297706036079354,
+        "delivered_energy": 3.6079352838669365e-08,
+        "unmet_energy": 27.297706,
+        "satisfaction": 1.3216990835118736e-09,
+        "priority": 2,
+        "willingness_to_pay": 0.9026126402980571,
+        "weighted_satisfaction": 2.385964598896349e-09
+      },
+      "205": {
+        "required_energy": 48.319855304516494,
+        "delivered_energy": 13.847120304516494,
+        "unmet_energy": 34.472735,
+        "satisfaction": 0.286572056502458,
+        "priority": 2,
+        "willingness_to_pay": 1.4723673040330825,
+        "weighted_satisfaction": 0.8438786524874805
+      },
+      "206": {
+        "required_energy": 18.85513985567457,
+        "delivered_energy": -1.4432542982945051e-07,
+        "unmet_energy": 18.85514,
+        "satisfaction": -7.654434419634981e-09,
+        "priority": 2,
+        "willingness_to_pay": 1.0868727917736554,
+        "weighted_satisfaction": -1.6638793014234062e-08
+      },
+      "207": {
+        "required_energy": 58.91258585328304,
+        "delivered_energy": 21.304293853283042,
+        "unmet_energy": 37.608292,
+        "satisfaction": 0.36162550912872227,
+        "priority": 2,
+        "willingness_to_pay": 1.0043966352728277,
+        "weighted_satisfaction": 0.7264308891954238
+      },
+      "208": {
+        "required_energy": 16.169896845759602,
+        "delivered_energy": -1.5424039645495213e-07,
+        "unmet_energy": 16.169897,
+        "satisfaction": -9.538737133496511e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.8489655021921093,
+        "weighted_satisfaction": -8.098058760817387e-09
+      },
+      "209": {
+        "required_energy": 13.443833128769827,
+        "delivered_energy": 1.287698268015447e-07,
+        "unmet_energy": 13.443833,
+        "satisfaction": 9.578356552353284e-09,
+        "priority": 1,
+        "willingness_to_pay": 0.9695164457437793,
+        "weighted_satisfaction": 9.286374200704195e-09
+      },
+      "210": {
+        "required_energy": 42.80606779891896,
+        "delivered_energy": 37.49999999891896,
+        "unmet_energy": 5.3060678,
+        "satisfaction": 0.8760440266336726,
+        "priority": 2,
+        "willingness_to_pay": 1.2855454046300048,
+        "weighted_satisfaction": 2.252388745384967
+      },
+      "212": {
+        "required_energy": 37.05277587424803,
+        "delivered_energy": -1.257519741670876e-07,
+        "unmet_energy": 37.052776,
+        "satisfaction": -3.393861192080294e-09,
+        "priority": 3,
+        "willingness_to_pay": 0.9178333257005437,
+        "weighted_satisfaction": -9.344996714679204e-09
+      },
+      "213": {
+        "required_energy": 25.623960145204805,
+        "delivered_energy": 1.4520480462465457e-07,
+        "unmet_energy": 25.62396,
+        "satisfaction": 5.6667589509729055e-09,
+        "priority": 1,
+        "willingness_to_pay": 1.412376319929583,
+        "weighted_satisfaction": 8.003596153103136e-09
+      },
+      "214": {
+        "required_energy": 4.555097612402559,
+        "delivered_energy": 4.074214542402559,
+        "unmet_energy": 0.48088307,
+        "satisfaction": 0.8944296893461388,
+        "priority": 1,
+        "willingness_to_pay": 1.2024716300085951,
+        "weighted_satisfaction": 1.0755263264761328
+      },
+      "216": {
+        "required_energy": 40.338972529103486,
+        "delivered_energy": -4.7089651644682817e-07,
+        "unmet_energy": 40.338973,
+        "satisfaction": -1.1673488176100477e-08,
+        "priority": 2,
+        "willingness_to_pay": 1.1636400734125338,
+        "weighted_satisfaction": -2.716747727643581e-08
+      }
+    },
+    "solve_time": 299.23341488838196,
+    "schedule_size": 159,
+    "evs_served": 97,
+    "total_evs": 217,
+    "milp_status": 1,
+    "milp_objective": 26219803.356654387
+  },
+  "timestamp": "2025-05-23 11:03:00"
+}

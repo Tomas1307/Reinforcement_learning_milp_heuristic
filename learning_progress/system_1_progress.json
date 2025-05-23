@@ -1,0 +1,273 @@
+{
+  "system_info": {
+    "system_id": 1,
+    "total_vehicles": 32,
+    "n_spots": 10,
+    "n_chargers": 5,
+    "total_episodes": 24,
+    "timestamp": "2025-05-22T21:07:09.385649"
+  },
+  "performance_summary": {
+    "final_reward": 1034.3750059329639,
+    "best_reward": 1197.2914265073432,
+    "avg_reward": 976.5970696683704,
+    "reward_improvement": 117.75479234763418,
+    "final_satisfaction": 44.62368107256208,
+    "best_satisfaction": 46.13369786446873,
+    "avg_satisfaction": 41.971303983525964,
+    "satisfaction_improvement": 2.4369651643509513,
+    "final_assign_ratio": 56.25,
+    "best_assign_ratio": 59.375,
+    "avg_assign_ratio": 56.640625,
+    "final_epsilon": 0.38193487565652895,
+    "avg_episode_time": 0.09716078639030457
+  },
+  "learning_trends": {
+    "reward_trend": 2.4821622912764996,
+    "satisfaction_trend": -0.032071373917055904,
+    "assign_ratio_trend": -0.004076086956523046,
+    "episode_time_trend": -0.004214298517807676
+  },
+  "episode_by_episode": [
+    {
+      "episode": 1,
+      "reward": 916.6202135853297,
+      "satisfaction_pct": 42.18671590821113,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.9,
+      "episode_time": 0.24103045463562012
+    },
+    {
+      "episode": 2,
+      "reward": 975.2984517101563,
+      "satisfaction_pct": 43.63073143417657,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.9,
+      "episode_time": 0.017036914825439453
+    },
+    {
+      "episode": 3,
+      "reward": 948.1772516125084,
+      "satisfaction_pct": 39.310671391198106,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.8865673875,
+      "episode_time": 0.5174939632415771
+    },
+    {
+      "episode": 4,
+      "reward": 962.6416304452787,
+      "satisfaction_pct": 42.50748271213844,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.8517191218320987,
+      "episode_time": 0.07183408737182617
+    },
+    {
+      "episode": 5,
+      "reward": 1062.808916370683,
+      "satisfaction_pct": 44.34318624055676,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.8182406354242773,
+      "episode_time": 0.059352874755859375
+    },
+    {
+      "episode": 6,
+      "reward": 932.3594941996321,
+      "satisfaction_pct": 43.29058766764902,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.7860780864228484,
+      "episode_time": 0.06593823432922363
+    },
+    {
+      "episode": 7,
+      "reward": 1059.9581889022113,
+      "satisfaction_pct": 44.19868781692647,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.7551797493335214,
+      "episode_time": 0.07169270515441895
+    },
+    {
+      "episode": 8,
+      "reward": 964.3145151143233,
+      "satisfaction_pct": 41.612775472530814,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.7254959318337562,
+      "episode_time": 0.061005353927612305
+    },
+    {
+      "episode": 9,
+      "reward": 932.6791499783221,
+      "satisfaction_pct": 43.01486607344748,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.6969788948549688,
+      "episode_time": 0.06437134742736816
+    },
+    {
+      "episode": 10,
+      "reward": 874.1017621853871,
+      "satisfaction_pct": 42.42430045765021,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.6695827758060644,
+      "episode_time": 0.0707094669342041
+    },
+    {
+      "episode": 11,
+      "reward": 750.7371078284361,
+      "satisfaction_pct": 36.965310898159295,
+      "assign_ratio": 53.125,
+      "vehicles_assigned": 17,
+      "vehicles_skipped": 15,
+      "epsilon": 0.6432635148148175,
+      "episode_time": 0.07691693305969238
+    },
+    {
+      "episode": 12,
+      "reward": 987.0978131726442,
+      "satisfaction_pct": 43.02584055222486,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.6179787838684802,
+      "episode_time": 0.07235932350158691
+    },
+    {
+      "episode": 13,
+      "reward": 1015.6557732558374,
+      "satisfaction_pct": 41.061756251433465,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.5936879187396572,
+      "episode_time": 0.07616329193115234
+    },
+    {
+      "episode": 14,
+      "reward": 1165.5333572742688,
+      "satisfaction_pct": 46.13369786446873,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.5703518535879679,
+      "episode_time": 0.0739741325378418
+    },
+    {
+      "episode": 15,
+      "reward": 1107.5236100832662,
+      "satisfaction_pct": 44.34308067781928,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.5479330581323169,
+      "episode_time": 0.08865952491760254
+    },
+    {
+      "episode": 16,
+      "reward": 1037.307803122121,
+      "satisfaction_pct": 41.91209996482467,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.5263954772927323,
+      "episode_time": 0.07611536979675293
+    },
+    {
+      "episode": 17,
+      "reward": 1001.2637833593808,
+      "satisfaction_pct": 40.89795015795086,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.5057044732046998,
+      "episode_time": 0.07773852348327637
+    },
+    {
+      "episode": 18,
+      "reward": 665.8936960350211,
+      "satisfaction_pct": 31.68172326236404,
+      "assign_ratio": 53.125,
+      "vehicles_assigned": 17,
+      "vehicles_skipped": 15,
+      "epsilon": 0.48582676951273596,
+      "episode_time": 0.07013797760009766
+    },
+    {
+      "episode": 19,
+      "reward": 920.7269027218704,
+      "satisfaction_pct": 38.418588219634906,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.46673039785361253,
+      "episode_time": 0.0733027458190918
+    },
+    {
+      "episode": 20,
+      "reward": 854.5858393167234,
+      "satisfaction_pct": 40.37754935697696,
+      "assign_ratio": 53.125,
+      "vehicles_assigned": 17,
+      "vehicles_skipped": 15,
+      "epsilon": 0.4483846464431615,
+      "episode_time": 0.07534646987915039
+    },
+    {
+      "episode": 21,
+      "reward": 1197.2914265073432,
+      "satisfaction_pct": 45.7584937666572,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.43076001068397696,
+      "episode_time": 0.08000946044921875
+    },
+    {
+      "episode": 22,
+      "reward": 943.2282269986815,
+      "satisfaction_pct": 39.91517359063845,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.4138281457145775,
+      "episode_time": 0.08228397369384766
+    },
+    {
+      "episode": 23,
+      "reward": 1128.1497523284997,
+      "satisfaction_pct": 45.67634479442332,
+      "assign_ratio": 59.375,
+      "vehicles_assigned": 19,
+      "vehicles_skipped": 13,
+      "epsilon": 0.3975618208237168,
+      "episode_time": 0.0851738452911377
+    },
+    {
+      "episode": 24,
+      "reward": 1034.3750059329639,
+      "satisfaction_pct": 44.62368107256208,
+      "assign_ratio": 56.25,
+      "vehicles_assigned": 18,
+      "vehicles_skipped": 14,
+      "epsilon": 0.38193487565652895,
+      "episode_time": 0.08321189880371094
+    }
+  ]
+}

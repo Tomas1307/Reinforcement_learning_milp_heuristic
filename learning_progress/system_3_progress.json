@@ -1,0 +1,133 @@
+{
+  "system_info": {
+    "system_id": 3,
+    "total_vehicles": 49,
+    "n_spots": 30,
+    "n_chargers": 12,
+    "total_episodes": 10,
+    "timestamp": "2025-05-22T21:07:15.023814"
+  },
+  "performance_summary": {
+    "final_reward": 2242.6916563738528,
+    "best_reward": 2776.866849868824,
+    "avg_reward": 2434.2312250624827,
+    "reward_improvement": -419.9683250555686,
+    "final_satisfaction": 53.497657518372186,
+    "best_satisfaction": 57.395557387110216,
+    "avg_satisfaction": 54.03842352798652,
+    "satisfaction_improvement": -3.2209347714302154,
+    "final_assign_ratio": 73.46938775510205,
+    "best_assign_ratio": 81.63265306122449,
+    "avg_assign_ratio": 75.51020408163265,
+    "final_epsilon": 0.5877658817502291,
+    "avg_episode_time": 0.1203770637512207
+  },
+  "learning_trends": {
+    "reward_trend": -39.304949505967045,
+    "satisfaction_trend": -0.2598700024619389,
+    "assign_ratio_trend": -0.5442176870748302,
+    "episode_time_trend": 0.0032270547115441544
+  },
+  "episode_by_episode": [
+    {
+      "episode": 1,
+      "reward": 2662.6599814294214,
+      "satisfaction_pct": 56.7185922898024,
+      "assign_ratio": 77.55102040816327,
+      "vehicles_assigned": 38,
+      "vehicles_skipped": 11,
+      "epsilon": 0.8821345505625,
+      "episode_time": 0.10513854026794434
+    },
+    {
+      "episode": 2,
+      "reward": 2776.866849868824,
+      "satisfaction_pct": 57.395557387110216,
+      "assign_ratio": 81.63265306122449,
+      "vehicles_assigned": 40,
+      "vehicles_skipped": 9,
+      "epsilon": 0.8432232235918236,
+      "episode_time": 0.10901856422424316
+    },
+    {
+      "episode": 3,
+      "reward": 2349.784128284581,
+      "satisfaction_pct": 51.508036243383806,
+      "assign_ratio": 75.51020408163265,
+      "vehicles_assigned": 37,
+      "vehicles_skipped": 12,
+      "epsilon": 0.8060282916604905,
+      "episode_time": 0.11223816871643066
+    },
+    {
+      "episode": 4,
+      "reward": 2536.4406762467984,
+      "satisfaction_pct": 54.60778134157489,
+      "assign_ratio": 77.55102040816327,
+      "vehicles_assigned": 38,
+      "vehicles_skipped": 11,
+      "epsilon": 0.7704740438596104,
+      "episode_time": 0.11359763145446777
+    },
+    {
+      "episode": 5,
+      "reward": 2443.0128394569024,
+      "satisfaction_pct": 53.17372733282356,
+      "assign_ratio": 73.46938775510205,
+      "vehicles_assigned": 36,
+      "vehicles_skipped": 13,
+      "epsilon": 0.7364881089204068,
+      "episode_time": 0.12732315063476562
+    },
+    {
+      "episode": 6,
+      "reward": 2262.1895548212115,
+      "satisfaction_pct": 53.639758567242424,
+      "assign_ratio": 73.46938775510205,
+      "vehicles_assigned": 36,
+      "vehicles_skipped": 13,
+      "epsilon": 0.7040013079012841,
+      "episode_time": 0.11621451377868652
+    },
+    {
+      "episode": 7,
+      "reward": 2111.697839195278,
+      "satisfaction_pct": 50.83791594642905,
+      "assign_ratio": 69.38775510204081,
+      "vehicles_assigned": 34,
+      "vehicles_skipped": 15,
+      "epsilon": 0.672947513372929,
+      "episode_time": 0.12214183807373047
+    },
+    {
+      "episode": 8,
+      "reward": 2381.1712156626145,
+      "satisfaction_pct": 53.38697507876243,
+      "assign_ratio": 75.51020408163265,
+      "vehicles_assigned": 37,
+      "vehicles_skipped": 12,
+      "epsilon": 0.6432635148148175,
+      "episode_time": 0.13646507263183594
+    },
+    {
+      "episode": 9,
+      "reward": 2575.7975092853435,
+      "satisfaction_pct": 55.61823357436416,
+      "assign_ratio": 77.55102040816327,
+      "vehicles_assigned": 38,
+      "vehicles_skipped": 11,
+      "epsilon": 0.6148888899491377,
+      "episode_time": 0.12425804138183594
+    },
+    {
+      "episode": 10,
+      "reward": 2242.6916563738528,
+      "satisfaction_pct": 53.497657518372186,
+      "assign_ratio": 73.46938775510205,
+      "vehicles_assigned": 36,
+      "vehicles_skipped": 13,
+      "epsilon": 0.5877658817502291,
+      "episode_time": 0.1373751163482666
+    }
+  ]
+}

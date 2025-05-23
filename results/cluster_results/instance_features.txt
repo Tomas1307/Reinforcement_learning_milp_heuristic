@@ -61,6 +61,216 @@ Instancia: test_system_10.json
   energy_demand_per_spot: 535.8199647830592
   complexity_factor: 4401.703183871322
 
+Instancia: test_system_11.json
+  n_evs: 103
+  total_energy: 3286.481594959156
+  mean_energy: 31.907588300574332
+  std_energy: 16.345597781420526
+  max_energy: 89.7142265762743
+  mean_time_window: 3.450657579947333
+  std_time_window: 1.4518732777543308
+  min_time_window: 0.07259587851308247
+  max_time_window: 6.193398151653384
+  total_horizon: 13.928834014211004
+  max_concurrency: 35
+  mean_concurrency: 24.68421052631579
+  congestion_ratio: 3.5
+  price_mean: 31.462489397616082
+  price_std: 8.949455584773544
+  price_min: 19.334994982353614
+  price_max: 51.585663565297494
+  price_range: 32.25066858294388
+  price_volatility: 0.2844484259230818
+  n_spots: 10
+  n_chargers: 10
+  chargers_per_spot: 1.0
+  total_charger_power: 145
+  mean_charger_power: 14.5
+  transformer_limit: 70
+  power_per_spot: 14.5
+  energy_demand_per_spot: 328.6481594959156
+  complexity_factor: 102.44121632894206
+
+Instancia: test_system_12.json
+  n_evs: 183
+  total_energy: 5332.502592881107
+  mean_energy: 29.13935843104432
+  std_energy: 16.0445503443578
+  max_energy: 87.5912960687724
+  mean_time_window: 4.143281383020672
+  std_time_window: 1.8809868590813519
+  min_time_window: 0.18401961071954887
+  max_time_window: 9.582240170217982
+  total_horizon: 13.994907147613421
+  max_concurrency: 76
+  mean_concurrency: 52.68421052631579
+  congestion_ratio: 3.8
+  price_mean: 39.81363796052742
+  price_std: 11.276612865527378
+  price_min: 19.663599526764216
+  price_max: 59.6050707730811
+  price_range: 39.94147124631689
+  price_volatility: 0.28323492760715285
+  n_spots: 20
+  n_chargers: 15
+  chargers_per_spot: 0.75
+  total_charger_power: 365
+  mean_charger_power: 24.333333333333332
+  transformer_limit: 200
+  power_per_spot: 18.25
+  energy_demand_per_spot: 266.6251296440554
+  complexity_factor: 262.2657372277152
+
+Instancia: test_system_13.json
+  n_evs: 217
+  total_energy: 6249.885649583969
+  mean_energy: 28.801316357529824
+  std_energy: 14.37930849070225
+  max_energy: 87.69896670287459
+  mean_time_window: 4.60722689215303
+  std_time_window: 2.0133026112133177
+  min_time_window: 0.16346266049490588
+  max_time_window: 10.119423229959999
+  total_horizon: 13.850539029570411
+  max_concurrency: 103
+  mean_concurrency: 70.29824561403508
+  congestion_ratio: 3.433333333333333
+  price_mean: 45.62655489407715
+  price_std: 13.042280103440186
+  price_min: 29.70191075034793
+  price_max: 69.60486390700697
+  price_range: 39.90295315665904
+  price_volatility: 0.28584845236985496
+  n_spots: 30
+  n_chargers: 22
+  chargers_per_spot: 0.7333333333333333
+  total_charger_power: 730
+  mean_charger_power: 33.18181818181818
+  transformer_limit: 300
+  power_per_spot: 24.333333333333332
+  energy_demand_per_spot: 208.32952165279897
+  complexity_factor: 290.01356145794955
+
+Instancia: test_system_14.json
+  n_evs: 286
+  total_energy: 8596.786184041668
+  mean_energy: 30.058692951194637
+  std_energy: 15.81095840145743
+  max_energy: 87.49366933512884
+  mean_time_window: 4.847737384626794
+  std_time_window: 2.2183442468754326
+  min_time_window: 0.019611445375605996
+  max_time_window: 11.050956843401003
+  total_horizon: 13.982394172503415
+  max_concurrency: 133
+  mean_concurrency: 96.36842105263158
+  congestion_ratio: 2.66
+  price_mean: 40.15980282547931
+  price_std: 17.14216812419595
+  price_min: 12.460183232953579
+  price_max: 72.46570147735265
+  price_range: 60.00551824439907
+  price_volatility: 0.4268489115519296
+  n_spots: 50
+  n_chargers: 38
+  chargers_per_spot: 0.76
+  total_charger_power: 1475
+  mean_charger_power: 38.81578947368421
+  transformer_limit: 500
+  power_per_spot: 29.5
+  energy_demand_per_spot: 171.93572368083335
+  complexity_factor: 426.7142942867884
+
+Instancia: test_system_15.json
+  n_evs: 341
+  total_energy: 10279.87294218101
+  mean_energy: 30.146254962407635
+  std_energy: 16.652969564896235
+  max_energy: 86.55512123565721
+  mean_time_window: 4.5902045056369
+  std_time_window: 2.1066794092248715
+  min_time_window: 0.035319958727413336
+  max_time_window: 9.742507076285634
+  total_horizon: 13.996288299106595
+  max_concurrency: 159
+  mean_concurrency: 108.7719298245614
+  congestion_ratio: 1.59
+  price_mean: 44.481174328723746
+  price_std: 20.67084979922923
+  price_min: 15.93905113713856
+  price_max: 82.31052075319397
+  price_range: 66.3714696160554
+  price_volatility: 0.4647100736699979
+  n_spots: 100
+  n_chargers: 62
+  chargers_per_spot: 0.62
+  total_charger_power: 2290
+  mean_charger_power: 36.935483870967744
+  transformer_limit: 800
+  power_per_spot: 22.9
+  energy_demand_per_spot: 102.7987294218101
+  complexity_factor: 405.73454886173295
+
+Instancia: test_system_16.json
+  n_evs: 462
+  total_energy: 13901.655228151925
+  mean_energy: 30.09016283149772
+  std_energy: 16.48481911416639
+  max_energy: 89.89971080845518
+  mean_time_window: 4.731719727110982
+  std_time_window: 2.0976672162593886
+  min_time_window: 0.016129080975266774
+  max_time_window: 11.485240404888035
+  total_horizon: 13.988837743203007
+  max_concurrency: 213
+  mean_concurrency: 151.91228070175438
+  congestion_ratio: 1.42
+  price_mean: 35.84310769309958
+  price_std: 12.863404171798711
+  price_min: 16.79034995091335
+  price_max: 60.28125126863589
+  price_range: 43.490901317722546
+  price_volatility: 0.35888082813408334
+  n_spots: 150
+  n_chargers: 86
+  chargers_per_spot: 0.5733333333333334
+  total_charger_power: 3420
+  mean_charger_power: 39.76744186046512
+  transformer_limit: 1000
+  power_per_spot: 22.8
+  energy_demand_per_spot: 92.67770152101284
+  complexity_factor: 409.93646864030876
+
+Instancia: test_system_17.json
+  n_evs: 592
+  total_energy: 16806.914408509638
+  mean_energy: 28.39005812248248
+  std_energy: 15.89616179137366
+  max_energy: 88.71018912043927
+  mean_time_window: 4.602081850349036
+  std_time_window: 2.2134156493567065
+  min_time_window: 0.037230696475663905
+  max_time_window: 11.384551739556565
+  total_horizon: 13.993425416955267
+  max_concurrency: 262
+  mean_concurrency: 189.10526315789474
+  congestion_ratio: 1.31
+  price_mean: 45.958253460411846
+  price_std: 16.980853214428386
+  price_min: 22.893183790551742
+  price_max: 78.92954528980596
+  price_range: 56.03636149925421
+  price_volatility: 0.369484302293071
+  n_spots: 200
+  n_chargers: 132
+  chargers_per_spot: 0.66
+  total_charger_power: 6280
+  mean_charger_power: 47.57575757575758
+  transformer_limit: 1500
+  power_per_spot: 31.4
+  energy_demand_per_spot: 84.03457204254819
+  complexity_factor: 433.49843587643323
+
 Instancia: test_system_2.json
   n_evs: 49
   total_energy: 1148.1067081927788

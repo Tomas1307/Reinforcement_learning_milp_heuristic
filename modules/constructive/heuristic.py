@@ -48,6 +48,9 @@ class HeuristicaConstructivaEVs:
         Args:
             config: Diccionario con la configuración del sistema.
         """
+        self.alpha_cost = config.get("alpha_cost", 0.6)
+        self.alpha_satisfaction = config.get("alpha_satisfaction", 0.4)
+        self.penalizacion_base = config.get("penalizacion_base", 1000.0)
         self.times = config["times"]
         self.prices = config["prices"]
         self.arrivals = config["arrivals"]
@@ -61,10 +64,42 @@ class HeuristicaConstructivaEVs:
         self.arrival_time = {arr["id"]: arr["arrival_time"] for arr in self.arrivals}
         self.departure_time = {arr["id"]: arr["departure_time"] for arr in self.arrivals}
         self.required_energy = {arr["id"]: arr["required_energy"] for arr in self.arrivals}
-        
+        self.priority = {arr["id"]: arr.get("priority", 1) for arr in self.arrivals}
+        self.willingness_to_pay = {arr["id"]: arr.get("willingness_to_pay", 1.0) for arr in self.arrivals}
+        self.efficiency = {arr["id"]: arr.get("efficiency", 0.9) for arr in self.arrivals}
+
+        self.battery_capacity = {arr["id"]: arr.get("battery_capacity", 40) for arr in self.arrivals}
+        self.min_charge_rate = {arr["id"]: arr.get("min_charge_rate", 3.5) for arr in self.arrivals}
+        self.max_charge_rate = {arr["id"]: arr.get("max_charge_rate", 50) for arr in self.arrivals}
+        self.ac_charge_rate = {arr["id"]: arr.get("ac_charge_rate", 7) for arr in self.arrivals}
+        self.dc_charge_rate = {arr["id"]: arr.get("dc_charge_rate", 50) for arr in self.arrivals}
+        self.brand = {arr["id"]: arr.get("brand", "Generic") for arr in self.arrivals}
+
+        self.charger_type = {c["charger_id"]: c.get("type", "AC") for c in self.chargers}
+        self.charger_efficiency = {c["charger_id"]: c.get("efficiency", 1.0) for c in self.chargers}
+
         self.charger_ids = [c["charger_id"] for c in self.chargers]
         self.max_charger_power = {c["charger_id"]: c["power"] for c in self.chargers}
         
+        self.ev_charger_compatible = {}
+        for ev_id in self.ev_ids:
+            ev_brand = self.brand[ev_id]
+            ac_limit = self.ac_charge_rate[ev_id]
+            dc_limit = self.dc_charge_rate[ev_id]
+            self.ev_charger_compatible[ev_id] = []
+
+            for c in self.chargers:
+                cid = c["charger_id"]
+                ctype = c.get("type", "AC")
+                power = c["power"]
+                compatible_brands = c.get("compatible_vehicles", [])
+
+                brand_match = not compatible_brands or any(b in ev_brand for b in compatible_brands)
+                power_ok = (ctype == "AC" and power <= ac_limit) or (ctype == "DC" and power <= dc_limit)
+
+                if brand_match and power_ok:
+                    self.ev_charger_compatible[ev_id].append(cid)
+
         # Variables para almacenar el estado del sistema
         self.schedule = []  # [(ev_id, t_idx, charger_id, slot, power)]
         self.occupied_spots = {t: set() for t in range(len(self.times))}
@@ -74,6 +109,9 @@ class HeuristicaConstructivaEVs:
         self.energy_remaining = {ev_id: self.required_energy[ev_id] for ev_id in self.ev_ids}
         self.current_ev_assignment = {t: {} for t in range(len(self.times))}  # {t: {ev_id: (slot, charger, power)}}
         self.rejected_vehicles = set()
+        
+        # Construir compatibilidad EV–cargador por tipo y marca
+
 
     def run(self, track_progress=False):
         """
@@ -380,7 +418,7 @@ class HeuristicaConstructivaEVs:
             slots_con_cargador = []
             for s in range(self.n_spots):
                 if s not in self.occupied_spots[t]:
-                    for c in self.charger_ids:
+                    for c in self.ev_charger_compatible.get(ev, []):
                         if c not in self.occupied_chargers[t]:
                             slots_con_cargador.append((s, c))
             
@@ -579,7 +617,9 @@ class HeuristicaConstructivaEVs:
         self.occupied_spots[t_idx].add(slot)
         self.occupied_chargers[t_idx].add(charger_id)
         self.power_used[t_idx] += power
-        energy = power * self.dt
+        eff = self.efficiency[ev_id] * self.charger_efficiency.get(charger_id, 1.0)
+        energy = power * self.dt * eff
+
         self.energy_delivered[ev_id] += energy
         self.energy_remaining[ev_id] -= energy
         self.current_ev_assignment[t_idx][ev_id] = (slot, charger_id, power)
@@ -627,7 +667,9 @@ class HeuristicaConstructivaEVs:
                 self.power_used[t_idx] -= power
                 
                 # Restaurar energía
-                energy = power * self.dt
+                eff = self.efficiency[ev_id] * self.charger_efficiency.get(charger_id, 1.0)
+                energy = power * self.dt * eff
+
                 self.energy_delivered[ev_id] -= energy
                 self.energy_remaining[ev_id] += energy
             
@@ -827,12 +869,13 @@ class HeuristicaConstructivaEVs:
         
         for (ev_id, t_idx, charger_id, slot, power) in schedule:
             if charger_id is not None and power > 0:
-                energia = power * self.dt
+                eff = self.efficiency[ev_id] * self.charger_efficiency.get(charger_id, 1.0)
+                energia = power * self.dt * eff
                 costo_operacion += energia * self.prices[t_idx]
                 energia_entregada[ev_id] += energia
         
         # Penalización mejorada por energía no entregada
-        penalizacion_base = 1000.0
+        penalizacion_base = self.penalizacion_base
         costo_penalizacion = 0.0
         
         for ev_id in self.ev_ids:
@@ -843,11 +886,13 @@ class HeuristicaConstructivaEVs:
                 # Penalización progresiva: mayor cuanto mayor sea el porcentaje de energía no entregada
                 # Esto incentiva entregar al menos algo de energía a todos los vehículos
                 porcentaje_no_entregado = energia_no_entregada / energia_requerida
-                factor_penalizacion = penalizacion_base * porcentaje_no_entregado
+                factor_penalizacion = penalizacion_base * porcentaje_no_entregado * self.priority[ev_id] * self.willingness_to_pay[ev_id]
+
                 
                 costo_penalizacion += energia_no_entregada * factor_penalizacion
         
-        return costo_operacion + costo_penalizacion
+        return self.alpha_cost * costo_operacion + self.alpha_satisfaction * costo_penalizacion
+
 
     def get_resultados(self):
         """
@@ -914,7 +959,7 @@ class HeuristicaConstructivaEVs:
                     "required_energy": self.required_energy[ev_id],
                     "delivered_energy": self.energy_delivered[ev_id],
                     "unmet_energy": unmet,
-                    "penalty_cost": unmet * 1000,
+                    "penalty_cost": unmet * self.penalizacion_base * self.priority[ev_id] * self.willingness_to_pay[ev_id],
                     "rejected_by_capacity": False
                 }
         

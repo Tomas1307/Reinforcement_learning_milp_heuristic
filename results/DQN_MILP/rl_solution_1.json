@@ -1,0 +1,384 @@
+{
+  "schedule": [
+    [
+      13,
+      27,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      28,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      29,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      30,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      31,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      32,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      33,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      34,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      35,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      36,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      37,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      38,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      39,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      40,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      41,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      42,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      43,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      44,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      45,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      46,
+      0,
+      0,
+      7
+    ]
+  ],
+  "metrics": {
+    "energy_metrics": {
+      "total_required_energy": 537.6048589181183,
+      "total_delivered_energy": 29.924999999999997,
+      "total_satisfaction_pct": 5.566355940350201,
+      "ev_metrics": {
+        "0": {
+          "required_energy": 26.478437273714942,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "1": {
+          "required_energy": 14.873750460775147,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "2": {
+          "required_energy": 10.525724897109281,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "3": {
+          "required_energy": 21.743116293045194,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "4": {
+          "required_energy": 12.450087517219067,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "5": {
+          "required_energy": 18.58006288201015,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "6": {
+          "required_energy": 27.753826894503916,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "7": {
+          "required_energy": 15.298824584658966,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "8": {
+          "required_energy": 10.17228428358413,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "9": {
+          "required_energy": 23.39317703767802,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "10": {
+          "required_energy": 20.238996781476146,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "11": {
+          "required_energy": 8.611959460570718,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "12": {
+          "required_energy": 28.591060704607276,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "13": {
+          "required_energy": 29.967456147417174,
+          "delivered_energy": 29.924999999999997,
+          "satisfaction": 0.9985832582115638,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "14": {
+          "required_energy": 5.127082117480351,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "15": {
+          "required_energy": 9.61782393872722,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "16": {
+          "required_energy": 11.376157008369912,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "17": {
+          "required_energy": 12.79068673272877,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "18": {
+          "required_energy": 10.380712874679656,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "19": {
+          "required_energy": 25.724031973478546,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "20": {
+          "required_energy": 10.11765540426638,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "21": {
+          "required_energy": 29.231387595776397,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "22": {
+          "required_energy": 23.155291844019377,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "23": {
+          "required_energy": 12.304938606900205,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "24": {
+          "required_energy": 17.172654405802156,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "25": {
+          "required_energy": 5.055989428833827,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "26": {
+          "required_energy": 9.15175433861242,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "27": {
+          "required_energy": 7.041028405628692,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "28": {
+          "required_energy": 12.985126507140937,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "29": {
+          "required_energy": 29.96796340772214,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "30": {
+          "required_energy": 16.176528087435333,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        },
+        "31": {
+          "required_energy": 21.549281022145895,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.0
+        }
+      }
+    },
+    "total_cost": 936.2939479766868,
+    "cost_per_kwh": 31.288018311668736,
+    "schedule_size": 20,
+    "evs_served": 1,
+    "total_evs": 32,
+    "execution_time": 1748014069.7443125
+  },
+  "timestamp": "2025-05-23 10:27:55"
+}

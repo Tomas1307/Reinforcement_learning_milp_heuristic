@@ -1,0 +1,143 @@
+{
+  "system_info": {
+    "system_id": 13,
+    "total_vehicles": 289,
+    "n_spots": 200,
+    "n_chargers": 85,
+    "total_episodes": 11,
+    "timestamp": "2025-05-22T21:08:23.724549"
+  },
+  "performance_summary": {
+    "final_reward": 8176.868505563149,
+    "best_reward": 8325.503161770024,
+    "avg_reward": 3913.151607446777,
+    "reward_improvement": 4939.477131957041,
+    "final_satisfaction": 42.64391423227663,
+    "best_satisfaction": 42.64391423227663,
+    "avg_satisfaction": 33.35387202004242,
+    "satisfaction_improvement": 9.604506749232378,
+    "final_assign_ratio": 53.28719723183391,
+    "best_assign_ratio": 54.325259515570934,
+    "avg_assign_ratio": 42.87511796162315,
+    "final_epsilon": 0.14959098312502883,
+    "avg_episode_time": 1.6396528807553379
+  },
+  "learning_trends": {
+    "reward_trend": -59.10395841087647,
+    "satisfaction_trend": -0.1220684530051217,
+    "assign_ratio_trend": -0.16986473733878588,
+    "episode_time_trend": 0.023952180689031488
+  },
+  "episode_by_episode": [
+    {
+      "episode": 1,
+      "reward": 3237.3913736061077,
+      "satisfaction_pct": 33.03940748304425,
+      "assign_ratio": 40.830449826989614,
+      "vehicles_assigned": 118,
+      "vehicles_skipped": 165,
+      "epsilon": 0.7821476959907341,
+      "episode_time": 1.461320400238037
+    },
+    {
+      "episode": 2,
+      "reward": 4230.017147028965,
+      "satisfaction_pct": 34.00795572294502,
+      "assign_ratio": 43.25259515570934,
+      "vehicles_assigned": 125,
+      "vehicles_skipped": 158,
+      "epsilon": 0.6629036876173989,
+      "episode_time": 1.5183117389678955
+    },
+    {
+      "episode": 3,
+      "reward": 8325.503161770024,
+      "satisfaction_pct": 42.14649432269179,
+      "assign_ratio": 54.325259515570934,
+      "vehicles_assigned": 157,
+      "vehicles_skipped": 126,
+      "epsilon": 0.5618392808791859,
+      "episode_time": 1.6967251300811768
+    },
+    {
+      "episode": 4,
+      "reward": 6093.1031250335545,
+      "satisfaction_pct": 37.63701846725448,
+      "assign_ratio": 48.09688581314879,
+      "vehicles_assigned": 139,
+      "vehicles_skipped": 144,
+      "epsilon": 0.47618286552816513,
+      "episode_time": 1.7012503147125244
+    },
+    {
+      "episode": 5,
+      "reward": 3900.277431568247,
+      "satisfaction_pct": 31.803207983583228,
+      "assign_ratio": 43.59861591695502,
+      "vehicles_assigned": 126,
+      "vehicles_skipped": 157,
+      "epsilon": 0.4035853831148793,
+      "episode_time": 1.5950610637664795
+    },
+    {
+      "episode": 6,
+      "reward": 1222.177137142635,
+      "satisfaction_pct": 28.238529176788056,
+      "assign_ratio": 36.67820069204152,
+      "vehicles_assigned": 106,
+      "vehicles_skipped": 177,
+      "epsilon": 0.34205590594554863,
+      "episode_time": 1.6178560256958008
+    },
+    {
+      "episode": 7,
+      "reward": 1796.009146176502,
+      "satisfaction_pct": 29.5601984674935,
+      "assign_ratio": 37.71626297577855,
+      "vehicles_assigned": 109,
+      "vehicles_skipped": 174,
+      "epsilon": 0.2899070374878413,
+      "episode_time": 1.5728187561035156
+    },
+    {
+      "episode": 8,
+      "reward": -1982.2495742095655,
+      "satisfaction_pct": 20.709007533852166,
+      "assign_ratio": 28.373702422145332,
+      "vehicles_assigned": 82,
+      "vehicles_skipped": 201,
+      "epsilon": 0.2457086368751538,
+      "episode_time": 1.5625042915344238
+    },
+    {
+      "episode": 9,
+      "reward": 3229.550240617395,
+      "satisfaction_pct": 31.307161656125583,
+      "assign_ratio": 41.522491349480966,
+      "vehicles_assigned": 120,
+      "vehicles_skipped": 163,
+      "epsilon": 0.20824859844107177,
+      "episode_time": 1.6949284076690674
+    },
+    {
+      "episode": 10,
+      "reward": 4816.019987617528,
+      "satisfaction_pct": 35.79969717441188,
+      "assign_ratio": 43.944636678200695,
+      "vehicles_assigned": 127,
+      "vehicles_skipped": 156,
+      "epsilon": 0.1764996106942145,
+      "episode_time": 1.7573144435882568
+    },
+    {
+      "episode": 11,
+      "reward": 8176.868505563149,
+      "satisfaction_pct": 42.64391423227663,
+      "assign_ratio": 53.28719723183391,
+      "vehicles_assigned": 154,
+      "vehicles_skipped": 129,
+      "epsilon": 0.14959098312502883,
+      "episode_time": 1.858091115951538
+    }
+  ]
+}

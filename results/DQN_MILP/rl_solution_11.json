@@ -1,0 +1,2371 @@
+{
+  "schedule": [
+    [
+      0,
+      1,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      2,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      3,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      4,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      5,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      6,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      7,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      8,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      9,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      10,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      11,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      12,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      13,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      14,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      15,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      16,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      17,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      18,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      19,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      20,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      0,
+      21,
+      0,
+      2,
+      6.895771088742968
+    ],
+    [
+      4,
+      3,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      4,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      5,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      6,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      7,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      8,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      9,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      10,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      11,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      12,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      13,
+      1,
+      3,
+      7
+    ],
+    [
+      4,
+      14,
+      1,
+      3,
+      7
+    ],
+    [
+      19,
+      8,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      9,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      10,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      11,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      12,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      13,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      14,
+      2,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      15,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      16,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      17,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      18,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      19,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      20,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      21,
+      1,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      22,
+      0,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      23,
+      0,
+      4,
+      6.562756162098669
+    ],
+    [
+      19,
+      24,
+      0,
+      4,
+      6.562756162098669
+    ],
+    [
+      25,
+      12,
+      3,
+      5,
+      7
+    ],
+    [
+      25,
+      13,
+      3,
+      5,
+      7
+    ],
+    [
+      25,
+      14,
+      3,
+      5,
+      7
+    ],
+    [
+      25,
+      15,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      16,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      17,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      18,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      19,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      20,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      21,
+      2,
+      5,
+      7
+    ],
+    [
+      25,
+      22,
+      1,
+      5,
+      7
+    ],
+    [
+      25,
+      23,
+      1,
+      5,
+      7
+    ],
+    [
+      25,
+      24,
+      1,
+      5,
+      7
+    ],
+    [
+      25,
+      25,
+      0,
+      5,
+      7
+    ],
+    [
+      25,
+      26,
+      0,
+      5,
+      7
+    ],
+    [
+      34,
+      17,
+      3,
+      3,
+      7
+    ],
+    [
+      34,
+      18,
+      3,
+      3,
+      7
+    ],
+    [
+      34,
+      19,
+      3,
+      3,
+      7
+    ],
+    [
+      34,
+      20,
+      3,
+      3,
+      7
+    ],
+    [
+      34,
+      21,
+      3,
+      3,
+      7
+    ],
+    [
+      34,
+      22,
+      2,
+      3,
+      7
+    ],
+    [
+      34,
+      23,
+      2,
+      3,
+      7
+    ],
+    [
+      34,
+      24,
+      2,
+      3,
+      7
+    ],
+    [
+      34,
+      25,
+      1,
+      3,
+      7
+    ],
+    [
+      34,
+      26,
+      1,
+      3,
+      7
+    ],
+    [
+      34,
+      27,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      28,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      29,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      30,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      31,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      32,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      33,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      34,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      35,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      36,
+      0,
+      3,
+      7
+    ],
+    [
+      34,
+      37,
+      0,
+      3,
+      7
+    ],
+    [
+      47,
+      28,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      29,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      30,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      31,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      32,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      33,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      34,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      35,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      36,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      37,
+      1,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      38,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      39,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      40,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      41,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      42,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      43,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      44,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      45,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      46,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      47,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      47,
+      48,
+      0,
+      2,
+      5.083400931253718
+    ],
+    [
+      50,
+      28,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      29,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      30,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      31,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      32,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      33,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      34,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      35,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      36,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      37,
+      2,
+      4,
+      7
+    ],
+    [
+      50,
+      38,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      39,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      40,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      41,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      42,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      43,
+      1,
+      4,
+      7
+    ],
+    [
+      50,
+      44,
+      1,
+      4,
+      7
+    ],
+    [
+      52,
+      29,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      30,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      31,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      32,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      33,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      34,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      35,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      36,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      37,
+      3,
+      5,
+      7
+    ],
+    [
+      52,
+      38,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      39,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      40,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      41,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      42,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      43,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      44,
+      2,
+      5,
+      7
+    ],
+    [
+      52,
+      45,
+      1,
+      5,
+      7
+    ],
+    [
+      52,
+      46,
+      1,
+      5,
+      7
+    ],
+    [
+      52,
+      47,
+      1,
+      5,
+      7
+    ],
+    [
+      53,
+      29,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      30,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      31,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      32,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      33,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      34,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      35,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      36,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      37,
+      4,
+      6,
+      7
+    ],
+    [
+      53,
+      38,
+      3,
+      6,
+      7
+    ],
+    [
+      53,
+      39,
+      3,
+      6,
+      7
+    ],
+    [
+      62,
+      33,
+      5,
+      7,
+      7
+    ],
+    [
+      62,
+      34,
+      5,
+      7,
+      7
+    ],
+    [
+      62,
+      35,
+      5,
+      7,
+      7
+    ],
+    [
+      62,
+      36,
+      5,
+      7,
+      7
+    ],
+    [
+      62,
+      37,
+      5,
+      7,
+      7
+    ],
+    [
+      62,
+      38,
+      4,
+      7,
+      7
+    ],
+    [
+      62,
+      39,
+      4,
+      7,
+      7
+    ],
+    [
+      62,
+      40,
+      3,
+      7,
+      7
+    ],
+    [
+      62,
+      41,
+      3,
+      7,
+      7
+    ],
+    [
+      62,
+      42,
+      3,
+      7,
+      7
+    ],
+    [
+      64,
+      34,
+      6,
+      8,
+      7
+    ],
+    [
+      64,
+      35,
+      6,
+      8,
+      7
+    ],
+    [
+      64,
+      36,
+      6,
+      8,
+      7
+    ],
+    [
+      64,
+      37,
+      6,
+      8,
+      7
+    ],
+    [
+      64,
+      38,
+      5,
+      8,
+      7
+    ],
+    [
+      64,
+      39,
+      5,
+      8,
+      7
+    ],
+    [
+      64,
+      40,
+      4,
+      8,
+      7
+    ],
+    [
+      64,
+      41,
+      4,
+      8,
+      7
+    ],
+    [
+      64,
+      42,
+      4,
+      8,
+      7
+    ],
+    [
+      64,
+      43,
+      3,
+      8,
+      7
+    ],
+    [
+      64,
+      44,
+      3,
+      8,
+      7
+    ],
+    [
+      67,
+      36,
+      7,
+      9,
+      7
+    ],
+    [
+      67,
+      37,
+      7,
+      9,
+      7
+    ],
+    [
+      67,
+      38,
+      6,
+      9,
+      7
+    ],
+    [
+      67,
+      39,
+      6,
+      9,
+      7
+    ],
+    [
+      67,
+      40,
+      5,
+      9,
+      7
+    ],
+    [
+      67,
+      41,
+      5,
+      9,
+      7
+    ],
+    [
+      67,
+      42,
+      5,
+      9,
+      7
+    ],
+    [
+      67,
+      43,
+      4,
+      9,
+      7
+    ],
+    [
+      67,
+      44,
+      4,
+      9,
+      7
+    ],
+    [
+      67,
+      45,
+      2,
+      9,
+      7
+    ],
+    [
+      67,
+      46,
+      2,
+      9,
+      7
+    ],
+    [
+      67,
+      47,
+      2,
+      9,
+      7
+    ],
+    [
+      67,
+      48,
+      1,
+      9,
+      7
+    ],
+    [
+      67,
+      49,
+      0,
+      9,
+      7
+    ],
+    [
+      67,
+      50,
+      0,
+      9,
+      7
+    ],
+    [
+      67,
+      51,
+      0,
+      9,
+      7
+    ],
+    [
+      67,
+      52,
+      0,
+      9,
+      7
+    ],
+    [
+      70,
+      38,
+      7,
+      1,
+      22
+    ],
+    [
+      70,
+      39,
+      7,
+      1,
+      22
+    ],
+    [
+      70,
+      40,
+      6,
+      1,
+      22
+    ],
+    [
+      70,
+      41,
+      6,
+      1,
+      22
+    ],
+    [
+      70,
+      42,
+      6,
+      1,
+      22
+    ],
+    [
+      70,
+      43,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      44,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      45,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      46,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      47,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      48,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      49,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      50,
+      5,
+      1,
+      22
+    ],
+    [
+      70,
+      51,
+      5,
+      1,
+      22
+    ],
+    [
+      80,
+      45,
+      3,
+      4,
+      7
+    ],
+    [
+      80,
+      46,
+      3,
+      4,
+      7
+    ],
+    [
+      80,
+      47,
+      3,
+      4,
+      7
+    ],
+    [
+      80,
+      48,
+      2,
+      4,
+      7
+    ],
+    [
+      80,
+      49,
+      1,
+      4,
+      7
+    ],
+    [
+      80,
+      50,
+      1,
+      4,
+      7
+    ],
+    [
+      80,
+      51,
+      1,
+      4,
+      7
+    ],
+    [
+      80,
+      52,
+      1,
+      4,
+      7
+    ],
+    [
+      80,
+      53,
+      0,
+      4,
+      7
+    ],
+    [
+      80,
+      54,
+      0,
+      4,
+      7
+    ],
+    [
+      80,
+      55,
+      0,
+      4,
+      7
+    ],
+    [
+      87,
+      49,
+      2,
+      3,
+      7
+    ],
+    [
+      87,
+      50,
+      2,
+      3,
+      7
+    ],
+    [
+      87,
+      51,
+      2,
+      3,
+      7
+    ],
+    [
+      87,
+      52,
+      2,
+      3,
+      7
+    ],
+    [
+      87,
+      53,
+      1,
+      3,
+      7
+    ],
+    [
+      87,
+      54,
+      1,
+      3,
+      7
+    ],
+    [
+      87,
+      55,
+      1,
+      3,
+      7
+    ],
+    [
+      88,
+      50,
+      3,
+      5,
+      7
+    ],
+    [
+      88,
+      51,
+      3,
+      5,
+      7
+    ],
+    [
+      88,
+      52,
+      3,
+      5,
+      7
+    ],
+    [
+      88,
+      53,
+      2,
+      5,
+      7
+    ],
+    [
+      88,
+      54,
+      2,
+      5,
+      7
+    ],
+    [
+      88,
+      55,
+      2,
+      5,
+      7
+    ]
+  ],
+  "metrics": {
+    "energy_metrics": {
+      "total_required_energy": 3286.481594959156,
+      "total_delivered_energy": 349.29524843653735,
+      "total_satisfaction_pct": 10.628242950524672,
+      "ev_metrics": {
+        "0": {
+          "required_energy": 36.202798215900586,
+          "delivered_energy": 31.98517222374815,
+          "satisfaction": 0.8834999999999995,
+          "priority": 2,
+          "willingness": 1.4744423866457064
+        },
+        "1": {
+          "required_energy": 31.73541020306799,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.8400728510999379
+        },
+        "2": {
+          "required_energy": 44.48544645838387,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.8323176403959996
+        },
+        "3": {
+          "required_energy": 28.043566548259285,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.2989204545330968
+        },
+        "4": {
+          "required_energy": 30.388948580346767,
+          "delivered_energy": 17.555999999999997,
+          "satisfaction": 0.5777100169682694,
+          "priority": 3,
+          "willingness": 0.9518509798553096
+        },
+        "5": {
+          "required_energy": 18.614841268065817,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.0551275355920944
+        },
+        "6": {
+          "required_energy": 52.61846329124237,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.3736652648333014
+        },
+        "7": {
+          "required_energy": 14.74780055034928,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3958046652659917
+        },
+        "8": {
+          "required_energy": 18.536923997502612,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.4277746067635064
+        },
+        "9": {
+          "required_energy": 22.324940081536006,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.280718538167543
+        },
+        "10": {
+          "required_energy": 12.475807378162838,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.4943287627416262
+        },
+        "11": {
+          "required_energy": 34.73343361184398,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.153654200753646
+        },
+        "12": {
+          "required_energy": 26.234127628939653,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.85020511515353
+        },
+        "13": {
+          "required_energy": 30.708257542574092,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.939168694719959
+        },
+        "14": {
+          "required_energy": 15.745816392765484,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.4137811978537989
+        },
+        "15": {
+          "required_energy": 42.627499719902936,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.2081493720965055
+        },
+        "16": {
+          "required_energy": 35.96459649305479,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3730033566164361
+        },
+        "17": {
+          "required_energy": 48.76208118978256,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8719600984904925
+        },
+        "18": {
+          "required_energy": 32.631170525197895,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8976425282522766
+        },
+        "19": {
+          "required_energy": 27.891713688919342,
+          "delivered_energy": 23.31747264393657,
+          "satisfaction": 0.836,
+          "priority": 1,
+          "willingness": 1.3582907384307257
+        },
+        "20": {
+          "required_energy": 8.686422566473356,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.1429049510470908
+        },
+        "21": {
+          "required_energy": 15.197603720139728,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.04622862383004
+        },
+        "22": {
+          "required_energy": 16.526202747023753,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.258859300003094
+        },
+        "23": {
+          "required_energy": 14.741293018403292,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.2278102533781934
+        },
+        "24": {
+          "required_energy": 17.192202740265476,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.9308547936906915
+        },
+        "25": {
+          "required_energy": 43.01870774192308,
+          "delivered_energy": 21.945,
+          "satisfaction": 0.5101268994794539,
+          "priority": 3,
+          "willingness": 1.3261608145726136
+        },
+        "26": {
+          "required_energy": 7.484349638309787,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.373285441858417
+        },
+        "27": {
+          "required_energy": 6.544325063489104,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.2163473398872937
+        },
+        "28": {
+          "required_energy": 17.66095695578627,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.4510988320690132
+        },
+        "29": {
+          "required_energy": 12.751882153758539,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.1846525964955708
+        },
+        "30": {
+          "required_energy": 25.919518629227447,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3771900447975198
+        },
+        "31": {
+          "required_energy": 46.6559062061453,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.9351559466500929
+        },
+        "32": {
+          "required_energy": 32.99628334709743,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.2635733717113338
+        },
+        "33": {
+          "required_energy": 40.83209187096682,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.8704739145164363
+        },
+        "34": {
+          "required_energy": 39.056694291642344,
+          "delivered_energy": 30.723000000000006,
+          "satisfaction": 0.7866257131386143,
+          "priority": 3,
+          "willingness": 1.304321595583014
+        },
+        "35": {
+          "required_energy": 35.79157000390657,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3012305758261014
+        },
+        "36": {
+          "required_energy": 74.48953937860894,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.1367924040214032
+        },
+        "37": {
+          "required_energy": 34.470180540068306,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3352404684813894
+        },
+        "38": {
+          "required_energy": 44.68646206678078,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.2095977673202218
+        },
+        "39": {
+          "required_energy": 29.86173029718577,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3758939865326405
+        },
+        "40": {
+          "required_energy": 30.767617597154015,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.3020087976369572
+        },
+        "41": {
+          "required_energy": 43.309053699911416,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8098433391427086
+        },
+        "42": {
+          "required_energy": 19.240956159682906,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.2870088808491589
+        },
+        "43": {
+          "required_energy": 21.653936498971195,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.8091263599808842
+        },
+        "44": {
+          "required_energy": 28.466082548290817,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.059562813688224
+        },
+        "45": {
+          "required_energy": 29.832361360908607,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.8595092185320585
+        },
+        "46": {
+          "required_energy": 7.858013070351443,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.0727758517636112
+        },
+        "47": {
+          "required_energy": 26.68785488908202,
+          "delivered_energy": 23.578719794503957,
+          "satisfaction": 0.8834999999999997,
+          "priority": 2,
+          "willingness": 1.1761973335884937
+        },
+        "48": {
+          "required_energy": 25.358522683292758,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.9435926733163722
+        },
+        "49": {
+          "required_energy": 11.092296795411556,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.1252927934114396
+        },
+        "50": {
+          "required_energy": 44.21507698996357,
+          "delivered_energy": 24.871000000000002,
+          "satisfaction": 0.5625004340859906,
+          "priority": 2,
+          "willingness": 0.8066078772373297
+        },
+        "51": {
+          "required_energy": 9.157254711321784,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.1074773114261074
+        },
+        "52": {
+          "required_energy": 89.7142265762743,
+          "delivered_energy": 29.376375000000003,
+          "satisfaction": 0.3274438862271688,
+          "priority": 1,
+          "willingness": 1.066323083668069
+        },
+        "53": {
+          "required_energy": 19.96606518956922,
+          "delivered_energy": 16.092999999999996,
+          "satisfaction": 0.8060176027276215,
+          "priority": 1,
+          "willingness": 0.9673614280525965
+        },
+        "54": {
+          "required_energy": 28.038157517735506,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.8798442140345061
+        },
+        "55": {
+          "required_energy": 52.61472040176493,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.369401883258532
+        },
+        "56": {
+          "required_energy": 62.32717794477741,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3354995881812965
+        },
+        "57": {
+          "required_energy": 15.406513921015389,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3482303670830396
+        },
+        "58": {
+          "required_energy": 51.15267053493113,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.2422356117338786
+        },
+        "59": {
+          "required_energy": 31.738403773288894,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.198705910138855
+        },
+        "60": {
+          "required_energy": 12.400879326370195,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.126961719710885
+        },
+        "61": {
+          "required_energy": 34.40614084080981,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.9564493408247801
+        },
+        "62": {
+          "required_energy": 46.80805607819425,
+          "delivered_energy": 15.461250000000001,
+          "satisfaction": 0.33031173040323497,
+          "priority": 3,
+          "willingness": 1.4250313080817554
+        },
+        "63": {
+          "required_energy": 6.522988845256033,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.4771732162598523
+        },
+        "64": {
+          "required_energy": 38.67112852169307,
+          "delivered_energy": 16.092999999999996,
+          "satisfaction": 0.41615025511790843,
+          "priority": 2,
+          "willingness": 0.8135031462141591
+        },
+        "65": {
+          "required_energy": 25.15121115251371,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.8267961118018871
+        },
+        "66": {
+          "required_energy": 27.83326498742166,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.1690799858490606
+        },
+        "67": {
+          "required_energy": 61.015998585305844,
+          "delivered_energy": 26.284125000000003,
+          "satisfaction": 0.4307743150880738,
+          "priority": 2,
+          "willingness": 1.0272844776737249
+        },
+        "68": {
+          "required_energy": 11.773740045237888,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8923202176072148
+        },
+        "69": {
+          "required_energy": 22.413883032338187,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.936259602699047
+        },
+        "70": {
+          "required_energy": 35.8185087743486,
+          "delivered_energy": 35.8185087743486,
+          "satisfaction": 1.0,
+          "priority": 1,
+          "willingness": 1.4964391391782135
+        },
+        "71": {
+          "required_energy": 56.766883618092145,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.3168019511339404
+        },
+        "72": {
+          "required_energy": 28.77773778411076,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.1030336554611115
+        },
+        "73": {
+          "required_energy": 47.661472318068114,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3249442640409876
+        },
+        "74": {
+          "required_energy": 43.08044570502876,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.8036872920710304
+        },
+        "75": {
+          "required_energy": 47.07495690618571,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.9040073329015896
+        },
+        "76": {
+          "required_energy": 7.76424203388177,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.0448735174636996
+        },
+        "77": {
+          "required_energy": 24.907367075944393,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.038858852539805
+        },
+        "78": {
+          "required_energy": 80.63006397469637,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.2601975351421084
+        },
+        "79": {
+          "required_energy": 31.525650504044386,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.2360046310829422
+        },
+        "80": {
+          "required_energy": 39.8067380821981,
+          "delivered_energy": 16.092999999999996,
+          "satisfaction": 0.40427828994099163,
+          "priority": 1,
+          "willingness": 0.8852412838984072
+        },
+        "81": {
+          "required_energy": 31.72428730598245,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.1415833462198122
+        },
+        "82": {
+          "required_energy": 51.79276233883952,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.474686056618184
+        },
+        "83": {
+          "required_energy": 46.904700697013375,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3464603954268197
+        },
+        "84": {
+          "required_energy": 32.539192205265266,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.3808563553430022
+        },
+        "85": {
+          "required_energy": 31.16383843367355,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.3870552651415786
+        },
+        "86": {
+          "required_energy": 30.256359573102998,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 1.0197392308543112
+        },
+        "87": {
+          "required_energy": 29.324289603183107,
+          "delivered_energy": 10.822875000000002,
+          "satisfaction": 0.3690754369996808,
+          "priority": 3,
+          "willingness": 1.067796833644457
+        },
+        "88": {
+          "required_energy": 31.828402469401173,
+          "delivered_energy": 9.276750000000002,
+          "satisfaction": 0.291461376640514,
+          "priority": 3,
+          "willingness": 1.094691663127361
+        },
+        "89": {
+          "required_energy": 5.391885735722615,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.2963157244793273
+        },
+        "90": {
+          "required_energy": 46.239701785721884,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8728905041202261
+        },
+        "91": {
+          "required_energy": 11.529825316786841,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.9774208463482804
+        },
+        "92": {
+          "required_energy": 37.69736927338433,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 0.9175744353930272
+        },
+        "93": {
+          "required_energy": 52.88117809575228,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.4205640425660597
+        },
+        "94": {
+          "required_energy": 35.56496796597649,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 2,
+          "willingness": 1.21075322981689
+        },
+        "95": {
+          "required_energy": 22.88370076883609,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8180106157871758
+        },
+        "96": {
+          "required_energy": 9.358780346360268,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8108072683260503
+        },
+        "97": {
+          "required_energy": 12.340384118073516,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.209478990745
+        },
+        "98": {
+          "required_energy": 32.496101133006405,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 0.9568346056252792
+        },
+        "99": {
+          "required_energy": 50.678925306488146,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 1,
+          "willingness": 1.1141035170485247
+        },
+        "100": {
+          "required_energy": 32.96724538685324,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8346175413963108
+        },
+        "101": {
+          "required_energy": 50.858788583709135,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.8821453768365296
+        },
+        "102": {
+          "required_energy": 50.613021117584964,
+          "delivered_energy": 0,
+          "satisfaction": 0.0,
+          "priority": 3,
+          "willingness": 0.9787584145656028
+        }
+      },
+      "by_priority": {
+        "1": {
+          "count": 34,
+          "required_energy": 1219.2795636076357,
+          "delivered_energy": 120.69835641828516,
+          "satisfaction": 0.09899153567468953
+        },
+        "2": {
+          "count": 33,
+          "required_energy": 1041.2034536713466,
+          "delivered_energy": 122.81201701825209,
+          "satisfaction": 0.11795198775533203
+        },
+        "3": {
+          "count": 36,
+          "required_energy": 1025.998577680174,
+          "delivered_energy": 105.78487500000001,
+          "satisfaction": 0.10310430959776189
+        }
+      }
+    },
+    "total_cost": 13377.99294782563,
+    "cost_per_kwh": 38.29995686373113,
+    "schedule_size": 230,
+    "evs_served": 16,
+    "total_evs": 103,
+    "execution_time": 1748015676.0610158
+  },
+  "timestamp": "2025-05-23 10:54:38"
+}

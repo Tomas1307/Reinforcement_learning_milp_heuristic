@@ -539,7 +539,7 @@ def main():
                         help='Número de clusters (si no se especifica, se determina automáticamente)')
     parser.add_argument('--n_per_cluster', type=int, default=1,
                         help='Número de instancias representativas por clusters')
-    parser.add_argument('--output_dir', type=str, default='./cluster_results',
+    parser.add_argument('--output_dir', type=str, default='./results/cluster_results',
                         help='Directorio para guardar resultados')
     
     args = parser.parse_args()
