@@ -1,0 +1,10 @@
+learning_rate: 0.0005
+gamma: 0.99
+epsilon_start: 1.0
+epsilon_min: 0.01
+epsilon_decay: 0.995
+batch_size: 64
+target_update_frequency: 10
+memory_size: 100000
+hidden_layers: [64, 64] # Ejemplo, si tu red usa esto
+dueling: True # Si tu DQNNetwork soporta Dueling

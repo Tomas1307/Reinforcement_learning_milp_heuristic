@@ -1,0 +1,91 @@
+# Configuración de sistemas para evaluación multi-nivel
+
+evaluation_systems:
+  # Sistemas para evaluación rápida (diversidad básica)
+  fast_evaluation:
+    system_1:
+      description: "Sistema pequeño - 10 EVs, 5 cargadores"
+      complexity: "low"
+      focus: "basic_functionality"
+      
+    system_5:
+      description: "Sistema mediano - 25 EVs, 12 cargadores"
+      complexity: "medium"
+      focus: "resource_competition"
+      
+  # Sistemas para evaluación media (diversidad ampliada)  
+  medium_evaluation:
+    system_1:
+      description: "Sistema pequeño"
+      weight: 0.2
+      
+    system_3:
+      description: "Sistema con precios variables"
+      complexity: "medium"
+      focus: "price_optimization"
+      weight: 0.3
+      
+    system_5:
+      description: "Sistema con alta demanda"
+      weight: 0.3
+      
+    system_7:
+      description: "Sistema complejo multi-tipo"
+      complexity: "high"
+      focus: "multi_constraint"
+      weight: 0.2
+      
+  # Evaluación completa (todos los sistemas)
+  full_evaluation:
+    use_all_systems: true
+    equal_weights: true
+    focus: "comprehensive_validation"
+    
+# Métricas de evaluación
+evaluation_metrics:
+  primary:
+    metric: "total_reward"
+    description: "Promedio de recompensa total (ya incluye satisfacción + costos)"
+    
+  secondary:
+    - name: "satisfaction_pct"
+      weight: 0.3
+      description: "Porcentaje de satisfacción energética"
+      
+    - name: "assignment_ratio"
+      weight: 0.2
+      description: "Ratio de vehículos asignados exitosamente"
+      
+    - name: "convergence_speed"
+      weight: 0.2
+      description: "Velocidad de convergencia en episodios"
+      
+    - name: "stability"
+      weight: 0.3
+      description: "Estabilidad de rendimiento (baja varianza)"
+
+# Configuración de timeouts y recursos
+resource_limits:
+  max_evaluation_time_minutes: 120  # 2 horas máximo por evaluación full
+  memory_limit_gb: 8
+  gpu_memory_limit_gb: 4
+  
+  # Timeouts por nivel
+  timeouts:
+    fast: 15    # minutos
+    medium: 45  # minutos  
+    full: 120   # minutos
+    
+# Configuración de paralelización por nivel
+parallelization:
+  fast:
+    max_workers: 2
+    batch_size: 2
+    
+  medium:
+    max_workers: 4
+    batch_size: 4
+    
+  full:
+    max_workers: 6
+    batch_size: 1  # Uno a la vez para evaluación completa
