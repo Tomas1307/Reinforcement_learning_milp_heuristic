@@ -365,19 +365,38 @@ def visualize_rl_solution(rl_schedule: list, system_config: dict, output_dir: st
 # --- Adaptación de la función de visualización de solución MILP ---
 # Esta función es un placeholder para la que tenías en tu 'main.py'
 # Se usará cuando se genere una 'solución final' después de la optimización MILP.
-def visualize_milp_solution(milp_schedule: dict, system_config: dict, output_dir: str = None, filename: str = "milp_solution_schedule.png"):
+def visualize_milp_solution(milp_schedule, system_config: dict, output_dir: str = None, filename: str = "milp_solution_schedule.png"):
     """
     Visualiza una solución de carga generada por el optimizador MILP.
     Adapta el formato de la solución MILP para ser compatible con visualize_solution.
     """
-    # milp_schedule es un diccionario como: {ev_id: [(t_idx, charger_id, power), ...]}
-    # Necesitamos convertirlo al formato de visualize_solution: [(ev_id, t_idx, charger_id, slot_idx, power), ...]
     converted_schedule = []
-    # Aquí asumimos que MILP no usa slot_idx directamente, así que ponemos un placeholder
-    # Si tu MILP maneja slots, tendrías que adaptar esta parte.
-    for ev_id, assignments in milp_schedule.items():
-        for t_idx, charger_id, power in assignments:
-            converted_schedule.append((ev_id, t_idx, charger_id, 0, power)) # 0 como slot_idx placeholder
+    
+    # Verificar si ya está en formato de lista (como RL)
+    if isinstance(milp_schedule, list):
+        print("MILP schedule ya está en formato de lista, usando directamente...")
+        converted_schedule = milp_schedule
+    elif isinstance(milp_schedule, dict):
+        print("Convirtiendo MILP schedule de formato diccionario...")
+        # milp_schedule es un diccionario como: {ev_id: [(t_start, t_end, charger_id, slot, power), ...]}
+        for ev_id, assignments in milp_schedule.items():
+            for assignment in assignments:
+                if len(assignment) == 5:  # (t_start, t_end, charger_id, slot, power)
+                    t_start, t_end, charger_id, slot, power = assignment
+                    # Convertir t_start a índice de tiempo
+                    times = system_config["times"]
+                    t_idx = 0
+                    for idx, t in enumerate(times):
+                        if abs(t - t_start) < 1e-5:
+                            t_idx = idx
+                            break
+                    converted_schedule.append((ev_id, t_idx, charger_id, slot, power))
+                elif len(assignment) == 3:  # (t_idx, charger_id, power)
+                    t_idx, charger_id, power = assignment
+                    converted_schedule.append((ev_id, t_idx, charger_id, 0, power))
+    else:
+        print(f"Error: Formato de schedule MILP no reconocido: {type(milp_schedule)}")
+        return
 
     print("Generando visualización de la solución MILP...")
     visualize_solution(converted_schedule, system_config, save_dir=output_dir, filename=filename)

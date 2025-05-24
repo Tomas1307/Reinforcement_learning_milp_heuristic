@@ -528,21 +528,37 @@ def run_single_dqn_training(config_path: str, dqn_hyperparams: dict, num_episode
     log_filepath = os.path.join(output_dir, "episode_log.json")
     logger.save_episode_data(log_filepath)
 
-    def train_dqn_agent_for_optimization(dqn_params: Dict, reward_weights: Dict, 
-                                        system_config: Dict, episodes: int = 100) -> float:
-        """Versión específica para Scatter Search que retorna fitness directo"""
-        
-        # Crear environment y agente
-        env = EVChargingEnv(system_config)
-        env.update_reward_weights(reward_weights)
-        
-        agent = EnhancedDQNAgent(**dqn_params)
-        
-        # Entrenar
-        results = train_dqn_agent(agent, env, episodes)
-        
-        # Retornar fitness (promedio últimos 10 episodios)
-        if len(results) >= 10:
-            return np.mean([ep['reward'] for ep in results[-10:]])
-        else:
-            return np.mean([ep['reward'] for ep in results])
+def train_dqn_agent_for_optimization(dqn_params: Dict, reward_weights: Dict, 
+                                    system_config: Dict, episodes: int = 100) -> float:
+    """Versión específica para Scatter Search que retorna fitness directo"""
+    
+    # Crear environment y agente
+    env = EVChargingEnv(system_config)
+    env.update_reward_weights(reward_weights)
+    
+    agent = EnhancedDQNAgent(**dqn_params)
+    
+    # Entrenar
+    results = train_dqn_agent(agent, env, episodes)
+    
+    # Retornar fitness (promedio últimos 10 episodios)
+    if len(results) >= 10:
+        return np.mean([ep['reward'] for ep in results[-10:]])
+    else:
+        return np.mean([ep['reward'] for ep in results])
+    
+def evaluate_hyperparameter_config(dqn_params, reward_weights, system_config, episodes=50):
+    """Evalúa UNA configuración de hiperparámetros entrenando un DQN completo"""
+    
+    # Crear environment con pesos específicos
+    env = EVChargingEnv(system_config)
+    env.update_reward_weights(reward_weights)
+    
+    # Crear agente con hiperparámetros específicos
+    agent = EnhancedDQNAgent(**dqn_params)
+    
+    # Entrenar completamente
+    results = train_dqn_agent(agent, env, episodes)
+    
+    # Retornar fitness (promedio últimos episodios)
+    return np.mean([ep['reward'] for ep in results[-10:]])

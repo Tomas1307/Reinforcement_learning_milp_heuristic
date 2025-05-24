@@ -1,120 +1,110 @@
-# Definición completa del espacio de búsqueda de hiperparámetros
+# Configuración del espacio de búsqueda de hiperparámetros para Scatter Search
+# Este archivo define los rangos válidos para cada hiperparámetro
 
 dqn_hyperparameters:
-  learning_rate: 
+  learning_rate:
+    type: float
     min: 0.0001
-    max: 0.005
-    type: float
-    description: "Adam optimizer learning rate - conservador para estabilidad"
+    max: 0.01
+    description: "Tasa de aprendizaje del optimizador Adam"
     
-  gamma: 
-    min: 0.95
+  gamma:
+    type: float
+    min: 0.90
     max: 0.999
-    type: float
-    description: "Discount factor - alto para horizontes largos en carga EV"
+    description: "Factor de descuento para recompensas futuras"
     
-  epsilon_start: 
-    min: 0.8
+  epsilon_start:
+    type: float
+    min: 0.5
     max: 1.0
-    type: float
-    description: "Initial exploration rate - exploración fuerte"
+    description: "Valor inicial de epsilon para exploración"
     
-  epsilon_min: 
+  epsilon_min:
+    type: float
     min: 0.01
-    max: 0.05
-    type: float
-    description: "Minimum exploration rate - convergencia estable"
+    max: 0.2
+    description: "Valor mínimo de epsilon"
     
-  epsilon_decay: 
-    min: 0.995
-    max: 0.999
+  epsilon_decay:
     type: float
-    description: "Exploration decay rate - decay lento para mejor exploración"
+    min: 0.99
+    max: 0.9999
+    description: "Factor de decaimiento de epsilon"
     
-  batch_size: 
-    values: [32, 64, 128, 256]
+  batch_size:
     type: int_discrete
-    description: "Training batch size - eliminado 16 por ser muy pequeño"
+    values: [16, 32, 64, 128]
+    description: "Tamaño del batch para entrenamiento"
     
-  target_update_freq: 
+  target_update_freq:
+    type: int_discrete
     values: [10, 20, 30, 50, 100]
-    type: int_discrete
-    description: "Target network update frequency"
+    description: "Frecuencia de actualización del target network"
     
-  memory_size: 
-    values: [10000, 20000, 50000]
+  memory_size:
     type: int_discrete
-    description: "Experience replay buffer size - aumentados para mejor replay"
+    values: [2000, 5000, 10000, 15000, 20000]
+    description: "Tamaño del replay buffer"
     
-  dueling_network: 
-    values: [True, False]
+  dueling_network:
     type: bool
-    description: "Use Dueling DQN architecture vs standard DQN"
+    values: [true, false]
+    description: "Usar arquitectura Dueling DQN"
 
 reward_weights:
-  energy_satisfaction_weight: 
-    min: 0.3
+  energy_satisfaction_weight:
+    type: float
+    min: 0.5
     max: 3.0
-    type: float
-    current_baseline: 1.0
-    description: "Weight for energy satisfaction in reward function"
+    description: "Peso para satisfacción energética en función de recompensa"
     
-  energy_cost_weight: 
-    min: 0.01
+  energy_cost_weight:
+    type: float
+    min: 0.05
     max: 1.0
-    type: float
-    current_baseline: 0.1
-    description: "Weight for energy cost in reward function"
+    description: "Peso para costo energético en función de recompensa"
     
-  penalty_skipped_vehicle: 
+  penalty_skipped_vehicle:
+    type: float
     min: 10.0
     max: 200.0
-    type: float
-    current_baseline: 50.0
-    description: "Penalty for vehicles not assigned to charging"
+    description: "Penalización por vehículo no atendido"
     
-  reward_assigned_vehicle: 
-    min: 1.0
-    max: 100.0
+  reward_assigned_vehicle:
     type: float
-    current_baseline: 20.0
-    description: "Reward for successfully assigning vehicles"
+    min: 5.0
+    max: 100.0
+    description: "Recompensa por vehículo asignado exitosamente"
 
-# Definiciones de arquetipos para diversidad garantizada
+# Arquetipos de comportamiento para guiar la búsqueda
 archetypes:
   cost_minimizer:
-    energy_cost_weight: [0.6, 1.0]
-    energy_satisfaction_weight: [0.3, 0.8]
-    description: "Prioritizes cost reduction over satisfaction"
+    description: "Enfoque en minimizar costos energéticos"
+    energy_cost_weight: [0.3, 1.0]
+    energy_satisfaction_weight: [0.5, 1.5]
+    penalty_skipped_vehicle: [10.0, 50.0]
     
   satisfaction_maximizer:
+    description: "Enfoque en maximizar satisfacción del cliente"
     energy_satisfaction_weight: [2.0, 3.0]
-    energy_cost_weight: [0.01, 0.2]
-    description: "Prioritizes complete energy satisfaction"
+    energy_cost_weight: [0.05, 0.2]
+    penalty_skipped_vehicle: [50.0, 200.0]
     
   balanced_optimizer:
-    energy_satisfaction_weight: [1.0, 1.8]
-    energy_cost_weight: [0.2, 0.6]
-    description: "Balanced approach to cost and satisfaction"
+    description: "Balance entre costo y satisfacción"
+    energy_satisfaction_weight: [1.0, 2.0]
+    energy_cost_weight: [0.1, 0.5]
+    penalty_skipped_vehicle: [30.0, 100.0]
     
   urgency_focused:
-    penalty_skipped_vehicle: [120, 200]
-    reward_assigned_vehicle: [60, 100]
-    description: "Never leaves vehicles unattended"
+    description: "Nunca dejar vehículos sin atender"
+    penalty_skipped_vehicle: [100.0, 200.0]
+    energy_satisfaction_weight: [1.5, 2.5]
+    reward_assigned_vehicle: [20.0, 100.0]
     
   efficiency_focused:
-    reward_assigned_vehicle: [70, 100]
-    penalty_skipped_vehicle: [10, 40]
-    description: "Maximizes throughput and assignments"
-
-# Validación y restricciones adicionales
-validation:
-  # Restricción: energy_satisfaction_weight + energy_cost_weight debe ser balanceado
-  balance_constraints:
-    max_total_weight: 4.0  # suma máxima de satisfaction + cost weights
-    min_total_weight: 0.5  # suma mínima
-    
-  # Restricción: penalty vs reward debe ser proporcional
-  penalty_reward_ratio:
-    max_ratio: 20.0  # penalty no debe ser más de 20x el reward
-    min_ratio: 0.1   # penalty no debe ser menos de 0.1x el reward
+    description: "Maximizar throughput y asignaciones"
+    reward_assigned_vehicle: [50.0, 100.0]
+    energy_satisfaction_weight: [1.0, 2.0]
+    penalty_skipped_vehicle: [20.0, 80.0]

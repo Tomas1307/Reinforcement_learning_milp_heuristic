@@ -99,8 +99,8 @@ def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytor
         
         # Crear entorno temporal para obtener dimensiones
         temp_env = EVChargingEnv(config)
-        state_size = 32  # Valor fijo basado en el main anterior
-        action_size = 150  # Valor fijo basado en el main anterior
+        state_size = 40  # Valor fijo basado en el main anterior
+        action_size = 60  # Valor fijo basado en el main anterior
 
         agent = EnhancedDQNAgent(
             state_size=state_size, 
@@ -281,10 +281,149 @@ def compare_solutions(rl_metrics, milp_metrics):
     print(f"  RL:   {rl_evs}/{total_evs} ({rl_evs/total_evs*100:.1f}%)")
     print(f"  MILP: {milp_evs}/{total_evs} ({milp_evs/total_evs*100:.1f}%)")
 
+def run_scatter_search_optimization(args):
+    """
+    Ejecuta la optimización de hiperparámetros usando Scatter Search.
+    """
+    print("=== MODO SCATTER SEARCH OPTIMIZATION ===")
+    
+    # Importar módulos de scatter search
+    try:
+        from src.scatter_search.scatter_algorithm import ScatterSearchOptimizer
+        from src.scatter_search.results_analyzer import ResultsAnalyzer
+    except ImportError as e:
+        print(f"Error al importar módulos de Scatter Search: {e}")
+        print("Asegúrate de que todos los archivos de scatter_search están en src/scatter_search/")
+        return
+    
+    # Configurar directorios
+    scatter_output_dir = os.path.join(args.output_base_dir, "scatter_search_optimization")
+    ensure_directory_exists(scatter_output_dir)
+    
+    # Cargar sistemas de datos
+    print("Cargando sistemas de datos...")
+    systems_data = load_all_test_systems(args.data_dir)
+    
+    if not systems_data:
+        print("No se encontraron sistemas de datos para optimización.")
+        return
+    
+    print(f"Sistemas cargados: {list(systems_data.keys())}")
+    
+    # Configuración del algoritmo
+    scatter_config_path = args.scatter_config or "src/configs/scatter_search_config.yaml"
+    
+    if not os.path.exists(scatter_config_path):
+        print(f"Archivo de configuración no encontrado: {scatter_config_path}")
+        print("Creando configuración por defecto...")
+        create_default_scatter_config(scatter_config_path)
+    
+    # Inicializar optimizador
+    print(f"Inicializando Scatter Search con configuración: {scatter_config_path}")
+    optimizer = ScatterSearchOptimizer(scatter_config_path, systems_data)
+    
+    # Ejecutar optimización
+    print("Iniciando optimización de hiperparámetros...")
+    start_time = time.time()
+    
+    try:
+        results = optimizer.run_optimization()
+        execution_time = time.time() - start_time
+        
+        print(f"\n✅ Optimización completada en {execution_time/3600:.2f} horas")
+        print(f"Mejores soluciones encontradas: {len(results['best_solutions'])}")
+        
+        # Mostrar mejores resultados
+        if results['best_solutions']:
+            print("\n🏆 TOP 3 SOLUCIONES ENCONTRADAS:")
+            for i, solution in enumerate(results['best_solutions'][:3]):
+                print(f"{i+1}. {solution['archetype'].upper()} - Fitness: {solution['fitness']:.2f}")
+        
+        # Analizar y exportar resultados
+        print("\nAnalizando y exportando resultados...")
+        analyzer = ResultsAnalyzer(scatter_output_dir)
+        
+        # Guardar resultados completos
+        analyzer.save_complete_results(results)
+        
+        # Generar reporte
+        analyzer.generate_summary_report(results)
+        
+        # Crear archivos de configuración
+        if results['best_solutions']:
+            analyzer.create_configuration_files(results['best_solutions'])
+        
+        # Generar visualizaciones
+        analyzer.generate_visualizations(results)
+        
+        # Exportar a Excel
+        analyzer.export_to_excel(results)
+        
+        # Crear paquete de deployment
+        analyzer.create_deployment_package(results)
+        
+        print(f"\n📁 Todos los resultados guardados en: {scatter_output_dir}")
+        print("📋 Revisa el archivo 'optimization_report.txt' para un resumen completo")
+        print("🎯 Las configuraciones optimizadas están en 'configurations/'")
+        print("📊 Las visualizaciones están en 'visualizations/'")
+        
+    except KeyboardInterrupt:
+        print("\n⚠️ Optimización interrumpida por el usuario")
+        print("Los resultados parciales pueden estar disponibles en checkpoints")
+    except Exception as e:
+        print(f"\n❌ Error durante la optimización: {e}")
+        import traceback
+        traceback.print_exc()
+
+def create_default_scatter_config(config_path):
+    """
+    Crea un archivo de configuración por defecto para Scatter Search.
+    """
+    import yaml
+    
+    default_config = {
+        'algorithm': {
+            'population_size': 30,
+            'ref_set_size': 10,
+            'elite_count': 6,
+            'diverse_count': 4,
+            'max_iterations': 15,
+            'max_time_hours': 8.0,
+            'combination_probability': 0.7,
+            'improvement_probability': 0.3
+        },
+        'evaluation': {
+            'fast': {
+                'systems': [1, 2, 3],
+                'episodes': 20
+            },
+            'medium': {
+                'systems': [1, 2, 3, 4, 5],
+                'episodes': 30
+            },
+            'full': {
+                'systems': [1, 2, 3, 4, 5, 6, 7],
+                'episodes': 50
+            }
+        },
+        'output': {
+            'save_frequency': 2,
+            'checkpoint_dir': './checkpoints/scatter_search'
+        }
+    }
+    
+    # Crear directorio si no existe
+    os.makedirs(os.path.dirname(config_path), exist_ok=True)
+    
+    with open(config_path, 'w') as f:
+        yaml.dump(default_config, f, default_flow_style=False, indent=2)
+    
+    print(f"Configuración por defecto creada en: {config_path}")
+
 def main():
     parser = argparse.ArgumentParser(description="EV Charging Management System")
     parser.add_argument("--mode", type=str, required=True,
-                        choices=["train", "train_dqn", "solve", "optimize", "run_milp", "visualize_solution"],
+                        choices=["train", "train_dqn", "solve", "optimize", "run_milp", "visualize_solution", "scatter_search"],
                         help="Operating mode")
     parser.add_argument("--data_dir", type=str, default="src/configs/system_data",
                         help="Directory containing system configuration files (JSON).")
@@ -297,7 +436,7 @@ def main():
     parser.add_argument("--all_systems", action="store_true",
                         help="Process all systems")
     parser.add_argument("--all", action="store_true", help="Alias para --all_systems")
-    parser.add_argument("--model_path", type=str, default="./ev_scheduler_model_pytorch.pt",
+    parser.add_argument("--model_path", type=str, default="./model/ev_scheduler_model_pytorch.pt",
                         help="Path to save/load the DQN model.")
     parser.add_argument("--hyperparameters_path", type=str, default="src/configs/hyperparameters.yaml",
                         help="Path to the YAML file containing DQN hyperparameters.")
@@ -315,6 +454,10 @@ def main():
                         help="Límite de tiempo para MILP (segundos)")
     parser.add_argument("--solution_to_visualize", type=str, default=None,
                         help="Path to a saved solution JSON file to visualize")
+    
+    # Argumentos específicos para Scatter Search
+    parser.add_argument("--scatter_config", type=str, default=None,
+                        help="Path to Scatter Search configuration YAML file")
 
     args = parser.parse_args()
 
@@ -341,7 +484,10 @@ def main():
             sys.exit(1)
 
     # --- Modes of Operation ---
-    if args.mode == "train":
+    if args.mode == "scatter_search":
+        run_scatter_search_optimization(args)
+        
+    elif args.mode == "train":
         print("=== MODO DE ENTRENAMIENTO ===")
         
         # Cargar todos los sistemas
@@ -424,8 +570,8 @@ def main():
             env = EVChargingEnv(system_config)
             
             # Usar valores fijos para compatibilidad
-            state_size = 32
-            action_size = 150
+            state_size = 40
+            action_size = 60
             
             # Initialize Agent with mapped hyperparameters
             print(f"Creating agent with hyperparameters: {hyperparameters}")
@@ -553,8 +699,8 @@ def main():
                     compare_solutions(rl_metrics, milp_metrics)
                     save_solution(schedule_rl, rl_metrics, os.path.join(args.output_base_dir, f"rl_solution_{system_id}.json"))
                     save_solution(schedule_milp, milp_metrics, os.path.join(args.output_base_dir, f"milp_solution_{system_id}.json"))
-                    visualize_solution(schedule_rl, config, f"RL Sistema {system_id}: ")
-                    visualize_solution(schedule_milp, config, f"MILP Sistema {system_id}: ")
+                    visualize_rl_solution(schedule_rl, config, output_dir=args.output_base_dir, filename=f"rl_solution_{system_id}.png")
+                    visualize_milp_solution(schedule_milp, config, output_dir=args.output_base_dir, filename=f"milp_solution_{system_id}.png")
                 else:
                     print(f"Fallo en optimización para sistema {system_id}")
             return
@@ -759,7 +905,7 @@ def main():
             sys.exit(1)
 
     else:
-        print(f"Modo no reconocido: {args.mode}. Use 'train', 'train_dqn', 'solve', 'optimize', 'run_milp', or 'visualize_solution'.")
+        print(f"Modo no reconocido: {args.mode}. Use 'train', 'train_dqn', 'solve', 'optimize', 'run_milp', 'visualize_solution', or 'scatter_search'.")
 
 if __name__ == "__main__":
     main()

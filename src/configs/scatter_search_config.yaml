@@ -1,0 +1,90 @@
+# Configuración del algoritmo Scatter Search para optimización de hiperparámetros
+
+algorithm:
+  # Parámetros de población
+  population_size: 40
+  ref_set_size: 12
+  elite_count: 7
+  diverse_count: 5
+  
+  # Parámetros de iteración
+  max_iterations: 20
+  max_time_hours: 12.0
+  
+  # Probabilidades de operaciones
+  combination_probability: 0.8
+  improvement_probability: 0.4
+  
+  # Criterios de convergencia
+  min_improvement_threshold: 0.01
+  patience_iterations: 5
+
+evaluation:
+  # Evaluación rápida: sistemas pequeños, pocos episodios
+  fast:
+    systems: [1, 2, 3]  # IDs de sistemas para evaluación rápida
+    episodes: 15
+    description: "Evaluación rápida para filtrado inicial"
+    
+  # Evaluación media: más sistemas, episodios moderados
+  medium:
+    systems: [1, 2, 3, 4, 5]
+    episodes: 25
+    description: "Evaluación intermedia para candidatos prometedores"
+    
+  # Evaluación completa: todos los sistemas disponibles
+  full:
+    systems: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    episodes: 40
+    description: "Evaluación completa para mejores candidatos"
+
+output:
+  # Configuración de salida y checkpoints
+  save_frequency: 3  # Guardar cada N iteraciones
+  checkpoint_dir: "./checkpoints/scatter_search"
+  
+  # Configuración de reportes
+  generate_plots: true
+  generate_excel: true
+  create_deployment_package: true
+  
+  # Configuración de logging
+  log_level: "INFO"
+  detailed_logging: true
+
+diversity:
+  # Parámetros para control de diversidad
+  similarity_threshold_initial: 0.95
+  similarity_threshold_final: 0.75
+  adaptive_threshold: true
+  
+  # Métrica de similitud
+  similarity_metric: "cosine"  # opciones: "cosine", "euclidean"
+  
+quality:
+  # Parámetros para asegurar calidad
+  min_evaluations_per_config: 1
+  fitness_aggregation: "mean"  # opciones: "mean", "median", "min"
+  
+  # Criterios de filtrado
+  filter_invalid_configs: true
+  min_fitness_threshold: -4000.0
+
+resources:
+  # Configuración de recursos computacionales
+  parallel_evaluation: false  # Para futuro desarrollo
+  max_concurrent_jobs: 1
+  
+  # Límites de memoria
+  max_memory_gb: 8.0
+  cleanup_frequency: 5  # Limpiar memoria cada N iteraciones
+
+debug:
+  # Configuración para debugging
+  verbose_output: true
+  save_intermediate_results: true
+  track_convergence: true
+  
+  # Configuración de testing
+  test_mode: false
+  quick_test: false  # Usar solo 1 sistema y 5 episodios

@@ -1,6 +1,7 @@
 import numpy as np
 from collections import deque, defaultdict
 from typing import Dict
+
 class EVChargingEnv:
     """
     Entorno de simulación mejorado para la carga de vehículos eléctricos con RL.
@@ -16,6 +17,7 @@ class EVChargingEnv:
         self.config = config
         self.process_config()
         self.reset()
+        
     
     def process_config(self):
         """Procesa la configuración para extraer parámetros."""

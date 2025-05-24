@@ -12,7 +12,17 @@ class HyperparameterSpace:
     def __init__(self, config_path: str):
         self.load_space_definition(config_path)
         self.setup_parameter_types()
+    
+    def setup_parameter_types(self):
+        """Configura tipos de parámetros para validación"""
+        self.parameter_types = {}
         
+        for param, config in self.dqn_params.items():
+            self.parameter_types[param] = config['type']
+            
+        for param, config in self.reward_weights.items():
+            self.parameter_types[param] = config['type']
+            
     def load_space_definition(self, config_path: str):
         """Carga definición desde hyperparameter_ranges.yaml"""
         with open(config_path, 'r') as f:
