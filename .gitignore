@@ -1,1 +1,3 @@
 dqn_venv/
+__pycache__/
+checkpoints/
