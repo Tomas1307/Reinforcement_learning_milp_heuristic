@@ -12,7 +12,7 @@ from .cosine_similarity_hyperparams import CosineSimilarityCalculator
 from ..dqn_agent.training import train_dqn_agent
 from ..dqn_agent.agent import EnhancedDQNAgentPyTorch
 from ..dqn_agent.environment import EVChargingEnv
-
+import os
 class ScatterSearchOptimizer:
     """Implementación principal del algoritmo Scatter Search"""
     
@@ -22,7 +22,7 @@ class ScatterSearchOptimizer:
         
         # Initialize components
         self.hyperparameter_space = HyperparameterSpace(
-            "configs/hyperparameter_ranges.yaml"
+            "./src/configs/hyperparameter_ranges.yaml"
         )
         self.similarity_calculator = CosineSimilarityCalculator(self.hyperparameter_space)
         
@@ -389,44 +389,67 @@ class ScatterSearchOptimizer:
         
         print(f"    Evaluando {len(population)} configuraciones en {len(systems_to_use)} sistemas ({episodes} episodios)")
         
+        # Variables para progreso
+        total_configs = len(population)
+        milestone_interval = max(1, total_configs // 5)  # Mostrar cada 20%
+        
         for i, config in enumerate(population):
-            print(f"      Evaluando configuración {i+1}/{len(population)}")
+            # Mostrar progreso solo en hitos importantes
+            if i % milestone_interval == 0 or i == total_configs - 1:
+                progress = (i + 1) / total_configs * 100
+                print(f"      Progreso: {progress:.0f}% ({i+1}/{total_configs})")
             
             # Separar hiperparámetros DQN y pesos de recompensa
             dqn_params = self._extract_dqn_params(config)
             reward_weights = self._extract_reward_weights(config)
             
-            # Evaluar en múltiples sistemas
+            # Evaluar en múltiples sistemas (silenciosamente)
             system_fitness = []
             for system_config in systems_to_use:
                 try:
                     fitness = self._evaluate_single_config(dqn_params, reward_weights, system_config, episodes)
                     system_fitness.append(fitness)
                 except Exception as e:
-                    print(f"        Error en evaluación: {e}")
+                    # Solo mostrar errores críticos, no detalles del entrenamiento
+                    if "missing" in str(e) or "Error" in str(e):
+                        print(f"        ⚠️ Error en configuración {i+1}: {str(e)[:50]}...")
                     system_fitness.append(-1000.0)  # Penalización por error
             
             # Fitness promedio entre sistemas
             avg_fitness = np.mean(system_fitness)
             fitness_scores.append(avg_fitness)
-            
-            print(f"        Fitness: {avg_fitness:.2f}")
+        
+        # Resumen final de la evaluación
+        best_fitness = max(fitness_scores)
+        worst_fitness = min(fitness_scores)
+        avg_fitness_all = np.mean(fitness_scores)
+        
+        print(f"     Evaluación completada:")
+        print(f"       Mejor fitness: {best_fitness:.2f}")
+        print(f"       Peor fitness: {worst_fitness:.2f}")
+        print(f"       Promedio: {avg_fitness_all:.2f}")
         
         return fitness_scores
     
     def _evaluate_single_config(self, dqn_params: Dict, reward_weights: Dict, 
-                               system_config: Dict, episodes: int) -> float:
+                           system_config: Dict, episodes: int) -> float:
         """Evalúa una configuración en un sistema específico"""
         
         # Crear environment y actualizar pesos
         env = EVChargingEnv(system_config)
         env.update_reward_weights(reward_weights)
         
-        # Crear agente con hiperparámetros
-        agent = EnhancedDQNAgentPyTorch(**dqn_params)
+        # AGREGAR ESTAS LÍNEAS PARA DEFINIR DIMENSIONES:
+        state_size = 40  # Usar valores fijos como en main.py
+        action_size = 60  # Usar valores fijos como en main.py
+        
+        # CAMBIAR ESTA LÍNEA:
+        # agent = EnhancedDQNAgentPyTorch(**dqn_params)
+        # POR ESTA:
+        agent = EnhancedDQNAgentPyTorch(state_size, action_size, **dqn_params)
         
         # Entrenar y obtener resultados
-        results = train_dqn_agent(agent, env, episodes)
+        results = train_dqn_agent(agent, env, episodes,verbose=False)
         
         # Calcular fitness (promedio últimos 10 episodios)
         if len(results) >= 10:
@@ -463,7 +486,28 @@ class ScatterSearchOptimizer:
         ]
         
         return {param: config[param] for param in weight_param_names if param in config}
+    
+    def _train_and_save_best_models(self, candidates, fitness_scores):
+        """Entrena y guarda solo los mejores modelos"""
+        print("Entrenando y guardando modelos óptimos...")
         
+        models_dir = os.path.join(self.output_dir, "trained_models")
+        os.makedirs(models_dir, exist_ok=True)
+        
+        for i, (config, fitness) in enumerate(zip(candidates, fitness_scores)):
+            if fitness > -500:  # Solo si tiene buen fitness
+                print(f"Entrenando modelo óptimo {i+1}/5...")
+                
+                # Entrenar con más episodios (100+ en lugar de 15)
+                trained_agent = self._train_final_model(config, episodes=100)
+                
+                # Guardar modelo
+                archetype = self._classify_solution_archetype(config)
+                model_path = f"{models_dir}/{archetype}_rank_{i+1}.pt"
+                trained_agent.save(model_path)
+                
+                print(f"Modelo guardado: {model_path}")
+
     def _final_evaluation(self) -> Dict[str, Any]:
         """Evaluación final completa de los mejores candidatos"""
         print("Evaluación final completa...")
@@ -472,6 +516,8 @@ class ScatterSearchOptimizer:
         top_candidates = self.best_solutions[:5]
         final_fitness = self._evaluate_population(top_candidates, level="full")
         
+        trained_models = self._train_and_save_best_models(top_candidates, final_fitness)
+
         # Crear resultados finales
         final_results = []
         for i, (solution, fitness) in enumerate(zip(top_candidates, final_fitness)):

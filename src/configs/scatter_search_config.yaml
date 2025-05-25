@@ -2,14 +2,16 @@
 
 algorithm:
   # Parámetros de población
-  population_size: 40
-  ref_set_size: 12
-  elite_count: 7
-  diverse_count: 5
+  population_size: 6
+  ref_set_size: 4
+  elite_count: 2
+  diverse_count: 2
+  max_iterations: 2
+  max_time_hours: 0.5
   
   # Parámetros de iteración
-  max_iterations: 20
-  max_time_hours: 12.0
+  #max_iterations: 20
+  #max_time_hours: 12.0
   
   # Probabilidades de operaciones
   combination_probability: 0.8
@@ -22,8 +24,8 @@ algorithm:
 evaluation:
   # Evaluación rápida: sistemas pequeños, pocos episodios
   fast:
-    systems: [1, 2, 3]  # IDs de sistemas para evaluación rápida
-    episodes: 15
+    systems: [1]  # IDs de sistemas para evaluación rápida
+    episodes: 5
     description: "Evaluación rápida para filtrado inicial"
     
   # Evaluación media: más sistemas, episodios moderados

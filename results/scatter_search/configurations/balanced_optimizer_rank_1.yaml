@@ -1,0 +1,42 @@
+description: "Equilibra eficientemente costos y satisfacci\xF3n para uso general"
+dqn_hyperparameters:
+  batch_size: 64
+  dueling_network: true
+  epsilon_decay: 0.9950658521038344
+  epsilon_min: 0.06281880331781738
+  epsilon_start: 0.8886010019028688
+  gamma: 0.971180643579378
+  learning_rate: 0.00222573495561033
+  memory_size: 5000
+  target_update_freq: 10
+metadata:
+  archetype: balanced_optimizer
+  fitness: !!python/object/apply:numpy.core.multiarray.scalar
+  - !!python/object/apply:numpy.dtype
+    args:
+    - f8
+    - false
+    - true
+    state: !!python/tuple
+    - 3
+    - <
+    - null
+    - null
+    - null
+    - -1
+    - -1
+    - 0
+  - !!binary |
+    sYQAFxGnZcA=
+  generated_date: '2025-05-24T13:28:32.894321'
+  optimization_method: scatter_search
+  rank: 1
+recommended_usage:
+- Oficinas corporativas
+- "Centros comerciales est\xE1ndar"
+- Uso general en entornos mixtos
+reward_weights:
+  energy_cost_weight: 0.10424108422084097
+  energy_satisfaction_weight: 1.5923223731805032
+  penalty_skipped_vehicle: 83.48388297596897
+  reward_assigned_vehicle: 43.50409485132494

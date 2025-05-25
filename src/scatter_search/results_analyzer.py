@@ -264,10 +264,21 @@ class ResultsAnalyzer:
     def _plot_fitness_by_archetype(self, solutions: List[Dict], viz_dir: str):
         """Gráfico de fitness por arquetipo"""
         
+        if not solutions:
+            print("No hay soluciones para graficar fitness por arquetipo")
+            return
+        
         df = pd.DataFrame([
-            {'Archetype': sol['archetype'], 'Fitness': sol['fitness'], 'Rank': sol['rank']}
+            {'Archetype': sol.get('archetype', 'unknown'), 
+            'Fitness': sol['fitness'], 
+            'Rank': sol.get('rank', 0)}
             for sol in solutions
         ])
+        
+        # VERIFICAR QUE EL DATAFRAME NO ESTÉ VACÍO:
+        if df.empty:
+            print("DataFrame vacío para fitness por arquetipo")
+            return
         
         plt.figure(figsize=(12, 6))
         sns.boxplot(data=df, x='Archetype', y='Fitness')
@@ -317,40 +328,46 @@ class ResultsAnalyzer:
        plt.close()
        
     def _plot_tradeoff_analysis(self, solutions: List[Dict], viz_dir: str):
-       """Análisis de trade-offs costo vs satisfacción"""
+        """Análisis de trade-offs costo vs satisfacción"""
        
-       # Extraer pesos de recompensa
-       tradeoff_data = []
-       for sol in solutions:
-           hp = sol['hyperparameters']
-           tradeoff_data.append({
-               'satisfaction_weight': hp.get('energy_satisfaction_weight', 1.0),
-               'cost_weight': hp.get('energy_cost_weight', 0.1),
-               'fitness': sol['fitness'],
-               'archetype': sol['archetype'],
-               'rank': sol['rank']
-           })
+        if not solutions:
+         print("No hay soluciones para graficar trade-offs")
+         return
+        # Extraer pesos de recompensa
+        tradeoff_data = []
+        for sol in solutions:
+            hp = sol['hyperparameters']
+            tradeoff_data.append({
+                'satisfaction_weight': hp.get('energy_satisfaction_weight', 1.0),
+                'cost_weight': hp.get('energy_cost_weight', 0.1),
+                'fitness': sol['fitness'],
+                'archetype': sol['archetype'],
+                'rank': sol['rank']
+            })
+        if not tradeoff_data:
+            print("No hay datos válidos para graficar trade-offs")
+            return   
            
-       df = pd.DataFrame(tradeoff_data)
+        df = pd.DataFrame(tradeoff_data)
        
-       # Scatter plot con colores por arquetipo
-       plt.figure(figsize=(12, 8))
+        # Scatter plot con colores por arquetipo
+        plt.figure(figsize=(12, 8))
        
-       for archetype in df['archetype'].unique():
-           arch_data = df[df['archetype'] == archetype]
-           plt.scatter(arch_data['cost_weight'], arch_data['satisfaction_weight'], 
-                      s=arch_data['fitness']/10, alpha=0.7, label=archetype)
+        for archetype in df['archetype'].unique():
+            arch_data = df[df['archetype'] == archetype]
+            plt.scatter(arch_data['cost_weight'], arch_data['satisfaction_weight'], 
+                       s=arch_data['fitness']/10, alpha=0.7, label=archetype)
            
-       plt.xlabel('Energy Cost Weight')
-       plt.ylabel('Energy Satisfaction Weight')
-       plt.title('Trade-off Analysis: Cost vs Satisfaction Weights\n(Tamaño = Fitness)')
-       plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
-       plt.grid(True, alpha=0.3)
-       plt.tight_layout()
+        plt.xlabel('Energy Cost Weight')
+        plt.ylabel('Energy Satisfaction Weight')
+        plt.title('Trade-off Analysis: Cost vs Satisfaction Weights\n(Tamaño = Fitness)')
+        plt.legend(bbox_to_anchor=(1.05, 1), loc='upper left')
+        plt.grid(True, alpha=0.3)
+        plt.tight_layout()
        
-       plt.savefig(os.path.join(viz_dir, 'tradeoff_analysis.png'), 
+        plt.savefig(os.path.join(viz_dir, 'tradeoff_analysis.png'), 
                   dpi=300, bbox_inches='tight')
-       plt.close()
+        plt.close()
        
     def _plot_convergence(self, iteration_history: List[Dict], viz_dir: str):
        """Gráfico de convergencia del algoritmo"""

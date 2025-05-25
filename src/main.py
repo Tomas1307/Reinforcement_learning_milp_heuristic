@@ -297,7 +297,7 @@ def run_scatter_search_optimization(args):
         return
     
     # Configurar directorios
-    scatter_output_dir = os.path.join(args.output_base_dir, "scatter_search_optimization")
+    scatter_output_dir = args.output_base_dir
     ensure_directory_exists(scatter_output_dir)
     
     # Cargar sistemas de datos
@@ -337,7 +337,8 @@ def run_scatter_search_optimization(args):
         if results['best_solutions']:
             print("\n🏆 TOP 3 SOLUCIONES ENCONTRADAS:")
             for i, solution in enumerate(results['best_solutions'][:3]):
-                print(f"{i+1}. {solution['archetype'].upper()} - Fitness: {solution['fitness']:.2f}")
+                archetype = solution.get('archetype', 'unknown')
+                print(f"{i+1}. {archetype.upper()} - Fitness: {solution['fitness']:.2f}")
         
         # Analizar y exportar resultados
         print("\nAnalizando y exportando resultados...")
@@ -438,7 +439,7 @@ def main():
     parser.add_argument("--all", action="store_true", help="Alias para --all_systems")
     parser.add_argument("--model_path", type=str, default="./model/ev_scheduler_model_pytorch.pt",
                         help="Path to save/load the DQN model.")
-    parser.add_argument("--hyperparameters_path", type=str, default="src/configs/hyperparameters.yaml",
+    parser.add_argument("--hyperparameters_path", type=str, default="./src/configs/hyperparameters.yaml",
                         help="Path to the YAML file containing DQN hyperparameters.")
     parser.add_argument("--num_episodes", type=int, default=1000,
                         help="Number of training episodes for DQN")

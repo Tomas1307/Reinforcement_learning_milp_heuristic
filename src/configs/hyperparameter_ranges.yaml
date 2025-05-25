@@ -1,110 +1,82 @@
-# Configuración del espacio de búsqueda de hiperparámetros para Scatter Search
-# Este archivo define los rangos válidos para cada hiperparámetro
-
 dqn_hyperparameters:
   learning_rate:
     type: float
-    min: 0.0001
-    max: 0.01
-    description: "Tasa de aprendizaje del optimizador Adam"
+    min: 0.001      # Rango más estrecho
+    max: 0.005      # Era: 0.01
     
   gamma:
     type: float
-    min: 0.90
-    max: 0.999
-    description: "Factor de descuento para recompensas futuras"
+    min: 0.95       # Rango más estrecho
+    max: 0.99       # Era: 0.999
     
   epsilon_start:
     type: float
-    min: 0.5
+    min: 0.8        # Rango más estrecho
     max: 1.0
-    description: "Valor inicial de epsilon para exploración"
     
   epsilon_min:
     type: float
     min: 0.01
-    max: 0.2
-    description: "Valor mínimo de epsilon"
+    max: 0.1        # Era: 0.2
     
   epsilon_decay:
     type: float
     min: 0.99
-    max: 0.9999
-    description: "Factor de decaimiento de epsilon"
+    max: 0.999      # Era: 0.9999
     
   batch_size:
     type: int_discrete
-    values: [16, 32, 64, 128]
-    description: "Tamaño del batch para entrenamiento"
+    values: [32, 64]      # Solo 2 opciones (era: [16, 32, 64, 128])
     
   target_update_freq:
     type: int_discrete
-    values: [10, 20, 30, 50, 100]
-    description: "Frecuencia de actualización del target network"
+    values: [10, 30]      # Solo 2 opciones (era: [10, 20, 30, 50, 100])
     
   memory_size:
     type: int_discrete
-    values: [2000, 5000, 10000, 15000, 20000]
-    description: "Tamaño del replay buffer"
+    values: [2000, 5000]  # Solo 2 opciones (era: [2000, 5000, 10000, 15000, 20000])
     
   dueling_network:
     type: bool
-    values: [true, false]
-    description: "Usar arquitectura Dueling DQN"
+    values: [true]        # Solo true para simplificar (era: [true, false])
 
 reward_weights:
   energy_satisfaction_weight:
     type: float
-    min: 0.5
-    max: 3.0
-    description: "Peso para satisfacción energética en función de recompensa"
+    min: 1.0        # Rango más estrecho
+    max: 2.0        # Era: 3.0
     
   energy_cost_weight:
     type: float
-    min: 0.05
-    max: 1.0
-    description: "Peso para costo energético en función de recompensa"
+    min: 0.1        # Rango más estrecho
+    max: 0.5        # Era: 1.0
     
   penalty_skipped_vehicle:
     type: float
-    min: 10.0
-    max: 200.0
-    description: "Penalización por vehículo no atendido"
+    min: 20.0       # Rango más estrecho
+    max: 100.0      # Era: 200.0
     
   reward_assigned_vehicle:
     type: float
-    min: 5.0
-    max: 100.0
-    description: "Recompensa por vehículo asignado exitosamente"
+    min: 10.0       # Rango más estrecho
+    max: 50.0       # Era: 100.0
 
-# Arquetipos de comportamiento para guiar la búsqueda
+# Solo 3 arquetipos para prueba
 archetypes:
   cost_minimizer:
     description: "Enfoque en minimizar costos energéticos"
-    energy_cost_weight: [0.3, 1.0]
-    energy_satisfaction_weight: [0.5, 1.5]
-    penalty_skipped_vehicle: [10.0, 50.0]
+    energy_cost_weight: [0.3, 0.5]
+    energy_satisfaction_weight: [1.0, 1.5]
+    penalty_skipped_vehicle: [20.0, 50.0]
     
   satisfaction_maximizer:
     description: "Enfoque en maximizar satisfacción del cliente"
-    energy_satisfaction_weight: [2.0, 3.0]
-    energy_cost_weight: [0.05, 0.2]
-    penalty_skipped_vehicle: [50.0, 200.0]
+    energy_satisfaction_weight: [1.5, 2.0]
+    energy_cost_weight: [0.1, 0.2]
+    penalty_skipped_vehicle: [50.0, 100.0]
     
   balanced_optimizer:
     description: "Balance entre costo y satisfacción"
-    energy_satisfaction_weight: [1.0, 2.0]
-    energy_cost_weight: [0.1, 0.5]
-    penalty_skipped_vehicle: [30.0, 100.0]
-    
-  urgency_focused:
-    description: "Nunca dejar vehículos sin atender"
-    penalty_skipped_vehicle: [100.0, 200.0]
-    energy_satisfaction_weight: [1.5, 2.5]
-    reward_assigned_vehicle: [20.0, 100.0]
-    
-  efficiency_focused:
-    description: "Maximizar throughput y asignaciones"
-    reward_assigned_vehicle: [50.0, 100.0]
-    energy_satisfaction_weight: [1.0, 2.0]
-    penalty_skipped_vehicle: [20.0, 80.0]
+    energy_satisfaction_weight: [1.0, 1.8]
+    energy_cost_weight: [0.2, 0.4]
+    penalty_skipped_vehicle: [30.0, 80.0]

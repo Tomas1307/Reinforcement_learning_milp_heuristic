@@ -196,20 +196,20 @@ class EVChargingEnv:
                 break
             
             # Si NO HAY vehículos, saltar automáticamente SIN penalización
-            print(f"⚡ Auto-skip: No hay vehículos en tiempo {current_time:.2f}h (idx: {self.current_time_idx})")
+            #print(f"⚡ Auto-skip: No hay vehículos en tiempo {current_time:.2f}h (idx: {self.current_time_idx})")
             self.current_time_idx += 1
             skips_made += 1
         
         # Si llegamos al final del tiempo, terminamos
         if self.current_time_idx >= len(self.times):
-            print(f"Simulación terminada: {len(self.times)} intervalos procesados")
+            #print(f"Simulación terminada: {len(self.times)} intervalos procesados")
             return None
         
         # AQUÍ YA SABEMOS QUE HAY VEHÍCULOS PRESENTES
         representative_ev = self._select_representative_ev(evs_present_now)
         if representative_ev is None:
             # Esto no debería pasar, pero por seguridad
-            print(f"Warning: No se pudo seleccionar vehículo representativo en t={current_time:.2f}h")
+            #print(f"Warning: No se pudo seleccionar vehículo representativo en t={current_time:.2f}h")
             self.current_time_idx += 1
             return self._get_state()
         
@@ -223,13 +223,13 @@ class EVChargingEnv:
         if not ev_time_indices:
             # Este EV ya no tiene tiempo disponible, marcarlo como procesado
             self.evs_processed.add(ev_id)
-            print(f"EV {ev_id} procesado: sin tiempo restante")
+            #print(f"EV {ev_id} procesado: sin tiempo restante")
             return self._get_state()
         
         # Log de información útil para debugging
-        print(f"Procesando EV {ev_id} en t={current_time:.2f}h, "
-            f"{len(evs_present_now)} EVs presentes, "
-            f"{len(ev_time_indices)} intervalos futuros")
+        #print(f"Procesando EV {ev_id} en t={current_time:.2f}h, "
+            #f"{len(evs_present_now)} EVs presentes, "
+            #f"{len(ev_time_indices)} intervalos futuros")
         
         # -- Cálculo de características del EV --
         
@@ -475,13 +475,13 @@ class EVChargingEnv:
         # VERIFICACIÓN ADICIONAL: Asegurar que el vehículo realmente esté presente AHORA
         current_time = self.times[current_time_idx]
         if not (self.arrival_time[ev_id] <= current_time < self.departure_time[ev_id]):
-            print(f" Warning: EV {ev_id} no está presente en tiempo {current_time:.2f}h")
+            #print(f" Warning: EV {ev_id} no está presente en tiempo {current_time:.2f}h")
             return [{"skip": True}]
         
         # Verificar que el vehículo aún necesita energía
         energy_needed = self.required_energy[ev_id] - self.energy_delivered[ev_id]
         if energy_needed <= 0.01:  # Threshold mínimo
-            print(f" EV {ev_id} ya está completamente cargado")
+            #print(f" EV {ev_id} ya está completamente cargado")
             return [{"skip": True}]
         
         # Verificar recursos disponibles EN EL TIEMPO ACTUAL
@@ -492,7 +492,7 @@ class EVChargingEnv:
         
         # Si no hay recursos, solo skip
         if not current_available_spots or not current_available_chargers:
-            print(f" Sin recursos: spots={len(current_available_spots)}, chargers={len(current_available_chargers)}")
+            #print(f" Sin recursos: spots={len(current_available_spots)}, chargers={len(current_available_chargers)}")
             return [{"skip": True}]
         
         # VERIFICACIÓN DE TIEMPO SUFICIENTE: Verificar que haya tiempo suficiente para carga mínima
@@ -501,12 +501,12 @@ class EVChargingEnv:
         min_energy_possible = min_power * time_remaining
         
         if min_energy_possible < 0.1:  # Menos de 0.1 kWh posible
-            print(f" EV {ev_id}: tiempo insuficiente ({time_remaining:.2f}h) para carga mínima")
+            #print(f" EV {ev_id}: tiempo insuficiente ({time_remaining:.2f}h) para carga mínima")
             return [{"skip": True}]
         
         # VERIFICACIÓN DE VIABILIDAD ECONÓMICA: Asegurar que vale la pena cargar
         if energy_needed < 0.5:  # Menos de 0.5 kWh necesario
-            print(f" EV {ev_id}: energía necesaria muy baja ({energy_needed:.2f} kWh)")
+            #print(f" EV {ev_id}: energía necesaria muy baja ({energy_needed:.2f} kWh)")
             return [{"skip": True}]
         
         # Solo ahora generar acciones reales
@@ -524,7 +524,7 @@ class EVChargingEnv:
         # OPTIMIZACIÓN FUERTE: Máximo 2 spots para reducir aún más el espacio de acciones
         spots_to_try = current_available_spots[:2] if len(current_available_spots) > 2 else current_available_spots
         
-        print(f" Generando acciones para EV {ev_id}: {len(spots_to_try)} spots, energía_necesaria={energy_needed:.2f}kWh")
+        #print(f" Generando acciones para EV {ev_id}: {len(spots_to_try)} spots, energía_necesaria={energy_needed:.2f}kWh")
         
         for spot in spots_to_try:
             # Determinar cargadores compatibles y disponibles AHORA
@@ -567,7 +567,7 @@ class EVChargingEnv:
         # Siempre incluir skip como opción
         actions.append(skip_action)
         
-        print(f" Generadas {len(actions)-1} acciones + skip para EV {ev_id} en t={current_time:.2f}h")
+        #print(f" Generadas {len(actions)-1} acciones + skip para EV {ev_id} en t={current_time:.2f}h")
         
         return actions
 
@@ -710,7 +710,7 @@ class EVChargingEnv:
         satisfaction_ratio = self.energy_delivered[ev_id] / self.required_energy[ev_id]
         if satisfaction_ratio >= 0.99:  # 99% cargado
             self.evs_processed.add(ev_id)
-            print(f"EV {ev_id} completamente cargado ({satisfaction_ratio:.1%})")
+            #print(f"EV {ev_id} completamente cargado ({satisfaction_ratio:.1%})")
         
         # Avanzar al siguiente intervalo
         self.current_time_idx += 1

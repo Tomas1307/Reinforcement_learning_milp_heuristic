@@ -408,20 +408,28 @@ Modelo guardado en: {model_path}
 
 def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: int,
                     model_save_path: str = None, log_frequency: int = 100,
-                    logger: SimpleEpisodeLogger = None):
+                    logger: SimpleEpisodeLogger = None, verbose: bool = False):
     """
     Función simplificada para entrenamiento de un solo sistema (compatibilidad).
     Usa la lógica del main anterior pero para un solo sistema.
+    
+    Args:
+        verbose (bool): Si True, muestra información detallada. Si False, solo progreso básico.
     """
     if logger is None:
-        logger = SimpleEpisodeLogger(log_frequency=log_frequency) 
+        logger = SimpleEpisodeLogger(log_frequency=log_frequency if verbose else num_episodes + 1) 
 
-    print(f"\n--- Iniciando entrenamiento del DQN para {num_episodes} episodios ---")
-    print(f"Hiperparámetros del agente: LR={agent.learning_rate}, Gamma={agent.gamma}, "
-          f"Epsilon_decay={agent.epsilon_decay}, Batch_size={agent.batch_size}")
+    # Solo mostrar info inicial si es verbose
+    if verbose:
+        print(f"\n--- Iniciando entrenamiento del DQN para {num_episodes} episodios ---")
+        print(f"Hiperparámetros del agente: LR={agent.learning_rate}, Gamma={agent.gamma}, "
+              f"Epsilon_decay={agent.epsilon_decay}, Batch_size={agent.batch_size}")
 
     best_reward = -float('inf')
-
+    
+    # Variables para progreso
+    milestone_interval = max(1, num_episodes // 4)  # Mostrar cada 25%
+    
     for episode in range(1, num_episodes + 1):
         start_time = time.time()
         
@@ -475,13 +483,21 @@ def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: i
             total_vehicles, episode_time, agent.epsilon
         )
 
+        # Mostrar progreso solo en hitos (sin verbose) o según log_frequency (con verbose)
+        if not verbose:
+            if episode % milestone_interval == 0 or episode == num_episodes:
+                progress = episode / num_episodes * 100
+                print(f"        Entrenando: {progress:.0f}% ({episode}/{num_episodes}) - Reward: {total_reward:.0f}")
+
         # Guardar el modelo si es el mejor y se especificó una ruta
         if total_reward > best_reward:
             best_reward = total_reward
             if model_save_path:
                 agent.save(model_save_path)
     
-    print(f"--- Entrenamiento finalizado. Recompensa máxima: {best_reward:.2f} ---")
+    # Solo mostrar resumen final si es verbose
+    if verbose:
+        print(f"--- Entrenamiento finalizado. Recompensa máxima: {best_reward:.2f} ---")
     
     return logger.get_episode_data()
 
