@@ -1,92 +1,88 @@
-# Configuración del algoritmo Scatter Search para optimización de hiperparámetros
+# Scatter Search algorithm configuration for hyperparameter optimization
 
 algorithm:
-  # Parámetros de población
-  population_size: 6
-  ref_set_size: 4
-  elite_count: 2
-  diverse_count: 2
-  max_iterations: 2
-  max_time_hours: 0.5
+  # Population parameters
+  population_size: 200
+  ref_set_size: 20
+  elite_count: 12
+  diverse_count: 8
+  max_iterations: 50
+  max_time_hours: 60
   
-  # Parámetros de iteración
-  #max_iterations: 20
-  #max_time_hours: 12.0
+  # Operation probabilities
+  combination_probability: 0.9
+  improvement_probability: 0.6
   
-  # Probabilidades de operaciones
-  combination_probability: 0.8
-  improvement_probability: 0.4
-  
-  # Criterios de convergencia
-  min_improvement_threshold: 0.01
-  patience_iterations: 5
+  # Convergence criteria
+  min_improvement_threshold: 0.005
+  patience_iterations: 8
 
 evaluation:
-  # Evaluación rápida: sistemas pequeños, pocos episodios
+  # FAST EVALUATION - Initial aggressive filtering
   fast:
-    systems: [1]  # IDs de sistemas para evaluación rápida
-    episodes: 5
-    description: "Evaluación rápida para filtrado inicial"
+    systems: [1,2,3]  # System IDs for fast evaluation
+    episodes: 30
+    description: "Initial Filtering - RTX 4090"
     
-  # Evaluación media: más sistemas, episodios moderados
+  # MEDIUM EVALUATION - Promising candidates
   medium:
-    systems: [1, 2, 3, 4, 5]
-    episodes: 25
-    description: "Evaluación intermedia para candidatos prometedores"
+    systems: [1, 2, 3, 4, 5,6,7,8,9]
+    episodes: 60
+    description: "Medium evaluation for promising candidates"
     
-  # Evaluación completa: todos los sistemas disponibles
+  # Full evaluation: all available systems
   full:
-    systems: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    episodes: 40
-    description: "Evaluación completa para mejores candidatos"
+    systems: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+    episodes: 80
+    description: "Complete evaluation for best candidates"
 
 output:
-  # Configuración de salida y checkpoints
-  save_frequency: 3  # Guardar cada N iteraciones
+  # Output and checkpoint configuration
+  save_frequency: 3  # Save every N iterations
   checkpoint_dir: "./checkpoints/scatter_search"
   
-  # Configuración de reportes
+  # Report configuration
   generate_plots: true
   generate_excel: true
   create_deployment_package: true
   
-  # Configuración de logging
+  # Logging configuration
   log_level: "INFO"
   detailed_logging: true
 
 diversity:
-  # Parámetros para control de diversidad
-  similarity_threshold_initial: 0.95
+  # Diversity control parameters
+  similarity_threshold_initial: 0.98
   similarity_threshold_final: 0.75
   adaptive_threshold: true
   
-  # Métrica de similitud
-  similarity_metric: "cosine"  # opciones: "cosine", "euclidean"
+  # Similarity metric
+  similarity_metric: "cosine"  # options: "cosine", "euclidean"
   
 quality:
-  # Parámetros para asegurar calidad
+  # Quality assurance parameters
   min_evaluations_per_config: 1
-  fitness_aggregation: "mean"  # opciones: "mean", "median", "min"
+  fitness_aggregation: "mean"  # options: "mean", "median", "min"
   
-  # Criterios de filtrado
+  # Filtering criteria
   filter_invalid_configs: true
   min_fitness_threshold: -4000.0
 
 resources:
-  # Configuración de recursos computacionales
-  parallel_evaluation: false  # Para futuro desarrollo
+  # Computational resources configuration
+  parallel_evaluation: false  # For future development
   max_concurrent_jobs: 1
   
-  # Límites de memoria
-  max_memory_gb: 8.0
-  cleanup_frequency: 5  # Limpiar memoria cada N iteraciones
+  # Memory limits
+  max_memory_gb: 20
+  cleanup_frequency: 3  # Clean memory every N iterations
 
 debug:
-  # Configuración para debugging
+  # Debug configuration
   verbose_output: true
   save_intermediate_results: true
   track_convergence: true
   
-  # Configuración de testing
+  # Testing configuration
   test_mode: false
-  quick_test: false  # Usar solo 1 sistema y 5 episodios
+  quick_test: false  # Use only 1 system and 5 episodes
