@@ -435,12 +435,10 @@ class ScatterSearchOptimizer:
         print(f"    Evaluando {len(population)} configuraciones en {len(systems_to_use)} sistemas ({episodes} episodios)")
         
         total_configs = len(population)
-        milestone_interval = max(1, total_configs // 5) 
         
         for i, config in enumerate(population):
-            if i % milestone_interval == 0 or i == total_configs - 1:
-                progress = (i + 1) / total_configs * 100
-                print(f"      Progreso: {progress:.0f}% ({i+1}/{total_configs})")
+            # ESTE ES EL PRINT QUE QUERIAS
+            print(f"      Poblacion {i+1}/{total_configs} - Iteracion {self.current_iteration + 1}")
             
             dqn_params = self._extract_dqn_params(config)
             reward_weights = self._extract_reward_weights(config)
@@ -452,7 +450,7 @@ class ScatterSearchOptimizer:
                     system_fitness.append(fitness)
                 except Exception as e:
                     if "missing" in str(e) or "Error" in str(e):
-                        print(f"        ⚠️ Error en configuración {i+1}: {str(e)[:50]}...")
+                        print(f"        Error en configuracion {i+1}: {str(e)[:50]}...")
                     system_fitness.append(-1000.0)
             
             avg_fitness = np.mean(system_fitness)
@@ -462,7 +460,7 @@ class ScatterSearchOptimizer:
         worst_fitness = min(fitness_scores)
         avg_fitness_all = np.mean(fitness_scores)
         
-        print(f"     Evaluación completada:")
+        print(f"     Evaluacion completada:")
         print(f"       Mejor fitness: {best_fitness:.2f}")
         print(f"       Peor fitness: {worst_fitness:.2f}")
         print(f"       Promedio: {avg_fitness_all:.2f}")
