@@ -7,7 +7,7 @@ algorithm:
   elite_count: 12
   diverse_count: 8
   max_iterations: 50
-  max_time_hours: 60
+  max_time_hours: 30
   
   # Operation probabilities
   combination_probability: 0.9

@@ -60,12 +60,11 @@ class ScatterSearchOptimizer:
             return False
         
     def run_optimization(self, resume_from: str = None) -> Dict[str, Any]:
-        """Ejecuta el algoritmo completo de Scatter Search"""
+        """Ejecuta el algoritmo completo de Scatter Search - SIN MODO EMERGENCY"""
         print("Iniciando Scatter Search Optimization")
         print(f"Tiempo máximo: {self.algo_config['max_time_hours']} horas")
         print(f"Población: {self.algo_config['population_size']}")
         print(f"RefSet: {self.algo_config['ref_set_size']}")
-        
         
         if resume_from:
             print(f"Intentando resumir desde: {resume_from}")
@@ -75,57 +74,114 @@ class ScatterSearchOptimizer:
                 print("No se pudo cargar checkpoint, iniciando desde cero")
         
         print("Iniciando nueva optimización")
-        
-        
         self.start_time = time.time()
         
-        try:
-            print("\nFase 1: Generando población inicial...")
-            self.population = self._generate_initial_population()
+        # REMOVER try-except que activa emergency mode
+        print("\nFase 1: Generando población inicial...")
+        self.population = self._generate_initial_population()
+        
+        print("\nFase 2: Construyendo Reference Set inicial...")
+        self.reference_set = self._build_initial_reference_set()
+        
+        print("\nFase 3: Iteraciones principales...")
+        self._main_optimization_loop()
+        
+        print("\nFase 4: Evaluación final...")
+        final_results = self._final_evaluation()
+        
+        return final_results
+    
+    def _log_archetype_distribution(self, population: List[Dict[str, Any]], 
+                                    phase_name: str, detailed: bool = False):
+        """Imprime distribución de arquetipos en una población"""
+        
+        archetype_counts = {}
+        archetype_details = {}
+        
+        for i, solution in enumerate(population):
+            archetype = self._classify_solution_archetype(solution)
             
-            print("\nFase 2: Construyendo Reference Set inicial...")
-            self.reference_set = self._build_initial_reference_set()
+            if archetype not in archetype_counts:
+                archetype_counts[archetype] = 0
+                archetype_details[archetype] = []
             
-            print("\nFase 3: Iteraciones principales...")
-            self._main_optimization_loop()
+            archetype_counts[archetype] += 1
             
-            print("\nFase 4: Evaluación final...")
-            final_results = self._final_evaluation()
-            
-            return final_results
-            
-        except KeyboardInterrupt:
-            print("\nOptimización interrumpida por usuario")
-            return self._emergency_results()
-        except Exception as e:
-            print(f"\nError durante optimización: {e}")
-            return self._emergency_results()
+            if detailed:
+                energy_sat = solution.get('energy_satisfaction_weight', 0)
+                energy_cost = solution.get('energy_cost_weight', 0)
+                penalty = solution.get('penalty_skipped_vehicle', 0)
+                reward = solution.get('reward_assigned_vehicle', 0)
+                
+                archetype_details[archetype].append({
+                    'index': i + 1,
+                    'energy_sat': energy_sat,
+                    'energy_cost': energy_cost,
+                    'penalty': penalty,
+                    'reward': reward
+                })
+        
+        total = len(population)
+        print(f"\nDISTRIBUCION DE ARQUETIPOS - {phase_name}")
+        print("=" * 60)
+        
+        for archetype, count in sorted(archetype_counts.items()):
+            percentage = (count / total) * 100
+            print(f"   {archetype:20s}: {count:3d}/{total} ({percentage:5.1f}%)")
+        
+        if detailed and len(population) <= 50:
+            print(f"\nDETALLES POR ARQUETIPO:")
+            for archetype, details in archetype_details.items():
+                print(f"\n   {archetype.upper()}:")
+                for detail in details[:3]:
+                    print(f"      {detail['index']:3d}/{total}: Sat={detail['energy_sat']:.2f}, "
+                        f"Cost={detail['energy_cost']:.3f}, Pen={detail['penalty']:.0f}, "
+                        f"Rew={detail['reward']:.0f}")
+                if len(details) > 3:
+                    print(f"      ... y {len(details)-3} mas")
+        
+        print("=" * 60)
+        return archetype_counts
             
     def _generate_initial_population(self) -> List[Dict[str, Any]]:
-        """Genera población inicial con diversidad garantizada"""
+        """Genera población inicial con diversidad garantizada y logging"""
         population = []
         pop_size = self.algo_config['population_size']
         
         archetype_names = list(self.hyperparameter_space.archetypes.keys())
         individuals_per_archetype = max(2, pop_size // (len(archetype_names) * 3))
         
+        print(f"\nGENERANDO POBLACION INICIAL:")
+        print(f"   Total individuos: {pop_size}")
+        print(f"   Arquetipos disponibles: {len(archetype_names)}")
+        print(f"   Individuos por arquetipo: {individuals_per_archetype}")
+        
         for archetype in archetype_names:
+            print(f"   Generando {individuals_per_archetype} individuos de '{archetype}'...")
             for _ in range(individuals_per_archetype):
                 solution = self.hyperparameter_space.generate_archetype_solution(archetype)
                 population.append(solution)
                 
-        while len(population) < pop_size:
-            solution = self.hyperparameter_space.generate_random_solution()
-            population.append(solution)
-            
-        print(f"Población generada: {len(population)} individuos")
-        print(f"   - Por arquetipo: {individuals_per_archetype}")
-        print(f"   - Aleatorios: {pop_size - len(archetype_names) * individuals_per_archetype}")
+        remaining = pop_size - len(population)
+        if remaining > 0:
+            print(f"   Generando {remaining} individuos aleatorios...")
+            while len(population) < pop_size:
+                solution = self.hyperparameter_space.generate_random_solution()
+                population.append(solution)
+        
+        print(f"\nPOBLACION GENERADA COMPLETADA")
+        actual_counts = self._log_archetype_distribution(population, "POBLACION INICIAL", detailed=True)
+        
+        for archetype in archetype_names:
+            expected = individuals_per_archetype
+            actual = actual_counts.get(archetype, 0)
+            if actual < expected:
+                print(f"WARNING: {archetype} genero solo {actual}/{expected} individuos")
         
         return population
         
     def _build_initial_reference_set(self) -> List[Dict[str, Any]]:
-        """Construye el Reference Set inicial"""
+        """Construye el Reference Set inicial con logging"""
         print("Evaluando población inicial...")
         
         fitness_scores = self._evaluate_population(self.population, level="fast")
@@ -152,7 +208,10 @@ class ScatterSearchOptimizer:
         print(f"   - Elite: {elite_count}")
         print(f"   - Diverse: {len(diverse_solutions)}")
         
+        self._log_archetype_distribution(reference_set, "REFERENCE SET INICIAL")
+        
         self.best_solutions = [sol for sol, _ in evaluated_population[:5]]
+        self._log_archetype_distribution(self.best_solutions, "TOP 5 MEJORES")
         
         return reference_set
     
@@ -214,10 +273,10 @@ class ScatterSearchOptimizer:
             
         except KeyboardInterrupt:
             print("\nOptimización resumida interrumpida por usuario")
-            return self._emergency_results()
+
         except Exception as e:
             print(f"\nError durante optimización resumida: {e}")
-            return self._emergency_results()
+
         
     def _main_optimization_loop(self):
         """Loop principal de optimización"""
@@ -251,8 +310,11 @@ class ScatterSearchOptimizer:
                 self._save_checkpoint(iteration)
                 
     def _combination_phase(self) -> List[Dict[str, Any]]:
-        """Combina hiperparámetros del RefSet para crear nuevas soluciones"""
+        """Combina hiperparámetros del RefSet para crear nuevas soluciones con logging"""
         new_solutions = []
+        
+        print(f"    RefSet actual:")
+        self._log_archetype_distribution(self.reference_set, "REFSET ANTES DE COMBINACION")
         
         for i in range(len(self.reference_set)):
             for j in range(i + 1, len(self.reference_set)):
@@ -262,7 +324,13 @@ class ScatterSearchOptimizer:
                     )
                     new_solutions.append(child)
         
+        if new_solutions:
+            self._log_archetype_distribution(new_solutions, "SOLUCIONES COMBINADAS")
+        
         filtered_solutions = self._filter_similar_solutions(new_solutions, self.current_iteration)
+        
+        if filtered_solutions:
+            self._log_archetype_distribution(filtered_solutions, "SOLUCIONES FILTRADAS")
         
         print(f"    Generadas {len(new_solutions)} combinaciones, {len(filtered_solutions)} únicas")
         return filtered_solutions
@@ -382,8 +450,11 @@ class ScatterSearchOptimizer:
         return filtered
         
     def _update_reference_set(self, new_solutions: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Actualiza el Reference Set con nuevas soluciones"""
+        """Actualiza el Reference Set con logging de arquetipos"""
         all_candidates = self.reference_set + new_solutions
+        
+        print(f"    Evaluando {len(all_candidates)} candidatos para RefSet...")
+        self._log_archetype_distribution(all_candidates, "CANDIDATOS PARA REFSET")
         
         fitness_scores = self._evaluate_population(all_candidates, level="medium")
         
@@ -391,9 +462,13 @@ class ScatterSearchOptimizer:
             all_candidates, fitness_scores, self.algo_config['ref_set_size']
         )
         
+        self._log_archetype_distribution(new_ref_set, "NUEVO REFERENCE SET")
+        
         evaluated_candidates = list(zip(all_candidates, fitness_scores))
         evaluated_candidates.sort(key=lambda x: x[1], reverse=True)
         self.best_solutions = [sol for sol, _ in evaluated_candidates[:5]]
+        
+        self._log_archetype_distribution(self.best_solutions, "NUEVOS TOP 5 MEJORES")
         
         print(f"    RefSet actualizado")
         return new_ref_set
@@ -435,10 +510,22 @@ class ScatterSearchOptimizer:
         print(f"    Evaluando {len(population)} configuraciones en {len(systems_to_use)} sistemas ({episodes} episodios)")
         
         total_configs = len(population)
+        elapsed_time = time.time() - self.start_time if self.start_time else 0
+        max_time = self.algo_config['max_time_hours'] * 3600
+        
+        # Determinar fase actual
+        if not hasattr(self, 'current_iteration') or self.current_iteration == 0:
+            if not hasattr(self, '_initial_phase_done'):
+                phase = "INICIAL"
+            else:
+                phase = f"ITER_{self.current_iteration + 1}"
+        elif level == "full":
+            phase = "FINAL"
+        else:
+            phase = f"ITER_{self.current_iteration + 1}"
         
         for i, config in enumerate(population):
-            # ESTE ES EL PRINT QUE QUERIAS
-            print(f"      Poblacion {i+1}/{total_configs} - Iteracion {self.current_iteration + 1}")
+            print(f"   ############## Fase {phase} - Poblacion {i+1}/{total_configs} - Tiempo {elapsed_time/3600:.2f}h/{max_time/3600:.0f}h")
             
             dqn_params = self._extract_dqn_params(config)
             reward_weights = self._extract_reward_weights(config)
@@ -455,6 +542,9 @@ class ScatterSearchOptimizer:
             
             avg_fitness = np.mean(system_fitness)
             fitness_scores.append(avg_fitness)
+            
+            # Actualizar tiempo para siguiente iteración
+            elapsed_time = time.time() - self.start_time if self.start_time else 0
         
         best_fitness = max(fitness_scores)
         worst_fitness = min(fitness_scores)
@@ -516,7 +606,7 @@ class ScatterSearchOptimizer:
         return {param: config[param] for param in weight_param_names if param in config}
     
     def _train_and_save_best_models(self, candidates, fitness_scores):
-        """Entrena y guarda solo los mejores modelos"""
+        """Entrena y guarda solo los mejores modelos - CORREGIDO"""
         print("Entrenando y guardando modelos óptimos...")
         
         models_dir = os.path.join(self.main_output_dir, "trained_models")
@@ -526,22 +616,42 @@ class ScatterSearchOptimizer:
             if fitness > -500:  
                 print(f"Entrenando modelo óptimo {i+1}/5...")
                 
-                trained_agent = self._train_final_model(config, episodes=100)
+                # CORREGIR: usar método que SÍ existe
+                dqn_params = self._extract_dqn_params(config)
+                reward_weights = self._extract_reward_weights(config)
+                
+                # Usar el primer sistema para entrenamiento final
+                first_system = list(self.systems_data.values())[0]
+                env = EVChargingEnv(first_system)
+                env.update_reward_weights(reward_weights)
+                
+                # Crear y entrenar agente
+                state_size = 40 
+                action_size = 60  
+                agent = EnhancedDQNAgentPyTorch(state_size, action_size, **dqn_params)
+                
+                # Entrenar con más episodios para modelo final
+                train_dqn_agent(agent, env, num_episodes=100, verbose=False)
                 
                 archetype = self._classify_solution_archetype(config)
                 model_path = f"{models_dir}/{archetype}_rank_{i+1}.pt"
-                trained_agent.save(model_path)
+                agent.save(model_path)
                 
                 print(f"Modelo guardado: {model_path}")
 
     def _final_evaluation(self) -> Dict[str, Any]:
-        """Evaluación final completa de los mejores candidatos"""
+        """Evaluación final completa de los mejores candidatos - CORREGIDO"""
         print("Evaluación final completa...")
         
         top_candidates = self.best_solutions[:5]
         final_fitness = self._evaluate_population(top_candidates, level="full")
         
-        trained_models = self._train_and_save_best_models(top_candidates, final_fitness)
+        # CORREGIR: Solo llamar si hay candidatos válidos
+        if top_candidates and any(f > -500 for f in final_fitness):
+            try:
+                self._train_and_save_best_models(top_candidates, final_fitness)
+            except Exception as e:
+                print(f"Warning: No se pudieron entrenar modelos finales: {e}")
 
         final_results = []
         for i, (solution, fitness) in enumerate(zip(top_candidates, final_fitness)):
@@ -552,7 +662,7 @@ class ScatterSearchOptimizer:
                 'fitness': fitness,
                 'archetype': archetype,
                 'hyperparameters': solution,
-                'configuration_namef': f"optimized_{archetype}_{i+1}"
+                'configuration_name': f"optimized_{archetype}_{i+1}"  # CORREGIR typo
             }
             final_results.append(result)
             
@@ -565,21 +675,33 @@ class ScatterSearchOptimizer:
         }
     
     def _classify_solution_archetype(self, solution: Dict[str, Any]) -> str:
-        """Clasifica una solución según su arquetipo de comportamiento"""
+        """Clasifica una solución según su arquetipo de comportamiento - VERSIÓN MEJORADA"""
         
         energy_satisfaction = solution.get('energy_satisfaction_weight', 1.0)
         energy_cost = solution.get('energy_cost_weight', 0.1)
         penalty_skipped = solution.get('penalty_skipped_vehicle', 50.0)
         reward_assigned = solution.get('reward_assigned_vehicle', 20.0)
         
-        if energy_cost > 0.5:
+        # Clasificación más granular para obtener diversidad
+        cost_ratio = energy_cost / max(energy_satisfaction, 0.1)
+        
+        # 1. Cost Minimizer: Prioriza costos
+        if energy_cost > 1.0 or cost_ratio > 0.4:
             return "cost_minimizer"
-        elif energy_satisfaction > 2.0:
-            return "satisfaction_maximizer"
-        elif penalty_skipped > 100.0:
+        
+        # 2. Urgency Focused: Penalización muy alta por saltar
+        elif penalty_skipped > 200.0:
             return "urgency_focused"
-        elif reward_assigned > 60.0:
+        
+        # 3. Efficiency Focused: Recompensa alta por asignar
+        elif reward_assigned > 100.0:
             return "efficiency_focused"
+        
+        # 4. Satisfaction Maximizer: SOLO si satisfaction es muy alto Y cost bajo
+        elif energy_satisfaction > 4.0 and energy_cost < 0.5:
+            return "satisfaction_maximizer"
+        
+        # 5. Balanced Optimizer: El resto (será la mayoría ahora)
         else:
             return "balanced_optimizer"
         
@@ -616,43 +738,46 @@ class ScatterSearchOptimizer:
     
     def _create_optimization_summary(self) -> Dict[str, Any]:
         """Crea resumen de la optimización"""
-        
-        if not self.iteration_history:
-            return {}
-        
-        return {
-            'total_iterations': len(self.iteration_history),
-            'total_time_hours': (time.time() - self.start_time) / 3600,
-            'final_best_fitness': self.iteration_history[-1]['best_fitness'],
-            'initial_best_fitness': self.iteration_history[0]['best_fitness'],
-            'improvement': self.iteration_history[-1]['best_fitness'] - self.iteration_history[0]['best_fitness'],
-            'final_diversity': self.iteration_history[-1]['diversity_score'],
-            'iteration_history': self.iteration_history
-        }
-    
+        try:
+            if not self.iteration_history:
+                return {}
+            
+            return {
+                'total_iterations': len(self.iteration_history),
+                'total_time_hours': (time.time() - self.start_time) / 3600,
+                'final_best_fitness': self.iteration_history[-1]['best_fitness'],
+                'initial_best_fitness': self.iteration_history[0]['best_fitness'],
+                'improvement': self.iteration_history[-1]['best_fitness'] - self.iteration_history[0]['best_fitness'],
+                'final_diversity': self.iteration_history[-1]['diversity_score'],
+                'iteration_history': self.iteration_history
+            }
+        except Exception as e:
+            print(f"Error on create_optimization_summary as  : {e}")
+
     def _save_checkpoint(self, iteration: int):
         """Guarda checkpoint del algoritmo"""
-        checkpoint_dir = os.path.join(self.main_output_dir, "checkpoints")
-        checkpoint_path = f"{checkpoint_dir}/scatter_checkpoint_iter_{iteration}.json"
-        checkpoint_data = {
-            'iteration': iteration,
-            'reference_set': self.reference_set,
-            'best_solutions': self.best_solutions,
-            'iteration_history': self.iteration_history,
-            'config': self.config
-        }
-        
-        checkpoint_path = f"{self.output_config.get('checkpoint_dir', './checkpoints')}/scatter_checkpoint_iter_{iteration}.json"
-        
-        import json
-        import os
-        os.makedirs(os.path.dirname(checkpoint_path), exist_ok=True)
-        
-        with open(checkpoint_path, 'w') as f:
-            json.dump(checkpoint_data, f, indent=2, default=str)
-        
-        print(f"      Checkpoint guardado: {checkpoint_path}")
-    
+        try:
+            checkpoint_dir = os.path.join(self.main_output_dir, "checkpoints")
+            os.makedirs(checkpoint_dir, exist_ok=True)
+
+            checkpoint_data = {
+                'iteration': iteration,
+                'reference_set': self.reference_set,
+                'best_solutions': self.best_solutions,
+                'iteration_history': self.iteration_history,
+                'config': self.config
+            }
+            
+            checkpoint_path = os.path.join(checkpoint_dir, f"scatter_checkpoint_iter_{iteration}.json")        
+            os.makedirs(os.path.dirname(checkpoint_path), exist_ok=True)
+            
+            with open(checkpoint_path, 'w') as f:
+                json.dump(checkpoint_data, f, indent=2, default=str)
+            
+            print(f"      Checkpoint guardado: {checkpoint_path}")
+        except Exception as e:
+            print(f"Error on savecheckpoint: {e}")
+
     def _emergency_results(self) -> Dict[str, Any]:
         """Retorna resultados de emergencia en caso de error"""
         
