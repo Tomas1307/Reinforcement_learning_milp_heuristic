@@ -1,0 +1,49 @@
+ENHANCED SYSTEM ANALYSIS
+==================================================
+
+SYSTEM CHARACTERISTICS vs PERFORMANCE:
+--------------------------------------------------
+
+| Sys | Vehicles | Slots | Chargers | V/S Ratio | Bottleneck | Satisfaction | Efficiency | Assigned |
+|-----|----------|-------|----------|-----------|------------|--------------|------------|----------|
+|  3 |      21 |   60 |      25 |     0.3 |   unknown |       32.4% |     66.7% |   14.0 |
+|  7 |     289 |  200 |      85 |     1.4 |   unknown |        1.4% |      9.3% |   27.0 |
+|  2 |      49 |   30 |      12 |     1.6 |   unknown |       18.5% |     60.4% |   29.6 |
+|  5 |      72 |   40 |      27 |     1.8 |   unknown |       13.3% |     30.6% |   22.0 |
+|  9 |     285 |  150 |      80 |     1.9 |   unknown |        1.3% |      8.8% |   25.0 |
+|  6 |     163 |   80 |      45 |     2.0 |   unknown |        6.6% |     14.1% |   23.0 |
+| 17 |     592 |  200 |     132 |     3.0 |   unknown |        4.0% |      4.6% |   27.0 |
+| 16 |     462 |  150 |      86 |     3.1 |   unknown |        3.6% |      4.8% |   22.0 |
+|  1 |      32 |   10 |       5 |     3.2 |   unknown |       13.9% |     53.1% |   17.0 |
+| 15 |     341 |  100 |      62 |     3.4 |   unknown |        7.9% |      8.8% |   30.0 |
+|  4 |      75 |   20 |      10 |     3.8 |   unknown |        3.4% |     37.3% |   28.0 |
+|  8 |     431 |  100 |      55 |     4.3 |   unknown |        0.7% |      5.1% |   22.0 |
+| 14 |     286 |   50 |      38 |     5.7 |   unknown |        4.9% |      9.4% |   27.0 |
+| 13 |     217 |   30 |      22 |     7.2 |   unknown |        9.4% |     14.7% |   32.0 |
+| 12 |     183 |   20 |      15 |     9.2 |   unknown |        7.3% |     16.4% |   30.0 |
+| 11 |     103 |   10 |      10 |    10.3 |   unknown |        3.2% |     23.3% |   24.0 |
+| 10 |     554 |   30 |      17 |    18.5 |   unknown |        1.9% |      4.9% |   27.0 |
+
+
+SYSTEM CATEGORIZATION:
+-------------------------
+EASY Systems (V/S ≤ 2.0): 5 systems
+  Average satisfaction: 13.4%
+  Systems: 3, 7, 2, 5, 9
+
+MEDIUM Systems (2.0 < V/S ≤ 10.0): 10 systems
+  Average satisfaction: 6.2%
+  Systems: 6, 17, 16, 1, 15, 4, 8, 14, 13, 12
+
+HARD Systems (V/S > 10.0): 2 systems
+  Average satisfaction: 2.6%
+  Systems: 11, 10
+
+
+PERFORMANCE INSIGHTS:
+--------------------
+Best performing system: 3 (32.4% satisfaction)
+  Characteristics: 21 vehicles, 60 slots, V/S ratio = 0.3
+
+Worst performing system: 8 (0.7% satisfaction)
+  Characteristics: 431 vehicles, 100 slots, V/S ratio = 4.3

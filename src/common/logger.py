@@ -2,21 +2,21 @@ import json
 import os
 import time
 from datetime import datetime
-import numpy as np # Para calcular tendencias y estadísticas
+import numpy as np
 
 class SimpleEpisodeLogger:
     """
-    Un logger simple diseñado para registrar los datos de cada episodio
-    durante el entrenamiento de un agente DQN o cualquier proceso iterativo.
-    Los datos se almacenan en memoria y pueden ser recuperados como una lista de diccionarios.
+    A simple logger designed to record data for each episode
+    during the training of a DQN agent or any iterative process.
+    Data is stored in memory and can be retrieved as a list of dictionaries.
     """
     def __init__(self, log_frequency: int = 100):
         """
-        Inicializa el logger de episodios.
+        Initializes the episode logger.
 
         Args:
-            log_frequency (int): La frecuencia (en número de episodios) con la que
-                                 se imprimirán los logs a la consola.
+            log_frequency (int): The frequency (in number of episodes) at which
+                                 logs will be printed to the console.
         """
         self.episode_data = []
         self.start_time = time.time()
@@ -26,17 +26,17 @@ class SimpleEpisodeLogger:
                     assign_count: int, skip_count: int, total_vehicles: int,
                     episode_time: float, agent_epsilon: float):
         """
-        Registra los datos de un episodio y opcionalmente los imprime en la consola.
+        Records episode data and optionally prints it to the console.
 
         Args:
-            episode_num (int): Número del episodio actual.
-            total_reward (float): Recompensa total obtenida en el episodio.
-            metrics (dict): Diccionario de métricas del entorno (de EVChargingEnv.get_metrics()).
-            assign_count (int): Número de vehículos asignados en el episodio.
-            skip_count (int): Número de vehículos saltados (no asignados) en el episodio.
-            total_vehicles (int): Número total de vehículos considerados en el episodio.
-            episode_time (float): Duración del episodio en segundos.
-            agent_epsilon (float): Valor actual de epsilon del agente (tasa de exploración).
+            episode_num (int): The current episode number.
+            total_reward (float): The total reward obtained in the episode.
+            metrics (dict): Dictionary of environment metrics (from EVChargingEnv.get_metrics()).
+            assign_count (int): The number of vehicles assigned in the episode.
+            skip_count (int): The number of vehicles skipped (not assigned) in the episode.
+            total_vehicles (int): The total number of vehicles considered in the episode.
+            episode_time (float): The duration of the episode in seconds.
+            agent_epsilon (float): The agent's current epsilon value (exploration rate).
         """
         satisfaction_pct = metrics.get("total_satisfaction_pct", 0.0)
         assign_ratio = (assign_count / total_vehicles * 100) if total_vehicles > 0 else 0
@@ -56,39 +56,26 @@ class SimpleEpisodeLogger:
         self.episode_data.append(data)
 
         if episode_num % self.log_frequency == 0 or episode_num == 1:
-            print(f"Ep {episode_num}: Reward={total_reward:.2f}, Sat={satisfaction_pct:.2f}%, "
-                  f"Assign={assign_ratio:.1f}%, Epsilon={agent_epsilon:.2f}, Time={episode_time:.2f}s")
+            print(f"Episode {episode_num}: Reward={total_reward:.2f}, Satisfaction={satisfaction_pct:.2f}%, "
+                  f"Assignment={assign_ratio:.1f}%, Epsilon={agent_epsilon:.2f}, Time={episode_time:.2f}s")
 
     def get_episode_data(self) -> list:
         """
-        Retorna la lista completa de datos de los episodios registrados.
+        Returns the complete list of logged episode data.
 
         Returns:
-            list: Una lista de diccionarios, cada uno con los datos de un episodio.
+            list: A list of dictionaries, each containing the data for an episode.
         """
         return self.episode_data
 
     def save_episode_data(self, filepath: str):
         """
-        Guarda los datos de los episodios en un archivo JSON.
+        Saves the episode data to a JSON file.
 
         Args:
-            filepath (str): La ruta completa del archivo donde se guardarán los datos.
+            filepath (str): The full path to the file where the data will be saved.
         """
         os.makedirs(os.path.dirname(filepath), exist_ok=True)
         with open(filepath, 'w') as f:
             json.dump(self.episode_data, f, indent=4)
-        print(f"Datos de episodios guardados en: {filepath}")
-
-    
-
-# NOTA: La clase SystemProgressLogger y las funciones relacionadas que tenías en
-# train_logger.py se adaptarían para el Scatter Search. Por ahora, nos enfocamos en
-# la SimpleEpisodeLogger para el entrenamiento del DQN, ya que es la que se usará
-# directamente en training.py.
-
-# El antiguo SystemProgressLogger podría ser refactorizado para el Scatter Search
-# en un módulo diferente, o una versión más general aquí si se usa para logs
-# de alto nivel de toda la ejecución del Scatter Search.
-
-# Por ahora, mantendremos solo SimpleEpisodeLogger aquí para una funcionalidad clara.
+        print(f"Episode data saved to: {filepath}")

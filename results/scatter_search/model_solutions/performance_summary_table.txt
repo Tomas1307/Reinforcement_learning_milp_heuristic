@@ -1,0 +1,36 @@
+PERFORMANCE SUMMARY TABLE - ALL MODELS
+========================================================================================================================
+
++---------------------------------+---------------+-----------+-------+------------+-----------------+--------------+
+| Model                           | Avg_Time(s)   | Vehicles  | Slots | Chargers   | Satisfaction(%) | Avg_Cost($)  |
++---------------------------------+---------------+-----------+-------+------------+-----------------+--------------+
+| efficiency_focused_rank_1       |         0.2   |       -   |     - |        -   |           8.2   |   14300.66   |
+| efficiency_focused_rank_2       |         0.1   |       -   |     - |        -   |           7.4   |   13661.06   |
+| efficiency_focused_rank_3       |         0.1   |       -   |     - |        -   |           7.5   |   13727.78   |
+| efficiency_focused_rank_4       |         0.1   |       -   |     - |        -   |           8.2   |   14300.66   |
+| efficiency_focused_rank_5       |         0.1   |       -   |     - |        -   |           8.2   |   14300.66   |
++---------------------------------+---------------+-----------+-------+------------+-----------------+--------------+
+
+RANKINGS:
+----------
+
+BEST SATISFACTION:
+  1. efficiency_focused_rank_1 - 8.2%
+  2. efficiency_focused_rank_4 - 8.2%
+  3. efficiency_focused_rank_5 - 8.2%
+  4. efficiency_focused_rank_3 - 7.5%
+  5. efficiency_focused_rank_2 - 7.4%
+
+BEST COST (lowest):
+  1. efficiency_focused_rank_2 - $13661.06
+  2. efficiency_focused_rank_3 - $13727.78
+  3. efficiency_focused_rank_1 - $14300.66
+  4. efficiency_focused_rank_4 - $14300.66
+  5. efficiency_focused_rank_5 - $14300.66
+
+FASTEST:
+  1. efficiency_focused_rank_2 - 0.10s
+  2. efficiency_focused_rank_3 - 0.10s
+  3. efficiency_focused_rank_4 - 0.10s
+  4. efficiency_focused_rank_5 - 0.10s
+  5. efficiency_focused_rank_1 - 0.17s

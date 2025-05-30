@@ -33,7 +33,7 @@
     "absolute_improvement": 3878.2167906860377
   },
   "recommendations": [
-    "Implementar configuraci\u00f3n 'efficiency_focused' como soluci\u00f3n principal (Fitness: 4678.22)",
-    "Learning rate optimizado es agresivo (0.0038). Sugiere potencial para convergencia r\u00e1pida en este dominio."
+    "configuration 'efficiency_focused' as principal solution (Fitness: 4678.22)",
+    "Learning rate optimized is aggresive (0.0038). Fast convergence in this domain."
   ]
 }

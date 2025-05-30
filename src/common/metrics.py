@@ -3,15 +3,15 @@ from collections import defaultdict
 
 def calculate_energy_satisfaction(delivered_energy: float, required_energy: float) -> float:
     """
-    Calcula el porcentaje de satisfacción de energía para un EV o un grupo de EVs.
+    Calculates the energy satisfaction percentage for an EV or a group of EVs.
 
     Args:
-        delivered_energy (float): La energía total entregada.
-        required_energy (float): La energía total requerida.
+        delivered_energy (float): The total energy delivered.
+        required_energy (float): The total energy required.
 
     Returns:
-        float: El porcentaje de satisfacción de energía (0.0 a 100.0).
-               Retorna 100.0 si la energía requerida es 0 (no se necesitaba cargar).
+        float: The energy satisfaction percentage (0.0 to 100.0).
+               Returns 100.0 if required energy is 0 (no charging needed).
     """
     if required_energy <= 0:
         return 100.0
@@ -20,32 +20,31 @@ def calculate_energy_satisfaction(delivered_energy: float, required_energy: floa
 def calculate_weighted_satisfaction(delivered_energy: float, required_energy: float,
                                     priority: float = 1.0, willingness_to_pay: float = 1.0) -> float:
     """
-    Calcula la satisfacción de energía ponderada por prioridad y disposición a pagar.
+    Calculates energy satisfaction weighted by priority and willingness to pay.
 
     Args:
-        delivered_energy (float): La energía total entregada.
-        required_energy (float): La energía total requerida.
-        priority (float): El factor de prioridad del EV (por defecto 1.0).
-        willingness_to_pay (float): La disposición a pagar del EV (por defecto 1.0).
+        delivered_energy (float): The total energy delivered.
+        required_energy (float): The total energy required.
+        priority (float): The priority factor of the EV (defaults to 1.0).
+        willingness_to_pay (float): The willingness to pay of the EV (defaults to 1.0).
 
     Returns:
-        float: La satisfacción ponderada.
+        float: The weighted satisfaction.
     """
     satisfaction_pct = calculate_energy_satisfaction(delivered_energy, required_energy)
-    # Considerar cómo se combinan los pesos. Una simple multiplicación es un buen punto de partida.
     return satisfaction_pct * priority * willingness_to_pay
 
 def calculate_assignment_ratio(assigned_count: int, total_vehicles: int) -> float:
     """
-    Calcula el ratio de vehículos asignados con éxito.
+    Calculates the ratio of successfully assigned vehicles.
 
     Args:
-        assigned_count (int): Número de vehículos a los que se les asignó carga.
-        total_vehicles (int): Número total de vehículos que llegaron al sistema.
+        assigned_count (int): The number of vehicles that were assigned charging.
+        total_vehicles (int): The total number of vehicles that arrived at the system.
 
     Returns:
-        float: El ratio de asignación (0.0 a 100.0).
-               Retorna 0.0 si no hay vehículos totales.
+        float: The assignment ratio (0.0 to 100.0).
+               Returns 0.0 if there are no total vehicles.
     """
     if total_vehicles <= 0:
         return 0.0
@@ -53,30 +52,30 @@ def calculate_assignment_ratio(assigned_count: int, total_vehicles: int) -> floa
 
 def calculate_cost_per_timestep(power_delivered_kw: float, price_per_kwh: float, dt_hours: float) -> float:
     """
-    Calcula el costo de la energía entregada en un timestep.
+    Calculates the cost of energy delivered in a timestep.
 
     Args:
-        power_delivered_kw (float): Potencia entregada en kW durante el timestep.
-        price_per_kwh (float): Precio de la energía en $/kWh para ese timestep.
-        dt_hours (float): Duración del timestep en horas (e.g., 0.25 para 15 minutos).
+        power_delivered_kw (float): Power delivered in kW during the timestep.
+        price_per_kwh (float): Price of energy in $/kWh for that timestep.
+        dt_hours (float): Duration of the timestep in hours (e.g., 0.25 for 15 minutes).
 
     Returns:
-        float: El costo total para el timestep.
+        float: The total cost for the timestep.
     """
     return power_delivered_kw * dt_hours * price_per_kwh
 
 def calculate_total_energy_cost(schedule: list, prices_per_timestep: list, dt_hours: float) -> float:
     """
-    Calcula el costo total de energía de un schedule de carga.
+    Calculates the total energy cost of a charging schedule.
 
     Args:
-        schedule (list): Lista de tuplas/listas representando las asignaciones de carga:
+        schedule (list): List of tuples/lists representing charging assignments:
                          [(ev_id, t_idx, charger_id, slot_idx, power_kw), ...]
-        prices_per_timestep (list): Lista de precios de energía por timestep (indexados por t_idx).
-        dt_hours (float): Duración del timestep en horas.
+        prices_per_timestep (list): List of energy prices per timestep (indexed by t_idx).
+        dt_hours (float): Duration of the timestep in hours.
 
     Returns:
-        float: El costo total de energía del schedule.
+        float: The total energy cost of the schedule.
     """
     total_cost = 0.0
     for _, t_idx, _, _, power_kw in schedule:
@@ -86,18 +85,18 @@ def calculate_total_energy_cost(schedule: list, prices_per_timestep: list, dt_ho
 
 def calculate_peak_load(schedule: list, num_timesteps: int, dt_hours: float, station_limit_kw: float) -> dict:
     """
-    Calcula la carga total de la estación por timestep y la carga pico.
+    Calculates the total station load per timestep and the peak load.
 
     Args:
-        schedule (list): Lista de asignaciones de carga:
+        schedule (list): List of charging assignments:
                          [(ev_id, t_idx, charger_id, slot_idx, power_kw), ...]
-        num_timesteps (int): El número total de timesteps en la simulación.
-        dt_hours (float): Duración del timestep en horas.
-        station_limit_kw (float): Límite de potencia de la estación en kW.
+        num_timesteps (int): The total number of timesteps in the simulation.
+        dt_hours (float): Duration of the timestep in hours.
+        station_limit_kw (float): The power limit of the station in kW.
 
     Returns:
-        dict: Un diccionario con 'load_profile' (carga por timestep), 'peak_load_kw',
-              'peak_load_time_idx', y 'over_limit_duration_hours'.
+        dict: A dictionary with 'load_profile_kw' (load per timestep), 'peak_load_kw',
+              'peak_load_time_idx', and 'over_limit_duration_hours'.
     """
     load_profile = np.zeros(num_timesteps)
     for _, t_idx, _, _, power_kw in schedule:
@@ -107,12 +106,11 @@ def calculate_peak_load(schedule: list, num_timesteps: int, dt_hours: float, sta
     peak_load_kw = np.max(load_profile) if load_profile.size > 0 else 0.0
     peak_load_time_idx = np.argmax(load_profile) if load_profile.size > 0 else -1
 
-    # Calcular la duración en la que la carga excede el límite
     over_limit_timesteps = np.sum(load_profile > station_limit_kw)
     over_limit_duration_hours = over_limit_timesteps * dt_hours
 
     return {
-        "load_profile_kw": load_profile.tolist(), # Convertir a lista para JSON serialización
+        "load_profile_kw": load_profile.tolist(),
         "peak_load_kw": peak_load_kw,
         "peak_load_time_idx": int(peak_load_time_idx),
         "over_limit_duration_hours": over_limit_duration_hours
@@ -120,21 +118,21 @@ def calculate_peak_load(schedule: list, num_timesteps: int, dt_hours: float, sta
 
 def calculate_metrics_by_priority(ev_metrics_raw: dict, priority_map: dict) -> dict:
     """
-    Calcula métricas agregadas (energía, satisfacción) por nivel de prioridad.
+    Calculates aggregated metrics (energy, satisfaction) by priority level.
 
     Args:
-        ev_metrics_raw (dict): Diccionario de métricas por EV, directamente del entorno.
-                               Ej: {ev_id: {"required_energy": ..., "delivered_energy": ...}, ...}
-        priority_map (dict): Mapeo de ev_id a su nivel de prioridad.
+        ev_metrics_raw (dict): Dictionary of metrics per EV, directly from the environment.
+                               E.g.: {ev_id: {"required_energy": ..., "delivered_energy": ...}, ...}
+        priority_map (dict): Mapping of ev_id to its priority level.
 
     Returns:
-        dict: Métricas agregadas por nivel de prioridad.
-              Ej: {1: {"count": ..., "required_energy": ..., "delivered_energy": ..., "satisfaction": ...}, ...}
+        dict: Aggregated metrics by priority level.
+              E.g.: {1: {"count": ..., "required_energy": ..., "delivered_energy": ..., "satisfaction_pct": ...}, ...}
     """
     metrics_by_prio = defaultdict(lambda: {"count": 0, "required_energy": 0.0, "delivered_energy": 0.0})
 
     for ev_id, metrics in ev_metrics_raw.items():
-        priority = priority_map.get(ev_id, 1) # Default a prioridad 1 si no está mapeado
+        priority = priority_map.get(ev_id, 1)
         metrics_by_prio[priority]["count"] += 1
         metrics_by_prio[priority]["required_energy"] += metrics["required_energy"]
         metrics_by_prio[priority]["delivered_energy"] += metrics["delivered_energy"]
@@ -149,23 +147,3 @@ def calculate_metrics_by_priority(ev_metrics_raw: dict, priority_map: dict) -> d
             "satisfaction_pct": satisfaction
         }
     return result
-
-# La función calculate_total_reward podría permanecer en el entorno si es muy específica de RL,
-# o ser movida aquí si se desea reutilizar para MILP o otros algoritmos.
-# Por ahora, es razonable mantenerla en EVChargingEnv si sus pesos son internos y fijos.
-# Sin embargo, si quieres que MILP u otros módulos puedan "evaluar" una solución
-# bajo la misma función de recompensa, entonces sí debería estar aquí.
-
-# def calculate_total_reward(satisfaction_pct: float, cost: float, assign_ratio: float,
-#                            energy_satisfaction_weight: float, energy_cost_weight: float,
-#                            assigned_vehicle_reward: float, skipped_vehicle_penalty: float,
-#                            assigned_count: int, skipped_count: int) -> float:
-#     """
-#     Calcula la recompensa total para un episodio en el entorno RL.
-#     Esta es una versión más compleja que combina varias métricas.
-#     """
-#     norm_satisfaction = satisfaction_pct / 100.0
-#     reward = (norm_satisfaction * energy_satisfaction_weight) - (cost * energy_cost_weight)
-#     reward += (assigned_count * assigned_vehicle_reward)
-#     reward -= (skipped_count * skipped_vehicle_penalty)
-#     return reward

@@ -1,0 +1,162 @@
+{
+  "comparison_summary": {
+    "models_evaluated": [
+      "efficiency_focused_rank_1",
+      "efficiency_focused_rank_2",
+      "efficiency_focused_rank_3",
+      "efficiency_focused_rank_4",
+      "efficiency_focused_rank_5"
+    ],
+    "systems_evaluated": 17,
+    "evaluation_date": "2025-05-29",
+    "total_evaluations": 85
+  },
+  "performance_ranking": {
+    "by_satisfaction": [
+      {
+        "model": "efficiency_focused_rank_1",
+        "avg_satisfaction": 8.16
+      },
+      {
+        "model": "efficiency_focused_rank_4",
+        "avg_satisfaction": 8.16
+      },
+      {
+        "model": "efficiency_focused_rank_5",
+        "avg_satisfaction": 8.16
+      },
+      {
+        "model": "efficiency_focused_rank_3",
+        "avg_satisfaction": 7.45
+      },
+      {
+        "model": "efficiency_focused_rank_2",
+        "avg_satisfaction": 7.41
+      }
+    ],
+    "by_cost": [
+      {
+        "model": "efficiency_focused_rank_2",
+        "avg_cost": 13661.06
+      },
+      {
+        "model": "efficiency_focused_rank_3",
+        "avg_cost": 13727.78
+      },
+      {
+        "model": "efficiency_focused_rank_1",
+        "avg_cost": 14300.66
+      },
+      {
+        "model": "efficiency_focused_rank_4",
+        "avg_cost": 14300.66
+      },
+      {
+        "model": "efficiency_focused_rank_5",
+        "avg_cost": 14300.66
+      }
+    ],
+    "by_speed": [
+      {
+        "model": "efficiency_focused_rank_2",
+        "avg_time": 0.098
+      },
+      {
+        "model": "efficiency_focused_rank_3",
+        "avg_time": 0.099
+      },
+      {
+        "model": "efficiency_focused_rank_4",
+        "avg_time": 0.102
+      },
+      {
+        "model": "efficiency_focused_rank_5",
+        "avg_time": 0.102
+      },
+      {
+        "model": "efficiency_focused_rank_1",
+        "avg_time": 0.17
+      }
+    ],
+    "by_assignment": [
+      {
+        "model": "efficiency_focused_rank_1",
+        "avg_assignment": 21.9
+      },
+      {
+        "model": "efficiency_focused_rank_4",
+        "avg_assignment": 21.9
+      },
+      {
+        "model": "efficiency_focused_rank_5",
+        "avg_assignment": 21.9
+      },
+      {
+        "model": "efficiency_focused_rank_2",
+        "avg_assignment": 21.8
+      },
+      {
+        "model": "efficiency_focused_rank_3",
+        "avg_assignment": 21.8
+      }
+    ]
+  },
+  "performance_table": [
+    {
+      "model": "efficiency_focused_rank_1",
+      "archetype": "efficiency_focused",
+      "rank": 1,
+      "avg_satisfaction": 8.16,
+      "avg_cost": 14300.66,
+      "avg_time": 0.17,
+      "avg_assignment": 21.9,
+      "systems_ok": 17
+    },
+    {
+      "model": "efficiency_focused_rank_2",
+      "archetype": "efficiency_focused",
+      "rank": 2,
+      "avg_satisfaction": 7.41,
+      "avg_cost": 13661.06,
+      "avg_time": 0.098,
+      "avg_assignment": 21.8,
+      "systems_ok": 17
+    },
+    {
+      "model": "efficiency_focused_rank_3",
+      "archetype": "efficiency_focused",
+      "rank": 3,
+      "avg_satisfaction": 7.45,
+      "avg_cost": 13727.78,
+      "avg_time": 0.099,
+      "avg_assignment": 21.8,
+      "systems_ok": 17
+    },
+    {
+      "model": "efficiency_focused_rank_4",
+      "archetype": "efficiency_focused",
+      "rank": 4,
+      "avg_satisfaction": 8.16,
+      "avg_cost": 14300.66,
+      "avg_time": 0.102,
+      "avg_assignment": 21.9,
+      "systems_ok": 17
+    },
+    {
+      "model": "efficiency_focused_rank_5",
+      "archetype": "efficiency_focused",
+      "rank": 5,
+      "avg_satisfaction": 8.16,
+      "avg_cost": 14300.66,
+      "avg_time": 0.102,
+      "avg_assignment": 21.9,
+      "systems_ok": 17
+    }
+  ],
+  "cross_analysis": {
+    "best_overall": "efficiency_focused_rank_1",
+    "most_cost_effective": "efficiency_focused_rank_2",
+    "fastest": "efficiency_focused_rank_2",
+    "best_assignment_rate": "efficiency_focused_rank_1"
+  }
+}

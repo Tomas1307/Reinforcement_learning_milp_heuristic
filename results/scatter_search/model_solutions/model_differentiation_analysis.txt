@@ -1,0 +1,304 @@
+MODEL DIFFERENTIATION ANALYSIS
+============================================================
+
+SYSTEM 1 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=13.9%, Cost=$2349.09, Assigned=17
+    efficiency_focused_rank_2: Sat=13.9%, Cost=$2349.09, Assigned=17
+    efficiency_focused_rank_3: Sat=13.9%, Cost=$2349.09, Assigned=17
+    efficiency_focused_rank_4: Sat=13.9%, Cost=$2349.09, Assigned=17
+    efficiency_focused_rank_5: Sat=13.9%, Cost=$2349.09, Assigned=17
+
+SYSTEM 2 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 3/5
+  Unique cost values: 3/5
+  Unique assignment values: 2/5
+  Unique energy values: 3/5
+  Differentiation score: 0.550
+  ✅ Good model differentiation.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=20.6%, Cost=$8845.84, Assigned=30
+    efficiency_focused_rank_2: Sat=15.2%, Cost=$6167.81, Assigned=29
+    efficiency_focused_rank_3: Sat=15.5%, Cost=$6344.07, Assigned=29
+    efficiency_focused_rank_4: Sat=20.6%, Cost=$8845.84, Assigned=30
+    efficiency_focused_rank_5: Sat=20.6%, Cost=$8845.84, Assigned=30
+
+SYSTEM 3 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 2/5
+  Unique cost values: 2/5
+  Unique assignment values: 1/5
+  Unique energy values: 2/5
+  Differentiation score: 0.350
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=33.0%, Cost=$8624.73, Assigned=14
+    efficiency_focused_rank_2: Sat=31.4%, Cost=$8170.39, Assigned=14
+    efficiency_focused_rank_3: Sat=31.4%, Cost=$8170.39, Assigned=14
+    efficiency_focused_rank_4: Sat=33.0%, Cost=$8624.73, Assigned=14
+    efficiency_focused_rank_5: Sat=33.0%, Cost=$8624.73, Assigned=14
+
+SYSTEM 4 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=3.4%, Cost=$2735.94, Assigned=28
+    efficiency_focused_rank_2: Sat=3.4%, Cost=$2735.94, Assigned=28
+    efficiency_focused_rank_3: Sat=3.4%, Cost=$2735.94, Assigned=28
+    efficiency_focused_rank_4: Sat=3.4%, Cost=$2735.94, Assigned=28
+    efficiency_focused_rank_5: Sat=3.4%, Cost=$2735.94, Assigned=28
+
+SYSTEM 5 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 3/5
+  Unique cost values: 3/5
+  Unique assignment values: 1/5
+  Unique energy values: 3/5
+  Differentiation score: 0.500
+  ✅ Good model differentiation.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=15.3%, Cost=$19304.88, Assigned=22
+    efficiency_focused_rank_2: Sat=9.5%, Cost=$11564.07, Assigned=22
+    efficiency_focused_rank_3: Sat=11.1%, Cost=$14601.77, Assigned=22
+    efficiency_focused_rank_4: Sat=15.3%, Cost=$19304.88, Assigned=22
+    efficiency_focused_rank_5: Sat=15.3%, Cost=$19304.88, Assigned=22
+
+SYSTEM 6 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 2/5
+  Unique cost values: 2/5
+  Unique assignment values: 1/5
+  Unique energy values: 2/5
+  Differentiation score: 0.350
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=6.9%, Cost=$13264.54, Assigned=23
+    efficiency_focused_rank_2: Sat=6.9%, Cost=$13264.54, Assigned=23
+    efficiency_focused_rank_3: Sat=5.7%, Cost=$11184.88, Assigned=23
+    efficiency_focused_rank_4: Sat=6.9%, Cost=$13264.54, Assigned=23
+    efficiency_focused_rank_5: Sat=6.9%, Cost=$13264.54, Assigned=23
+
+SYSTEM 7 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=1.4%, Cost=$6368.67, Assigned=27
+    efficiency_focused_rank_2: Sat=1.4%, Cost=$6368.67, Assigned=27
+    efficiency_focused_rank_3: Sat=1.4%, Cost=$6368.67, Assigned=27
+    efficiency_focused_rank_4: Sat=1.4%, Cost=$6368.67, Assigned=27
+    efficiency_focused_rank_5: Sat=1.4%, Cost=$6368.67, Assigned=27
+
+SYSTEM 8 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=0.7%, Cost=$5116.38, Assigned=22
+    efficiency_focused_rank_2: Sat=0.7%, Cost=$5116.38, Assigned=22
+    efficiency_focused_rank_3: Sat=0.7%, Cost=$5116.38, Assigned=22
+    efficiency_focused_rank_4: Sat=0.7%, Cost=$5116.38, Assigned=22
+    efficiency_focused_rank_5: Sat=0.7%, Cost=$5116.38, Assigned=22
+
+SYSTEM 9 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=1.3%, Cost=$6253.63, Assigned=25
+    efficiency_focused_rank_2: Sat=1.3%, Cost=$6253.63, Assigned=25
+    efficiency_focused_rank_3: Sat=1.3%, Cost=$6253.63, Assigned=25
+    efficiency_focused_rank_4: Sat=1.3%, Cost=$6253.63, Assigned=25
+    efficiency_focused_rank_5: Sat=1.3%, Cost=$6253.63, Assigned=25
+
+SYSTEM 10 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=1.9%, Cost=$12975.67, Assigned=27
+    efficiency_focused_rank_2: Sat=1.9%, Cost=$12975.67, Assigned=27
+    efficiency_focused_rank_3: Sat=1.9%, Cost=$12975.67, Assigned=27
+    efficiency_focused_rank_4: Sat=1.9%, Cost=$12975.67, Assigned=27
+    efficiency_focused_rank_5: Sat=1.9%, Cost=$12975.67, Assigned=27
+
+SYSTEM 11 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=3.2%, Cost=$3651.51, Assigned=24
+    efficiency_focused_rank_2: Sat=3.2%, Cost=$3651.51, Assigned=24
+    efficiency_focused_rank_3: Sat=3.2%, Cost=$3651.51, Assigned=24
+    efficiency_focused_rank_4: Sat=3.2%, Cost=$3651.51, Assigned=24
+    efficiency_focused_rank_5: Sat=3.2%, Cost=$3651.51, Assigned=24
+
+SYSTEM 12 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=7.3%, Cost=$17083.74, Assigned=30
+    efficiency_focused_rank_2: Sat=7.3%, Cost=$17083.74, Assigned=30
+    efficiency_focused_rank_3: Sat=7.3%, Cost=$17083.74, Assigned=30
+    efficiency_focused_rank_4: Sat=7.3%, Cost=$17083.74, Assigned=30
+    efficiency_focused_rank_5: Sat=7.3%, Cost=$17083.74, Assigned=30
+
+SYSTEM 13 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=9.4%, Cost=$30546.09, Assigned=32
+    efficiency_focused_rank_2: Sat=9.4%, Cost=$30546.09, Assigned=32
+    efficiency_focused_rank_3: Sat=9.4%, Cost=$30546.09, Assigned=32
+    efficiency_focused_rank_4: Sat=9.4%, Cost=$30546.09, Assigned=32
+    efficiency_focused_rank_5: Sat=9.4%, Cost=$30546.09, Assigned=32
+
+SYSTEM 14 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=4.9%, Cost=$18513.23, Assigned=27
+    efficiency_focused_rank_2: Sat=4.9%, Cost=$18513.23, Assigned=27
+    efficiency_focused_rank_3: Sat=4.9%, Cost=$18513.23, Assigned=27
+    efficiency_focused_rank_4: Sat=4.9%, Cost=$18513.23, Assigned=27
+    efficiency_focused_rank_5: Sat=4.9%, Cost=$18513.23, Assigned=27
+
+SYSTEM 15 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=7.9%, Cost=$36302.88, Assigned=30
+    efficiency_focused_rank_2: Sat=7.9%, Cost=$36302.88, Assigned=30
+    efficiency_focused_rank_3: Sat=7.9%, Cost=$36302.88, Assigned=30
+    efficiency_focused_rank_4: Sat=7.9%, Cost=$36302.88, Assigned=30
+    efficiency_focused_rank_5: Sat=7.9%, Cost=$36302.88, Assigned=30
+
+SYSTEM 16 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=3.6%, Cost=$19058.05, Assigned=22
+    efficiency_focused_rank_2: Sat=3.6%, Cost=$19058.05, Assigned=22
+    efficiency_focused_rank_3: Sat=3.6%, Cost=$19058.05, Assigned=22
+    efficiency_focused_rank_4: Sat=3.6%, Cost=$19058.05, Assigned=22
+    efficiency_focused_rank_5: Sat=3.6%, Cost=$19058.05, Assigned=22
+
+SYSTEM 17 ANALYSIS:
+------------------------------
+  Total models evaluated: 5
+  Unique satisfaction values: 1/5
+  Unique cost values: 1/5
+  Unique assignment values: 1/5
+  Unique energy values: 1/5
+  Differentiation score: 0.200
+  ⚠️  CAUTION: Limited model differentiation detected.
+
+  Detailed Results:
+    efficiency_focused_rank_1: Sat=4.0%, Cost=$32116.29, Assigned=27
+    efficiency_focused_rank_2: Sat=4.0%, Cost=$32116.29, Assigned=27
+    efficiency_focused_rank_3: Sat=4.0%, Cost=$32116.29, Assigned=27
+    efficiency_focused_rank_4: Sat=4.0%, Cost=$32116.29, Assigned=27
+    efficiency_focused_rank_5: Sat=4.0%, Cost=$32116.29, Assigned=27
+
+OVERALL DIFFERENTIATION SUMMARY:
+========================================
+Systems analyzed: 17
+Systems with identical results: 13
+Problematic ratio: 76.5%
+
+🚨 CRITICAL ISSUE: Most systems show identical results across models!
+   Possible causes:
+   - Models not loading correctly
+   - Models converged to same solution
+   - Evaluation environment issues
+   - Same random seed being used

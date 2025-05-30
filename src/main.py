@@ -20,38 +20,43 @@ from src.common.logger import SimpleEpisodeLogger
 from src.common.visualize import plot_dqn_learning_progress, visualize_solution, visualize_milp_solution, visualize_rl_solution
 from src.common.utils import ensure_directory_exists, get_timestamp_filepath
 
-
 def map_hyperparameters(hyperparams):
     """
-    Maps hyperparameter names from the YAML file to match the 
+    Maps hyperparameter names from the YAML file to match the
     EnhancedDQNAgentPyTorch constructor parameters.
+
+    Args:
+        hyperparams (dict): A dictionary of hyperparameters loaded from a YAML file.
+
+    Returns:
+        dict: A dictionary of mapped hyperparameters suitable for the agent's constructor.
     """
     try:
         mapped = {}
-    
+
         param_mappings = {
             'learning_rate': 'learning_rate',
             'gamma': 'gamma',
-            'epsilon_start': 'epsilon',  
+            'epsilon_start': 'epsilon',
             'epsilon_min': 'epsilon_min',
             'epsilon_decay': 'epsilon_decay',
             'memory_size': 'memory_size',
             'batch_size': 'batch_size',
             'target_update_freq': 'target_update_freq',
-            'target_update_frequency': 'target_update_freq',  
+            'target_update_frequency': 'target_update_freq',
             'dueling_network': 'dueling_network',
-            'dueling': 'dueling_network',  
+            'dueling': 'dueling_network',
             'epsilon_end': 'epsilon_min'
         }
-        
+
         for yaml_key, agent_key in param_mappings.items():
             if yaml_key in hyperparams:
                 mapped[agent_key] = hyperparams[yaml_key]
-        
+
         defaults = {
             'learning_rate': 0.0005,
             'gamma': 0.95,
-            'epsilon': 1.0,  
+            'epsilon': 1.0,
             'epsilon_min': 0.01,
             'epsilon_decay': 0.995,
             'memory_size': 5000,
@@ -59,20 +64,26 @@ def map_hyperparameters(hyperparams):
             'target_update_freq': 50,
             'dueling_network': True
         }
-        
+
         for key, default_value in defaults.items():
             if key not in mapped:
                 mapped[key] = default_value
-        
+
         return mapped
     except Exception as e:
-        print(f"Error on map_hyperparameters as : {e}")
+        print(f"Error mapping hyperparameters: {e}")
 
 
 def get_all_system_ids(data_dir: str) -> list[int]:
     """
-    Escanea el directorio de datos para encontrar todos los system_ids disponibles
-    basados en el patrón 'test_system_X.json'.
+    Scans the data directory to find all available system_ids
+    based on the 'test_system_X.json' pattern.
+
+    Args:
+        data_dir (str): The path to the directory containing the test system JSON files.
+
+    Returns:
+        list[int]: A sorted list of found system IDs.
     """
     system_ids = []
     try:
@@ -80,27 +91,36 @@ def get_all_system_ids(data_dir: str) -> list[int]:
             match = re.match(r"test_system_(\d+)\.json", filename)
             if match:
                 system_ids.append(int(match.group(1)))
-        system_ids.sort()  
+        system_ids.sort()
     except FileNotFoundError:
         print(f"Warning: Directory {data_dir} not found.")
     return system_ids
 
-def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytorch.pt", state_size: int = 40, action_size: int = 60): 
+
+def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytorch.pt", state_size: int = 40, action_size: int = 60):
     """
-    Genera una solución usando el agente RL.
+    Generates a solution using the RL agent.
+
+    Args:
+        config (dict): The configuration dictionary for the environment.
+        agent (EnhancedDQNAgent, optional): An initialized RL agent. If None, an agent will be loaded.
+        model_path (str, optional): The path to the pre-trained model. Defaults to "./ev_scheduler_model_pytorch.pt".
+        state_size (int, optional): The size of the state space. Defaults to 40.
+        action_size (int, optional): The size of the action space. Defaults to 60.
+
+    Returns:
+        tuple: A tuple containing the generated schedule (list) and performance metrics (dict).
     """
     try:
-
-        print("Generando solución RL...")
+        print("Generating RL solution...")
 
         if agent is None:
-            print(f"Intentando cargar modelo desde {model_path}...")
-            
+            print(f"Attempting to load model from {model_path}...")
+
             temp_env = EVChargingEnv(config)
-            
 
             agent = EnhancedDQNAgent(
-                state_size=state_size, 
+                state_size=state_size,
                 action_size=action_size,
                 dueling_network=True
             )
@@ -108,16 +128,16 @@ def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytor
             try:
                 model_loaded = agent.load(model_path)
                 if not model_loaded:
-                    raise ValueError("El modelo no se pudo cargar correctamente.")
+                    raise ValueError("The model could not be loaded correctly.")
             except Exception as e:
-                raise RuntimeError(f"Error crítico al cargar el modelo desde {model_path}: {e}")
+                raise RuntimeError(f"Critical error loading the model from {model_path}: {e}")
 
         env = EVChargingEnv(config)
         state = env.reset()
         done = False
 
         original_epsilon = agent.epsilon
-        agent.epsilon = 0.05 
+        agent.epsilon = 0.05
 
         while not done:
             possible_actions = env._get_possible_actions(state)
@@ -147,24 +167,36 @@ def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytor
             "total_evs": len(config["arrivals"])
         }
 
-        print(f"Solución RL generada: {len(schedule_rl)} asignaciones para {metrics['evs_served']}/{metrics['total_evs']} EVs ({metrics['evs_served']/metrics['total_evs']*100:.2f}%)")
-        print(f"Satisfacción energética: {energy_metrics['total_satisfaction_pct']:.2f}%")
-        print(f"Costo total: ${total_cost:.2f}")
+        print(f"RL solution generated: {len(schedule_rl)} assignments for {metrics['evs_served']}/{metrics['total_evs']} EVs ({metrics['evs_served']/metrics['total_evs']*100:.2f}%)")
+        print(f"Energy satisfaction: {energy_metrics['total_satisfaction_pct']:.2f}%")
+        print(f"Total cost: ${total_cost:.2f}")
 
         return schedule_rl, metrics
     except Exception as e:
         print(f"Error on generate_solution: {e}")
 
+
 def optimize_solution(config, rl_schedule, alpha_cost=0.6, alpha_satisfaction=0.4, time_limit=900):
     """
-    Optimiza la solución RL usando MILP multiobjetivo.
+    Optimizes the RL solution using multi-objective MILP.
+
+    Args:
+        config (dict): The configuration dictionary for the environment.
+        rl_schedule (list): The schedule generated by the RL agent.
+        alpha_cost (float, optional): Weight for the cost objective. Defaults to 0.6.
+        alpha_satisfaction (float, optional): Weight for the satisfaction objective. Defaults to 0.4.
+        time_limit (int, optional): Time limit for the MILP solver in seconds. Defaults to 900.
+
+    Returns:
+        tuple: A tuple containing the optimized MILP schedule (list) and performance metrics (dict).
+               Returns (None, {"error": "Optimization failed"}) if optimization fails.
     """
     try:
-        print("\nOptimizando solución con MILP multiobjetivo...")
-        print(f"Pesos: Costo ({alpha_cost:.2f}), Satisfacción ({alpha_satisfaction:.2f})")
-        
+        print("\nOptimizing solution with multi-objective MILP...")
+        print(f"Weights: Cost ({alpha_cost:.2f}), Satisfaction ({alpha_satisfaction:.2f})")
+
         optimizer = EVChargingMILP(config)
-        
+
         start_time = time.time()
         model, schedule, rejected_details, obj_values = optimizer.solve(
             penalty_unmet=1000.0,
@@ -175,11 +207,11 @@ def optimize_solution(config, rl_schedule, alpha_cost=0.6, alpha_satisfaction=0.
         )
 
         solve_time = time.time() - start_time
-        
+
         if model is None:
-            print("No se pudo optimizar. Devolviendo solución RL original.")
-            return None, {"error": "Optimización fallida"}
-        
+            print("Could not optimize. Returning original RL solution.")
+            return None, {"error": "Optimization failed"}
+
         schedule_milp = []
         for ev_id, entries in schedule.items():
             for (start_time, end_time, charger_id, slot, power) in entries:
@@ -188,10 +220,10 @@ def optimize_solution(config, rl_schedule, alpha_cost=0.6, alpha_satisfaction=0.
                     if abs(t - start_time) < 1e-5:
                         time_idx = idx
                         break
-                
+
                 if time_idx is not None:
                     schedule_milp.append((ev_id, time_idx, charger_id, slot, power))
-        
+
         metrics = {
             "obj_values": obj_values,
             "rejected_details": rejected_details,
@@ -202,180 +234,195 @@ def optimize_solution(config, rl_schedule, alpha_cost=0.6, alpha_satisfaction=0.
             "milp_status": model.status if model else None,
             "milp_objective": model.objective.value() if model else None
         }
-        
-        print(f"Solución MILP generada en {solve_time:.2f} segundos")
-        print(f"Energía satisfecha: {obj_values['energy_satisfaction_pct']:.2f}%")
-        print(f"Costo total: ${obj_values['energy_cost']:.2f}")
-        print(f"Satisfacción ponderada: {obj_values['weighted_satisfaction']:.4f}")
-        
+
+        print(f"MILP solution generated in {solve_time:.2f} seconds")
+        print(f"Energy satisfied: {obj_values['energy_satisfaction_pct']:.2f}%")
+        print(f"Total cost: ${obj_values['energy_cost']:.2f}")
+        print(f"Weighted satisfaction: {obj_values['weighted_satisfaction']:.4f}")
+
         if rejected_details:
-            print(f"Vehículos con energía no satisfecha: {len(rejected_details)}")
-        
+            print(f"Vehicles with unmet energy: {len(rejected_details)}")
+
         return schedule_milp, metrics
     except Exception as e:
-        print(f"Erro on optimize_solution as : {e}")
+        print(f"Error on optimize_solution: {e}")
+
 
 def save_solution(schedule, metrics, filename):
     """
-    Guarda la solución y métricas en un archivo JSON.
+    Saves the solution and metrics to a JSON file.
+
+    Args:
+        schedule (list): The generated or optimized schedule.
+        metrics (dict): The performance metrics.
+        filename (str): The name of the file to save the data.
     """
     try:
-
         serializable_schedule = []
         for entry in schedule:
             serializable_schedule.append(list(entry))
-        
+
         data = {
             "schedule": serializable_schedule,
             "metrics": metrics,
             "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
         }
-        
+
         with open(filename, 'w') as f:
             json.dump(data, f, indent=2)
-        
-        print(f"Solución guardada en {filename}")
+
+        print(f"Solution saved to {filename}")
     except Exception as e:
-        print(f"Erro on save_solution as :{e}")
+        print(f"Error on save_solution: {e}")
+
 
 def compare_solutions(rl_metrics, milp_metrics):
     """
-    Compara las soluciones RL y MILP.
+    Compares the RL and MILP solutions.
+
+    Args:
+        rl_metrics (dict): Metrics from the RL solution.
+        milp_metrics (dict): Metrics from the MILP solution.
     """
     try:
-        
-        print("\n=== COMPARACIÓN DE SOLUCIONES ===")
-        
+        print("\n=== SOLUTION COMPARISON ===")
+
         rl_satisfaction = rl_metrics["energy_metrics"]["total_satisfaction_pct"]
         milp_satisfaction = milp_metrics["obj_values"]["energy_satisfaction_pct"]
         satisfaction_diff = milp_satisfaction - rl_satisfaction
-        
-        print(f"Satisfacción energética:")
+
+        print(f"Energy satisfaction:")
         print(f"  RL:   {rl_satisfaction:.2f}%")
         print(f"  MILP: {milp_satisfaction:.2f}% ({'+' if satisfaction_diff >= 0 else ''}{satisfaction_diff:.2f}%)")
-        
+
         rl_cost = rl_metrics["total_cost"]
         milp_cost = milp_metrics["obj_values"]["energy_cost"]
         cost_diff_pct = ((milp_cost - rl_cost) / rl_cost) * 100 if rl_cost > 0 else 0
-        
-        print(f"Costo total:")
+
+        print(f"Total cost:")
         print(f"  RL:   ${rl_cost:.2f}")
         print(f"  MILP: ${milp_cost:.2f} ({'+' if cost_diff_pct >= 0 else ''}{cost_diff_pct:.2f}%)")
-        
+
         rl_evs = rl_metrics["evs_served"]
         milp_evs = milp_metrics["evs_served"]
         total_evs = rl_metrics["total_evs"]
-        
-        print(f"Vehículos atendidos:")
+
+        print(f"Vehicles served:")
         print(f"  RL:   {rl_evs}/{total_evs} ({rl_evs/total_evs*100:.1f}%)")
         print(f"  MILP: {milp_evs}/{total_evs} ({milp_evs/total_evs*100:.1f}%)")
     except Exception as e:
-        print(f"Errof on compare_solutions as : {e}")
+        print(f"Error on compare_solutions: {e}")
+
 
 def run_scatter_search_optimization(args, ask_resume: bool = True):
     """
-    Ejecuta la optimización de hiperparámetros usando Scatter Search.
+    Executes hyperparameter optimization using Scatter Search.
+
+    Args:
+        args: An object containing command-line arguments (e.g., output_base_dir, data_dir, scatter_config).
+        ask_resume (bool, optional): If True, prompts the user to resume from a checkpoint if found. Defaults to True.
     """
     try:
-        print("=== MODO SCATTER SEARCH OPTIMIZATION ===")
-        
-        # IMPORTACIONES AL INICIO
+        print("=== SCATTER SEARCH OPTIMIZATION MODE ===")
+
+        # IMPORTS AT THE BEGINNING
         try:
             from src.scatter_search.scatter_algorithm import ScatterSearchOptimizer
             from src.scatter_search.results_analyzer import ResultsAnalyzer
         except ImportError as e:
-            print(f"Error al importar módulos de Scatter Search: {e}")
-            print("Asegúrate de que todos los archivos de scatter_search están en src/scatter_search/")
+            print(f"Error importing Scatter Search modules: {e}")
+            print("Ensure all scatter_search files are in src/scatter_search/")
             return
-        
-        # CONFIGURAR DIRECTORIOS Y DATOS
+
+        # CONFIGURE DIRECTORIES AND DATA
         scatter_output_dir = args.output_base_dir
         ensure_directory_exists(scatter_output_dir)
-        
-        print("Cargando sistemas de datos...")
+
+        print("Loading data systems...")
         systems_data = load_all_test_systems(args.data_dir)
-        
+
         if not systems_data:
-            print("No se encontraron sistemas de datos para optimización.")
+            print("No data systems found for optimization.")
             return
-        
-        print(f"Sistemas cargados: {list(systems_data.keys())}")
-        
-        # CONFIGURACIÓN
+
+        print(f"Systems loaded: {list(systems_data.keys())}")
+
+        # CONFIGURATION
         scatter_config_path = args.scatter_config or "src/configs/scatter_search_config.yaml"
-        
-        # MANEJO DE RESUME (CORREGIDO)
+
+        # RESUME HANDLING
         checkpoint_result = find_latest_checkpoint()
         resume_from = None
 
-        if checkpoint_result is not None:  # ← VALIDACIÓN AGREGADA
+        if checkpoint_result is not None:
             latest_checkpoint, iteration_num = checkpoint_result
             if ask_resume:
-                response = input(f"🔄 ¿Resumir desde checkpoint (iteración {iteration_num})? (y/n): ")
+                response = input(f"Resume from checkpoint (iteration {iteration_num})? (y/n): ")
                 if response.lower() == 'y':
                     resume_from = latest_checkpoint
         else:
-            print("No se encontraron checkpoints previos. Iniciando nueva optimización.")
-        
-        # INICIALIZAR OPTIMIZADOR
-        print(f"Inicializando Scatter Search con configuración: {scatter_config_path}")
+            print("No previous checkpoints found. Starting new optimization.")
+
+        # INITIALIZE OPTIMIZER
+        print(f"Initializing Scatter Search with configuration: {scatter_config_path}")
         optimizer = ScatterSearchOptimizer(scatter_config_path, systems_data, args.output_base_dir)
 
-        
-        print("Iniciando optimización de hiperparámetros...")
+        print("Starting hyperparameter optimization...")
         start_time = time.time()
-        
+
         try:
-            # EJECUTAR OPTIMIZACIÓN (CON RESUME SI APLICA)
+            # EXECUTE OPTIMIZATION (WITH RESUME IF APPLICABLE)
             results = optimizer.run_optimization(resume_from=resume_from)
             execution_time = time.time() - start_time
-            
-            print(f"\n✅ Optimización completada en {execution_time/3600:.2f} horas")
-            print(f"Mejores soluciones encontradas: {len(results['best_solutions'])}")
-            
-            # MOSTRAR TOP 3 (CON VALIDACIÓN)
+
+            print(f"\nOptimization completed in {execution_time/3600:.2f} hours")
+            print(f"Best solutions found: {len(results['best_solutions'])}")
+
+            # SHOW TOP 3 (WITH VALIDATION)
             if results['best_solutions']:
-                print("\n🏆 TOP 3 SOLUCIONES ENCONTRADAS:")
+                print("\nTOP 3 SOLUTIONS FOUND:")
                 for i, solution in enumerate(results['best_solutions'][:3]):
                     archetype = solution.get('archetype', 'unknown')
-                    fitness = solution.get('fitness', 'N/A')  # ← VALIDACIÓN AGREGADA
+                    fitness = solution.get('fitness', 'N/A')
                     print(f"{i+1}. {archetype.upper()} - Fitness: {fitness}")
-            
-            # ANÁLISIS Y EXPORTACIÓN
-            print("\nAnalizando y exportando resultados...")
+
+            # ANALYSIS AND EXPORT
+            print("\nAnalyzing and exporting results...")
             analyzer = ResultsAnalyzer(scatter_output_dir)
-            
+
             analyzer.save_complete_results(results)
             analyzer.generate_summary_report(results)
-            
+
             if results['best_solutions']:
                 analyzer.create_configuration_files(results['best_solutions'])
-            
+
             analyzer.generate_visualizations(results)
             analyzer.export_to_excel(results)
             analyzer.create_deployment_package(results)
-            
-            print(f"\nTodos los resultados guardados en: {scatter_output_dir}")
-            print("Revisa el archivo 'optimization_report.txt' para un resumen completo")
-            print("Las configuraciones optimizadas están en 'configurations/'")
-            print("Las visualizaciones están en 'visualizations/'")
-            
+
+            print(f"\nAll results saved in: {scatter_output_dir}")
+            print("Check 'optimization_report.txt' for a complete summary")
+            print("Optimized configurations are in 'configurations/'")
+            print("Visualizations are in 'visualizations/'")
+
         except KeyboardInterrupt:
-            print("\nOptimización interrumpida por el usuario")
-            print("Los resultados parciales pueden estar disponibles en checkpoints")
+            print("\nOptimization interrupted by user")
+            print("Partial results may be available in checkpoints")
         except Exception as e:
-            print(f"\n❌ Error durante la optimización: {e}")
+            print(f"\nError during optimization: {e}")
             import traceback
             traceback.print_exc()
     except Exception as e:
-        print(f"Erro on run_scatter_Search_optimization as: {e}")
+        print(f"Error on run_scatter_search_optimization: {e}")
+
 
 def create_default_scatter_config(config_path):
     """
-    Crea un archivo de configuración por defecto para Scatter Search.
+    Creates a default configuration file for Scatter Search.
+
+    Args:
+        config_path (str): The path where the default configuration file will be created.
     """
-    
-    
     default_config = {
         'algorithm': {
             'population_size': 30,
@@ -406,37 +453,50 @@ def create_default_scatter_config(config_path):
             'checkpoint_dir': './checkpoints/scatter_search'
         }
     }
-    
+
     os.makedirs(os.path.dirname(config_path), exist_ok=True)
-    
+
     with open(config_path, 'w') as f:
         yaml.dump(default_config, f, default_flow_style=False, indent=2)
-    
-    print(f"Configuración por defecto creada en: {config_path}")
+
+    print(f"Default configuration created in: {config_path}")
+
 
 def find_latest_checkpoint(checkpoint_dir="./results/scatter_search/checkpoints"):
-    """Encuentra el checkpoint más reciente"""
+    """
+    Finds the most recent Scatter Search checkpoint.
 
-    
+    Args:
+        checkpoint_dir (str, optional): The directory where checkpoints are saved.
+                                        Defaults to "./results/scatter_search/checkpoints".
+
+    Returns:
+        tuple or None: A tuple containing the path to the latest checkpoint and its iteration number,
+                       or None if no checkpoints are found.
+    """
     pattern = os.path.join(checkpoint_dir, "scatter_checkpoint_iter_*.json")
     checkpoints = glob.glob(pattern)
-    
+
     if not checkpoints:
         return None
-    
+
     def extract_iteration(path):
         filename = os.path.basename(path)
         return int(filename.split('_')[-1].split('.')[0])
-    
+
     latest = max(checkpoints, key=extract_iteration)
     iteration = extract_iteration(latest)
-    
-    print(f"Checkpoint más reciente encontrado: iteración {iteration}")
+
+    print(f"Most recent checkpoint found: iteration {iteration}")
     return latest, iteration
 
 def main():
+    """
+    Main function to parse arguments and run the EV Charging Management System
+    in different modes: train, solve (RL), optimize (RL+MILP), run_milp,
+    visualize_solution, or scatter_search for hyperparameter optimization.
+    """
     try:
-
         parser = argparse.ArgumentParser(description="EV Charging Management System")
         parser.add_argument("--mode", type=str, required=True,
                             choices=["train", "train_dqn", "solve", "optimize", "run_milp", "visualize_solution", "scatter_search"],
@@ -447,37 +507,35 @@ def main():
                             help="Base directory for saving all outputs.")
         parser.add_argument("--system_id", type=int, default=1,
                             help="ID of the system configuration to use")
-        parser.add_argument("--system", type=str, default=None, 
-                            help="Sistema específico a procesar (para modos solve/optimize)")
+        parser.add_argument("--system", type=str, default=None,
+                            help="Specific system to process (for solve/optimize modes)")
         parser.add_argument("--all_systems", action="store_true",
                             help="Process all systems")
-        parser.add_argument("--all", action="store_true", help="Alias para --all_systems")
+        parser.add_argument("--all", action="store_true", help="Alias for --all_systems")
         parser.add_argument("--model_path", type=str, default="./model/ev_scheduler_model_pytorch.pt",
                             help="Path to save/load the DQN model.")
         parser.add_argument("--hyperparameters_path", type=str, default="./src/configs/hyperparameters.yaml",
                             help="Path to the YAML file containing DQN hyperparameters.")
         parser.add_argument("--num_episodes", type=int, default=1000,
                             help="Number of training episodes for DQN")
-        parser.add_argument("--episodes", type=int, default=30, 
-                            help="Episodios por sistema para entrenamiento (modo train)")
+        parser.add_argument("--episodes", type=int, default=30,
+                            help="Episodes per system for training (train mode)")
         parser.add_argument("--log_frequency", type=int, default=50,
                             help="Frequency of logging episode data to console")
-        parser.add_argument("--alpha_cost", type=float, default=0.6, 
-                            help="Peso del objetivo de costo (0-1)")
-        parser.add_argument("--alpha_satisfaction", type=float, default=0.4, 
-                            help="Peso del objetivo de satisfacción (0-1)")
-        parser.add_argument("--time_limit", type=int, default=900, 
-                            help="Límite de tiempo para MILP (segundos)")
+        parser.add_argument("--alpha_cost", type=float, default=0.6,
+                            help="Weight for the cost objective (0-1)")
+        parser.add_argument("--alpha_satisfaction", type=float, default=0.4,
+                            help="Weight for the satisfaction objective (0-1)")
+        parser.add_argument("--time_limit", type=int, default=900,
+                            help="Time limit for MILP solver (seconds)")
         parser.add_argument("--solution_to_visualize", type=str, default=None,
                             help="Path to a saved solution JSON file to visualize")
-        
         parser.add_argument("--scatter_config", type=str, default=None,
                             help="Path to Scatter Search configuration YAML file")
-
-        parser.add_argument("--state_size", type=int, default=40, 
-                            help="State size DQN Agent")
-        parser.add_argument("--action_size", type=int, default=40, 
-                            help="Action size DQN Agent")
+        parser.add_argument("--state_size", type=int, default=40,
+                            help="State size for DQN Agent")
+        parser.add_argument("--action_size", type=int, default=40,
+                            help="Action size for DQN Agent")
         args = parser.parse_args()
 
         if args.all:
@@ -501,26 +559,26 @@ def main():
 
         if args.mode == "scatter_search":
             run_scatter_search_optimization(args)
-            
+
         elif args.mode == "train":
-            print("=== MODO DE ENTRENAMIENTO ===")
-            
+            print("=== TRAINING MODE ===")
+
             systems = load_all_test_systems(args.data_dir)
-            
+
             if not systems:
-                print("No se encontraron sistemas para entrenar.")
+                print("No systems found for training.")
                 return
-            
-            print(f"Se cargaron {len(systems)} sistemas de prueba.")
-            
+
+            print(f"Loaded {len(systems)} test systems.")
+
             train_config = {
                 "state_size": args.state_size,
                 "action_size": args.action_size,
-                "batch_size": 64,                    
+                "batch_size": 64,
                 "episodes_per_system": args.episodes,
                 "checkpoint_frequency": 5,
                 "checkpoint_dir": "./checkpoints",
-                "model_path": args.model_path, 
+                "model_path": args.model_path,
                 "patience": 8,
                 "resume_from_checkpoint": True,
                 "learning_rate": 0.0005,
@@ -529,16 +587,16 @@ def main():
                 "epsilon_min": 0.01,
                 "epsilon_decay": 0.995,
                 "memory_size": 12000,
-                "target_update_freq": 10,            
+                "target_update_freq": 10,
                 "dueling_network": True
             }
-            
+
             start_time = time.time()
             agent = train_agent(systems, train_config)
             train_time = time.time() - start_time
-            
-            print(f"\nEntrenamiento completado en {train_time:.2f} segundos.")
-            print(f"Modelo guardado en: {args.model_path}")
+
+            print(f"\nTraining completed in {train_time:.2f} seconds.")
+            print(f"Model saved to: {args.model_path}")
 
         elif args.mode == "train_dqn":
             print("\n--- Starting DQN Training Mode ---")
@@ -555,7 +613,7 @@ def main():
 
             for current_system_id in systems_to_train:
                 print(f"\n--- Training DQN for System ID: {current_system_id} ---")
-                
+
                 dqn_output_root = os.path.join(args.output_base_dir, f"dqn_agent_system_{current_system_id}")
                 dqn_models_dir = os.path.join(dqn_output_root, "models")
                 dqn_logs_dir = os.path.join(dqn_output_root, "logs")
@@ -577,10 +635,10 @@ def main():
                     continue
 
                 env = EVChargingEnv(system_config)
-                
+
                 state_size = args.state_size
                 action_size = args.action_size
-                
+
                 print(f"Creating agent with hyperparameters: {hyperparameters}")
                 agent = EnhancedDQNAgent(state_size, action_size, **hyperparameters)
 
@@ -591,7 +649,7 @@ def main():
                     model_save_path = os.path.join(dqn_models_dir, f"{base_model_name}_system_{current_system_id}.pt")
                 else:
                     model_save_path = get_timestamp_filepath(dqn_models_dir, prefix=f"dqn_model_system_{current_system_id}_", suffix=".pt")
-                
+
                 print(f"Training DQN agent for {args.num_episodes} episodes for system {current_system_id}...")
                 episode_data_log = train_dqn_agent(
                     agent, env, args.num_episodes, model_save_path=model_save_path, logger=logger
@@ -622,24 +680,24 @@ def main():
                     print("No final DQN schedule to save or visualize for this system.")
 
         elif args.mode == "solve":
-            print("=== MODO DE SOLUCIÓN RL ===")
-            
+            print("=== RL SOLUTION MODE ===")
+
             if args.all_systems:
-                print("Procesando todos los sistemas con RL...")
+                print("Processing all systems with RL...")
                 systems = load_all_test_systems(args.data_dir)
                 for system_id, config in systems.items():
-                    print(f"\nSistema {system_id}")
+                    print(f"\nSystem {system_id}")
                     schedule_rl, rl_metrics = generate_solution(config, model_path=args.model_path, state_size=args.state_size, action_size=args.action_size)
                     rl_metrics["execution_time"] = time.time()
-                    
-                    # Guardar solución
+
+                    # Save solution
                     save_solution(schedule_rl, rl_metrics, os.path.join(args.output_base_dir, f"rl_solution_{system_id}.json"))
-                    
-                    # Visualizar
-                    visualize_solution(schedule_rl, config, f"RL Sistema {system_id}: ")
+
+                    # Visualize
+                    visualize_solution(schedule_rl, config, f"RL System {system_id}: ")
                 return
-            
-            # Cargar sistema específico
+
+            # Load specific system
             config = None
             if args.system:
                 try_paths = [
@@ -649,46 +707,46 @@ def main():
                 ]
             else:
                 try_paths = [os.path.join(args.data_dir, f"test_system_{args.system_id}.json")]
-            
+
             for path in try_paths:
                 if path is None:
                     continue
                 try:
                     config = load_data(path)
-                    print(f"Sistema cargado: {path}")
+                    print(f"System loaded: {path}")
                     break
                 except Exception as e:
-                    print(f"Error al cargar {path}: {e}")
-            
+                    print(f"Error loading {path}: {e}")
+
             if config is None:
-                print("No se pudo cargar el sistema.")
+                print("Could not load the system.")
                 return
-            
-            # Generar solución RL
+
+            # Generate RL solution
             start_time = time.time()
             schedule_rl, metrics = generate_solution(config, model_path=args.model_path)
             solve_time = time.time() - start_time
             metrics["execution_time"] = solve_time
-            
-            # Guardar solución
+
+            # Save solution
             test_number = config.get("test_number", "unknown")
             output_file = os.path.join(args.output_base_dir, f"rl_solution_{test_number}.json")
             save_solution(schedule_rl, metrics, output_file)
-            
-            # Visualizar
+
+            # Visualize
             visualize_solution(schedule_rl, config, "RL: ")
 
         elif args.mode == "optimize":
-            print("=== MODO DE OPTIMIZACIÓN RL+MILP ===")
-            
+            print("=== RL+MILP OPTIMIZATION MODE ===")
+
             if args.all_systems:
-                print("Procesando todos los sistemas con RL + MILP...")
+                print("Processing all systems with RL + MILP...")
                 systems = load_all_test_systems(args.data_dir)
                 for system_id, config in systems.items():
-                    print(f"\nSistema {system_id}")
+                    print(f"\nSystem {system_id}")
                     schedule_rl, rl_metrics = generate_solution(config, model_path=args.model_path)
                     rl_metrics["execution_time"] = time.time()
-                    
+
                     schedule_milp, milp_metrics = optimize_solution(
                         config,
                         schedule_rl,
@@ -696,7 +754,7 @@ def main():
                         alpha_satisfaction=args.alpha_satisfaction,
                         time_limit=args.time_limit
                     )
-                    
+
                     if schedule_milp is not None:
                         compare_solutions(rl_metrics, milp_metrics)
                         save_solution(schedule_rl, rl_metrics, os.path.join(args.output_base_dir, f"rl_solution_{system_id}.json"))
@@ -704,10 +762,10 @@ def main():
                         visualize_rl_solution(schedule_rl, config, output_dir=args.output_base_dir, filename=f"rl_solution_{system_id}.png")
                         visualize_milp_solution(schedule_milp, config, output_dir=args.output_base_dir, filename=f"milp_solution_{system_id}.png")
                     else:
-                        print(f"Fallo en optimización para sistema {system_id}")
+                        print(f"Optimization failed for system {system_id}")
                 return
-            
-            # Cargar sistema específico
+
+            # Load specific system
             config = None
             if args.system:
                 try_paths = [
@@ -717,64 +775,64 @@ def main():
                 ]
             else:
                 try_paths = [os.path.join(args.data_dir, f"test_system_{args.system_id}.json")]
-            
+
             for path in try_paths:
                 if path is None:
                     continue
                 try:
                     config = load_data(path)
-                    print(f"Sistema cargado: {path}")
+                    print(f"System loaded: {path}")
                     break
                 except Exception as e:
-                    print(f"Error al cargar {path}: {e}")
-            
+                    print(f"Error loading {path}: {e}")
+
             if config is None:
-                print("No se pudo cargar el sistema.")
+                print("Could not load the system.")
                 return
-            
-            # Generar solución RL inicial
-            print("\n1. GENERANDO SOLUCIÓN RL INICIAL")
+
+            # Generate initial RL solution
+            print("\n1. GENERATING INITIAL RL SOLUTION")
             start_time = time.time()
             schedule_rl, rl_metrics = generate_solution(config, model_path=args.model_path)
             rl_time = time.time() - start_time
             rl_metrics["execution_time"] = rl_time
-            
-            # Optimizar con MILP
-            print("\n2. OPTIMIZANDO CON MILP MULTIOBJETIVO")
+
+            # Optimize with MILP
+            print("\n2. OPTIMIZING WITH MULTI-OBJECTIVE MILP")
             schedule_milp, milp_metrics = optimize_solution(
-                config, 
-                schedule_rl, 
-                alpha_cost=args.alpha_cost, 
+                config,
+                schedule_rl,
+                alpha_cost=args.alpha_cost,
                 alpha_satisfaction=args.alpha_satisfaction,
                 time_limit=args.time_limit
             )
-            
-            # Comparar soluciones
+
+            # Compare solutions
             if schedule_milp is not None:
                 compare_solutions(rl_metrics, milp_metrics)
-                
-                # Guardar soluciones
+
+                # Save solutions
                 test_number = config.get("test_number", "unknown")
                 rl_output = os.path.join(args.output_base_dir, f"rl_solution_{test_number}.json")
                 milp_output = os.path.join(args.output_base_dir, f"milp_solution_{test_number}.json")
-                
+
                 save_solution(schedule_rl, rl_metrics, rl_output)
                 save_solution(schedule_milp, milp_metrics, milp_output)
-                
-                # Visualizar
+
+                # Visualize
                 visualize_solution(schedule_rl, config, "RL: ")
                 visualize_solution(schedule_milp, config, "MILP: ")
             else:
-                print("La optimización MILP no produjo una solución válida.")
+                print("MILP optimization did not produce a valid solution.")
 
         elif args.mode == "run_milp":
             print("\n--- Starting MILP Optimization Mode ---")
-            
+
             # Output subdirectories for the current system
             milp_output_root = os.path.join(args.output_base_dir, f"milp_optimizer_system_{args.system_id}")
             milp_solutions_dir = os.path.join(milp_output_root, "solutions")
             milp_plots_dir = os.path.join(milp_output_root, "plots")
-            
+
             ensure_directory_exists(milp_solutions_dir)
             ensure_directory_exists(milp_plots_dir)
 
@@ -800,11 +858,11 @@ def main():
                     time_limit=300,
                     epsilon_satisfaction=0.8
                 )
-                
+
                 if milp_schedule:
                     print("MILP solution found.")
                     print(f"Objective values: {obj_values}")
-                    
+
                     # Save MILP solution
                     milp_solution_filename = f"milp_solution_system_{args.system_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
                     milp_solution_filepath = os.path.join(milp_solutions_dir, milp_solution_filename)
@@ -825,14 +883,14 @@ def main():
                     print(f"MILP solution visualization saved to: {os.path.join(milp_plots_dir, milp_plot_filename)}")
                 else:
                     print("No MILP solution found.")
-                    
+
             except Exception as e:
                 print(f"Error solving MILP: {e}")
                 sys.exit(1)
 
         elif args.mode == "visualize_solution":
             print("\n--- Starting Visualization Mode ---")
-            
+
             # Output root for visualizations
             visualization_output_root = os.path.join(args.output_base_dir, "visualizations")
             visualize_plots_dir = os.path.join(visualization_output_root, "plots")
@@ -865,7 +923,7 @@ def main():
                 match = re.search(r"system_(\d+)", os.path.basename(solution_filepath))
                 if match:
                     system_id_from_filename = int(match.group(1))
-                
+
                 # Use provided system_id or try to infer from solution
                 current_system_id = args.system_id
                 if system_id_from_filename:
@@ -884,7 +942,7 @@ def main():
                     sys.exit(1)
 
                 output_filename_base = os.path.basename(solution_filepath).replace(".json", "")
-                
+
                 if isinstance(schedule, list) and all(isinstance(item, (list, tuple)) and len(item) >= 4 for item in schedule):
                     print("Visualizing DQN-style schedule.")
                     output_filename = f"{output_filename_base}_viz_dqn.png"
@@ -907,8 +965,9 @@ def main():
                 sys.exit(1)
 
         else:
-            print(f"Modo no reconocido: {args.mode}. Use 'train', 'train_dqn', 'solve', 'optimize', 'run_milp', 'visualize_solution', or 'scatter_search'.")
+            print(f"Unrecognized mode: {args.mode}. Use 'train', 'train_dqn', 'solve', 'optimize', 'run_milp', 'visualize_solution', or 'scatter_search'.")
     except Exception as e:
         print(f"Error on main: {e}")
+        
 if __name__ == "__main__":
     main()
