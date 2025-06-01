@@ -1,0 +1,89 @@
+{
+  "model_info": {
+    "archetype": "efficiency_focused",
+    "rank": 1,
+    "filename": "efficiency_focused_rank_1.pt",
+    "path": "results/scatter_search/trained_models\\efficiency_focused_rank_1.pt"
+  },
+  "evaluation_method": "efficient_slot_by_slot",
+  "timestamp": "2025-06-01 12:43:48",
+  "systems_evaluated": 3,
+  "systems_failed": 0,
+  "results": [
+    {
+      "system_id": 1,
+      "model_info": {
+        "archetype": "efficiency_focused",
+        "rank": 1,
+        "filename": "efficiency_focused_rank_1.pt"
+      },
+      "system_metrics": {
+        "num_vehicles": 32,
+        "num_slots": 10,
+        "num_chargers": 5
+      },
+      "performance": {
+        "execution_time_seconds": 2.223,
+        "vehicles_assigned": 0,
+        "vehicles_total": 32,
+        "assignment_ratio_pct": 0.0,
+        "slots_used": 0,
+        "slots_total": 10,
+        "slots_usage_pct": 0.0,
+        "charging_assignments": 0,
+        "parking_assignments": 0
+      },
+      "assignments_detail": []
+    },
+    {
+      "system_id": 2,
+      "model_info": {
+        "archetype": "efficiency_focused",
+        "rank": 1,
+        "filename": "efficiency_focused_rank_1.pt"
+      },
+      "system_metrics": {
+        "num_vehicles": 49,
+        "num_slots": 30,
+        "num_chargers": 12
+      },
+      "performance": {
+        "execution_time_seconds": 0.012,
+        "vehicles_assigned": 0,
+        "vehicles_total": 49,
+        "assignment_ratio_pct": 0.0,
+        "slots_used": 0,
+        "slots_total": 30,
+        "slots_usage_pct": 0.0,
+        "charging_assignments": 0,
+        "parking_assignments": 0
+      },
+      "assignments_detail": []
+    },
+    {
+      "system_id": 3,
+      "model_info": {
+        "archetype": "efficiency_focused",
+        "rank": 1,
+        "filename": "efficiency_focused_rank_1.pt"
+      },
+      "system_metrics": {
+        "num_vehicles": 21,
+        "num_slots": 60,
+        "num_chargers": 25
+      },
+      "performance": {
+        "execution_time_seconds": 0.011,
+        "vehicles_assigned": 0,
+        "vehicles_total": 21,
+        "assignment_ratio_pct": 0.0,
+        "slots_used": 0,
+        "slots_total": 60,
+        "slots_usage_pct": 0.0,
+        "charging_assignments": 0,
+        "parking_assignments": 0
+      },
+      "assignments_detail": []
+    }
+  ]
+}
