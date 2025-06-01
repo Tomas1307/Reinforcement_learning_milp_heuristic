@@ -686,7 +686,7 @@ class ScatterSearchOptimizer:
         cost_ratio = energy_cost / max(energy_satisfaction, 0.1)
         
         # 1. Cost Minimizer: Prioriza costos
-        if energy_cost > 1.0 or cost_ratio > 0.4:
+        if cost_ratio >= 0.4 or energy_cost >= 0.8:
             return "cost_minimizer"
         
         # 2. Urgency Focused: Penalización muy alta por saltar
@@ -698,7 +698,7 @@ class ScatterSearchOptimizer:
             return "efficiency_focused"
         
         # 4. Satisfaction Maximizer: SOLO si satisfaction es muy alto Y cost bajo
-        elif energy_satisfaction > 4.0 and energy_cost < 0.5:
+        elif energy_satisfaction >= 3.5 and cost_ratio <= 0.15:
             return "satisfaction_maximizer"
         
         # 5. Balanced Optimizer: El resto (será la mayoría ahora)

@@ -113,40 +113,67 @@ def generate_solution(config, agent=None, model_path="./ev_scheduler_model_pytor
     """
     try:
         print("Generating RL solution...")
+        print("DEBUG: Starting generate_solution function")
 
         if agent is None:
             print(f"Attempting to load model from {model_path}...")
-
+            print("DEBUG: About to create temp_env")
+            
             temp_env = EVChargingEnv(config)
+            print("DEBUG: temp_env created successfully")
 
+            print("DEBUG: About to create agent")
             agent = EnhancedDQNAgent(
                 state_size=state_size,
                 action_size=action_size,
                 dueling_network=True
             )
+            print("DEBUG: Agent created successfully")
 
             try:
+                print("DEBUG: About to load model")
                 model_loaded = agent.load(model_path)
+                print(f"DEBUG: Model loaded result: {model_loaded}")
                 if not model_loaded:
                     raise ValueError("The model could not be loaded correctly.")
             except Exception as e:
                 raise RuntimeError(f"Critical error loading the model from {model_path}: {e}")
 
+        print("DEBUG: About to create main env")
         env = EVChargingEnv(config)
+        print("DEBUG: Main env created, about to reset")
         state = env.reset()
+        print(f"DEBUG: Environment reset, state shape: {np.array(state).shape if hasattr(state, 'shape') else len(state) if state else 'None'}")
+        
         done = False
+        step_count = 0
+        max_steps = 1000  # Agregar límite de pasos
 
         original_epsilon = agent.epsilon
         agent.epsilon = 0.05
+        print(f"DEBUG: Set epsilon to {agent.epsilon}")
 
-        while not done:
+        while not done and step_count < max_steps:
+            print(f"DEBUG: Step {step_count}")
             possible_actions = env._get_possible_actions(state)
+            print(f"DEBUG: Possible actions: {len(possible_actions) if possible_actions else 0}")
+            
+            if not possible_actions:
+                print("DEBUG: No possible actions, breaking")
+                break
+                
             action = agent.act(state, possible_actions)
+            print(f"DEBUG: Selected action: {action}")
 
             if action == -1 or action >= len(possible_actions):
+                print(f"DEBUG: Invalid action {action}, breaking")
                 break
 
             state, _, done = env.step(action)
+            print(f"DEBUG: Step completed, done: {done}")
+            step_count += 1
+
+        print(f"DEBUG: Loop finished after {step_count} steps")
 
         agent.epsilon = original_epsilon
 
