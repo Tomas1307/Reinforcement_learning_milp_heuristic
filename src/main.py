@@ -19,6 +19,9 @@ from src.milp_optimizer.optimizer import EVChargingMILP
 from src.common.logger import SimpleEpisodeLogger
 from src.common.visualize import plot_dqn_learning_progress, visualize_solution, visualize_milp_solution, visualize_rl_solution
 from src.common.utils import ensure_directory_exists, get_timestamp_filepath
+from src.tests.evaluator import EfficientSlotBySlotSimulator
+import gc
+import torch
 
 def map_hyperparameters(hyperparams):
     """
@@ -442,7 +445,69 @@ def run_scatter_search_optimization(args, ask_resume: bool = True):
     except Exception as e:
         print(f"Error on run_scatter_search_optimization: {e}")
 
-
+def load_scatter_search_solution(system_id, model_name, output_base_dir):
+    """
+    Load a pre-calculated RL solution from scatter search results
+    
+    Args:
+        system_id (int): System ID
+        model_name (str): Model name (e.g., 'efficiency_focused_rank_1')
+        output_base_dir (str): Base output directory
+    
+    Returns:
+        tuple: (schedule_rl, rl_metrics) or (None, None) if error
+    """
+    try:
+        solution_file = os.path.join(
+            output_base_dir, 
+            "scatter_search", 
+            "model_solution", 
+            model_name, 
+            f"config_{system_id}.json"
+        )
+        
+        print(f"Loading scatter search solution from: {solution_file}")
+        
+        if not os.path.exists(solution_file):
+            print(f"Error: Scatter search solution not found: {solution_file}")
+            print(f"Hint: Run 'solution_scatter_search' mode first to generate solutions")
+            return None, None
+        
+        with open(solution_file, 'r') as f:
+            solution_data = json.load(f)
+        
+        schedule_rl = solution_data.get('schedule_detail', [])
+        if not schedule_rl:
+            print(f"Error: No 'schedule_detail' found in {solution_file}")
+            return None, None
+        
+        rl_metrics = {
+            "energy_metrics": {
+                "total_satisfaction_pct": solution_data.get('energy_performance', {}).get('overall_satisfaction_pct', 0),
+                "total_delivered_energy": solution_data.get('energy_performance', {}).get('total_energy_delivered_kwh', 0)
+            },
+            "total_cost": solution_data.get('economic_performance', {}).get('total_energy_cost', 0),
+            "cost_per_kwh": solution_data.get('economic_performance', {}).get('cost_efficiency', 0),
+            "schedule_size": len(schedule_rl),
+            "evs_served": solution_data.get('vehicle_performance', {}).get('vehicles_assigned', 0),
+            "total_evs": solution_data.get('vehicle_performance', {}).get('vehicles_total', 0),
+            "execution_time": solution_data.get('execution_performance', {}).get('execution_time_seconds', 0),
+            "model_info": solution_data.get('model_info', {}),
+            "source": "scatter_search_pre_calculated"
+        }
+        
+        print(f"Loaded scatter search solution:")
+        print(f"   Schedule entries: {len(schedule_rl)}")
+        print(f"   Vehicles served: {rl_metrics['evs_served']}/{rl_metrics['total_evs']}")
+        print(f"   Energy satisfaction: {rl_metrics['energy_metrics']['total_satisfaction_pct']:.1f}%")
+        print(f"   Model: {rl_metrics['model_info'].get('model_name', 'Unknown')}")
+        
+        return schedule_rl, rl_metrics
+        
+    except Exception as e:
+        print(f"Error loading scatter search solution: {e}")
+        return None, None
+    
 def create_default_scatter_config(config_path):
     """
     Creates a default configuration file for Scatter Search.
@@ -517,6 +582,186 @@ def find_latest_checkpoint(checkpoint_dir="./results/scatter_search/checkpoints"
     print(f"Most recent checkpoint found: iteration {iteration}")
     return latest, iteration
 
+
+def run_solution_scatter_search(args):
+    """
+    Ejecuta evaluación de soluciones usando modelos entrenados de scatter search
+    Procesa sistemas según --all_systems, --system_id, o sistema por defecto
+    """
+    try:
+        print("=== SOLUTION SCATTER SEARCH MODE ===")
+        
+        # Validar argumentos requeridos
+        if not args.model_to_evaluate:
+            print("Error: --model_to_evaluate is required for solution_scatter_search mode")
+            return
+        
+        if not args.model_name:
+            print("Error: --model_name is required for solution_scatter_search mode")
+            return
+        
+        if not os.path.exists(args.model_to_evaluate):
+            print(f"Error: Model file not found: {args.model_to_evaluate}")
+            return
+        
+        solution_output_dir = os.path.join(args.output_base_dir, "scatter_search", "model_solution", args.model_name)
+        ensure_directory_exists(solution_output_dir)
+        
+        print(f"Model: {args.model_name}")
+        print(f"Model file: {args.model_to_evaluate}")
+        print(f"Output directory: {solution_output_dir}")
+        
+        systems_to_process = []
+        
+        if args.all_systems:
+            print("Processing all systems...")
+            all_system_ids = get_all_system_ids(args.data_dir)
+            if not all_system_ids:
+                print(f"No test_system_*.json files found in {args.data_dir}")
+                return
+            systems_to_process = all_system_ids
+            print(f"Found systems: {systems_to_process}")
+        else:
+            systems_to_process = [args.system_id]
+            print(f"Processing system: {args.system_id}")
+        
+
+        temp_evaluator = EfficientSlotBySlotSimulator(
+            models_dir="", 
+            systems_dir=args.data_dir,
+            output_dir=solution_output_dir
+        )
+        
+        print(f"\nLoading model: {args.model_to_evaluate}")
+        agent = temp_evaluator.load_agent_once(args.model_to_evaluate)
+        
+        successful_evaluations = 0
+        failed_evaluations = 0
+        
+        for system_id in systems_to_process:
+            print(f"\n{'='*50}")
+            print(f"PROCESSING SYSTEM {system_id}")
+            print(f"{'='*50}")
+            
+            try:
+                system_config_path = os.path.join(args.data_dir, f"test_system_{system_id}.json")
+                
+                if not os.path.exists(system_config_path):
+                    print(f"Warning: System file not found: {system_config_path}")
+                    failed_evaluations += 1
+                    continue
+                
+                system_config = load_system_config(system_config_path)
+                print(f"System {system_id} loaded: {len(system_config['arrivals'])} vehicles, {system_config['n_spots']} spots, {len(system_config['chargers'])} chargers")
+                
+                start_time = time.time()
+                schedule_entries = temp_evaluator.simulate_system_efficient(agent, system_config)
+                execution_time = time.time() - start_time
+                
+                metrics = temp_evaluator._calculate_metrics_from_schedule(schedule_entries, system_config)
+                
+                result = {
+                    'system_id': system_id,
+                    'model_info': {
+                        'model_name': args.model_name,
+                        'model_path': args.model_to_evaluate,
+                        'filename': os.path.basename(args.model_to_evaluate)
+                    },
+                    'system_metrics': {
+                        'num_vehicles': len(system_config['arrivals']),
+                        'num_slots': system_config['n_spots'],
+                        'num_chargers': len(system_config['chargers']),
+                        'system_context': metrics['system_context']
+                    },
+                    'execution_performance': {
+                        'execution_time_seconds': round(execution_time, 3),
+                        'schedule_entries': len(schedule_entries),
+                        'timesteps_used': metrics['timesteps_used'],
+                        'time_coverage_pct': metrics['time_coverage_pct']
+                    },
+                    'vehicle_performance': {
+                        'vehicles_assigned': metrics['vehicles_assigned'],
+                        'vehicles_total': metrics['total_vehicles'],
+                        'assignment_ratio_pct': round(metrics['assignment_ratio'] * 100, 1),
+                        'vehicles_fully_satisfied': metrics['vehicles_fully_satisfied'],
+                        'vehicles_partially_satisfied': metrics['vehicles_partially_satisfied'],
+                        'vehicles_not_satisfied': metrics['vehicles_not_satisfied'],
+                        'charging_assignments': metrics['charging_assignments'],
+                        'parking_assignments': metrics['parking_assignments']
+                    },
+                    'energy_performance': {
+                        'total_energy_required_kwh': round(metrics['total_energy_required'], 2),
+                        'total_energy_delivered_kwh': round(metrics['total_energy_delivered'], 2),
+                        'overall_satisfaction_pct': round(metrics['overall_satisfaction_pct'], 1),
+                        'energy_deficit_kwh': round(metrics['energy_deficit'], 2),
+                        'satisfaction_distribution': metrics['satisfaction_distribution']
+                    },
+                    'economic_performance': {
+                        'total_energy_cost': round(metrics['total_energy_cost'], 2),
+                        'avg_energy_price_per_kwh': round(metrics['avg_energy_price'], 3),
+                        'cost_efficiency': round(metrics['cost_per_kwh_delivered'], 3)
+                    },
+                    'resource_utilization': {
+                        'capacity_utilization_pct': round(metrics['capacity_utilization_pct'], 1),
+                        'spots_utilization_pct': round(metrics['spots_utilization_pct'], 1),
+                        'chargers_utilization_pct': round(metrics['chargers_utilization_pct'], 1)
+                    },
+                    'detailed_ev_metrics': metrics['detailed_ev_metrics'],
+                    'schedule_detail': schedule_entries,
+                    'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                }
+                
+                # Guardar resultado como config_{system_id}.json
+                output_filename = f"config_{system_id}.json"
+                output_filepath = os.path.join(solution_output_dir, output_filename)
+                
+                with open(output_filepath, 'w') as f:
+                    json.dump(result, f, indent=2)
+                
+                print(f" SYSTEM {system_id} COMPLETED:")
+                print(f"   Satisfaction: {metrics['overall_satisfaction_pct']:.1f}%")
+                print(f"   Vehicles satisfied: {metrics['vehicles_fully_satisfied']}/{metrics['total_vehicles']}")
+                print(f"   Energy delivered: {metrics['total_energy_delivered']:.1f}/{metrics['total_energy_required']:.1f} kWh")
+                print(f"   Execution time: {execution_time:.1f}s")
+                print(f"   Saved: {output_filename}")
+                
+                successful_evaluations += 1
+                
+            except Exception as e:
+                print(f" ERROR processing system {system_id}: {e}")
+                import traceback
+                traceback.print_exc()
+                failed_evaluations += 1
+            
+            finally:
+                # Limpieza de memoria entre sistemas
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+        
+        # Resumen final
+        print(f"\n{'='*50}")
+        print(f"SOLUTION SCATTER SEARCH COMPLETED")
+        print(f"{'='*50}")
+        print(f"Model: {args.model_name}")
+        print(f"Successful evaluations: {successful_evaluations}")
+        print(f"Failed evaluations: {failed_evaluations}")
+        print(f"Results saved in: {solution_output_dir}")
+        
+        if successful_evaluations > 0:
+            print(f"\nFiles created:")
+            for system_id in systems_to_process:
+                config_file = os.path.join(solution_output_dir, f"config_{system_id}.json")
+                if os.path.exists(config_file):
+                    print(f"   config_{system_id}.json")
+                else:
+                    print(f"   config_{system_id}.json")
+        
+    except Exception as e:
+        print(f"Error in run_solution_scatter_search: {e}")
+        import traceback
+        traceback.print_exc()
+
 def main():
     """
     Main function to parse arguments and run the EV Charging Management System
@@ -526,8 +771,8 @@ def main():
     try:
         parser = argparse.ArgumentParser(description="EV Charging Management System")
         parser.add_argument("--mode", type=str, required=True,
-                            choices=["train", "train_dqn", "solve", "optimize", "run_milp", "visualize_solution", "scatter_search"],
-                            help="Operating mode")
+                    choices=["train", "train_dqn", "solve", "optimize", "run_milp", "visualize_solution", "scatter_search", "solution_scatter_search"],
+                    help="Operating mode")
         parser.add_argument("--data_dir", type=str, default="src/configs/system_data",
                             help="Directory containing system configuration files (JSON).")
         parser.add_argument("--output_base_dir", type=str, default="results",
@@ -563,6 +808,12 @@ def main():
                             help="State size for DQN Agent")
         parser.add_argument("--action_size", type=int, default=40,
                             help="Action size for DQN Agent")
+        
+        parser.add_argument("--model_to_evaluate", type=str, default='./results/scatter_search/trained_models/efficiency_focused_rank_1.pt',
+                            help="Path to the specific model (.pt file) to evaluate")
+
+        parser.add_argument("--model_name", type=str, default='efficiency_focused_rank_1',  # Sin .pt
+                            help="Name for the model output directory (e.g., 'efficiency_focused_rank_1')")
         args = parser.parse_args()
 
         if args.all:
@@ -586,6 +837,9 @@ def main():
 
         if args.mode == "scatter_search":
             run_scatter_search_optimization(args)
+            
+        elif args.mode == "solution_scatter_search":
+            run_solution_scatter_search(args)
 
         elif args.mode == "train":
             print("=== TRAINING MODE ===")
@@ -764,16 +1018,34 @@ def main():
             visualize_solution(schedule_rl, config, "RL: ")
 
         elif args.mode == "optimize":
-            print("=== RL+MILP OPTIMIZATION MODE ===")
+            print("=== RL+MILP OPTIMIZATION MODE (Using Scatter Search Solutions) ===")
 
             if args.all_systems:
-                print("Processing all systems with RL + MILP...")
-                systems = load_all_test_systems(args.data_dir)
-                for system_id, config in systems.items():
-                    print(f"\nSystem {system_id}")
-                    schedule_rl, rl_metrics = generate_solution(config, model_path=args.model_path)
-                    rl_metrics["execution_time"] = time.time()
-
+                print("Processing all systems with Scatter Search + MILP...")
+                
+                available_systems = get_all_system_ids(args.data_dir)
+                if not available_systems:
+                    print(f"No test_system_*.json files found in {args.data_dir}")
+                    return
+                
+                for system_id in available_systems:
+                    print(f"\nOPTIMIZING SYSTEM {system_id}")
+                    
+                    try:
+                        config = load_data(os.path.join(args.data_dir, f"test_system_{system_id}.json"))
+                    except Exception as e:
+                        print(f"Error loading system {system_id}: {e}")
+                        continue
+                    
+                    schedule_rl, rl_metrics = load_scatter_search_solution(
+                        system_id, args.model_name, args.output_base_dir
+                    )
+                    
+                    if schedule_rl is None:
+                        print(f"Skipping system {system_id} - no scatter search solution available")
+                        continue
+                    
+                    print(f"OPTIMIZING WITH MILP...")
                     schedule_milp, milp_metrics = optimize_solution(
                         config,
                         schedule_rl,
@@ -781,51 +1053,61 @@ def main():
                         alpha_satisfaction=args.alpha_satisfaction,
                         time_limit=args.time_limit
                     )
-
+                    
                     if schedule_milp is not None:
                         compare_solutions(rl_metrics, milp_metrics)
-                        save_solution(schedule_rl, rl_metrics, os.path.join(args.output_base_dir, f"rl_solution_{system_id}.json"))
-                        save_solution(schedule_milp, milp_metrics, os.path.join(args.output_base_dir, f"milp_solution_{system_id}.json"))
-                        visualize_rl_solution(schedule_rl, config, output_dir=args.output_base_dir, filename=f"rl_solution_{system_id}.png")
-                        visualize_milp_solution(schedule_milp, config, output_dir=args.output_base_dir, filename=f"milp_solution_{system_id}.png")
+                        
+                        # Create organized directory structure
+                        system_dir = os.path.join(args.output_base_dir, "MILP_RL", f"milp_optimizer_system_{system_id}")
+                        ensure_directory_exists(system_dir)
+                        
+                        rl_output = os.path.join(system_dir, f"scatter_rl_solution_{system_id}.json")
+                        milp_output = os.path.join(system_dir, f"scatter_milp_solution_{system_id}.json")
+                        
+                        save_solution(schedule_rl, rl_metrics, rl_output)
+                        save_solution(schedule_milp, milp_metrics, milp_output)
+                        
+                        print(f"Generating visualizations...")
+                        visualize_rl_solution(schedule_rl, config, output_dir=system_dir, 
+                                            filename=f"scatter_rl_solution_{system_id}.png")
+                        visualize_milp_solution(schedule_milp, config, output_dir=system_dir, 
+                                            filename=f"scatter_milp_solution_{system_id}.png")
                     else:
-                        print(f"Optimization failed for system {system_id}")
+                        print(f"MILP optimization failed for system {system_id}")
+                
                 return
 
-            # Load specific system
-            config = None
+            system_id = args.system_id
             if args.system:
-                try_paths = [
-                    args.system,
-                    os.path.join(args.data_dir, args.system),
-                    os.path.join(args.data_dir, f"test_system_{args.system}.json") if args.system.isdigit() else None
-                ]
-            else:
-                try_paths = [os.path.join(args.data_dir, f"test_system_{args.system_id}.json")]
+                if args.system.isdigit():
+                    system_id = int(args.system)
+                else:
+                    print(f"Error: --system should be a number, got: {args.system}")
+                    return
 
-            for path in try_paths:
-                if path is None:
-                    continue
-                try:
-                    config = load_data(path)
-                    print(f"System loaded: {path}")
-                    break
-                except Exception as e:
-                    print(f"Error loading {path}: {e}")
+            print(f"Processing system {system_id} with Scatter Search + MILP...")
 
-            if config is None:
-                print("Could not load the system.")
+            config = None
+            system_file = os.path.join(args.data_dir, f"test_system_{system_id}.json")
+            
+            try:
+                config = load_data(system_file)
+                print(f"System {system_id} loaded: {system_file}")
+            except Exception as e:
+                print(f"Error loading system {system_id}: {e}")
                 return
 
-            # Generate initial RL solution
-            print("\n1. GENERATING INITIAL RL SOLUTION")
-            start_time = time.time()
-            schedule_rl, rl_metrics = generate_solution(config, model_path=args.model_path)
-            rl_time = time.time() - start_time
-            rl_metrics["execution_time"] = rl_time
+            print(f"1. LOADING SCATTER SEARCH SOLUTION")
+            schedule_rl, rl_metrics = load_scatter_search_solution(
+                system_id, args.model_name, args.output_base_dir
+            )
+            
+            if schedule_rl is None:
+                print(f"Cannot proceed without scatter search solution")
+                print(f"Run this first: python main.py --mode solution_scatter_search --model_name {args.model_name} --system_id {system_id}")
+                return
 
-            # Optimize with MILP
-            print("\n2. OPTIMIZING WITH MULTI-OBJECTIVE MILP")
+            print(f"2. OPTIMIZING WITH MULTI-OBJECTIVE MILP")
             schedule_milp, milp_metrics = optimize_solution(
                 config,
                 schedule_rl,
@@ -834,23 +1116,43 @@ def main():
                 time_limit=args.time_limit
             )
 
-            # Compare solutions
             if schedule_milp is not None:
+                print(f"3. COMPARING SOLUTIONS")
                 compare_solutions(rl_metrics, milp_metrics)
 
-                # Save solutions
-                test_number = config.get("test_number", "unknown")
-                rl_output = os.path.join(args.output_base_dir, f"rl_solution_{test_number}.json")
-                milp_output = os.path.join(args.output_base_dir, f"milp_solution_{test_number}.json")
+                # Create organized directory structure
+                test_number = config.get("test_number", system_id)
+                system_dir = os.path.join(args.output_base_dir, "MILP_RL", f"milp_optimizer_system_{test_number}")
+                ensure_directory_exists(system_dir)
+
+                rl_output = os.path.join(system_dir, f"scatter_rl_solution_{test_number}.json")
+                milp_output = os.path.join(system_dir, f"scatter_milp_solution_{test_number}.json")
 
                 save_solution(schedule_rl, rl_metrics, rl_output)
                 save_solution(schedule_milp, milp_metrics, milp_output)
 
-                # Visualize
-                visualize_solution(schedule_rl, config, "RL: ")
-                visualize_solution(schedule_milp, config, "MILP: ")
+                print(f"4. GENERATING VISUALIZATIONS")
+                visualize_rl_solution(schedule_rl, config, output_dir=system_dir, 
+                                    filename=f"scatter_rl_solution_{test_number}.png")
+                visualize_milp_solution(schedule_milp, config, output_dir=system_dir, 
+                                    filename=f"scatter_milp_solution_{test_number}.png")
+                
+                print(f"OPTIMIZATION COMPLETED")
+                print(f"Results saved in: {system_dir}")
+                print(f"Results based on {rl_metrics['model_info'].get('model_name', 'scatter search')} solution")
             else:
-                print("MILP optimization did not produce a valid solution.")
+                print(f"MILP optimization did not produce a valid solution.")
+                print(f"The scatter search solution will be saved for analysis:")
+                
+                test_number = config.get("test_number", system_id)
+                system_dir = os.path.join(args.output_base_dir, "MILP_RL", f"milp_optimizer_system_{test_number}")
+                ensure_directory_exists(system_dir)
+                
+                rl_output = os.path.join(system_dir, f"scatter_rl_solution_{test_number}.json")
+                save_solution(schedule_rl, rl_metrics, rl_output)
+                visualize_rl_solution(schedule_rl, config, output_dir=system_dir, 
+                                    filename=f"scatter_rl_solution_{test_number}.png")
+                print(f"RL solution saved in: {system_dir}")
 
         elif args.mode == "run_milp":
             print("\n--- Starting MILP Optimization Mode ---")

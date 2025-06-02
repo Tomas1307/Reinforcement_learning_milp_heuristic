@@ -67,13 +67,6 @@ def visualize_solution(schedule: list, config: dict, save_dir: str = None, filen
     """
     Visualizes the electric vehicle charging schedule.
     Generates a Gantt chart to display vehicle-to-charger assignments.
-
-    Args:
-        schedule (list): A list of tuples/lists representing the schedule:
-                         [(ev_id, t_idx, charger_id, slot_idx, power), ...]
-        config (dict): The system configuration including times, chargers, arrivals.
-        save_dir (str, optional): Directory to save the plot. If None, the plot is not saved.
-        filename (str, optional): Filename for the plot if saved.
     """
     if not schedule:
         print("No schedule to visualize.")
@@ -103,8 +96,13 @@ def visualize_solution(schedule: list, config: dict, save_dir: str = None, filen
     charger_ids = sorted(charger_ids)
     ev_ids = sorted(list(set([s[0] for s in schedule])))
 
-    cmap = plt.cm.get_cmap('tab20', len(ev_ids))
-    ev_colors = {ev_id: cmap(i) for i, ev_id in enumerate(ev_ids)}
+    # Use more efficient colormap for many EVs
+    if len(ev_ids) > 20:
+        colors = plt.cm.nipy_spectral(np.linspace(0, 1, len(ev_ids)))
+    else:
+        colors = plt.cm.tab20(np.linspace(0, 1, len(ev_ids)))
+    
+    ev_colors = {ev_id: colors[i] for i, ev_id in enumerate(ev_ids)}
 
     charger_schedules = defaultdict(list)
     for ev_id, t_idx, charger_id, slot_idx, power in schedule:
@@ -119,39 +117,61 @@ def visualize_solution(schedule: list, config: dict, save_dir: str = None, filen
                 'color': ev_colors[ev_id]
             })
 
-    fig, ax = plt.subplots(figsize=(15, 8))
+    # Improved figure size and layout
+    fig, ax = plt.subplots(figsize=(14, max(6, len(charger_ids) * 0.5)))
 
     y_pos = np.arange(len(charger_ids))
     for i, charger_id in enumerate(charger_ids):
         for task in charger_schedules[charger_id]:
             ax.barh(y_pos[i], task['end'] - task['start'], left=task['start'],
                     color=task['color'], edgecolor='black', alpha=0.8)
-            ax.text(task['start'] + (task['end'] - task['start']) / 2, y_pos[i], 
-                    f"EV {task['ev_id']}\n{task['power']:.1f}kW",
-                    ha='center', va='center', color='white', fontsize=8, weight='bold')
+            
+            # Only show text if bar is wide enough
+            bar_width = task['end'] - task['start']
+            if bar_width > 0.5:  # Only show text for bars wider than 0.5 hours
+                ax.text(task['start'] + bar_width / 2, y_pos[i], 
+                        f"EV {task['ev_id']}\n{task['power']:.1f}kW",
+                        ha='center', va='center', color='white', fontsize=8, weight='bold')
+            elif bar_width > 0.25:  # Show only EV ID for medium bars
+                ax.text(task['start'] + bar_width / 2, y_pos[i], 
+                        f"{task['ev_id']}",
+                        ha='center', va='center', color='white', fontsize=6, weight='bold')
 
     ax.set_yticks(y_pos)
     ax.set_yticklabels([f"Charger {cid}" for cid in charger_ids], fontsize=10)
     ax.set_xlabel("Time (hours)", fontsize=12)
     ax.set_ylabel("Charger", fontsize=12)
-    ax.set_title("EV Charging Schedule (Gantt Chart)", fontsize=16)
+    ax.set_title("EV Charging Schedule (Gantt Chart)", fontsize=14)
     ax.set_xlim(min(times), max(times) + config.get("dt", 0.25))
+    ax.grid(True, alpha=0.3)
 
-    handles = []
-    labels = []
-    for ev_id, color in ev_colors.items():
-        patch = plt.Line2D([0], [0], marker='s', color='w', label=f'EV {ev_id}',
-                           markerfacecolor=color, markersize=10)
-        handles.append(patch)
-        labels.append(f'EV {ev_id}')
-    
-    ax.legend(handles=handles, labels=labels, bbox_to_anchor=(1.05, 1), loc='upper left', borderaxespad=0.)
+    # Improved legend handling
+    if len(ev_ids) <= 15:
+        # Show legend for small number of EVs
+        handles = []
+        labels = []
+        for ev_id, color in ev_colors.items():
+            patch = plt.Line2D([0], [0], marker='s', color='w', label=f'EV {ev_id}',
+                               markerfacecolor=color, markersize=8)
+            handles.append(patch)
+            labels.append(f'EV {ev_id}')
+        
+        ax.legend(handles=handles, labels=labels, bbox_to_anchor=(1.02, 1), 
+                 loc='upper left', borderaxespad=0., fontsize=8)
+    else:
+        # For many EVs, add summary text instead of legend
+        summary_text = f"Total EVs: {len(ev_ids)}\nTotal Chargers: {len(charger_ids)}"
+        ax.text(0.02, 0.98, summary_text, transform=ax.transAxes,
+                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='white', alpha=0.8),
+                fontsize=10)
+
+    # Tight layout to minimize white space
     plt.tight_layout()
 
     if save_dir:
         os.makedirs(save_dir, exist_ok=True)
         filepath = os.path.join(save_dir, filename)
-        plt.savefig(filepath, dpi=300, bbox_inches='tight')
+        plt.savefig(filepath, dpi=300, bbox_inches='tight', pad_inches=0.1)
         print(f"Schedule plot saved to: {filepath}")
     
     plt.close(fig)

@@ -10,22 +10,15 @@ import os
 
 class DQNNetwork(nn.Module):
     """
-    DQN neural network with a Dueling architecture implemented in PyTorch.
+    Red neuronal DQN con arquitectura Dueling implementada en PyTorch.
     """
     def __init__(self, state_size, action_size, dueling=True):
-        """
-        Initializes the DQNNetwork.
-
-        Args:
-            state_size (int): The dimension of the input state.
-            action_size (int): The number of possible actions.
-            dueling (bool): Whether to use a Dueling DQN architecture. Defaults to True.
-        """
         super(DQNNetwork, self).__init__()
         self.state_size = state_size
         self.action_size = action_size
         self.dueling = dueling
         
+        # Capas compartidas
         self.fc1 = nn.Linear(state_size, 64)
         self.bn1 = nn.BatchNorm1d(64)
         self.fc2 = nn.Linear(64, 64)
@@ -33,72 +26,53 @@ class DQNNetwork(nn.Module):
         self.fc3 = nn.Linear(64, 32)
         
         if self.dueling:
+            # Dueling DQN: separar value y advantage streams
             self.value_stream = nn.Linear(32, 16)
             self.value_output = nn.Linear(16, 1)
             
             self.advantage_stream = nn.Linear(32, 16)
             self.advantage_output = nn.Linear(16, action_size)
         else:
+            # DQN simple
             self.output = nn.Linear(32, action_size)
     
     def forward(self, x):
-        """
-        Performs a forward pass through the network.
-
-        Args:
-            x (torch.Tensor): The input state tensor.
-
-        Returns:
-            torch.Tensor: The Q-values for each action.
-        """
+        # Asegurar que x tenga la forma correcta
         if len(x.shape) == 1:
             x = x.unsqueeze(0)
         
+        # Capas compartidas
         x = F.relu(self.bn1(self.fc1(x)))
         x = F.relu(self.fc2(x))
         x = self.dropout(x)
         x = F.relu(self.fc3(x))
         
         if self.dueling:
-
+            # Dueling DQN
             value = F.relu(self.value_stream(x))
             value = self.value_output(value)
             
             advantage = F.relu(self.advantage_stream(x))
             advantage = self.advantage_output(advantage)
             
-
+            # Combinar value y advantage
+            # Q(s,a) = V(s) + (A(s,a) - mean(A(s,a)))
             q_values = value + (advantage - advantage.mean(dim=1, keepdim=True))
             
             return q_values
         else:
-            # Simple DQN
+            # DQN simple
             return self.output(x)
 
 class EnhancedDQNAgentPyTorch:
     """
-    Enhanced DQN agent implemented in PyTorch with automatic GPU support.
+    Agente DQN mejorado implementado en PyTorch con soporte automático para GPU.
     """
     def __init__(self, state_size, action_size, learning_rate=0.0005, 
                  gamma=0.95, epsilon=0.9, epsilon_min=0.05, epsilon_decay=0.99,
                  memory_size=5000, batch_size=32, target_update_freq=50,
                  dueling_network=True):
-        """
-        Initializes the EnhancedDQNAgentPyTorch.
-
-        Args:
-            state_size (int): The dimension of the input state.
-            action_size (int): The number of possible actions.
-            learning_rate (float): The learning rate for the optimizer. Defaults to 0.0005.
-            gamma (float): The discount factor for future rewards. Defaults to 0.95.
-            epsilon (float): The initial exploration rate. Defaults to 0.9.
-            epsilon_min (float): The minimum exploration rate. Defaults to 0.05.
-            epsilon_decay (float): The decay rate for epsilon. Defaults to 0.99.
-            memory_size (int): The maximum size of the replay memory. Defaults to 5000.
-            batch_size (int): The number of samples per training batch. Defaults to 32.
-            target_update_freq (int): How often to update the target network. Defaults to 50.
-            dueling_network (bool): Whether to use a Dueling DQN architecture. Defaults to True.
-        """
+        
         self.state_size = state_size
         self.action_size = action_size
         self.memory = deque(maxlen=memory_size)
@@ -113,40 +87,35 @@ class EnhancedDQNAgentPyTorch:
         self.target_update_counter = 0
         self.steps = 0
         
+        # Detectar dispositivo (GPU/CPU)
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        print(f"DQN Agent using: {self.device}")
+        print(f"DQN Agent usando: {self.device}")
         
         if torch.cuda.is_available():
-            print(f"GPU detected: {torch.cuda.get_device_name(0)}")
-            print(f"Available GPU memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
+            print(f"GPU detectada: {torch.cuda.get_device_name(0)}")
+            print(f"Memoria GPU disponible: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
         
+        # Crear redes neuronales
         self.q_network = DQNNetwork(state_size, action_size, dueling_network).to(self.device)
         self.target_network = DQNNetwork(state_size, action_size, dueling_network).to(self.device)
         
+        # Optimizer
         self.optimizer = optim.Adam(self.q_network.parameters(), lr=learning_rate)
         
+        # Inicializar target network
         self.update_target_network()
         
+        # Memoria específica por sistema
         self.system_memories = defaultdict(lambda: deque(maxlen=2000))
         
-        print(f"Neural network created with {sum(p.numel() for p in self.q_network.parameters())} parameters")
+        print(f"Red neuronal creada con {sum(p.numel() for p in self.q_network.parameters())} parámetros")
     
     def update_target_network(self):
-        """Updates the target network by copying weights from the main network."""
+        """Actualiza el target network copiando pesos del main network."""
         self.target_network.load_state_dict(self.q_network.state_dict())
     
     def remember(self, state, action, reward, next_state, done, system_type=0):
-        """
-        Stores an experience in memory.
-
-        Args:
-            state (object): The current state.
-            action (int): The action taken.
-            reward (float): The reward received.
-            next_state (object): The next state.
-            done (bool): Whether the episode is finished.
-            system_type (int): The type of system for system-specific memory. Defaults to 0.
-        """
+        """Almacena experiencia en memoria."""
         try:
             action = int(action)
             reward = float(reward)
@@ -163,67 +132,52 @@ class EnhancedDQNAgentPyTorch:
         self.system_memories[system_type].append(experience)
     
     def act(self, state, possible_actions, verbose=False):
-        """
-        Selects an action using epsilon-greedy.
-
-        Args:
-            state (object): The current state.
-            possible_actions (list): A list of available actions.
-            verbose (bool): Whether to print verbose output. Defaults to False.
-
-        Returns:
-            int: The selected action. Returns -1 if no actions are possible.
-        """
+        """Selecciona acción usando epsilon-greedy."""
         if len(possible_actions) == 0:
             if verbose:
-                print("       No possible actions")
+                print("      No hay acciones posibles")
             return -1
         
         if np.random.rand() <= self.epsilon:
             action = np.random.choice(len(possible_actions))
             if verbose:
-                print(f"       Random action: {action} (epsilon: {self.epsilon:.3f})")
+                print(f"      Acción aleatoria: {action} (epsilon: {self.epsilon:.3f})")
             return action
         
         try:
             state_vector = self._process_state(state)
             
+            # Convertir a tensor y mover a dispositivo
             state_tensor = torch.FloatTensor(state_vector).to(self.device)
             
+            # Modo evaluación para predicción
             self.q_network.eval()
             with torch.no_grad():
                 q_values = self.q_network(state_tensor)
             
+            # Filtrar solo acciones posibles
             q_values_np = q_values.cpu().numpy().flatten()
             filtered_actions = [(i, q_values_np[i]) for i in range(min(len(q_values_np), len(possible_actions)))]
             
             if not filtered_actions:
                 action = np.random.choice(len(possible_actions))
                 if verbose:
-                    print(f"       Random fallback: {action}")
+                    print(f"      Fallback aleatorio: {action}")
                 return action
             
             action = max(filtered_actions, key=lambda x: x[1])[0]
             if verbose:
                 q_value = filtered_actions[action][1]
-                action_type = possible_actions[action].get("type", "unknown")
-                print(f"       DQN action: {action} (Q-value: {q_value:.3f}, Type: {action_type})")
+                print(f"      Acción DQN: {action} (Q-value: {q_value:.3f})")
             return action
             
         except Exception as e:
-            print(f"Error in act(): {e}")
+            if verbose:
+                print(f"      Error en act(): {e}")
+            return np.random.choice(len(possible_actions))
     
     def _safe_scalar_from_list(self, value, default=0.0):
-        """
-        Safely converts a value to a scalar.
-
-        Args:
-            value (any): The value to convert.
-            default (float): The default value to return if conversion fails. Defaults to 0.0.
-
-        Returns:
-            float: The scalar representation of the value.
-        """
+        """Convierte valor a escalar de manera segura."""
         if value is None:
             return default
         
@@ -244,21 +198,14 @@ class EnhancedDQNAgentPyTorch:
             return default
     
     def _process_state(self, state):
-        """
-        Processes the state for the neural network.
-
-        Args:
-            state (dict): The raw state dictionary.
-
-        Returns:
-            numpy.ndarray: The processed state as a numpy array.
-        """
+        """Procesa el estado para la red neuronal."""
         if state is None:
             return np.zeros(self.state_size, dtype=np.float32)
         
         base_vector = []
         
         try:
+            # Características del vehículo
             ev_features = state.get("ev_features", [])
             if isinstance(ev_features, list) and len(ev_features) > 0:
                 for i in range(7):
@@ -270,6 +217,7 @@ class EnhancedDQNAgentPyTorch:
             else:
                 base_vector.extend([0.0] * 7)
             
+            # Características del sistema
             system_features = [
                 self._safe_scalar_from_list(state.get("avg_available_spots", 0.5)),
                 self._safe_scalar_from_list(state.get("avg_available_chargers", 0.5)),
@@ -285,6 +233,7 @@ class EnhancedDQNAgentPyTorch:
             ]
             base_vector.extend(system_features)
             
+            # Características adicionales
             additional_features = [
                 "battery_capacity", "charging_urgency", "system_demand_ratio", 
                 "time_remaining", "min_charge_rate", "max_charge_rate", 
@@ -305,73 +254,39 @@ class EnhancedDQNAgentPyTorch:
                         base_vector.append(self._safe_scalar_from_list(state[feature]) / 1.5)
                     else:
                         base_vector.append(self._safe_scalar_from_list(state[feature]))
-                else:
-                    base_vector.append(0.0)
             
+            # Características de listas
             list_features = ["spot_availability", "charger_availability", "relevant_prices", "transformer_capacity"]
             for feature in list_features:
                 if feature in state:
                     base_vector.append(self._safe_scalar_from_list(state[feature]))
-                else:
-                    base_vector.append(0.0)
             
-            evs_present = state.get("evs_present", [])
-            ev_details = state.get("ev_details", {})
-            
-            base_vector.append(len(evs_present) / 10.0)
-            base_vector.append(state.get("current_time_normalized", 0.0))
-            base_vector.append(state.get("competition_pressure", 0.0))
-            base_vector.append(self._safe_scalar_from_list(state.get("transformer_capacity_available", 35)) / 100.0)
-            
-            if evs_present and len(evs_present) > 1:
-                for ev_id in evs_present[:3]:
-                    if ev_id in ev_details:
-                        ev_detail = ev_details[ev_id]
-                        base_vector.extend([
-                            ev_detail.get("energy_needed", 0.0),
-                            ev_detail.get("energy_progress", 0.0),
-                            ev_detail.get("urgency", 0.0),
-                            1.0 if ev_detail.get("current_spot") is not None else 0.0,
-                            1.0 if ev_detail.get("is_charging", False) else 0.0,
-                            ev_detail.get("priority", 1.0),
-                            ev_detail.get("willingness_to_pay", 1.0),
-                            ev_detail.get("compatible_chargers_available", 0) / 5.0
-                        ])
-                    else:
-                        base_vector.extend([0.0] * 8)
-                
-                while len(base_vector) < len(base_vector) + (3 - len(evs_present)) * 8:
-                    base_vector.extend([0.0] * 8)
-            else:
-                base_vector.extend([0.0] * 24)
-            
+            # Asegurar que todos son escalares
             base_vector = [self._safe_scalar_from_list(x) for x in base_vector]
             
+            # Convertir a numpy array
             all_features = np.array(base_vector, dtype=np.float32)
             
+            # Asegurar dimensión correcta
             if len(all_features) < self.state_size:
                 padding = np.zeros(self.state_size - len(all_features), dtype=np.float32)
                 all_features = np.concatenate([all_features, padding])
             elif len(all_features) > self.state_size:
                 all_features = all_features[:self.state_size]
             
+            # Limpiar NaN e infinitos
             all_features = np.nan_to_num(all_features, nan=0.0, posinf=1.0, neginf=0.0)
             
             return all_features
             
         except Exception as e:
-            print(f"Error in _process_state: {e}")
-        
+            print(f"Error en _process_state: {e}")
+            return np.zeros(self.state_size, dtype=np.float32)
     
     def replay(self, system_specific=False, system_type=0):
-        """
-        Trains the network with past experience.
-
-        Args:
-            system_specific (bool): Whether to sample from system-specific memory. Defaults to False.
-            system_type (int): The type of system to sample from if system_specific is True. Defaults to 0.
-        """
+        """Entrena la red con experiencia pasada."""
         try:
+            # Seleccionar memoria
             if system_specific and len(self.system_memories[system_type]) >= self.batch_size:
                 samples = random.sample(self.system_memories[system_type], self.batch_size)
             else:
@@ -382,7 +297,7 @@ class EnhancedDQNAgentPyTorch:
             if not samples:
                 return
             
-            # Process batch
+            # Procesar batch
             states = []
             actions = []
             rewards = []
@@ -412,37 +327,47 @@ class EnhancedDQNAgentPyTorch:
             if len(states) == 0:
                 return
             
+            # Convertir a tensores
             states_tensor = torch.FloatTensor(np.array(states)).to(self.device)
             actions_tensor = torch.LongTensor(actions).to(self.device)
             rewards_tensor = torch.FloatTensor(rewards).to(self.device)
             next_states_tensor = torch.FloatTensor(np.array(next_states)).to(self.device)
             dones_tensor = torch.BoolTensor(dones).to(self.device)
             
+            # Calcular Q-values actuales
             self.q_network.train()
             current_q_values = self.q_network(states_tensor)
             current_q_values = current_q_values.gather(1, actions_tensor.unsqueeze(1))
             
+            # Calcular Q-values target (Double DQN)
             with torch.no_grad():
+                # Usar main network para seleccionar acciones
                 next_q_values_main = self.q_network(next_states_tensor)
                 next_actions = next_q_values_main.argmax(1)
                 
+                # Usar target network para evaluar
                 next_q_values_target = self.target_network(next_states_tensor)
                 next_q_values = next_q_values_target.gather(1, next_actions.unsqueeze(1))
                 
+                # Calcular targets
                 target_q_values = rewards_tensor + (self.gamma * next_q_values.squeeze() * ~dones_tensor)
             
+            # Calcular loss y optimizar
             loss = F.mse_loss(current_q_values.squeeze(), target_q_values)
             
             self.optimizer.zero_grad()
             loss.backward()
             
+            # Gradient clipping para estabilidad
             torch.nn.utils.clip_grad_norm_(self.q_network.parameters(), max_norm=1.0)
             
             self.optimizer.step()
             
+            # Decrementar epsilon
             if self.epsilon > self.epsilon_min:
                 self.epsilon *= self.epsilon_decay
             
+            # Actualizar target network
             self.steps += 1
             self.target_update_counter += 1
             if self.target_update_counter >= self.target_update_freq:
@@ -450,18 +375,10 @@ class EnhancedDQNAgentPyTorch:
                 self.target_update_counter = 0
                 
         except Exception as e:
-            print(f"Error in replay: {e}")
+            print(f"Error en replay: {e}")
     
     def save(self, filepath):
-        """
-        Saves the model.
-
-        Args:
-            filepath (str): The path to save the model.
-
-        Returns:
-            bool: True if saving was successful, False otherwise.
-        """
+        """Guarda el modelo."""
         try:
             torch.save({
                 'q_network_state_dict': self.q_network.state_dict(),
@@ -472,19 +389,11 @@ class EnhancedDQNAgentPyTorch:
             }, filepath)
             return True
         except Exception as e:
-            print(f"Error saving model: {e}")
+            print(f"Error al guardar modelo: {e}")
             return False
     
     def load(self, filepath):
-        """
-        Loads the model.
-
-        Args:
-            filepath (str): The path to load the model from.
-
-        Returns:
-            bool: True if loading was successful, False otherwise.
-        """
+        """Carga el modelo."""
         try:
             if not os.path.exists(filepath):
                 return False
@@ -499,5 +408,5 @@ class EnhancedDQNAgentPyTorch:
             
             return True
         except Exception as e:
-            print(f"Error loading model: {e}")
+            print(f"Error al cargar modelo: {e}")
             return False

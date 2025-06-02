@@ -12,11 +12,15 @@ from src.common.logger import SimpleEpisodeLogger
 from src.common.config import load_system_config
 
 def create_episode_data(episode_num, total_reward, energy_metrics, assign_count, skip_count,
-                       total_vehicles, episode_time, agent_epsilon, action_types_count=None):
+                       total_vehicles, episode_time, agent_epsilon):
+    """
+    Crea un diccionario estructurado con los datos del episodio para el logger.
+    Compatibilidad con el main anterior que funciona.
+    """
     satisfaction_pct = energy_metrics.get("total_satisfaction_pct", 0.0)
     assign_ratio = (assign_count / total_vehicles * 100) if total_vehicles > 0 else 0
 
-    episode_data = {
+    return {
         "episode": episode_num,
         "reward": total_reward,
         "satisfaction_pct": satisfaction_pct,
@@ -27,11 +31,6 @@ def create_episode_data(episode_num, total_reward, energy_metrics, assign_count,
         "epsilon": agent_epsilon,
         "episode_time": episode_time
     }
-    
-    if action_types_count:
-        episode_data["action_types"] = action_types_count
-    
-    return episode_data
 
 class SystemProgressLogger:
     """
@@ -56,6 +55,7 @@ def train_agent(systems, config):
     import time
     from datetime import datetime
     
+    # Configuración del agente optimizada
     state_size = config.get("state_size", 32)
     action_size = config.get("action_size", 50)
     batch_size = config.get("batch_size", 32)
@@ -66,6 +66,7 @@ def train_agent(systems, config):
     patience = config.get("patience", 3)
     resume_from_checkpoint = config.get("resume_from_checkpoint", True)
     
+    # Crear directorio de checkpoints si no existe
     os.makedirs(checkpoint_dir, exist_ok=True)
     
     progress_logger = SystemProgressLogger()
@@ -79,6 +80,7 @@ def train_agent(systems, config):
     print(f"   - Total de sistemas: {len(systems)}")
     print(f"   - Total episodios estimados: {len(systems) * episodes_per_system}")
     
+    # Crear agente avanzado con configuración optimizada
     print(f"\nCreando agente DQN...")
     agent = EnhancedDQNAgent(
         state_size=state_size, 
@@ -95,8 +97,10 @@ def train_agent(systems, config):
     )
     print(f"Agente creado exitosamente")
     
+    # Orden de entrenamiento: sistemas más simples primero
     system_order = sorted(systems.keys())
     
+    # Resumir entrenamiento desde checkpoint si existe
     current_system_idx = 0
     current_episode = 0
     
@@ -105,7 +109,7 @@ def train_agent(systems, config):
         checkpoint_files = []
         for root, _, files in os.walk(checkpoint_dir):
             for file in files:
-                if file.endswith('.pt') and 'checkpoint' in file:
+                if file.endswith('.pt') and 'checkpoint' in file:  # Cambio .h5 -> .pt
                     checkpoint_files.append(os.path.join(root, file))
         
         if checkpoint_files:
@@ -134,25 +138,29 @@ def train_agent(systems, config):
         else:
             print(f"No se encontraron checkpoints")
     
+    # Si no se encontró checkpoint, intentar cargar modelo pre-entrenado
     if current_system_idx == 0 and current_episode == 0:
         try:
             print(f"Intentando cargar modelo pre-entrenado desde {model_path}...")
             model_loaded = agent.load(model_path)
             if model_loaded:
                 print("Modelo pre-entrenado cargado exitosamente.")
-                agent.epsilon = 0.5
+                agent.epsilon = 0.5  # Epsilon intermedio para modelo pre-entrenado
                 print(f"Epsilon ajustado a {agent.epsilon}")
         except Exception as e:
             print(f"No se pudo cargar modelo pre-entrenado: {e}")
             print("Entrenando nuevo modelo desde cero...")
     
+    # Archivo de registro para el progreso
     log_path = os.path.join(checkpoint_dir, "training_log.txt")
     with open(log_path, "a") as log_file:
         log_file.write(f"\n\n--- Nueva sesión de entrenamiento optimizado: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} ---\n")
         
+        # Variables para estadísticas globales
         global_start_time = time.time()
         total_episodes_completed = 0
         
+        # Entrenar en cada sistema, comenzando desde el índice actual
         for system_idx in range(current_system_idx, len(system_order)):
             system_num = system_order[system_idx]
             system_config = systems[system_num]
@@ -165,6 +173,7 @@ def train_agent(systems, config):
             print(system_info)
             log_file.write(f"{system_info}\n")
             
+            # Crear entorno avanzado (usar EVChargingEnv en lugar de EnhancedEVChargingEnv)
             print(f"Creando entorno para sistema {system_num}...")
             env = EVChargingEnv(system_config)
             print(f"Entorno creado")
@@ -172,21 +181,25 @@ def train_agent(systems, config):
             agent.epsilon = config.get("epsilon", 0.9)
             print(f"Epsilon reiniciado a {agent.epsilon}")
             
+            # Comenzar desde el episodio actual o desde 0
             start_episode = current_episode if system_idx == current_system_idx else 0
             
             log_message = f"Ejecutando episodios {start_episode+1}-{episodes_per_system}..."
             print(log_message)
             log_file.write(f"{log_message}\n")
             
+            # Variables para early stopping
             best_reward = -float('inf')
             no_improvement_count = 0
-            best_model_path = os.path.join(checkpoint_dir, f"best_model_sys_{system_idx}.pt")
+            best_model_path = os.path.join(checkpoint_dir, f"best_model_sys_{system_idx}.pt")  # Cambio .h5 -> .pt
             
+            # Variables para estadísticas del sistema
             system_start_time = time.time()
             episode_times = []
             rewards_history = []
             satisfaction_history = []
             
+            # Lista para el logger
             episodes_data = []
             
             for e in range(start_episode, episodes_per_system):
@@ -201,6 +214,7 @@ def train_agent(systems, config):
                 done = False
                 step_count = 0
                 
+                # Contadores para diagnóstico
                 skip_count = 0
                 assign_count = 0
                 decisions_made = 0
@@ -209,6 +223,7 @@ def train_agent(systems, config):
                 print(f"   Procesando {total_vehicles} vehículos...", end="", flush=True)
                 
                 while not done:
+                    # Mostrar progreso cada 20 vehículos
                     if decisions_made > 0 and decisions_made % 20 == 0:
                         progress = (decisions_made / total_vehicles) * 100
                         print(f" {progress:.0f}%", end="", flush=True)
@@ -216,9 +231,10 @@ def train_agent(systems, config):
                     possible_actions = env._get_possible_actions(state)
                     
                     if len(possible_actions) == 0:
-                        print(f"\n   No hay acciones posibles en el estado actual")
+                        print(f"\n   No hay acciones posibles para el vehículo actual")
                         break
                         
+                    # Solo mostrar detalles de acción cada 50 vehículos para no saturar
                     verbose_action = (decisions_made % 50 == 0)
                     action = agent.act(state, possible_actions, verbose=verbose_action)
                     
@@ -227,15 +243,9 @@ def train_agent(systems, config):
                         break
                         
                     selected_action = possible_actions[action]
-                    
-                    action_type = selected_action.get("type", "unknown")
-                    if action_type in ["assign_parking", "assign_charging", "start_charging"]:
-                        assign_count += 1
-                    elif action_type == "no_action":
+                    if selected_action["skip"]:
                         skip_count += 1
-                    elif selected_action.get("skip", False):
-                        skip_count += 1
-                    elif not selected_action.get("skip", True):
+                    else:
                         assign_count += 1
                         
                     next_state, reward, done = env.step(action)
@@ -246,11 +256,13 @@ def train_agent(systems, config):
                     step_count += 1
                     decisions_made += 1
                     
+                    # Entrenar con experiencia con mayor frecuencia
                     if len(agent.memory) > batch_size and decisions_made % 10 == 0:
                         agent.replay()
                 
                 print(f" Completado")
                 
+                # Métricas de satisfacción (usar el método correcto)
                 energy_metrics = env.get_energy_satisfaction_metrics()
                 satisfaction_pct = energy_metrics["total_satisfaction_pct"]
                 
@@ -259,15 +271,18 @@ def train_agent(systems, config):
                 rewards_history.append(total_reward)
                 satisfaction_history.append(satisfaction_pct)
                 
+                # Guardar datos del episodio para el logger
                 episode_data = create_episode_data(
                     e + 1, total_reward, energy_metrics, assign_count, skip_count,
                     total_vehicles, episode_time, agent.epsilon
                 )
                 episodes_data.append(episode_data)
                 
+                # Calcular tendencias
                 avg_reward_last_3 = np.mean(rewards_history[-3:]) if len(rewards_history) >= 3 else total_reward
                 avg_satisfaction_last_3 = np.mean(satisfaction_history[-3:]) if len(satisfaction_history) >= 3 else satisfaction_pct
                 
+                # Estadísticas del episodio
                 log_message = (f"Episodio {e+1} completado:\n"
                              f"   Recompensa: {total_reward:.2f} (promedio últimos 3: {avg_reward_last_3:.2f})\n"
                              f"   Satisfacción energética: {satisfaction_pct:.1f}% (promedio últimos 3: {avg_satisfaction_last_3:.1f}%)\n"
@@ -279,20 +294,24 @@ def train_agent(systems, config):
                 print(log_message)
                 log_file.write(f"{log_message}\n")
                 
+                # Entrenar intensivamente al final del episodio
                 if len(agent.memory) > batch_size:
                     print(f"   Entrenando red neuronal...")
-                    for _ in range(5):
+                    for _ in range(5):  # Múltiples entrenamientos al final
                         agent.replay()
                 
+                # Guardar checkpoint periódicamente
                 if (e + 1) % checkpoint_frequency == 0 or e == episodes_per_system - 1:
-                    checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_sys_{system_idx}_ep_{e+1}.pt")
+                    checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_sys_{system_idx}_ep_{e+1}.pt")  # Cambio .h5 -> .pt
                     print(f"Guardando checkpoint: {checkpoint_path}")
                     agent.save(checkpoint_path)
                     
+                    # También actualizar modelo principal
                     agent.save(model_path)
                     log_file.write(f"Checkpoint guardado: {checkpoint_path}\n")
                     log_file.flush()
                 
+                # Early stopping basado en recompensa Y satisfacción
                 avg_reward_last_5 = np.mean(rewards_history[-5:]) if len(rewards_history) >= 5 else total_reward
                 avg_satisfaction_last_5 = np.mean(satisfaction_history[-5:]) if len(satisfaction_history) >= 5 else satisfaction_pct
                 combined_metric = avg_reward_last_5 + avg_satisfaction_last_5
@@ -329,6 +348,7 @@ def train_agent(systems, config):
                 
                 total_episodes_completed += 1
                 
+                # Estimación de tiempo restante
                 if len(episode_times) > 2:
                     avg_episode_time = np.mean(episode_times[-3:])
                     remaining_episodes = (len(systems) - system_idx - 1) * episodes_per_system + (episodes_per_system - e - 1)
@@ -337,13 +357,15 @@ def train_agent(systems, config):
                     eta_msg = f"ETA: {estimated_remaining/60:.1f} minutos restantes"
                     print(eta_msg)
             
+            # Guardar progreso del sistema
             system_info_for_logger = {
                 "total_vehicles": len(system_config["arrivals"]),
                 "n_spots": system_config["n_spots"],
-                "n_chargers": len(system_config["chargers"])
+                "n_chargers": len(system_config["chargers"])  # Acceso directo, no parking_config
             }
             progress_logger.save_system_progress(system_num, episodes_data, system_info_for_logger)
             
+            # Estadísticas del sistema completado
             system_time = time.time() - system_start_time
             avg_reward = np.mean(rewards_history) if rewards_history else 0
             avg_satisfaction = np.mean(satisfaction_history) if satisfaction_history else 0
@@ -362,8 +384,10 @@ RESUMEN SISTEMA {system_num}:
             print(system_summary)
             log_file.write(f"{system_summary}\n")
             
+            # Reset current_episode para el siguiente sistema
             current_episode = 0
     
+    # Estadísticas finales
     total_time = time.time() - global_start_time
     final_summary = f"""
 ENTRENAMIENTO COMPLETADO!
@@ -375,6 +399,7 @@ Modelo guardado en: {model_path}
 """
     print(final_summary)
     
+    # Guardar modelo final
     print(f"\nGuardando modelo final en {model_path}...")
     agent.save(model_path)
     print(f"Modelo guardado exitosamente")
@@ -384,16 +409,26 @@ Modelo guardado en: {model_path}
 def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: int,
                     model_save_path: str = None, log_frequency: int = 100,
                     logger: SimpleEpisodeLogger = None, verbose: bool = False):
+    """
+    Función simplificada para entrenamiento de un solo sistema (compatibilidad).
+    Usa la lógica del main anterior pero para un solo sistema.
+    
+    Args:
+        verbose (bool): Si True, muestra información detallada. Si False, solo progreso básico.
+    """
     if logger is None:
         logger = SimpleEpisodeLogger(log_frequency=log_frequency if verbose else num_episodes + 1) 
 
+    # Solo mostrar info inicial si es verbose
     if verbose:
         print(f"\n--- Iniciando entrenamiento del DQN para {num_episodes} episodios ---")
         print(f"Hiperparámetros del agente: LR={agent.learning_rate}, Gamma={agent.gamma}, "
               f"Epsilon_decay={agent.epsilon_decay}, Batch_size={agent.batch_size}")
 
     best_reward = -float('inf')
-    milestone_interval = max(1, num_episodes // 4)
+    
+    # Variables para progreso
+    milestone_interval = max(1, num_episodes // 4)  # Mostrar cada 25%
     
     for episode in range(1, num_episodes + 1):
         start_time = time.time()
@@ -402,22 +437,11 @@ def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: i
         total_reward = 0
         done = False
         
+        # Contadores para diagnóstico
         skip_count = 0
         assign_count = 0
         decisions_made = 0
         total_vehicles = len(env.arrivals)
-        
-        action_types_count = {
-            "no_action": 0,
-            "assign_parking": 0,
-            "assign_charging": 0,
-            "start_charging": 0,
-            "move_vehicle": 0,
-            "release_vehicle": 0,
-            "swap_vehicles": 0,
-            "legacy_skip": 0,
-            "legacy_assign": 0
-        }
         
         while not done:
             possible_actions = env._get_possible_actions(state)
@@ -431,25 +455,15 @@ def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: i
                 break
                 
             selected_action = possible_actions[action]
-            
-            action_type = selected_action.get("type", "unknown")
-            if action_type in action_types_count:
-                action_types_count[action_type] += 1
-            
-            if action_type in ["assign_parking", "assign_charging", "start_charging"]:
-                assign_count += 1
-            elif action_type == "no_action":
+            if selected_action["skip"]:
                 skip_count += 1
-            elif selected_action.get("skip", False):
-                skip_count += 1
-                action_types_count["legacy_skip"] += 1
-            elif not selected_action.get("skip", True):
+            else:
                 assign_count += 1
-                action_types_count["legacy_assign"] += 1
                 
             next_state, reward, done = env.step(action)
             agent.remember(state, action, reward, next_state, done)
             
+            # Entrenar periódicamente
             if len(agent.memory) > agent.batch_size and decisions_made % 10 == 0:
                 agent.replay()
             
@@ -458,28 +472,30 @@ def train_dqn_agent(agent: EnhancedDQNAgent, env: EVChargingEnv, num_episodes: i
             decisions_made += 1
 
         episode_time = time.time() - start_time
+
+        # Obtener métricas finales del episodio
         metrics = env.get_energy_satisfaction_metrics()
         
+        # Registrar el episodio usando el logger
         logger.log_episode(
             episode, total_reward, metrics,
             assign_count, skip_count,
             total_vehicles, episode_time, agent.epsilon
         )
 
+        # Mostrar progreso solo en hitos (sin verbose) o según log_frequency (con verbose)
         if not verbose:
             if episode % milestone_interval == 0 or episode == num_episodes:
                 progress = episode / num_episodes * 100
-                action_summary = f"A:{assign_count} S:{skip_count} T:{decisions_made}"
-                print(f"        Entrenando: {progress:.0f}% ({episode}/{num_episodes}) - Reward: {total_reward:.0f} [{action_summary}]")
+                print(f"        Entrenando: {progress:.0f}% ({episode}/{num_episodes}) - Reward: {total_reward:.0f}")
 
-        if verbose and episode % log_frequency == 0:
-            print(f"Episode {episode}: Reward={total_reward:.2f}, Actions={action_types_count}")
-
+        # Guardar el modelo si es el mejor y se especificó una ruta
         if total_reward > best_reward:
             best_reward = total_reward
             if model_save_path:
                 agent.save(model_save_path)
     
+    # Solo mostrar resumen final si es verbose
     if verbose:
         print(f"--- Entrenamiento finalizado. Recompensa máxima: {best_reward:.2f} ---")
     
