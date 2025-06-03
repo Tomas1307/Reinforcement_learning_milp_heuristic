@@ -1,0 +1,170 @@
+{
+  "schedule": [
+    [
+      0,
+      1,
+      0,
+      0,
+      7
+    ],
+    [
+      1,
+      6,
+      0,
+      0,
+      7
+    ],
+    [
+      2,
+      6,
+      1,
+      1,
+      7
+    ],
+    [
+      3,
+      9,
+      0,
+      0,
+      7
+    ],
+    [
+      4,
+      11,
+      0,
+      0,
+      7
+    ],
+    [
+      5,
+      13,
+      0,
+      0,
+      7
+    ],
+    [
+      6,
+      17,
+      0,
+      0,
+      7
+    ],
+    [
+      7,
+      18,
+      0,
+      0,
+      7
+    ],
+    [
+      8,
+      21,
+      0,
+      0,
+      7
+    ],
+    [
+      9,
+      29,
+      0,
+      0,
+      7
+    ],
+    [
+      10,
+      32,
+      0,
+      0,
+      7
+    ],
+    [
+      11,
+      32,
+      1,
+      1,
+      7
+    ],
+    [
+      12,
+      34,
+      0,
+      0,
+      7
+    ],
+    [
+      13,
+      35,
+      0,
+      0,
+      7
+    ],
+    [
+      14,
+      35,
+      1,
+      1,
+      7
+    ],
+    [
+      15,
+      36,
+      0,
+      0,
+      7
+    ],
+    [
+      16,
+      36,
+      1,
+      1,
+      7
+    ],
+    [
+      17,
+      38,
+      0,
+      0,
+      7
+    ],
+    [
+      18,
+      38,
+      1,
+      1,
+      7
+    ],
+    [
+      19,
+      49,
+      0,
+      0,
+      7
+    ],
+    [
+      20,
+      51,
+      0,
+      0,
+      7
+    ]
+  ],
+  "metrics": {
+    "energy_metrics": {
+      "total_satisfaction_pct": 6.0,
+      "total_delivered_energy": 36.75
+    },
+    "total_cost": 1461.84,
+    "cost_per_kwh": 39.778,
+    "schedule_size": 21,
+    "evs_served": 21,
+    "total_evs": 21,
+    "execution_time": 0.046,
+    "model_info": {
+      "model_name": "efficiency_focused_rank_1",
+      "model_path": "./results/scatter_search/trained_models/efficiency_focused_rank_1.pt",
+      "filename": "efficiency_focused_rank_1.pt"
+    },
+    "source": "scatter_search_pre_calculated"
+  },
+  "timestamp": "2025-06-01 20:01:26"
+}

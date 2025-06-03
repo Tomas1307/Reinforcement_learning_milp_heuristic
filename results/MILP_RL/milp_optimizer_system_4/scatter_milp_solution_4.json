@@ -3606,12 +3606,12 @@
         "weighted_satisfaction": -9.086449148654197e-09
       }
     },
-    "solve_time": 51.9138617515564,
+    "solve_time": 41.649614572525024,
     "schedule_size": 457,
     "evs_served": 56,
     "total_evs": 75,
     "milp_status": 1,
     "milp_objective": 11674644.637166077
   },
-  "timestamp": "2025-06-01 19:59:42"
+  "timestamp": "2025-06-01 20:02:10"
 }
